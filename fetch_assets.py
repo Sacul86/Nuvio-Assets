@@ -1,16 +1,18 @@
 """
-fetch_assets.py — downloads themed landscape images from Pexels for Carl's Nuvio collections.
+fetch_assets.py — downloads themed cinematic backdrop images from TMDB
+for Nuvio media app collection headers.
 
 Usage:
-    1. Sign up free at https://www.pexels.com/api/ to get an API key (instant)
-    2. Set the key:  export PEXELS_API_KEY=your_key_here  (or just paste it below)
-    3. pip install requests
-    4. python fetch_assets.py
+    export TMDB_API_KEY=your_key_here
+    pip install requests
+    python fetch_assets.py
+
+To replace existing images, delete the assets/ folder first and re-run.
 
 Outputs:
-    ./assets/<theme-slug>.jpg  — 41 landscape images, one per folder.
+    ./assets/<theme-slug>.jpg — 41 landscape backdrops (1280px wide).
 
-Pexels licence: free for personal and commercial use, no attribution required.
+TMDB attribution required: https://www.themoviedb.org/about/logos-attribution
 """
 
 import os
@@ -23,112 +25,186 @@ try:
 except ImportError:
     sys.exit("Run: pip install requests")
 
-API_KEY = os.environ.get("PEXELS_API_KEY") or "PASTE_YOUR_KEY_HERE"
+API_KEY = os.environ.get("TMDB_API_KEY") or "PASTE_YOUR_KEY_HERE"
 if API_KEY == "PASTE_YOUR_KEY_HERE":
-    sys.exit("Set PEXELS_API_KEY env var or paste it in the script.")
+    sys.exit("Set TMDB_API_KEY env var.")
 
-# theme slug  -> Pexels search query (tuned per theme for best cinematic match)
-THEMES = {
-    # Horror
-    "horror-new-movies":       "dark forest fog moonlight horror",
-    "horror-new-series":       "abandoned hospital corridor dark horror",
-    "horror-supernatural":     "haunted house ghost paranormal dark",
-    "horror-slasher":          "bloody knife silhouette dark alley",
-    "horror-creature":         "monster silhouette dark cave fog",
-    # Thriller
-    "thriller-new-movies":     "neon city night thriller cinematic",
-    "thriller-new-series":     "shadowy figure rain noir thriller",
-    "thriller-psychological":  "dark mirror reflection psychological",
-    "thriller-crime":          "crime scene noir detective dark city",
-    "thriller-action":         "explosion action movie cinematic",
-    # Zombie
-    "zombie-new-movies":       "zombie apocalypse abandoned street dark",
-    "zombie-new-series":       "post apocalyptic ruins decay dark",
-    "zombie-comedy":           "zombie hand graveyard halloween",
-    "zombie-survival":         "survivor wasteland barricade dark",
-    # Space
-    "space-new-movies":        "galaxy nebula stars space cinematic",
-    "space-new-series":        "spaceship cockpit stars cinematic",
-    "space-alien":             "ufo alien spacecraft sky dark",
-    "space-exploration":       "astronaut planet surface exploration",
-    "space-opera":             "starfield battleship sci-fi cinematic",
-    # Mystery
-    "mystery-new-movies":      "magnifying glass map detective mystery",
-    "mystery-new-series":      "noir detective shadow window",
-    "mystery-detective":       "vintage detective office trench coat",
-    "mystery-whodunit":        "manor house library mystery candlelight",
-    "mystery-conspiracy":      "shadowy figures meeting conspiracy",
-    # Science Fiction
-    "scifi-new-movies":        "futuristic city neon cyberpunk",
-    "scifi-new-series":        "spaceship interior cinematic sci-fi",
-    "scifi-dystopian":         "dystopian city ruins cyberpunk dark",
-    "scifi-ai":                "robot artificial intelligence circuit board",
-    "scifi-timetravel":        "wormhole time portal swirl light",
-    # Apocalyptic
-    "apoc-new-movies":         "post apocalyptic wasteland sunset",
-    "apoc-new-series":         "ruined city skyline apocalyptic",
-    "apoc-post":               "abandoned skyscrapers overgrown nature ruin",
-    "apoc-pandemic":           "biohazard virus laboratory dark",
-    "apoc-nuclear":            "nuclear explosion mushroom cloud",
-    "apoc-dystopia":           "dystopian future cyberpunk neon dark",
-    # Natural Disaster
-    "disaster-new-movies":     "tornado lightning storm cinematic",
-    "disaster-new-series":     "tsunami wave storm dramatic",
-    "disaster-earth":          "volcano eruption lava dramatic",
-    "disaster-water":          "tsunami wave flood dramatic",
-    "disaster-storm":          "hurricane storm clouds lightning",
-    "disaster-space":          "asteroid earth space catastrophe",
-}
-
+BASE_URL = "https://api.themoviedb.org/3"
+IMG_BASE = "https://image.tmdb.org/t/p/w1280"
 OUT_DIR = Path("assets")
 OUT_DIR.mkdir(exist_ok=True)
 
-HEADERS = {"Authorization": API_KEY}
-URL = "https://api.pexels.com/v1/search"
+# Track used backdrops so every theme gets a unique image
+used_backdrops = set()
 
-def fetch_one(slug: str, query: str) -> bool:
-    """Search Pexels, download the best landscape result, save as assets/<slug>.jpg."""
+# ── Theme definitions ─────────────────────────────────────────────
+# Each entry: (slug, method, media_type, params)
+#   method:     "discover" or "search"
+#   media_type: "movie" or "tv"
+#   params:     dict passed to the TMDB endpoint
+#
+# TMDB movie genre IDs: Horror=27, Thriller=53, Sci-Fi=878,
+#   Mystery=9648, Action=28, Crime=80
+# TMDB TV genre IDs differ — using search for TV themes instead.
+
+THEMES = [
+    # ── Horror ────────────────────────────────────────────────────
+    ("horror-new-movies",      "discover", "movie",
+     {"with_genres": "27", "sort_by": "popularity.desc",
+      "vote_count.gte": "200"}),
+    ("horror-new-series",      "search", "tv",
+     {"query": "horror dark"}),
+    ("horror-supernatural",    "search", "movie",
+     {"query": "conjuring supernatural haunting"}),
+    ("horror-slasher",         "search", "movie",
+     {"query": "scream slasher halloween"}),
+    ("horror-creature",        "search", "movie",
+     {"query": "creature monster horror"}),
+
+    # ── Thriller ──────────────────────────────────────────────────
+    ("thriller-new-movies",    "discover", "movie",
+     {"with_genres": "53", "sort_by": "popularity.desc",
+      "vote_count.gte": "200"}),
+    ("thriller-new-series",    "search", "tv",
+     {"query": "thriller suspense dark"}),
+    ("thriller-psychological", "search", "movie",
+     {"query": "psychological thriller mind"}),
+    ("thriller-crime",         "discover", "movie",
+     {"with_genres": "53,80", "sort_by": "popularity.desc",
+      "vote_count.gte": "100"}),
+    ("thriller-action",        "discover", "movie",
+     {"with_genres": "53,28", "sort_by": "popularity.desc",
+      "vote_count.gte": "100"}),
+
+    # ── Zombie ────────────────────────────────────────────────────
+    ("zombie-new-movies",      "search", "movie",
+     {"query": "zombie undead apocalypse"}),
+    ("zombie-new-series",      "search", "tv",
+     {"query": "zombie walking dead undead"}),
+    ("zombie-comedy",          "search", "movie",
+     {"query": "zombie comedy shaun zombieland"}),
+    ("zombie-survival",        "search", "movie",
+     {"query": "zombie survival last"}),
+
+    # ── Space ─────────────────────────────────────────────────────
+    ("space-new-movies",       "discover", "movie",
+     {"with_genres": "878", "sort_by": "popularity.desc",
+      "vote_count.gte": "300"}),
+    ("space-new-series",       "search", "tv",
+     {"query": "space sci-fi stars galaxy"}),
+    ("space-alien",            "search", "movie",
+     {"query": "alien extraterrestrial UFO"}),
+    ("space-exploration",      "search", "movie",
+     {"query": "astronaut space exploration interstellar"}),
+    ("space-opera",            "search", "movie",
+     {"query": "star wars guardians galaxy epic space"}),
+
+    # ── Mystery ───────────────────────────────────────────────────
+    ("mystery-new-movies",     "discover", "movie",
+     {"with_genres": "9648", "sort_by": "popularity.desc",
+      "vote_count.gte": "100"}),
+    ("mystery-new-series",     "search", "tv",
+     {"query": "mystery detective crime investigation"}),
+    ("mystery-detective",      "search", "movie",
+     {"query": "detective sherlock investigation clue"}),
+    ("mystery-whodunit",       "search", "movie",
+     {"query": "whodunit murder mystery knives out"}),
+    ("mystery-conspiracy",     "search", "movie",
+     {"query": "conspiracy cover-up secret government"}),
+
+    # ── Science Fiction ───────────────────────────────────────────
+    ("scifi-new-movies",       "discover", "movie",
+     {"with_genres": "878", "sort_by": "release_date.desc",
+      "vote_count.gte": "50"}),
+    ("scifi-new-series",       "search", "tv",
+     {"query": "science fiction futuristic technology"}),
+    ("scifi-dystopian",        "search", "movie",
+     {"query": "dystopian future blade runner cyberpunk"}),
+    ("scifi-ai",               "search", "movie",
+     {"query": "artificial intelligence robot android"}),
+    ("scifi-timetravel",       "search", "movie",
+     {"query": "time travel back future temporal"}),
+
+    # ── Apocalyptic ───────────────────────────────────────────────
+    ("apoc-new-movies",        "search", "movie",
+     {"query": "apocalypse end world doomsday"}),
+    ("apoc-new-series",        "search", "tv",
+     {"query": "apocalypse post-apocalyptic survival"}),
+    ("apoc-post",              "search", "movie",
+     {"query": "post-apocalyptic wasteland mad max"}),
+    ("apoc-pandemic",          "search", "movie",
+     {"query": "pandemic virus outbreak contagion"}),
+    ("apoc-nuclear",           "search", "movie",
+     {"query": "nuclear fallout radiation wasteland"}),
+    ("apoc-dystopia",          "search", "movie",
+     {"query": "dystopia hunger games totalitarian"}),
+
+    # ── Natural Disaster ──────────────────────────────────────────
+    ("disaster-new-movies",    "search", "movie",
+     {"query": "disaster catastrophe destruction"}),
+    ("disaster-new-series",    "search", "tv",
+     {"query": "disaster storm nature catastrophe"}),
+    ("disaster-earth",         "search", "movie",
+     {"query": "earthquake volcano eruption pompeii"}),
+    ("disaster-water",         "search", "movie",
+     {"query": "tsunami flood tidal wave poseidon"}),
+    ("disaster-storm",         "search", "movie",
+     {"query": "tornado hurricane twister storm"}),
+    ("disaster-space",         "search", "movie",
+     {"query": "asteroid meteor comet armageddon impact"}),
+]
+
+
+def fetch_one(slug, method, media_type, params):
     out_path = OUT_DIR / f"{slug}.jpg"
     if out_path.exists():
         print(f"  [skip] {slug} (exists)")
         return True
 
-    params = {
-        "query": query,
-        "orientation": "landscape",
-        "size": "large",     # 24MP+ — plenty for a tile
-        "per_page": 5,        # grab top 5, pick first
-    }
+    if method == "discover":
+        url = f"{BASE_URL}/discover/{media_type}"
+    else:
+        url = f"{BASE_URL}/search/{media_type}"
+
+    api_params = {"api_key": API_KEY, **params}
+
     try:
-        r = requests.get(URL, headers=HEADERS, params=params, timeout=20)
+        r = requests.get(url, params=api_params, timeout=20)
         r.raise_for_status()
-        photos = r.json().get("photos", [])
-        if not photos:
-            print(f"  [miss] {slug} — no results for '{query}'")
-            return False
-        # Use the 'large' size variant (~1880 wide) — good for landscape tiles
-        img_url = photos[0]["src"]["large"]
-        img_data = requests.get(img_url, timeout=30).content
-        out_path.write_bytes(img_data)
-        print(f"  [ok]   {slug:<30}  {photos[0]['photographer']}")
-        return True
+        results = r.json().get("results", [])
+
+        for item in results:
+            backdrop = item.get("backdrop_path")
+            if backdrop and backdrop not in used_backdrops:
+                used_backdrops.add(backdrop)
+                img_url = IMG_BASE + backdrop
+                img_resp = requests.get(img_url, timeout=30)
+                img_resp.raise_for_status()
+                out_path.write_bytes(img_resp.content)
+                title = item.get("title") or item.get("name", "?")
+                print(f"  [ok]   {slug:<30}  ← {title}")
+                return True
+
+        print(f"  [miss] {slug} — no unique backdrop found")
+        return False
     except Exception as e:
         print(f"  [err]  {slug}: {e}")
         return False
 
+
 def main():
-    print(f"Fetching {len(THEMES)} themed landscape images from Pexels...")
-    print(f"Output: {OUT_DIR.absolute()}")
-    print()
+    print(f"Fetching {len(THEMES)} themed backdrops from TMDB...")
+    print(f"Output:  {OUT_DIR.absolute()}")
+    print(f"Images:  1280px wide cinematic backdrops\n")
     ok = 0
-    for slug, query in THEMES.items():
-        if fetch_one(slug, query):
+    for slug, method, media_type, params in THEMES:
+        if fetch_one(slug, method, media_type, params):
             ok += 1
-        time.sleep(0.3)  # gentle rate limit
-    print()
-    print(f"Done. {ok}/{len(THEMES)} images saved to {OUT_DIR}/")
+        time.sleep(0.25)
+    print(f"\nDone. {ok}/{len(THEMES)} images saved to {OUT_DIR}/")
     if ok < len(THEMES):
-        print("For misses: edit the search query in this script and re-run; existing files are skipped.")
+        print("Re-run to retry misses (existing files are skipped).")
+
 
 if __name__ == "__main__":
     main()
