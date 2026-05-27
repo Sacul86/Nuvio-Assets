@@ -34,124 +34,163 @@ IMG_BASE = "https://image.tmdb.org/t/p/w1280"
 OUT_DIR = Path("assets")
 OUT_DIR.mkdir(exist_ok=True)
 
-# Track used backdrops so every theme gets a unique image
 used_backdrops = set()
 
+# ── TMDB Genre IDs ────────────────────────────────────────────────
+# Movie: Horror=27 Thriller=53 SciFi=878 Mystery=9648 Action=28
+#         Crime=80 Adventure=12 Fantasy=14 Drama=18
+# TV:    Action&Adventure=10759 Crime=80 Mystery=9648
+#        SciFi&Fantasy=10765 Drama=18
+
 # ── Theme definitions ─────────────────────────────────────────────
-# Each entry: (slug, method, media_type, params)
-#   method:     "discover" or "search"
-#   media_type: "movie" or "tv"
-#   params:     dict passed to the TMDB endpoint
+# (slug, method, media_type, params)
 #
-# TMDB movie genre IDs: Horror=27, Thriller=53, Sci-Fi=878,
-#   Mystery=9648, Action=28, Crime=80
-# TMDB TV genre IDs differ — using search for TV themes instead.
+# Strategy: use discover (reliable, always has backdrops) wherever
+# a genre ID maps cleanly. Use simple 1-2 word search queries only
+# for niche sub-themes. Different sort orders / genre combos / pages
+# ensure variety. Deduplication guarantees unique images.
 
 THEMES = [
-    # ── Horror ────────────────────────────────────────────────────
-    ("horror-new-movies",      "discover", "movie",
-     {"with_genres": "27", "sort_by": "popularity.desc",
-      "vote_count.gte": "200"}),
-    ("horror-new-series",      "search", "tv",
-     {"query": "horror dark"}),
-    ("horror-supernatural",    "search", "movie",
-     {"query": "conjuring supernatural haunting"}),
-    ("horror-slasher",         "search", "movie",
-     {"query": "scream slasher halloween"}),
-    ("horror-creature",        "search", "movie",
-     {"query": "creature monster horror"}),
+    # ── Horror (genre 27) ────────────────────────────────────────
+    ("horror-new-movies",
+     "discover", "movie",
+     {"with_genres": "27", "sort_by": "popularity.desc"}),
+    ("horror-new-series",
+     "search", "tv",
+     {"query": "horror"}),
+    ("horror-supernatural",
+     "discover", "movie",
+     {"with_genres": "27", "sort_by": "vote_average.desc",
+      "vote_count.gte": "500"}),
+    ("horror-slasher",
+     "discover", "movie",
+     {"with_genres": "27,53", "sort_by": "popularity.desc"}),
+    ("horror-creature",
+     "discover", "movie",
+     {"with_genres": "27,878", "sort_by": "popularity.desc"}),
 
-    # ── Thriller ──────────────────────────────────────────────────
-    ("thriller-new-movies",    "discover", "movie",
-     {"with_genres": "53", "sort_by": "popularity.desc",
-      "vote_count.gte": "200"}),
-    ("thriller-new-series",    "search", "tv",
-     {"query": "thriller suspense dark"}),
-    ("thriller-psychological", "search", "movie",
-     {"query": "psychological thriller mind"}),
-    ("thriller-crime",         "discover", "movie",
-     {"with_genres": "53,80", "sort_by": "popularity.desc",
-      "vote_count.gte": "100"}),
-    ("thriller-action",        "discover", "movie",
-     {"with_genres": "53,28", "sort_by": "popularity.desc",
-      "vote_count.gte": "100"}),
+    # ── Thriller (genre 53) ──────────────────────────────────────
+    ("thriller-new-movies",
+     "discover", "movie",
+     {"with_genres": "53", "sort_by": "popularity.desc"}),
+    ("thriller-new-series",
+     "search", "tv",
+     {"query": "thriller"}),
+    ("thriller-psychological",
+     "discover", "movie",
+     {"with_genres": "53", "sort_by": "vote_average.desc",
+      "vote_count.gte": "500"}),
+    ("thriller-crime",
+     "discover", "movie",
+     {"with_genres": "53,80", "sort_by": "popularity.desc"}),
+    ("thriller-action",
+     "discover", "movie",
+     {"with_genres": "53,28", "sort_by": "popularity.desc"}),
 
-    # ── Zombie ────────────────────────────────────────────────────
-    ("zombie-new-movies",      "search", "movie",
-     {"query": "zombie undead apocalypse"}),
-    ("zombie-new-series",      "search", "tv",
-     {"query": "zombie walking dead undead"}),
-    ("zombie-comedy",          "search", "movie",
-     {"query": "zombie comedy shaun zombieland"}),
-    ("zombie-survival",        "search", "movie",
-     {"query": "zombie survival last"}),
+    # ── Zombie ───────────────────────────────────────────────────
+    ("zombie-new-movies",
+     "search", "movie",
+     {"query": "zombie"}),
+    ("zombie-new-series",
+     "search", "tv",
+     {"query": "zombie"}),
+    ("zombie-comedy",
+     "search", "movie",
+     {"query": "zombieland"}),
+    ("zombie-survival",
+     "search", "movie",
+     {"query": "dead survival"}),
 
-    # ── Space ─────────────────────────────────────────────────────
-    ("space-new-movies",       "discover", "movie",
-     {"with_genres": "878", "sort_by": "popularity.desc",
-      "vote_count.gte": "300"}),
-    ("space-new-series",       "search", "tv",
-     {"query": "space sci-fi stars galaxy"}),
-    ("space-alien",            "search", "movie",
-     {"query": "alien extraterrestrial UFO"}),
-    ("space-exploration",      "search", "movie",
-     {"query": "astronaut space exploration interstellar"}),
-    ("space-opera",            "search", "movie",
-     {"query": "star wars guardians galaxy epic space"}),
+    # ── Space (genre 878 = Sci-Fi) ───────────────────────────────
+    ("space-new-movies",
+     "discover", "movie",
+     {"with_genres": "878", "sort_by": "popularity.desc"}),
+    ("space-new-series",
+     "search", "tv",
+     {"query": "space"}),
+    ("space-alien",
+     "search", "movie",
+     {"query": "alien"}),
+    ("space-exploration",
+     "search", "movie",
+     {"query": "astronaut"}),
+    ("space-opera",
+     "discover", "movie",
+     {"with_genres": "878,12", "sort_by": "popularity.desc"}),
 
-    # ── Mystery ───────────────────────────────────────────────────
-    ("mystery-new-movies",     "discover", "movie",
-     {"with_genres": "9648", "sort_by": "popularity.desc",
-      "vote_count.gte": "100"}),
-    ("mystery-new-series",     "search", "tv",
-     {"query": "mystery detective crime investigation"}),
-    ("mystery-detective",      "search", "movie",
-     {"query": "detective sherlock investigation clue"}),
-    ("mystery-whodunit",       "search", "movie",
-     {"query": "whodunit murder mystery knives out"}),
-    ("mystery-conspiracy",     "search", "movie",
-     {"query": "conspiracy cover-up secret government"}),
+    # ── Mystery (genre 9648) ─────────────────────────────────────
+    ("mystery-new-movies",
+     "discover", "movie",
+     {"with_genres": "9648", "sort_by": "popularity.desc"}),
+    ("mystery-new-series",
+     "discover", "tv",
+     {"with_genres": "9648", "sort_by": "popularity.desc"}),
+    ("mystery-detective",
+     "search", "movie",
+     {"query": "detective"}),
+    ("mystery-whodunit",
+     "discover", "movie",
+     {"with_genres": "9648,80", "sort_by": "popularity.desc"}),
+    ("mystery-conspiracy",
+     "search", "movie",
+     {"query": "conspiracy"}),
 
-    # ── Science Fiction ───────────────────────────────────────────
-    ("scifi-new-movies",       "discover", "movie",
-     {"with_genres": "878", "sort_by": "release_date.desc",
-      "vote_count.gte": "50"}),
-    ("scifi-new-series",       "search", "tv",
-     {"query": "science fiction futuristic technology"}),
-    ("scifi-dystopian",        "search", "movie",
-     {"query": "dystopian future blade runner cyberpunk"}),
-    ("scifi-ai",               "search", "movie",
-     {"query": "artificial intelligence robot android"}),
-    ("scifi-timetravel",       "search", "movie",
-     {"query": "time travel back future temporal"}),
+    # ── Science Fiction (genre 878) ──────────────────────────────
+    ("scifi-new-movies",
+     "discover", "movie",
+     {"with_genres": "878", "sort_by": "popularity.desc", "page": "2"}),
+    ("scifi-new-series",
+     "discover", "tv",
+     {"with_genres": "10765", "sort_by": "popularity.desc"}),
+    ("scifi-dystopian",
+     "search", "movie",
+     {"query": "dystopia"}),
+    ("scifi-ai",
+     "search", "movie",
+     {"query": "robot"}),
+    ("scifi-timetravel",
+     "search", "movie",
+     {"query": "time travel"}),
 
-    # ── Apocalyptic ───────────────────────────────────────────────
-    ("apoc-new-movies",        "search", "movie",
-     {"query": "apocalypse end world doomsday"}),
-    ("apoc-new-series",        "search", "tv",
-     {"query": "apocalypse post-apocalyptic survival"}),
-    ("apoc-post",              "search", "movie",
-     {"query": "post-apocalyptic wasteland mad max"}),
-    ("apoc-pandemic",          "search", "movie",
-     {"query": "pandemic virus outbreak contagion"}),
-    ("apoc-nuclear",           "search", "movie",
-     {"query": "nuclear fallout radiation wasteland"}),
-    ("apoc-dystopia",          "search", "movie",
-     {"query": "dystopia hunger games totalitarian"}),
+    # ── Apocalyptic ──────────────────────────────────────────────
+    ("apoc-new-movies",
+     "search", "movie",
+     {"query": "apocalypse"}),
+    ("apoc-new-series",
+     "search", "tv",
+     {"query": "apocalypse"}),
+    ("apoc-post",
+     "search", "movie",
+     {"query": "wasteland"}),
+    ("apoc-pandemic",
+     "search", "movie",
+     {"query": "pandemic"}),
+    ("apoc-nuclear",
+     "search", "movie",
+     {"query": "nuclear"}),
+    ("apoc-dystopia",
+     "discover", "movie",
+     {"with_genres": "878,18", "sort_by": "popularity.desc"}),
 
-    # ── Natural Disaster ──────────────────────────────────────────
-    ("disaster-new-movies",    "search", "movie",
-     {"query": "disaster catastrophe destruction"}),
-    ("disaster-new-series",    "search", "tv",
-     {"query": "disaster storm nature catastrophe"}),
-    ("disaster-earth",         "search", "movie",
-     {"query": "earthquake volcano eruption pompeii"}),
-    ("disaster-water",         "search", "movie",
-     {"query": "tsunami flood tidal wave poseidon"}),
-    ("disaster-storm",         "search", "movie",
-     {"query": "tornado hurricane twister storm"}),
-    ("disaster-space",         "search", "movie",
-     {"query": "asteroid meteor comet armageddon impact"}),
+    # ── Natural Disaster ─────────────────────────────────────────
+    ("disaster-new-movies",
+     "search", "movie",
+     {"query": "disaster"}),
+    ("disaster-new-series",
+     "search", "tv",
+     {"query": "disaster"}),
+    ("disaster-earth",
+     "search", "movie",
+     {"query": "earthquake"}),
+    ("disaster-water",
+     "search", "movie",
+     {"query": "tsunami"}),
+    ("disaster-storm",
+     "search", "movie",
+     {"query": "tornado"}),
+    ("disaster-space",
+     "search", "movie",
+     {"query": "asteroid"}),
 ]
 
 
@@ -169,23 +208,27 @@ def fetch_one(slug, method, media_type, params):
     api_params = {"api_key": API_KEY, **params}
 
     try:
-        r = requests.get(url, params=api_params, timeout=20)
-        r.raise_for_status()
-        results = r.json().get("results", [])
+        for page in range(1, 4):
+            api_params["page"] = api_params.get("page", str(page))
+            r = requests.get(url, params=api_params, timeout=20)
+            r.raise_for_status()
+            results = r.json().get("results", [])
 
-        for item in results:
-            backdrop = item.get("backdrop_path")
-            if backdrop and backdrop not in used_backdrops:
-                used_backdrops.add(backdrop)
-                img_url = IMG_BASE + backdrop
-                img_resp = requests.get(img_url, timeout=30)
-                img_resp.raise_for_status()
-                out_path.write_bytes(img_resp.content)
-                title = item.get("title") or item.get("name", "?")
-                print(f"  [ok]   {slug:<30}  ← {title}")
-                return True
+            for item in results:
+                backdrop = item.get("backdrop_path")
+                if backdrop and backdrop not in used_backdrops:
+                    used_backdrops.add(backdrop)
+                    img_url = IMG_BASE + backdrop
+                    img_resp = requests.get(img_url, timeout=30)
+                    img_resp.raise_for_status()
+                    out_path.write_bytes(img_resp.content)
+                    title = item.get("title") or item.get("name", "?")
+                    print(f"  [ok]   {slug:<30}  <- {title}")
+                    return True
 
-        print(f"  [miss] {slug} — no unique backdrop found")
+            api_params["page"] = str(page + 1)
+
+        print(f"  [miss] {slug} -- no backdrop found after 3 pages")
         return False
     except Exception as e:
         print(f"  [err]  {slug}: {e}")
