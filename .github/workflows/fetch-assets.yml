@@ -2,6 +2,10 @@ name: Fetch TMDB Assets
 
 on:
   workflow_dispatch:
+    inputs:
+      tmdb_api_key:
+        description: "Your TMDB API key (from themoviedb.org)"
+        required: true
 
 jobs:
   fetch:
@@ -25,7 +29,7 @@ jobs:
 
       - name: Fetch TMDB backdrops
         env:
-          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          TMDB_API_KEY: ${{ inputs.tmdb_api_key }}
         run: python fetch_assets.py
 
       - name: Commit and push
