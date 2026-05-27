@@ -1,0 +1,38 @@
+name: Fetch TMDB Assets
+
+on:
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: claude/nuvio-pexels-landscapes-Gw07I
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install requests
+
+      - name: Remove old Pexels images
+        run: rm -rf assets/
+
+      - name: Fetch TMDB backdrops
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+        run: python fetch_assets.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/
+          git diff --cached --quiet && echo "No changes" && exit 0
+          git commit -m "Replace assets with TMDB cinematic backdrops"
+          git push
