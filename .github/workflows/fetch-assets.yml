@@ -13,7 +13,6 @@ on:
         type: boolean
         default: false
 
-# Allow the workflow to commit the downloaded images back to the repo.
 permissions:
   contents: write
 
@@ -31,7 +30,13 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install requests
+        run: pip install requests Pillow
+
+      - name: Download Bebas Neue font
+        run: |
+          curl -fsSL -o /tmp/BebasNeue-Regular.ttf \
+            https://github.com/google/fonts/raw/main/ofl/bebasneue/BebasNeue-Regular.ttf
+          ls -la /tmp/BebasNeue-Regular.ttf
 
       - name: Generate assets
         env:
