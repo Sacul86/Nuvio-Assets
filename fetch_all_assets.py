@@ -27,6 +27,7 @@ Optional:
 """
 
 import io
+import json
 import os
 import sys
 import time
@@ -424,33 +425,142 @@ def fetch_fanart_movie_bg(tmdb_id):
         return None
 
 
-# ─── Tile generators ────────────────────────────────────────────────
+# ─── Filter-driven discovery (cover always matches the row's content) ─
+FILTER_KEY_MAP = {
+    "withGenres":           "with_genres",
+    "withoutGenres":        "without_genres",
+    "withKeywords":         "with_keywords",
+    "withoutKeywords":      "without_keywords",
+    "withCompanies":        "with_companies",
+    "withCast":             "with_cast",
+    "withCrew":             "with_crew",
+    "withOriginalLanguage": "with_original_language",
+    "voteCountGte":         "vote_count.gte",
+    "voteAverageGte":       "vote_average.gte",
+}
+
+
+def tmdb_discover_top(filters, media_type):
+    """Run TMDB Discover with the row's filters, return (id, backdrop_path) of the
+    most popular result that actually has a backdrop. Returns (None, None) on miss.
+    """
+    if not TMDB_KEY:
+        return None, None
+    endpoint = "movie" if media_type == "MOVIE" else "tv"
+    params = {"api_key": TMDB_KEY, "sort_by": "popularity.desc", "page": 1}
+    for k, v in (filters or {}).items():
+        if k in FILTER_KEY_MAP:
+            params[FILTER_KEY_MAP[k]] = v
+    try:
+        r = requests.get(
+            f"https://api.themoviedb.org/3/discover/{endpoint}",
+            params=params, timeout=20,
+        )
+        r.raise_for_status()
+        for res in r.json().get("results", []):
+            if res.get("backdrop_path"):
+                return res.get("id"), res["backdrop_path"]
+        return None, None
+    except Exception as e:
+        print(f"  [warn] discover {media_type} failed: {type(e).__name__}")
+        return None, None
+
+
+def load_filters_from_v13():
+    """Returns {slug: (filters, media_type)} from the v13 JSON in the repo root."""
+    json_path = Path("carl-nuvio-themed-collections-v13.json")
+    if not json_path.exists():
+        print("  [warn] v13 JSON not in repo - falling back to hard-coded picks.")
+        return {}
+    out = {}
+    try:
+        data = json.loads(json_path.read_text())
+    except Exception as e:
+        print(f"  [warn] v13 JSON parse failed ({e}); falling back.")
+        return {}
+    for col in data:
+        for fld in col["folders"]:
+            slug = fld["id"].replace("folder-carl-", "")
+            for src in fld.get("sources", []):
+                if src.get("tmdbSourceType") == "DISCOVER":
+                    out[slug] = (src.get("filters", {}), src.get("mediaType", "MOVIE"))
+                    break
+    return out
+
+
+SLUG_FILTERS = None  # lazy-populated once
+
+
 def make_themed_tile(slug, label, tmdb_id, media_type):
-    """Real backdrop of an iconic film/series + Bebas Neue title overlay."""
+    """Pick a representative backdrop and overlay the label.
+
+    Strategy (preferring matches over hand-picked guesses):
+      1. If v13 JSON has a DISCOVER filter for this slug, run TMDB Discover with
+         it and use the most popular result's backdrop. This is the strongest
+         guarantee that the cover image matches the content the user sees when
+         they open the row.
+      2. Otherwise fall back to the hard-coded tmdb_id (legacy iconic pick).
+    """
     if already(slug):
         print(f"  [skip] {slug}")
         return True
 
+    global SLUG_FILTERS
+    if SLUG_FILTERS is None:
+        SLUG_FILTERS = load_filters_from_v13()
+
     bg_bytes = None
     source = "?"
 
-    if media_type == "MOVIE":
-        bg_bytes = fetch_fanart_movie_bg(tmdb_id)
-        if bg_bytes:
-            source = "fanart.tv"
-        else:
-            bg_bytes, source = fetch_tmdb_backdrop("movie", tmdb_id)
-    else:
-        bg_bytes, source = fetch_tmdb_backdrop("tv", tmdb_id)
+    spec = SLUG_FILTERS.get(slug)
+    if spec:
+        filters, mt = spec
+        discover_id, discover_backdrop = tmdb_discover_top(filters, mt)
+        if discover_id:
+            # Try fanart.tv on the discovered movie first for nicer art.
+            if mt == "MOVIE":
+                bg_bytes = fetch_fanart_movie_bg(discover_id)
+                if bg_bytes:
+                    source = f"fanart.tv (discover→{discover_id})"
+            # Then the discover result's own backdrop_path.
+            if not bg_bytes and discover_backdrop:
+                try:
+                    bg_bytes = requests.get(
+                        f"https://image.tmdb.org/t/p/original{discover_backdrop}",
+                        timeout=30,
+                    ).content
+                    source = f"discover→{discover_id}"
+                except Exception as e:
+                    print(f"  [warn] {slug}: discover backdrop dl failed: {e}")
+            # And the /{type}/{id}/images endpoint as one more shot.
+            if not bg_bytes:
+                bg_bytes, s = fetch_tmdb_backdrop(
+                    "movie" if mt == "MOVIE" else "tv", discover_id,
+                )
+                if bg_bytes:
+                    source = f"{s} (discover→{discover_id})"
+
+    # Fall back to the legacy hand-picked tmdb_id if discover gave nothing.
+    if not bg_bytes:
+        if media_type == "MOVIE":
+            bg_bytes = fetch_fanart_movie_bg(tmdb_id)
+            if bg_bytes:
+                source = f"fanart.tv (legacy {tmdb_id})"
+        if not bg_bytes:
+            bg_bytes, s = fetch_tmdb_backdrop(
+                "movie" if media_type == "MOVIE" else "tv", tmdb_id,
+            )
+            if bg_bytes:
+                source = f"{s} (legacy {tmdb_id})"
 
     if not bg_bytes:
-        print(f"  [err]  {slug}: no backdrop ({source})")
+        print(f"  [err]  {slug}: no backdrop found")
         return False
 
     try:
         result = apply_text_overlay(bg_bytes, label)
         (OUT_DIR / f"{slug}.jpg").write_bytes(result)
-        print(f"  [ok]   {slug:<22} '{label}' ({media_type} {tmdb_id}, {source})")
+        print(f"  [ok]   {slug:<22} '{label}' ({source})")
         return True
     except Exception as e:
         print(f"  [err]  {slug}: overlay failed: {e}")
