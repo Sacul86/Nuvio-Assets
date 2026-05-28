@@ -351,15 +351,16 @@ def fetch_tmdb_collection(collection_id):
 
 
 def pick_best_tmdb_backdrop(backdrops):
-    """Sort backdrops by vote_count * (vote_average + 1), pick the top."""
+    """Rank backdrops: English/textless first, then by vote_count * vote_avg."""
     if not backdrops:
         return None
-    backdrops = sorted(
-        backdrops,
-        key=lambda b: (b.get("vote_count") or 0) * ((b.get("vote_average") or 0) + 1),
-        reverse=True,
-    )
-    return backdrops[0].get("file_path")
+    def rank(b):
+        lang = b.get("iso_639_1") or ""
+        # Textless (null/"") preferred for overlay use, then English, then anything else.
+        lang_pref = 2 if lang == "" else (1 if lang == "en" else 0)
+        score = (b.get("vote_count") or 0) * ((b.get("vote_average") or 0) + 1)
+        return (lang_pref, score)
+    return max(backdrops, key=rank).get("file_path")
 
 
 def fetch_tmdb_backdrop(media_type, tmdb_id):
@@ -369,10 +370,10 @@ def fetch_tmdb_backdrop(media_type, tmdb_id):
     try:
         r = requests.get(
             f"https://api.themoviedb.org/3/{media_type}/{tmdb_id}/images",
-            params={
-                "api_key": TMDB_KEY,
-                "include_image_language": "en,null",
-            },
+            # No include_image_language: some titles tag every backdrop with a
+            # non-English language code, which an "en,null" filter would empty out.
+            # We rank language preference client-side instead.
+            params={"api_key": TMDB_KEY},
             timeout=20,
         )
         r.raise_for_status()
