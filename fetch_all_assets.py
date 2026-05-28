@@ -13,13 +13,16 @@ Optional env vars:
   OVERWRITE=1   — regenerate existing files (default: skip)
 """
 
-import os, sys, time, urllib.parse
+import os, sys, urllib.parse
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 try:
     import requests
 except ImportError:
     sys.exit("Run: pip install requests")
+
+WORKERS = int(os.environ.get("WORKERS", "6"))
 
 OVERWRITE = os.environ.get("OVERWRITE", "0") == "1"
 OUT_DIR = Path("assets")
@@ -174,26 +177,30 @@ def copy_branded(slug, url, ext):
         return False
 
 
-def main():
-    print(f"Output: {OUT_DIR.absolute()}   OVERWRITE={OVERWRITE}")
-    print(f"AI:     Pollinations.ai (Flux model, free, no key)\n")
+def run_parallel(label, items):
+    """Run make_ai_tile across items with a thread pool."""
+    print(f"\n== {label} ({len(items)} AI-generated, {WORKERS} workers) ==")
+    ok = 0
+    with ThreadPoolExecutor(max_workers=WORKERS) as pool:
+        futs = {pool.submit(make_ai_tile, s, sc, t): s for s, sc, t in items}
+        for fut in as_completed(futs):
+            try:
+                if fut.result():
+                    ok += 1
+            except Exception as e:
+                print(f"  [err]  {futs[fut]}: {e}")
+    return ok
 
-    print("== Branded franchise art (from rrevanth) ==")
+
+def main():
+    print(f"Output: {OUT_DIR.absolute()}   OVERWRITE={OVERWRITE}   WORKERS={WORKERS}")
+    print(f"AI:     Pollinations.ai (Flux model, free, no key)")
+
+    print("\n== Branded franchise art (from rrevanth) ==")
     b_ok = sum(copy_branded(s, u, e) for s, (u, e) in BRANDED.items())
 
-    print(f"\n== Franchise fallbacks ({len(FRANCHISE_PROMPTS)} AI-generated) ==")
-    f_ok = 0
-    for slug, scene, title in FRANCHISE_PROMPTS:
-        if make_ai_tile(slug, scene, title):
-            f_ok += 1
-        time.sleep(1.0)  # be polite to free service
-
-    print(f"\n== Themed tiles ({len(THEMES)} AI-generated) ==")
-    t_ok = 0
-    for slug, scene, title in THEMES:
-        if make_ai_tile(slug, scene, title):
-            t_ok += 1
-        time.sleep(1.0)
+    f_ok = run_parallel("Franchise fallbacks", FRANCHISE_PROMPTS)
+    t_ok = run_parallel("Themed tiles",        THEMES)
 
     print(f"\nDone. Branded {b_ok}/{len(BRANDED)}, "
           f"Franchise AI {f_ok}/{len(FRANCHISE_PROMPTS)}, "
