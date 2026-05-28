@@ -539,7 +539,82 @@ MDBLIST_QUERIES = {
     "fr-madagascar":  "madagascar dreamworks",
     "fr-despicableme":"despicable me minions",
     "fr-iceage":      "ice age",
+    # Disaster sub-rows: default label query returns Marvel ensemble lists
+    # because 'storms & hurricanes' matches some unrelated curated list. Be
+    # explicit so we hit actual disaster-movie lists.
+    "disaster-new-movies": "best disaster movies",
+    "disaster-new-series": "disaster tv series",
+    "disaster-earth":      "earthquake volcano disaster movies",
+    "disaster-water":      "tsunami flood disaster movies",
+    "disaster-storm":      "tornado hurricane storm disaster movies",
+    "disaster-space":      "asteroid comet space disaster movies",
 }
+
+
+def _validate_tmdb_primary_genre(tmdb_id, media_type, expected_genre):
+    """Light TMDB call that confirms `tmdb_id`'s primary genre matches
+    `expected_genre`. Lets MDBList walk past, e.g., Shaun the Sheep when the
+    Comedy row's expected primary genre is 35 (Comedy) but its actual primary
+    is 16 (Animation). Returns True if no check is needed or the check fails
+    open (network error etc.) so MDBList stays usable when TMDB is grumpy.
+    """
+    if not expected_genre or not TMDB_KEY:
+        return True
+    endpoint = "movie" if media_type == "MOVIE" else "tv"
+    try:
+        r = requests.get(
+            f"https://api.themoviedb.org/3/{endpoint}/{tmdb_id}",
+            params={"api_key": TMDB_KEY}, timeout=15,
+        )
+        r.raise_for_status()
+        genres = r.json().get("genres") or []
+        if not genres:
+            return True
+        return genres[0].get("id") == expected_genre
+    except Exception:
+        return True
+
+
+def _parse_filter_keyword_ids(filters):
+    """Parse the 'withKeywords' filter from v15/v16 JSON ('9951|158020|161180')
+    into a set of int ids. TMDB accepts pipe-separated OR semantics."""
+    raw = (filters or {}).get("withKeywords")
+    if not raw:
+        return set()
+    out = set()
+    for chunk in str(raw).replace(",", "|").split("|"):
+        try:
+            out.add(int(chunk.strip()))
+        except (TypeError, ValueError):
+            pass
+    return out
+
+
+def _validate_tmdb_keyword(tmdb_id, media_type, expected_keyword_ids):
+    """Confirm the title carries at least one of the row's expected TMDB
+    keywords. Stops Titanic from winning the Nuclear War row (no nuclear
+    keyword), Guardians of the Galaxy from winning Storms & Hurricanes
+    (no storm keyword), etc.
+
+    Returns True when no expected keywords are configured OR the lookup
+    errors out, so this is purely additive on top of MDBList ranking.
+    """
+    if not expected_keyword_ids or not TMDB_KEY:
+        return True
+    endpoint = "movie" if media_type == "MOVIE" else "tv"
+    try:
+        r = requests.get(
+            f"https://api.themoviedb.org/3/{endpoint}/{tmdb_id}/keywords",
+            params={"api_key": TMDB_KEY}, timeout=15,
+        )
+        r.raise_for_status()
+        data = r.json()
+        # TMDB returns "keywords" for movies, "results" for TV.
+        items = data.get("keywords") if endpoint == "movie" else data.get("results")
+        actual = {k.get("id") for k in (items or []) if k.get("id")}
+        return bool(actual & expected_keyword_ids)
+    except Exception:
+        return True
 
 
 def _mdblist_get(path, params=None):
@@ -588,9 +663,16 @@ def _item_media_matches(item, media_type):
     return raw in ("show", "tv", "series")
 
 
-def mdblist_top_tmdb(query, media_type):
-    """Search MDBList for `query`, walk the top 3 matching lists, return the
-    first item's TMDB id whose media type matches. Returns None on any miss."""
+def mdblist_top_tmdb(query, media_type,
+                     primary_genre=None, expected_keyword_ids=None):
+    """Search MDBList for `query`, walk the top 3 matching lists, and return
+    the first item's TMDB id that passes:
+      1. media-type match (movie vs TV),
+      2. primary-genre match if `primary_genre` is set,
+      3. at least one matching keyword if `expected_keyword_ids` is non-empty.
+
+    Returns None if nothing in the first three lists makes it through validation.
+    """
     if not MDBLIST_KEY or not query:
         return None
     data = _mdblist_get("/lists/search", {"s": query})
@@ -599,6 +681,14 @@ def mdblist_top_tmdb(query, media_type):
         # Some MDBList revisions use 'query' instead of 's'.
         data = _mdblist_get("/lists/search", {"query": query})
         lists = _coerce_items(data)
+
+    def passes(tid):
+        if primary_genre and not _validate_tmdb_primary_genre(tid, media_type, primary_genre):
+            return False
+        if expected_keyword_ids and not _validate_tmdb_keyword(tid, media_type, expected_keyword_ids):
+            return False
+        return True
+
     for lst in lists[:3]:
         list_id = lst.get("id") or lst.get("list_id")
         if not list_id:
@@ -606,16 +696,19 @@ def mdblist_top_tmdb(query, media_type):
         items = _coerce_items(_mdblist_get(f"/lists/{list_id}/items"))
         if not items:
             continue
-        # Pass 1: media-type match.
-        for it in items[:10]:
-            if _item_media_matches(it, media_type):
-                tid = _item_tmdb_id(it)
-                if tid:
-                    return tid
-        # Pass 2: anything with a TMDB id.
-        for it in items[:1]:
+        # Pass 1: media-type match + validation.
+        for it in items[:15]:
+            if not _item_media_matches(it, media_type):
+                continue
             tid = _item_tmdb_id(it)
-            if tid:
+            if tid and passes(tid):
+                return tid
+        # Pass 2: any media type but with validation - some lists tag
+        # movies as shows and vice versa, and we'd rather get a
+        # genre-matching wrong-media-type cover than no cover.
+        for it in items[:15]:
+            tid = _item_tmdb_id(it)
+            if tid and passes(tid):
                 return tid
     return None
 
@@ -905,10 +998,18 @@ def make_themed_tile(slug, label, tmdb_id, media_type):
 
     # MDBList path: human-curated lists are far better than TMDB tag queries
     # at sourcing iconic covers. Try a list search first, only fall through to
-    # Discover if MDBList has nothing for this row.
+    # Discover if MDBList has nothing matching the row's filter.
     if MDBLIST_KEY and not _wants_handpicked(slug):
         query = MDBLIST_QUERIES.get(slug, label.lower())
-        mdbl_id = mdblist_top_tmdb(query, media_type)
+        spec = SLUG_FILTERS.get(slug)
+        row_filters = spec[0] if spec else {}
+        primary_genre = _primary_genre_for(slug)
+        expected_kw = _parse_filter_keyword_ids(row_filters)
+        mdbl_id = mdblist_top_tmdb(
+            query, media_type,
+            primary_genre=primary_genre,
+            expected_keyword_ids=expected_kw,
+        )
         if mdbl_id:
             mt = "movie" if media_type == "MOVIE" else "tv"
             mb, src_tag = fetch_tmdb_backdrop(mt, mdbl_id)
