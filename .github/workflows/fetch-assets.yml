@@ -36,12 +36,24 @@ jobs:
             https://github.com/google/fonts/raw/main/ofl/bebasneue/BebasNeue-Regular.ttf
           ls -la /tmp/BebasNeue-Regular.ttf
 
+      - name: Verify secrets are available
+        run: |
+          if [ -z "${{ secrets.TMDB_API_KEY }}" ]; then
+            echo "::error::TMDB_API_KEY secret is missing or empty. Add it at Settings -> Secrets and variables -> Actions."
+            exit 1
+          fi
+          if [ -z "${{ secrets.FANART_API_KEY }}" ]; then
+            echo "::error::FANART_API_KEY secret is missing or empty."
+            exit 1
+          fi
+          echo "Both secrets present."
+
       - name: Generate assets
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
           FANART_API_KEY: ${{ secrets.FANART_API_KEY }}
           OVERWRITE: ${{ inputs.overwrite && '1' || '0' }}
-        run: python fetch_all_assets.py
+        run: python fetch_all_assets.py 2>&1 | tee /tmp/fetch.log
 
       - name: Commit and push images
         run: |

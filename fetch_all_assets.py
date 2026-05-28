@@ -125,7 +125,7 @@ THEMES = [
     ("comedy-buddy",           "Buddy Comedy",          4638,   "MOVIE"),   # Hot Fuzz
     ("comedy-sitcom",          "Sitcoms",               2316,   "TV"),      # The Office (US)
     ("comedy-parody",          "Parody & Spoof",        813,    "MOVIE"),   # Airplane!
-    ("comedy-horror",          "Comedy Horror",         102362, "TV"),      # What We Do in the Shadows TV
+    ("comedy-horror",          "Comedy Horror",         89247,  "TV"),      # What We Do in the Shadows TV
     # Action
     ("action-new-movies",      "New Action Movies",     575264, "MOVIE"),   # M:I Dead Reckoning
     ("action-new-series",      "New Action Series",     108978, "TV"),      # Reacher
@@ -139,7 +139,7 @@ THEMES = [
     ("action-vigilante",       "Vigilante",             12159,  "MOVIE"),   # Death Wish (1974)
     # Drama
     ("drama-new-movies",       "New Drama Movies",      666277, "MOVIE"),   # Past Lives
-    ("drama-new-series",       "New Drama Series",      1535,   "TV"),      # Succession
+    ("drama-new-series",       "New Drama Series",      76331,  "TV"),      # Succession
     ("drama-period",           "Period Drama",          4348,   "MOVIE"),   # Pride & Prejudice (2005)
     ("drama-biopic",           "Biographical",          424694, "MOVIE"),   # Bohemian Rhapsody
     ("drama-coming-age",       "Coming-of-Age",         391713, "MOVIE"),   # Lady Bird
