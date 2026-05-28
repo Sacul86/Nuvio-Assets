@@ -1,19 +1,20 @@
 """
-fetch_all_assets.py v8 — themed AI tiles + expanded franchise lineup.
+fetch_all_assets.py v9 — themed AI tiles + franchises via fanart.tv → TMDB chain.
 
 Sources:
   1. 41 themed tiles      — Pollinations (Flux) background + Bebas Neue title text
   2. 17 branded franchises — copied as-is from rrevanth (official logos already on art)
-  3. 17 franchise fallbacks — TMDB collection backdrop + Bebas Neue title text
-                             (includes Pixar/DreamWorks/Illumination animation franchises)
+  3. 17 franchise fallbacks — fanart.tv background composited with hdmovielogo,
+                              falling back to TMDB collection backdrop + Bebas Neue.
 
-The TV the user runs Nuvio on doesn't render the row label, so every non-branded
-tile must carry its own title. Bebas Neue (Google Fonts, OFL licensed) is the
-condensed bold typeface used widely in streaming poster art — much more
-distinctive than the generic DejaVuSans-Bold we had before.
+Priority chain for franchise fallbacks:
+  a. fanart.tv moviebackground + hdmovielogo composite (best — looks like rrevanth)
+  b. fanart.tv moviebackground + Bebas Neue title (no logo available)
+  c. TMDB collection backdrop + Bebas Neue title (final fallback)
 
 Required env vars (set via workflow inputs):
-  TMDB_API_KEY  — for franchise fallback backdrops
+  TMDB_API_KEY   — for TMDB collection backdrops and movie enumeration
+  FANART_API_KEY — for fanart.tv backgrounds and franchise logos
 
 Optional:
   OVERWRITE=1   — regenerate existing files (default: skip)
@@ -37,6 +38,7 @@ except ImportError:
 
 WORKERS = int(os.environ.get("WORKERS", "6"))
 TMDB_KEY = os.environ.get("TMDB_API_KEY", "").strip()
+FANART_KEY = os.environ.get("FANART_API_KEY", "").strip()
 OVERWRITE = os.environ.get("OVERWRITE", "0") == "1"
 OUT_DIR = Path("assets")
 OUT_DIR.mkdir(exist_ok=True)
@@ -260,36 +262,157 @@ def copy_branded(slug, url, ext):
         return False
 
 
-def fetch_tmdb_franchise(slug, collection_id, label):
-    """TMDB collection backdrop + Bebas Neue title overlay."""
-    if already(slug):
-        print(f"  [skip] {slug}")
-        return True
+def pick_best_fanart(items, prefer_lang="en"):
+    """Pick the best fanart.tv asset: prefer matching language, then most likes."""
+    if not items:
+        return None
+    def score(it):
+        lang = (it.get("lang") or "").lower()
+        lang_match = 2 if lang == prefer_lang else (1 if lang in ("", "00") else 0)
+        try:
+            likes = int(it.get("likes") or "0")
+        except (TypeError, ValueError):
+            likes = 0
+        return (lang_match, likes)
+    return max(items, key=score).get("url")
+
+
+def fetch_fanart_data(tmdb_id):
+    """Get fanart.tv data for a TMDB id (movie or collection). Returns None on miss."""
+    if not FANART_KEY:
+        return None
+    try:
+        r = requests.get(
+            f"https://webservice.fanart.tv/v3/movies/{tmdb_id}",
+            params={"api_key": FANART_KEY},
+            timeout=20,
+        )
+        if r.status_code == 404:
+            return None
+        r.raise_for_status()
+        return r.json()
+    except Exception:
+        return None
+
+
+def fetch_tmdb_collection(collection_id):
+    """Get TMDB collection metadata (for backdrop + member movie IDs)."""
+    if not TMDB_KEY:
+        return None
     try:
         r = requests.get(
             f"https://api.themoviedb.org/3/collection/{collection_id}",
             params={"api_key": TMDB_KEY}, timeout=20,
         )
         r.raise_for_status()
-        data = r.json()
-        backdrop = data.get("backdrop_path")
+        return r.json()
+    except Exception:
+        return None
+
+
+def composite_logo_on_bg(bg_bytes, logo_bytes):
+    """Resize bg to 16:9, paste hdmovielogo centered in the lower portion."""
+    img = Image.open(io.BytesIO(bg_bytes)).convert("RGB")
+    img = ImageOps.fit(img, (TILE_W, TILE_H), Image.LANCZOS)
+
+    # Soft vertical gradient so the logo reads cleanly even on busy backgrounds.
+    overlay = Image.new("RGBA", img.size, (0, 0, 0, 0))
+    odraw = ImageDraw.Draw(overlay)
+    for y in range(TILE_H):
+        t = max(0.0, (y - TILE_H * 0.30) / (TILE_H * 0.70))
+        a = int(140 * (t ** 1.4))
+        odraw.line([(0, y), (TILE_W, y)], fill=(0, 0, 0, a))
+    img_rgba = Image.alpha_composite(img.convert("RGBA"), overlay)
+
+    logo = Image.open(io.BytesIO(logo_bytes)).convert("RGBA")
+    max_w = int(TILE_W * 0.60)
+    max_h = int(TILE_H * 0.32)
+    logo.thumbnail((max_w, max_h), Image.LANCZOS)
+    lx = (TILE_W - logo.width) // 2
+    ly = int(TILE_H * 0.62) - logo.height // 2
+    img_rgba.paste(logo, (lx, ly), logo)
+
+    out = img_rgba.convert("RGB")
+    buf = io.BytesIO()
+    out.save(buf, "JPEG", quality=92)
+    return buf.getvalue()
+
+
+def fetch_franchise(slug, collection_id, label):
+    """fanart.tv (bg+logo) → fanart.tv (bg+text) → TMDB (backdrop+text)."""
+    if already(slug):
+        print(f"  [skip] {slug}")
+        return True
+
+    # Pull collection data once so we can enumerate member movies if needed.
+    tmdb_data = fetch_tmdb_collection(collection_id)
+
+    # Try fanart.tv directly with the TMDB collection ID first.
+    fart = fetch_fanart_data(collection_id)
+
+    # If the collection ID had no fanart.tv data, walk member movies.
+    if FANART_KEY and (not fart or not (fart.get("moviebackground") or fart.get("hdmovielogo"))):
+        for movie in (tmdb_data.get("parts") if tmdb_data else [])[:6]:
+            mv = fetch_fanart_data(movie.get("id"))
+            if mv and (mv.get("moviebackground") or mv.get("hdmovielogo")):
+                fart = mv
+                break
+
+    bg_bytes = None
+    logo_bytes = None
+    source = "?"
+
+    if fart:
+        bg_url = pick_best_fanart(fart.get("moviebackground", []))
+        logo_url = pick_best_fanart(fart.get("hdmovielogo", []))
+        if bg_url:
+            try:
+                bg_bytes = requests.get(bg_url, timeout=30).content
+                source = "fanart.tv"
+            except Exception as e:
+                print(f"  [warn] {slug}: fanart bg download failed: {e}")
+        if logo_url:
+            try:
+                logo_bytes = requests.get(logo_url, timeout=30).content
+            except Exception as e:
+                print(f"  [warn] {slug}: fanart logo download failed: {e}")
+
+    # Fall back to TMDB collection backdrop if fanart.tv had nothing.
+    if not bg_bytes and tmdb_data:
+        backdrop = tmdb_data.get("backdrop_path")
         if not backdrop:
-            for movie in (data.get("parts") or []):
+            for movie in (tmdb_data.get("parts") or []):
                 if movie.get("backdrop_path"):
                     backdrop = movie["backdrop_path"]
                     break
-        if not backdrop:
-            print(f"  [miss] {slug} -- no backdrop in TMDB collection {collection_id}")
-            return False
-        img_url = f"https://image.tmdb.org/t/p/original{backdrop}"
-        img_bytes = requests.get(img_url, timeout=30).content
-        labeled = apply_text_overlay(img_bytes, label)
-        (OUT_DIR / f"{slug}.jpg").write_bytes(labeled)
-        print(f"  [ok]   {slug:<22} ({label}, TMDB col {collection_id})")
-        return True
-    except Exception as e:
-        print(f"  [err]  {slug}: {e}")
+        if backdrop:
+            try:
+                bg_bytes = requests.get(
+                    f"https://image.tmdb.org/t/p/original{backdrop}", timeout=30,
+                ).content
+                source = "TMDB"
+            except Exception as e:
+                print(f"  [warn] {slug}: TMDB bg download failed: {e}")
+
+    if not bg_bytes:
+        print(f"  [miss] {slug} -- no art from fanart.tv or TMDB")
         return False
+
+    if logo_bytes:
+        try:
+            result = composite_logo_on_bg(bg_bytes, logo_bytes)
+            kind = "bg+logo"
+        except Exception as e:
+            print(f"  [warn] {slug}: logo composite failed ({e}), falling back to text")
+            result = apply_text_overlay(bg_bytes, label)
+            kind = "bg+text"
+    else:
+        result = apply_text_overlay(bg_bytes, label)
+        kind = "bg+text"
+
+    (OUT_DIR / f"{slug}.jpg").write_bytes(result)
+    print(f"  [ok]   {slug:<22} ({label}, {source} {kind})")
+    return True
 
 
 def run_parallel_ai(label, items):
@@ -310,26 +433,27 @@ def main():
     print(f"Output: {OUT_DIR.absolute()}   OVERWRITE={OVERWRITE}   WORKERS={WORKERS}")
     print(f"AI:     Pollinations.ai (Flux model, free, no key)")
     print(f"TMDB:   {'configured' if TMDB_KEY else 'NO KEY — franchise fallbacks will skip'}")
+    print(f"FanArt: {'configured' if FANART_KEY else 'NO KEY — TMDB only for fallback art'}")
     print(f"Font:   {FONT_PATH if Path(FONT_PATH).exists() else FALLBACK_FONT + ' (Bebas Neue not found)'}")
 
     print("\n== Branded franchise art (from rrevanth) ==")
     b_ok = sum(copy_branded(s, u, e) for s, (u, e) in BRANDED.items())
 
-    print(f"\n== Franchise fallbacks ({len(TMDB_COLLECTIONS)} TMDB backdrops + title overlay) ==")
-    if not TMDB_KEY:
-        print("  TMDB_API_KEY not set — skipping franchise fallbacks.")
+    print(f"\n== Franchise fallbacks ({len(TMDB_COLLECTIONS)} via fanart.tv → TMDB) ==")
+    if not TMDB_KEY and not FANART_KEY:
+        print("  Neither TMDB_API_KEY nor FANART_API_KEY set — skipping franchise fallbacks.")
         f_ok = 0
     else:
         f_ok = 0
         for slug, cid, label in TMDB_COLLECTIONS:
-            if fetch_tmdb_franchise(slug, cid, label):
+            if fetch_franchise(slug, cid, label):
                 f_ok += 1
             time.sleep(0.2)
 
     t_ok = run_parallel_ai("Themed tiles", THEMES)
 
     print(f"\nDone. Branded {b_ok}/{len(BRANDED)}, "
-          f"Franchise TMDB {f_ok}/{len(TMDB_COLLECTIONS)}, "
+          f"Franchise {f_ok}/{len(TMDB_COLLECTIONS)}, "
           f"Themed AI {t_ok}/{len(THEMES)}.")
 
 
