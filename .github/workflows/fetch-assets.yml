@@ -4,6 +4,10 @@ name: Fetch Nuvio Assets
 on:
   workflow_dispatch:
     inputs:
+      tmdb_api_key:
+        description: "TMDB API key (v3 auth) — needed for franchise fallback art"
+        required: false
+        type: string
       overwrite:
         description: "Re-fetch images that already exist?"
         type: boolean
@@ -31,6 +35,7 @@ jobs:
 
       - name: Generate assets
         env:
+          TMDB_API_KEY: ${{ inputs.tmdb_api_key }}
           OVERWRITE: ${{ inputs.overwrite && '1' || '0' }}
         run: python fetch_all_assets.py
 

@@ -1,21 +1,20 @@
 """
-fetch_all_assets.py v5 — AI-generated tiles via Pollinations.ai (free, no API key).
-
-Pollinations.ai is a free, no-signup AI image gen service backed by Flux models.
-Each tile is a pure cinematic scene with NO baked-in title text — Nuvio's row
-header provides the label, so the tile is just visual mood/imagery.
+fetch_all_assets.py v6 — themed tiles via AI (no text), franchise tiles via TMDB.
 
 Sources:
   1. 41 themed tiles      — Pollinations (Flux), no text, cinematic genre scenes
-  2. 11 branded franchises — copied as-is from rrevanth (official logos on the art)
-  3.  8 franchise fallbacks — Pollinations (Flux), no text, iconic franchise scenes
+  2. 11 branded franchises — copied as-is from rrevanth (official key art with logos)
+  3.  8 franchise fallbacks — TMDB collection backdrops (real franchise marketing art)
 
-Optional env vars:
+Required env vars (set via workflow inputs):
+  TMDB_API_KEY  — for franchise fallback backdrops (Pollinations is keyless)
+
+Optional:
   OVERWRITE=1   — regenerate existing files (default: skip)
   WORKERS=N     — parallel AI requests (default: 6)
 """
 
-import os, sys, urllib.parse
+import os, sys, time, urllib.parse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
@@ -25,7 +24,7 @@ except ImportError:
     sys.exit("Run: pip install requests")
 
 WORKERS = int(os.environ.get("WORKERS", "6"))
-
+TMDB_KEY = os.environ.get("TMDB_API_KEY", "").strip()
 OVERWRITE = os.environ.get("OVERWRITE", "0") == "1"
 OUT_DIR = Path("assets")
 OUT_DIR.mkdir(exist_ok=True)
@@ -33,14 +32,13 @@ OUT_DIR.mkdir(exist_ok=True)
 POLLINATIONS_BASE = "https://image.pollinations.ai/prompt/"
 TILE_W, TILE_H = 1920, 1080
 
-# Hard constraints stamped into every prompt to keep style consistent.
 NEGATIVE = ("no anime, no manga, no cartoon, no illustration, no drawing, "
             "no digital painting, no 3d render, no chibi, no childish")
 STYLE = ("photorealistic cinematic film still aesthetic, "
          "dramatic atmospheric lighting, professionally designed movie streaming banner, "
          "widescreen 16:9 landscape composition")
 
-# ─── Themed tiles: (slug, scene description, title text to render) ──
+# ─── Themed tiles: (slug, scene description, title - for logging only) ──
 THEMES = [
     # Horror
     ("horror-new-movies",      "haunted misty dark forest with eerie moonlight piercing through skeletal bare trees, fog rolling on ground", "NEW HORROR MOVIES"),
@@ -93,7 +91,7 @@ THEMES = [
     ("disaster-space",         "giant asteroid streaking through atmosphere toward earth horizon, fire trail, dramatic cosmic",                "ASTEROID"),
 ]
 
-# ─── Branded franchises (copied as-is from rrevanth, no AI needed) ──
+# ─── Branded franchises (copied as-is from rrevanth) ────────────────
 RREV = "https://raw.githubusercontent.com/rrevanth/nuvio-assets/main/franchises"
 BRANDED = {
     "fr-starwars":    (f"{RREV}/star-wars/star-wars-landscape.jpg",                 "jpg"),
@@ -109,17 +107,16 @@ BRANDED = {
     "fr-indianajones":(f"{RREV}/indiana-jones/indiana-jones-landscape.jpg",         "jpg"),
 }
 
-# ─── Franchise fallbacks: scene prompts crafted around iconic visuals ──
-# Avoid copyright-named characters; describe style/atmosphere instead.
-FRANCHISE_PROMPTS = [
-    ("fr-fast",         "underground street racing scene with neon-lit modified sports cars on rain-slicked nighttime asphalt, dramatic action",   "FAST AND FURIOUS"),
-    ("fr-matrix",       "vertical streams of glowing green digital code raining down dark background, cyberpunk computer terminal aesthetic",       "THE MATRIX"),
-    ("fr-terminator",   "menacing chrome metallic humanoid robot endoskeleton with glowing red eyes in dark industrial setting, sci-fi",            "TERMINATOR"),
-    ("fr-alien",        "dark biomechanical spaceship corridor with dripping condensation, claustrophobic horror sci-fi atmosphere",                "ALIEN"),
-    ("fr-predator",     "dense humid jungle scene viewed through heat thermal vision filter, predator perspective, hunter aesthetic",               "PREDATOR"),
-    ("fr-madmax",       "post-apocalyptic desert wasteland with armored modified vehicles in dust storm, fire and chaos, dramatic action",          "MAD MAX"),
-    ("fr-planetapes",   "intelligent ape silhouette on horseback in misty post-apocalyptic forest, dystopian dramatic atmosphere",                   "PLANET OF THE APES"),
-    ("fr-monsterverse", "colossal kaiju monster silhouette destroying modern city skyline at night, dramatic atmospheric scale",                    "MONSTERVERSE"),
+# ─── Franchise fallbacks: TMDB collection ID → real franchise key art ──
+TMDB_COLLECTIONS = [
+    ("fr-fast",         "9485",   "Fast & Furious"),
+    ("fr-matrix",       "2344",   "The Matrix"),
+    ("fr-terminator",   "528",    "Terminator"),
+    ("fr-alien",        "8091",   "Alien"),
+    ("fr-predator",     "399",    "Predator"),
+    ("fr-madmax",       "8945",   "Mad Max"),
+    ("fr-planetapes",   "173710", "Planet of the Apes"),
+    ("fr-monsterverse", "535313", "MonsterVerse"),
 ]
 
 
@@ -127,10 +124,7 @@ def already(slug, ext="jpg"):
     return (OUT_DIR / f"{slug}.{ext}").exists() and not OVERWRITE
 
 
-def build_prompt(scene, title):
-    # title is kept in the data tuple for logging/documentation only.
-    # No text is requested from the AI — Flux's text rendering is unreliable
-    # and Nuvio's row header provides the title separately.
+def build_prompt(scene):
     return (
         f"Movie streaming app collection banner art. "
         f"{STYLE}. "
@@ -157,11 +151,11 @@ def make_ai_tile(slug, scene, title):
     if already(slug):
         print(f"  [skip] {slug}")
         return True
-    prompt = build_prompt(scene, title)
+    prompt = build_prompt(scene)
     try:
         img = fetch_pollinations(prompt)
         (OUT_DIR / f"{slug}.jpg").write_bytes(img)
-        print(f"  [ok]   {slug:<22} '{title}'")
+        print(f"  [ok]   {slug:<22} ({title})")
         return True
     except Exception as e:
         print(f"  [err]  {slug}: {e}")
@@ -182,8 +176,40 @@ def copy_branded(slug, url, ext):
         return False
 
 
-def run_parallel(label, items):
-    """Run make_ai_tile across items with a thread pool."""
+def fetch_tmdb_franchise(slug, collection_id, label):
+    """Fetch a franchise's TMDB collection backdrop and save as-is (no overlay)."""
+    if already(slug):
+        print(f"  [skip] {slug}")
+        return True
+    try:
+        r = requests.get(
+            f"https://api.themoviedb.org/3/collection/{collection_id}",
+            params={"api_key": TMDB_KEY}, timeout=20,
+        )
+        r.raise_for_status()
+        data = r.json()
+        # Prefer the collection-level backdrop (usually franchise key art).
+        backdrop = data.get("backdrop_path")
+        if not backdrop:
+            # Fall back to the first movie's backdrop.
+            for movie in (data.get("parts") or []):
+                if movie.get("backdrop_path"):
+                    backdrop = movie["backdrop_path"]
+                    break
+        if not backdrop:
+            print(f"  [miss] {slug} -- no backdrop in TMDB collection {collection_id}")
+            return False
+        img_url = f"https://image.tmdb.org/t/p/original{backdrop}"
+        img_bytes = requests.get(img_url, timeout=30).content
+        (OUT_DIR / f"{slug}.jpg").write_bytes(img_bytes)
+        print(f"  [ok]   {slug:<22} ({label}, TMDB col {collection_id})")
+        return True
+    except Exception as e:
+        print(f"  [err]  {slug}: {e}")
+        return False
+
+
+def run_parallel_ai(label, items):
     print(f"\n== {label} ({len(items)} AI-generated, {WORKERS} workers) ==")
     ok = 0
     with ThreadPoolExecutor(max_workers=WORKERS) as pool:
@@ -200,15 +226,26 @@ def run_parallel(label, items):
 def main():
     print(f"Output: {OUT_DIR.absolute()}   OVERWRITE={OVERWRITE}   WORKERS={WORKERS}")
     print(f"AI:     Pollinations.ai (Flux model, free, no key)")
+    print(f"TMDB:   {'configured' if TMDB_KEY else 'NO KEY — franchise fallbacks will skip'}")
 
     print("\n== Branded franchise art (from rrevanth) ==")
     b_ok = sum(copy_branded(s, u, e) for s, (u, e) in BRANDED.items())
 
-    f_ok = run_parallel("Franchise fallbacks", FRANCHISE_PROMPTS)
-    t_ok = run_parallel("Themed tiles",        THEMES)
+    print(f"\n== Franchise fallbacks ({len(TMDB_COLLECTIONS)} TMDB collection backdrops) ==")
+    if not TMDB_KEY:
+        print("  TMDB_API_KEY not set — skipping franchise fallbacks.")
+        f_ok = 0
+    else:
+        f_ok = 0
+        for slug, cid, label in TMDB_COLLECTIONS:
+            if fetch_tmdb_franchise(slug, cid, label):
+                f_ok += 1
+            time.sleep(0.2)
+
+    t_ok = run_parallel_ai("Themed tiles", THEMES)
 
     print(f"\nDone. Branded {b_ok}/{len(BRANDED)}, "
-          f"Franchise AI {f_ok}/{len(FRANCHISE_PROMPTS)}, "
+          f"Franchise TMDB {f_ok}/{len(TMDB_COLLECTIONS)}, "
           f"Themed AI {t_ok}/{len(THEMES)}.")
 
 
