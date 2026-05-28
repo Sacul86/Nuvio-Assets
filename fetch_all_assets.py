@@ -30,6 +30,7 @@ import io
 import json
 import os
 import sys
+import threading
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
@@ -440,6 +441,26 @@ FILTER_KEY_MAP = {
 }
 
 
+# Global set of backdrop file_paths already used as a tile cover during this
+# workflow run. The picker walks tag-matched candidates in score order and
+# takes the first one whose backdrop hasn't been claimed yet, so no two
+# rows end up with the same image.
+_USED_BACKDROPS = set()
+_USED_LOCK = threading.Lock()
+
+
+def reserve_backdrop(path):
+    """Atomically claim `path` for this run. Returns True if newly claimed,
+    False if another tile already took it."""
+    if not path:
+        return False
+    with _USED_LOCK:
+        if path in _USED_BACKDROPS:
+            return False
+        _USED_BACKDROPS.add(path)
+        return True
+
+
 def tmdb_discover_top(filters, media_type):
     """Run TMDB Discover with the row's filters, then re-rank the top 20 tag-
     matched results client-side by `vote_average * sqrt(vote_count)`.
@@ -493,8 +514,13 @@ def tmdb_discover_top(filters, media_type):
             cnt = b.get("vote_count") or 0
             return avg * (cnt ** 0.5)
 
-        best = max(candidates, key=score)
-        return best.get("id"), best["backdrop_path"]
+        # Walk in score order; first one whose backdrop hasn't been claimed
+        # by another row wins. Guarantees no duplicate covers across the run.
+        for cand in sorted(candidates, key=score, reverse=True):
+            path = cand.get("backdrop_path")
+            if reserve_backdrop(path):
+                return cand.get("id"), path
+        return None, None
     except Exception as e:
         print(f"  [warn] discover {media_type} failed: {type(e).__name__}")
         return None, None
@@ -760,23 +786,31 @@ def copy_branded(slug, url, ext):
 
 def fetch_collection_backdrop(collection_id):
     """For a TMDB collection: prefer the collection's own backdrop_path,
-    else the most popular member movie's backdrop. Returns bytes or None."""
+    else the most popular member movie's backdrop that hasn't been claimed
+    by another row in this run. Returns bytes or None."""
     coll = fetch_tmdb_collection(collection_id)
     if not coll:
         return None
-    path = coll.get("backdrop_path")
-    if not path:
-        parts = coll.get("parts") or []
-        parts = sorted(parts, key=lambda p: p.get("popularity") or 0, reverse=True)
+
+    # Try collection-level backdrop first (often franchise-branded key art).
+    chosen = None
+    if reserve_backdrop(coll.get("backdrop_path")):
+        chosen = coll.get("backdrop_path")
+    else:
+        # Walk member movies by popularity, take the first whose backdrop is
+        # still free. Means Avengers Collection won't reuse the same movie's
+        # backdrop that some other row already took.
+        parts = sorted(coll.get("parts") or [], key=lambda p: p.get("popularity") or 0, reverse=True)
         for movie in parts:
-            if movie.get("backdrop_path"):
-                path = movie["backdrop_path"]
+            if reserve_backdrop(movie.get("backdrop_path")):
+                chosen = movie["backdrop_path"]
                 break
-    if not path:
+
+    if not chosen:
         return None
     try:
         return requests.get(
-            f"https://image.tmdb.org/t/p/original{path}", timeout=30,
+            f"https://image.tmdb.org/t/p/original{chosen}", timeout=30,
         ).content
     except Exception:
         return None
