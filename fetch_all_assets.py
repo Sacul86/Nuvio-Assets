@@ -441,19 +441,29 @@ FILTER_KEY_MAP = {
 
 
 def tmdb_discover_top(filters, media_type):
-    """Run TMDB Discover with the row's filters, return (id, backdrop_path) of
-    the *most-voted-on* title with a backdrop. Returns (None, None) on miss.
+    """Run TMDB Discover with the row's filters, then re-rank the top 20 tag-
+    matched results client-side by `vote_average * sqrt(vote_count)`.
 
-    sort_by=vote_count.desc, NOT popularity.desc. Popularity surfaces whatever
-    happens to be trending the day the workflow runs - The Boys for horror TV,
-    The Punisher for MCU, Captain Marvel for action. vote_count.desc returns
-    titles that have been broadly engaged with over time, which lines up with
-    'iconic for this category' covers: Avengers Endgame for MCU, Stranger
-    Things for horror TV, The Dark Knight for action thrillers, etc.
+    Why this formula rather than picking one TMDB sort:
+      - popularity.desc surfaces this week's trending title (The Boys for
+        horror TV, The Punisher for MCU).
+      - vote_count.desc surfaces long-running ensemble shows but doesn't
+        weigh quality (a low-rated show with many votes can win).
+      - vote_average.desc surfaces highly-rated indies with a handful of
+        votes (an obscure 9.0 short beats Endgame).
+      - vote_average * sqrt(vote_count) requires BOTH: a high rating AND
+        broad engagement. Empirically returns Stranger Things for horror
+        TV and Avengers: Endgame for MCU, which is what 'iconic for this
+        tag' should look like.
+
+    Filters out anything below 100 votes and anything missing a backdrop.
     """
     if not TMDB_KEY:
         return None, None
     endpoint = "movie" if media_type == "MOVIE" else "tv"
+    # Fetch the 20 highest-vote-count results that match the row's tags, then
+    # re-rank in Python. sort_by=vote_count.desc is just the prefetch order;
+    # the actual choice is made by the formula below.
     params = {"api_key": TMDB_KEY, "sort_by": "vote_count.desc", "page": 1}
     for k, v in (filters or {}).items():
         if k in FILTER_KEY_MAP:
@@ -464,10 +474,27 @@ def tmdb_discover_top(filters, media_type):
             params=params, timeout=20,
         )
         r.raise_for_status()
-        for res in r.json().get("results", []):
-            if res.get("backdrop_path"):
-                return res.get("id"), res["backdrop_path"]
-        return None, None
+        candidates = [
+            res for res in r.json().get("results", [])
+            if res.get("backdrop_path") and (res.get("vote_count") or 0) >= 100
+        ]
+        if not candidates:
+            # Loosen the floor for niche categories that don't have many
+            # 100+ vote titles (stop-motion shorts, obscure sub-genres).
+            candidates = [
+                res for res in r.json().get("results", [])
+                if res.get("backdrop_path")
+            ]
+        if not candidates:
+            return None, None
+
+        def score(b):
+            avg = b.get("vote_average") or 0
+            cnt = b.get("vote_count") or 0
+            return avg * (cnt ** 0.5)
+
+        best = max(candidates, key=score)
+        return best.get("id"), best["backdrop_path"]
     except Exception as e:
         print(f"  [warn] discover {media_type} failed: {type(e).__name__}")
         return None, None
