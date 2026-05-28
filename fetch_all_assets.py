@@ -441,13 +441,20 @@ FILTER_KEY_MAP = {
 
 
 def tmdb_discover_top(filters, media_type):
-    """Run TMDB Discover with the row's filters, return (id, backdrop_path) of the
-    most popular result that actually has a backdrop. Returns (None, None) on miss.
+    """Run TMDB Discover with the row's filters, return (id, backdrop_path) of
+    the *most-voted-on* title with a backdrop. Returns (None, None) on miss.
+
+    sort_by=vote_count.desc, NOT popularity.desc. Popularity surfaces whatever
+    happens to be trending the day the workflow runs - The Boys for horror TV,
+    The Punisher for MCU, Captain Marvel for action. vote_count.desc returns
+    titles that have been broadly engaged with over time, which lines up with
+    'iconic for this category' covers: Avengers Endgame for MCU, Stranger
+    Things for horror TV, The Dark Knight for action thrillers, etc.
     """
     if not TMDB_KEY:
         return None, None
     endpoint = "movie" if media_type == "MOVIE" else "tv"
-    params = {"api_key": TMDB_KEY, "sort_by": "popularity.desc", "page": 1}
+    params = {"api_key": TMDB_KEY, "sort_by": "vote_count.desc", "page": 1}
     for k, v in (filters or {}).items():
         if k in FILTER_KEY_MAP:
             params[FILTER_KEY_MAP[k]] = v
