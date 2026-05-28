@@ -1,24 +1,25 @@
 """
-fetch_all_assets.py v9 — themed AI tiles + franchises via fanart.tv → TMDB chain.
+fetch_all_assets.py v10 — every tile is a real movie/show backdrop.
 
 Sources:
-  1. 41 themed tiles      — Pollinations (Flux) background + Bebas Neue title text
+  1. 41 themed tiles      — TMDB/fanart.tv backdrop of an iconic representative
+                            film or series + Bebas Neue genre title overlay
   2. 17 branded franchises — copied as-is from rrevanth (official logos already on art)
   3. 17 franchise fallbacks — fanart.tv background composited with hdmovielogo,
-                              falling back to TMDB collection backdrop + Bebas Neue.
+                              falling back to TMDB collection backdrop + Bebas Neue
 
-Priority chain for franchise fallbacks:
-  a. fanart.tv moviebackground + hdmovielogo composite (best — looks like rrevanth)
-  b. fanart.tv moviebackground + Bebas Neue title (no logo available)
-  c. TMDB collection backdrop + Bebas Neue title (final fallback)
+Priority chain (themed and franchise tiles both):
+  Movie:  fanart.tv moviebackground → TMDB /movie/{id}/images
+  TV:     TMDB /tv/{id}/images (fanart.tv TV needs TheTVDB IDs, skipped)
+  Logo:   fanart.tv hdmovielogo for franchise tiles (composited if present)
 
 Required env vars (set via workflow inputs):
-  TMDB_API_KEY   — for TMDB collection backdrops and movie enumeration
+  TMDB_API_KEY   — for TMDB images endpoints
   FANART_API_KEY — for fanart.tv backgrounds and franchise logos
 
 Optional:
   OVERWRITE=1   — regenerate existing files (default: skip)
-  WORKERS=N     — parallel AI requests (default: 6)
+  WORKERS=N     — parallel HTTP fetches (default: 6)
   FONT_PATH=... — override the TTF location (default: /tmp/BebasNeue-Regular.ttf)
 """
 
@@ -26,7 +27,6 @@ import io
 import os
 import sys
 import time
-import urllib.parse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
@@ -43,74 +43,68 @@ OVERWRITE = os.environ.get("OVERWRITE", "0") == "1"
 OUT_DIR = Path("assets")
 OUT_DIR.mkdir(exist_ok=True)
 
-POLLINATIONS_BASE = "https://image.pollinations.ai/prompt/"
 TILE_W, TILE_H = 1920, 1080
 
 # Bebas Neue — downloaded by the workflow before this script runs.
 FONT_PATH = os.environ.get("FONT_PATH", "/tmp/BebasNeue-Regular.ttf")
 FALLBACK_FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
 
-NEGATIVE = ("no anime, no manga, no cartoon, no illustration, no drawing, "
-            "no digital painting, no 3d render, no chibi, no childish")
-STYLE = ("photorealistic cinematic film still aesthetic, "
-         "dramatic atmospheric lighting, professionally designed movie streaming banner, "
-         "widescreen 16:9 landscape composition")
-
-# ─── Themed tiles: (slug, scene description, title text) ───────────
+# ─── Themed tiles: (slug, label, tmdb_id, media_type) ───────────────
+# Each row uses ONE iconic representative film or series, chosen to fit the
+# genre/keyword filter of the matching Nuvio collection row.
 THEMES = [
     # Horror
-    ("horror-new-movies",      "haunted misty dark forest with eerie moonlight piercing through skeletal bare trees, fog rolling on ground", "New Horror Movies"),
-    ("horror-new-series",      "abandoned dark hospital corridor with flickering fluorescent lights, peeling wallpaper, ominous shadows",     "New Horror Series"),
-    ("horror-supernatural",    "victorian haunted manor at night, glowing ghostly figure visible in attic window, swirling fog",               "Supernatural"),
-    ("horror-slasher",         "rain-soaked dark alley with neon reflection, ominous silhouette holding bloody blade, noir lighting",          "Slasher"),
-    ("horror-creature",        "menacing monster silhouette emerging from dark cave entrance with glowing yellow eyes, dense fog",             "Creature Feature"),
+    ("horror-new-movies",      "New Horror Movies",     933260, "MOVIE"),   # The Substance
+    ("horror-new-series",      "New Horror Series",     70713,  "TV"),      # The Haunting of Hill House
+    ("horror-supernatural",    "Supernatural",          138843, "MOVIE"),   # The Conjuring
+    ("horror-slasher",         "Slasher",               948,    "MOVIE"),   # Halloween (1978)
+    ("horror-creature",        "Creature Feature",      447332, "MOVIE"),   # A Quiet Place
     # Thriller
-    ("thriller-new-movies",    "rain-drenched neon-lit city street at night with reflective wet asphalt, lone figure walking",                 "New Thriller Movies"),
-    ("thriller-new-series",    "shadowy silhouetted figure under a flickering streetlamp in pouring rain, noir aesthetic",                     "New Thriller Series"),
-    ("thriller-psychological", "fractured shattered mirror reflecting a partially obscured face, distorted reflection, dark mood",             "Psychological"),
-    ("thriller-crime",         "crime scene perimeter at night with yellow police tape, red and blue police lights, gritty urban street",      "Crime Thriller"),
-    ("thriller-action",        "massive cinematic explosion with debris and flames against dark night sky, action movie still",                "Action Thriller"),
+    ("thriller-new-movies",    "New Thriller Movies",   929590, "MOVIE"),   # Civil War (2024)
+    ("thriller-new-series",    "New Thriller Series",   62560,  "TV"),      # Mr. Robot
+    ("thriller-psychological", "Psychological",         419430, "MOVIE"),   # Get Out
+    ("thriller-crime",         "Crime Thriller",        1422,   "MOVIE"),   # The Departed
+    ("thriller-action",        "Action Thriller",       155,    "MOVIE"),   # The Dark Knight
     # Zombie
-    ("zombie-new-movies",      "post-apocalyptic abandoned city street overrun with shambling decaying undead figures at dusk, debris",        "New Zombie Movies"),
-    ("zombie-new-series",      "ruined overgrown city skyline with crumbling buildings, ash falling, desolate atmosphere",                     "New Zombie Series"),
-    ("zombie-comedy",          "decaying zombie hand bursting out of moonlit cemetery grave, halloween theatrical atmosphere",                 "Zombie Comedy"),
-    ("zombie-survival",        "wasteland survivor in tactical gear behind makeshift barricade, dust storm, desperate atmosphere",             "Survival Horror"),
+    ("zombie-new-movies",      "New Zombie Movies",     396535, "MOVIE"),   # Train to Busan
+    ("zombie-new-series",      "New Zombie Series",     1402,   "TV"),      # The Walking Dead
+    ("zombie-comedy",          "Zombie Comedy",         19908,  "MOVIE"),   # Zombieland
+    ("zombie-survival",        "Survival Horror",       170,    "MOVIE"),   # 28 Days Later
     # Space
-    ("space-new-movies",       "majestic colorful nebula and distant galaxy with bright stars, deep space cinematic vista",                    "New Space Movies"),
-    ("space-new-series",       "interior of futuristic spaceship cockpit with starfield visible through curved windshield",                    "New Space Series"),
-    ("space-alien",            "metallic flying saucer hovering ominously above dark farm landscape under stormy sky",                         "Alien Invasion"),
-    ("space-exploration",      "lone astronaut standing on alien planet surface with rings and distant stars overhead",                        "Space Exploration"),
-    ("space-opera",            "epic capital starship battle with laser beams and debris in deep space, cinematic sci-fi",                     "Space Opera"),
+    ("space-new-movies",       "New Space Movies",      157336, "MOVIE"),   # Interstellar
+    ("space-new-series",       "New Space Series",      63639,  "TV"),      # The Expanse
+    ("space-alien",            "Alien Invasion",        329865, "MOVIE"),   # Arrival
+    ("space-exploration",      "Space Exploration",     286217, "MOVIE"),   # The Martian
+    ("space-opera",            "Space Opera",           11,     "MOVIE"),   # Star Wars: A New Hope
     # Mystery
-    ("mystery-new-movies",     "dimly lit detective desk with scattered case files, magnifying glass, vintage typewriter, low warm lamp",      "New Mystery Movies"),
-    ("mystery-new-series",     "noir detective silhouette in trench coat through venetian blinds shadows, smoky atmosphere",                   "New Mystery Series"),
-    ("mystery-detective",      "vintage 1940s detective office at night with desk lamp, file folders, fedora hat on coat rack",                "Detective"),
-    ("mystery-whodunit",       "elegant old mansion library at night with candlelight, leather armchairs, antique books, fireplace",           "Whodunit"),
-    ("mystery-conspiracy",     "shadowy silhouettes of suited figures in a smoke-filled room with hanging single bulb, secret meeting",        "Conspiracy"),
-    # Science Fiction
-    ("scifi-new-movies",       "neon-soaked futuristic cyberpunk megacity skyline at night with flying vehicles and holograms",                "New Sci-Fi Movies"),
-    ("scifi-new-series",       "sleek polished interior of advanced spaceship corridor with glowing console panels and viewports",             "New Sci-Fi Series"),
-    ("scifi-dystopian",        "rain-drenched dystopian cyberpunk city with crumbling neon-lit megastructures and smog",                       "Dystopian"),
-    ("scifi-ai",               "humanoid android face with glowing circuitry beneath translucent skin, cool blue lighting",                    "AI & Robots"),
-    ("scifi-timetravel",       "swirling glowing time vortex portal in dark room, energy ripples, cinematic sci-fi",                           "Time Travel"),
+    ("mystery-new-movies",     "New Mystery Movies",    546554, "MOVIE"),   # Knives Out
+    ("mystery-new-series",     "New Mystery Series",    19885,  "TV"),      # Sherlock
+    ("mystery-detective",      "Detective",             22538,  "MOVIE"),   # Sherlock Holmes (2009)
+    ("mystery-whodunit",       "Whodunit",              661374, "MOVIE"),   # Glass Onion
+    ("mystery-conspiracy",     "Conspiracy",            308,    "MOVIE"),   # All the President's Men
+    # Sci-Fi
+    ("scifi-new-movies",       "New Sci-Fi Movies",     693134, "MOVIE"),   # Dune: Part Two
+    ("scifi-new-series",       "New Sci-Fi Series",     95396,  "TV"),      # Severance
+    ("scifi-dystopian",        "Dystopian",             335984, "MOVIE"),   # Blade Runner 2049
+    ("scifi-ai",               "AI & Robots",           264660, "MOVIE"),   # Ex Machina
+    ("scifi-timetravel",       "Time Travel",           105,    "MOVIE"),   # Back to the Future
     # Apocalyptic
-    ("apoc-new-movies",        "post-apocalyptic desolate wasteland at fiery sunset with ruined freeway and abandoned cars",                   "New Apocalyptic"),
-    ("apoc-new-series",        "ruined collapsed city skyline at dusk with smoke columns rising and ash falling, desolate",                    "Apocalyptic Series"),
-    ("apoc-post",              "abandoned skyscrapers reclaimed by overgrown nature and vines, deserted cityscape, eerie quiet",               "Post-Apocalyptic"),
-    ("apoc-pandemic",          "ominous laboratory with glowing biohazard containment chambers and hazmat suits, dark atmosphere",             "Pandemic"),
-    ("apoc-nuclear",           "distant nuclear mushroom cloud rising over desolate desert horizon, dramatic atmosphere",                      "Nuclear War"),
-    ("apoc-dystopia",          "totalitarian dystopian future cityscape with massive screens, surveillance drones, oppressive neon",           "Dystopian Future"),
+    ("apoc-new-movies",        "New Apocalyptic",       646380, "MOVIE"),   # Don't Look Up
+    ("apoc-new-series",        "Apocalyptic Series",    100088, "TV"),      # The Last of Us
+    ("apoc-post",              "Post-Apocalyptic",      76341,  "MOVIE"),   # Mad Max: Fury Road
+    ("apoc-pandemic",          "Pandemic",              12493,  "MOVIE"),   # Contagion
+    ("apoc-nuclear",           "Nuclear War",           872585, "MOVIE"),   # Oppenheimer
+    ("apoc-dystopia",          "Dystopian Future",      9693,   "MOVIE"),   # Children of Men
     # Natural Disaster
-    ("disaster-new-movies",    "massive tornado funnel with lightning over dark stormy plains, dramatic cinematic disaster",                   "New Disaster Movies"),
-    ("disaster-new-series",    "dramatic dark stormy sky with rolling thunderclouds and lightning, foreboding atmosphere",                     "Disaster Series"),
-    ("disaster-earth",         "erupting volcano spewing red glowing lava and ash into night sky, dramatic geological catastrophe",            "Earthquakes & Volcanoes"),
-    ("disaster-water",         "enormous towering tsunami wave crashing toward dark coastline at sunset, dramatic ocean disaster",             "Tsunamis & Floods"),
-    ("disaster-storm",         "swirling massive hurricane cyclone with rain and lightning over angry ocean, aerial view",                     "Storms & Hurricanes"),
-    ("disaster-space",         "giant asteroid streaking through atmosphere toward earth horizon, fire trail, dramatic cosmic",                "Asteroid & Cosmic"),
+    ("disaster-new-movies",    "New Disaster Movies",   587732, "MOVIE"),   # Greenland
+    ("disaster-new-series",    "Disaster Series",       80388,  "TV"),      # Snowpiercer
+    ("disaster-earth",         "Earthquakes & Volcanoes", 277216, "MOVIE"), # San Andreas
+    ("disaster-water",         "Tsunamis & Floods",     8865,   "MOVIE"),   # Deep Impact
+    ("disaster-storm",         "Storms & Hurricanes",   9504,   "MOVIE"),   # Twister (1996)
+    ("disaster-space",         "Asteroid & Cosmic",     95,     "MOVIE"),   # Armageddon
 ]
 
 # ─── Branded franchises (copied as-is from rrevanth) ────────────────
-# 17 franchises with official key art. No text overlay applied (logos baked in).
 RREV = "https://raw.githubusercontent.com/rrevanth/nuvio-assets/main/franchises"
 BRANDED = {
     "fr-starwars":    (f"{RREV}/star-wars/star-wars-landscape.jpg",                  "jpg"),
@@ -132,11 +126,8 @@ BRANDED = {
     "fr-xmen":        (f"{RREV}/x-men/x-men-landscape.jpg",                          "jpg"),
 }
 
-# ─── Franchise fallbacks: TMDB collection backdrop + Bebas Neue title ──
-# 17 franchises rrevanth doesn't have. TMDB backdrop quality varies — some are
-# proper franchise key art, some are just a movie still. Title overlay is added.
+# ─── Franchise fallbacks: TMDB collection ID → fanart.tv + TMDB chain ──
 TMDB_COLLECTIONS = [
-    # Live-action sci-fi / action franchises
     ("fr-fast",         "9485",   "Fast & Furious"),
     ("fr-matrix",       "2344",   "The Matrix"),
     ("fr-terminator",   "528",    "Terminator"),
@@ -146,7 +137,6 @@ TMDB_COLLECTIONS = [
     ("fr-planetapes",   "173710", "Planet of the Apes"),
     ("fr-monsterverse", "535313", "MonsterVerse"),
     ("fr-startrek",     "115575", "Star Trek"),
-    # Animation franchises (Pixar / DreamWorks / Illumination / Blue Sky)
     ("fr-toystory",     "10194",  "Toy Story"),
     ("fr-cars",         "87118",  "Cars"),
     ("fr-shrek",        "2150",   "Shrek"),
@@ -162,14 +152,13 @@ def already(slug, ext="jpg"):
     return (OUT_DIR / f"{slug}.{ext}").exists() and not OVERWRITE
 
 
+# ─── Font helpers ───────────────────────────────────────────────────
 def font_at(size):
-    """Return Bebas Neue at the given size, falling back to DejaVu Sans Bold."""
     path = FONT_PATH if Path(FONT_PATH).exists() else FALLBACK_FONT
     return ImageFont.truetype(path, size)
 
 
 def fit_font(text, max_width, max_size=220):
-    """Pick the largest Bebas Neue size that keeps `text` within max_width."""
     for size in range(max_size, 50, -4):
         font = font_at(size)
         bbox = font.getbbox(text)
@@ -178,12 +167,12 @@ def fit_font(text, max_width, max_size=220):
     return font_at(50)
 
 
+# ─── Image overlays ─────────────────────────────────────────────────
 def apply_text_overlay(img_bytes, label):
     """Resize to 16:9, darken bottom area, overlay big Bebas Neue title."""
     img = Image.open(io.BytesIO(img_bytes)).convert("RGB")
     img = ImageOps.fit(img, (TILE_W, TILE_H), Image.LANCZOS)
 
-    # Vertical gradient: transparent top → ~88% black bottom for text legibility.
     overlay = Image.new("RGBA", img.size, (0, 0, 0, 0))
     odraw = ImageDraw.Draw(overlay)
     for y in range(TILE_H):
@@ -200,7 +189,6 @@ def apply_text_overlay(img_bytes, label):
     x = (TILE_W - tw) // 2
     y = TILE_H - th - 110
 
-    # White text with bold black stroke for legibility on any background.
     draw.text((x, y), text, font=font, fill="white",
               stroke_width=6, stroke_fill="black")
 
@@ -209,113 +197,11 @@ def apply_text_overlay(img_bytes, label):
     return buf.getvalue()
 
 
-def build_prompt(scene):
-    return (
-        f"Movie streaming app collection banner art. "
-        f"{STYLE}. "
-        f"Scene: {scene}. "
-        f"Atmospheric and evocative, no text, no title, no letters, no words, "
-        f"no logos, no captions, no signage. "
-        f"{NEGATIVE}."
-    )
-
-
-def fetch_pollinations(prompt, seed=None):
-    if seed is None:
-        seed = abs(hash(prompt)) % 1_000_000
-    p = urllib.parse.quote(prompt, safe="")
-    url = (f"{POLLINATIONS_BASE}{p}"
-           f"?width={TILE_W}&height={TILE_H}"
-           f"&model=flux&seed={seed}&nologo=true&private=true&enhance=true")
-    r = requests.get(url, timeout=180)
-    r.raise_for_status()
-    return r.content
-
-
-def make_ai_tile(slug, scene, title):
-    if already(slug):
-        print(f"  [skip] {slug}")
-        return True
-    prompt = build_prompt(scene)
-    try:
-        img = fetch_pollinations(prompt)
-        labeled = apply_text_overlay(img, title)
-        (OUT_DIR / f"{slug}.jpg").write_bytes(labeled)
-        print(f"  [ok]   {slug:<22} '{title}'")
-        return True
-    except Exception as e:
-        print(f"  [err]  {slug}: {e}")
-        return False
-
-
-def copy_branded(slug, url, ext):
-    if already(slug, ext):
-        print(f"  [skip] {slug}")
-        return True
-    try:
-        data = requests.get(url, timeout=30).content
-        (OUT_DIR / f"{slug}.{ext}").write_bytes(data)
-        print(f"  [ok]   {slug:<22} (branded {ext})")
-        return True
-    except Exception as e:
-        print(f"  [err]  {slug}: {e}")
-        return False
-
-
-def pick_best_fanart(items, prefer_lang="en"):
-    """Pick the best fanart.tv asset: prefer matching language, then most likes."""
-    if not items:
-        return None
-    def score(it):
-        lang = (it.get("lang") or "").lower()
-        lang_match = 2 if lang == prefer_lang else (1 if lang in ("", "00") else 0)
-        try:
-            likes = int(it.get("likes") or "0")
-        except (TypeError, ValueError):
-            likes = 0
-        return (lang_match, likes)
-    return max(items, key=score).get("url")
-
-
-def fetch_fanart_data(tmdb_id):
-    """Get fanart.tv data for a TMDB id (movie or collection). Returns None on miss."""
-    if not FANART_KEY:
-        return None
-    try:
-        r = requests.get(
-            f"https://webservice.fanart.tv/v3/movies/{tmdb_id}",
-            params={"api_key": FANART_KEY},
-            timeout=20,
-        )
-        if r.status_code == 404:
-            return None
-        r.raise_for_status()
-        return r.json()
-    except Exception:
-        return None
-
-
-def fetch_tmdb_collection(collection_id):
-    """Get TMDB collection metadata (for backdrop + member movie IDs)."""
-    if not TMDB_KEY:
-        return None
-    try:
-        r = requests.get(
-            f"https://api.themoviedb.org/3/collection/{collection_id}",
-            params={"api_key": TMDB_KEY}, timeout=20,
-        )
-        r.raise_for_status()
-        return r.json()
-    except Exception:
-        return None
-
-
 def composite_logo_on_bg(bg_bytes, logo_bytes):
     """Resize bg to 16:9, paste hdmovielogo centered in the lower portion."""
     img = Image.open(io.BytesIO(bg_bytes)).convert("RGB")
     img = ImageOps.fit(img, (TILE_W, TILE_H), Image.LANCZOS)
 
-    # Soft vertical gradient so the logo reads cleanly even on busy backgrounds.
     overlay = Image.new("RGBA", img.size, (0, 0, 0, 0))
     odraw = ImageDraw.Draw(overlay)
     for y in range(TILE_H):
@@ -338,19 +224,159 @@ def composite_logo_on_bg(bg_bytes, logo_bytes):
     return buf.getvalue()
 
 
+# ─── External API helpers ───────────────────────────────────────────
+def pick_best_fanart(items, prefer_lang="en"):
+    if not items:
+        return None
+    def score(it):
+        lang = (it.get("lang") or "").lower()
+        lang_match = 2 if lang == prefer_lang else (1 if lang in ("", "00") else 0)
+        try:
+            likes = int(it.get("likes") or "0")
+        except (TypeError, ValueError):
+            likes = 0
+        return (lang_match, likes)
+    return max(items, key=score).get("url")
+
+
+def fetch_fanart_data(tmdb_id):
+    if not FANART_KEY:
+        return None
+    try:
+        r = requests.get(
+            f"https://webservice.fanart.tv/v3/movies/{tmdb_id}",
+            params={"api_key": FANART_KEY},
+            timeout=20,
+        )
+        if r.status_code == 404:
+            return None
+        r.raise_for_status()
+        return r.json()
+    except Exception:
+        return None
+
+
+def fetch_tmdb_collection(collection_id):
+    if not TMDB_KEY:
+        return None
+    try:
+        r = requests.get(
+            f"https://api.themoviedb.org/3/collection/{collection_id}",
+            params={"api_key": TMDB_KEY}, timeout=20,
+        )
+        r.raise_for_status()
+        return r.json()
+    except Exception:
+        return None
+
+
+def pick_best_tmdb_backdrop(backdrops):
+    """Sort backdrops by vote_count * (vote_average + 1), pick the top."""
+    if not backdrops:
+        return None
+    backdrops = sorted(
+        backdrops,
+        key=lambda b: (b.get("vote_count") or 0) * ((b.get("vote_average") or 0) + 1),
+        reverse=True,
+    )
+    return backdrops[0].get("file_path")
+
+
+def fetch_tmdb_backdrop(media_type, tmdb_id):
+    """Return (bytes, source_tag) for the best backdrop on /movie or /tv."""
+    if not TMDB_KEY:
+        return None, "no-tmdb-key"
+    try:
+        r = requests.get(
+            f"https://api.themoviedb.org/3/{media_type}/{tmdb_id}/images",
+            params={
+                "api_key": TMDB_KEY,
+                "include_image_language": "en,null",
+            },
+            timeout=20,
+        )
+        r.raise_for_status()
+        data = r.json()
+        path = pick_best_tmdb_backdrop(data.get("backdrops", []))
+        if not path:
+            return None, "tmdb-empty"
+        img = requests.get(
+            f"https://image.tmdb.org/t/p/original{path}", timeout=30,
+        ).content
+        return img, "tmdb"
+    except Exception as e:
+        return None, f"tmdb-err:{type(e).__name__}"
+
+
+def fetch_fanart_movie_bg(tmdb_id):
+    fart = fetch_fanart_data(tmdb_id)
+    if not fart:
+        return None
+    url = pick_best_fanart(fart.get("moviebackground", []))
+    if not url:
+        return None
+    try:
+        return requests.get(url, timeout=30).content
+    except Exception:
+        return None
+
+
+# ─── Tile generators ────────────────────────────────────────────────
+def make_themed_tile(slug, label, tmdb_id, media_type):
+    """Real backdrop of an iconic film/series + Bebas Neue title overlay."""
+    if already(slug):
+        print(f"  [skip] {slug}")
+        return True
+
+    bg_bytes = None
+    source = "?"
+
+    if media_type == "MOVIE":
+        bg_bytes = fetch_fanart_movie_bg(tmdb_id)
+        if bg_bytes:
+            source = "fanart.tv"
+        else:
+            bg_bytes, source = fetch_tmdb_backdrop("movie", tmdb_id)
+    else:
+        bg_bytes, source = fetch_tmdb_backdrop("tv", tmdb_id)
+
+    if not bg_bytes:
+        print(f"  [err]  {slug}: no backdrop ({source})")
+        return False
+
+    try:
+        result = apply_text_overlay(bg_bytes, label)
+        (OUT_DIR / f"{slug}.jpg").write_bytes(result)
+        print(f"  [ok]   {slug:<22} '{label}' ({media_type} {tmdb_id}, {source})")
+        return True
+    except Exception as e:
+        print(f"  [err]  {slug}: overlay failed: {e}")
+        return False
+
+
+def copy_branded(slug, url, ext):
+    if already(slug, ext):
+        print(f"  [skip] {slug}")
+        return True
+    try:
+        data = requests.get(url, timeout=30).content
+        (OUT_DIR / f"{slug}.{ext}").write_bytes(data)
+        print(f"  [ok]   {slug:<22} (branded {ext})")
+        return True
+    except Exception as e:
+        print(f"  [err]  {slug}: {e}")
+        return False
+
+
 def fetch_franchise(slug, collection_id, label):
     """fanart.tv (bg+logo) → fanart.tv (bg+text) → TMDB (backdrop+text)."""
     if already(slug):
         print(f"  [skip] {slug}")
         return True
 
-    # Pull collection data once so we can enumerate member movies if needed.
     tmdb_data = fetch_tmdb_collection(collection_id)
-
-    # Try fanart.tv directly with the TMDB collection ID first.
     fart = fetch_fanart_data(collection_id)
 
-    # If the collection ID had no fanart.tv data, walk member movies.
     if FANART_KEY and (not fart or not (fart.get("moviebackground") or fart.get("hdmovielogo"))):
         for movie in (tmdb_data.get("parts") if tmdb_data else [])[:6]:
             mv = fetch_fanart_data(movie.get("id"))
@@ -377,7 +403,6 @@ def fetch_franchise(slug, collection_id, label):
             except Exception as e:
                 print(f"  [warn] {slug}: fanart logo download failed: {e}")
 
-    # Fall back to TMDB collection backdrop if fanart.tv had nothing.
     if not bg_bytes and tmdb_data:
         backdrop = tmdb_data.get("backdrop_path")
         if not backdrop:
@@ -415,11 +440,12 @@ def fetch_franchise(slug, collection_id, label):
     return True
 
 
-def run_parallel_ai(label, items):
-    print(f"\n== {label} ({len(items)} AI-generated, {WORKERS} workers) ==")
+# ─── Orchestration ──────────────────────────────────────────────────
+def run_parallel(label, items, fn):
+    print(f"\n== {label} ({len(items)} items, {WORKERS} workers) ==")
     ok = 0
     with ThreadPoolExecutor(max_workers=WORKERS) as pool:
-        futs = {pool.submit(make_ai_tile, s, sc, t): s for s, sc, t in items}
+        futs = {pool.submit(fn, *it): it[0] for it in items}
         for fut in as_completed(futs):
             try:
                 if fut.result():
@@ -431,30 +457,29 @@ def run_parallel_ai(label, items):
 
 def main():
     print(f"Output: {OUT_DIR.absolute()}   OVERWRITE={OVERWRITE}   WORKERS={WORKERS}")
-    print(f"AI:     Pollinations.ai (Flux model, free, no key)")
-    print(f"TMDB:   {'configured' if TMDB_KEY else 'NO KEY — franchise fallbacks will skip'}")
-    print(f"FanArt: {'configured' if FANART_KEY else 'NO KEY — TMDB only for fallback art'}")
+    print(f"TMDB:   {'configured' if TMDB_KEY else 'NO KEY — themed + fallback art will skip'}")
+    print(f"FanArt: {'configured' if FANART_KEY else 'NO KEY — TMDB only'}")
     print(f"Font:   {FONT_PATH if Path(FONT_PATH).exists() else FALLBACK_FONT + ' (Bebas Neue not found)'}")
 
     print("\n== Branded franchise art (from rrevanth) ==")
     b_ok = sum(copy_branded(s, u, e) for s, (u, e) in BRANDED.items())
 
     print(f"\n== Franchise fallbacks ({len(TMDB_COLLECTIONS)} via fanart.tv → TMDB) ==")
-    if not TMDB_KEY and not FANART_KEY:
-        print("  Neither TMDB_API_KEY nor FANART_API_KEY set — skipping franchise fallbacks.")
+    if not (TMDB_KEY or FANART_KEY):
+        print("  Neither TMDB_API_KEY nor FANART_API_KEY set — skipping.")
         f_ok = 0
     else:
         f_ok = 0
-        for slug, cid, label in TMDB_COLLECTIONS:
-            if fetch_franchise(slug, cid, label):
+        for slug, cid, lbl in TMDB_COLLECTIONS:
+            if fetch_franchise(slug, cid, lbl):
                 f_ok += 1
             time.sleep(0.2)
 
-    t_ok = run_parallel_ai("Themed tiles", THEMES)
+    t_ok = run_parallel("Themed tiles (iconic backdrops + title)", THEMES, make_themed_tile)
 
     print(f"\nDone. Branded {b_ok}/{len(BRANDED)}, "
           f"Franchise {f_ok}/{len(TMDB_COLLECTIONS)}, "
-          f"Themed AI {t_ok}/{len(THEMES)}.")
+          f"Themed {t_ok}/{len(THEMES)}.")
 
 
 if __name__ == "__main__":
