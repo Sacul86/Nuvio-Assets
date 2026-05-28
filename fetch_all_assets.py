@@ -100,8 +100,8 @@ THEMES = [
     ("apoc-nuclear",           "Nuclear War",           872585, "MOVIE"),   # Oppenheimer
     ("apoc-dystopia",          "Dystopian Future",      9693,   "MOVIE"),   # Children of Men
     # Natural Disaster
-    ("disaster-new-movies",    "New Disaster Movies",   465,    "MOVIE"),   # The Day After Tomorrow
-    ("disaster-new-series",    "Disaster Series",       73021,  "TV"),      # Designated Survivor (post-disaster political drama)
+    ("disaster-new-movies",    "New Disaster Movies",   44912,  "MOVIE"),   # 2012 (Roland Emmerich)
+    ("disaster-new-series",    "Disaster Series",       75219,  "TV"),      # 9-1-1 (emergency-disaster series)
     ("disaster-earth",         "Earthquakes & Volcanoes", 277216, "MOVIE"), # San Andreas
     ("disaster-water",         "Tsunamis & Floods",     84892,  "MOVIE"),   # The Impossible
     ("disaster-storm",         "Storms & Hurricanes",   9504,   "MOVIE"),   # Twister (1996)
@@ -497,6 +497,13 @@ SKIP_DISCOVER_SLUGS = {"anim-disney"}
 
 
 def _wants_handpicked(slug):
+    # "New X Movies/Series" rows are the most prominent at the top of each
+    # collection. Discover ends up giving identical covers when two such rows
+    # share a genre crossover hit (e.g. one trending horror-mystery title
+    # tops both withGenres=27 and withGenres=9648 by popularity). Force these
+    # to use the hand-picked iconic id so the rows stay visually distinct.
+    if slug.endswith("-new-movies") or slug.endswith("-new-series"):
+        return True
     return slug in SKIP_DISCOVER_SLUGS or slug.startswith("actor-")
 
 
