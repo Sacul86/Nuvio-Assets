@@ -367,17 +367,16 @@ def pick_best_tmdb_backdrop(backdrops):
 
 
 def fetch_tmdb_backdrop(media_type, tmdb_id):
-    """Return (bytes, source_tag) for the best backdrop on /movie or /tv.
+    """Return (bytes, source_tag) for the best UNUSED backdrop on /movie or /tv.
 
-    Tries /{type}/{id}/images first (richer set, ranked client-side). If that
-    comes back empty or errors, falls back to /{type}/{id}'s primary
-    backdrop_path field — TMDB sometimes exposes a primary backdrop even when
-    the /images endpoint returns nothing for that title.
+    Walks /{type}/{id}/images backdrops in score order; takes the first one
+    whose path isn't already reserved by another row. Falls back to
+    /{type}/{id}'s primary backdrop_path if /images had nothing usable.
     """
     if not TMDB_KEY:
         return None, "no-tmdb-key"
 
-    # Pass 1: /images
+    # Pass 1: /images - walk in score order, take first unused.
     try:
         r = requests.get(
             f"https://api.themoviedb.org/3/{media_type}/{tmdb_id}/images",
@@ -385,16 +384,22 @@ def fetch_tmdb_backdrop(media_type, tmdb_id):
             timeout=20,
         )
         r.raise_for_status()
-        path = pick_best_tmdb_backdrop(r.json().get("backdrops", []))
-        if path:
-            img = requests.get(
-                f"https://image.tmdb.org/t/p/original{path}", timeout=30,
-            ).content
-            return img, "tmdb-images"
+        backdrops = sorted(
+            r.json().get("backdrops", []),
+            key=lambda b: (b.get("vote_count") or 0) * ((b.get("vote_average") or 0) + 1),
+            reverse=True,
+        )
+        for b in backdrops:
+            path = b.get("file_path")
+            if path and reserve_backdrop(path):
+                img = requests.get(
+                    f"https://image.tmdb.org/t/p/original{path}", timeout=30,
+                ).content
+                return img, "tmdb-images"
     except Exception as e:
         print(f"  [warn] tmdb /images {media_type}/{tmdb_id} failed: {type(e).__name__}")
 
-    # Pass 2: /{type}/{id} primary backdrop_path
+    # Pass 2: /{type}/{id} primary backdrop_path.
     try:
         r = requests.get(
             f"https://api.themoviedb.org/3/{media_type}/{tmdb_id}",
@@ -403,12 +408,12 @@ def fetch_tmdb_backdrop(media_type, tmdb_id):
         )
         r.raise_for_status()
         path = r.json().get("backdrop_path")
-        if path:
+        if path and reserve_backdrop(path):
             img = requests.get(
                 f"https://image.tmdb.org/t/p/original{path}", timeout=30,
             ).content
             return img, "tmdb-primary"
-        return None, "tmdb-no-backdrop"
+        return None, "tmdb-no-unused-backdrop"
     except Exception as e:
         return None, f"tmdb-err:{type(e).__name__}"
 
@@ -784,6 +789,16 @@ def copy_branded(slug, url, ext):
         return False
 
 
+# Iconic TMDB collection ids for franchise rows whose own filter
+# (withCompanies=420 Marvel Studios, withCompanies=9993 DC Entertainment) is
+# too broad to yield a meaningful cover. The row content in Nuvio still uses
+# the broader filter; only the COVER is sourced from these collections.
+FRANCHISE_COVER_OVERRIDES = {
+    "fr-mcu": 86311,  # The Avengers Collection (iconic ensemble Marvel art)
+    "fr-dc":  263,    # The Dark Knight Collection (Nolan trilogy, iconic DC)
+}
+
+
 def fetch_collection_backdrop(collection_id):
     """For a TMDB collection: prefer the collection's own backdrop_path,
     else the most popular member movie's backdrop that hasn't been claimed
@@ -831,7 +846,18 @@ def make_franchise_tile(slug, label, sources):
     bg_bytes = None
     source = "?"
 
+    # Cover override: certain franchise rows (MCU, DC) use a broad
+    # withCompanies filter that yields LEGO Batman / The Punisher as the top
+    # hit. Point the COVER at a curated TMDB collection instead.
+    override_id = FRANCHISE_COVER_OVERRIDES.get(slug)
+    if override_id:
+        bg_bytes = fetch_collection_backdrop(override_id)
+        if bg_bytes:
+            source = f"collection-override {override_id}"
+
     for src in sources:
+        if bg_bytes:
+            break
         kind = src.get("tmdbSourceType")
         mt = src.get("mediaType", "MOVIE")
         if kind == "COLLECTION":
