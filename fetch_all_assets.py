@@ -466,25 +466,44 @@ def tmdb_discover_top(filters, media_type):
         return None, None
 
 
+def _load_collections_json():
+    """Return the parsed v14 (or v13 fallback) collections JSON, or [] on miss."""
+    for fname in ("carl-nuvio-themed-collections-v14.json",
+                  "carl-nuvio-themed-collections-v13.json"):
+        path = Path(fname)
+        if path.exists():
+            try:
+                return json.loads(path.read_text())
+            except Exception as e:
+                print(f"  [warn] {fname} parse failed ({e})")
+                return []
+    print("  [warn] no v13/v14 JSON in repo")
+    return []
+
+
 def load_filters_from_v13():
-    """Returns {slug: (filters, media_type)} from the v13 JSON in the repo root."""
-    json_path = Path("carl-nuvio-themed-collections-v13.json")
-    if not json_path.exists():
-        print("  [warn] v13 JSON not in repo - falling back to hard-coded picks.")
-        return {}
+    """Returns {slug: (filters, media_type)} for DISCOVER-mode rows."""
     out = {}
-    try:
-        data = json.loads(json_path.read_text())
-    except Exception as e:
-        print(f"  [warn] v13 JSON parse failed ({e}); falling back.")
-        return {}
-    for col in data:
+    for col in _load_collections_json():
         for fld in col["folders"]:
             slug = fld["id"].replace("folder-carl-", "")
             for src in fld.get("sources", []):
                 if src.get("tmdbSourceType") == "DISCOVER":
                     out[slug] = (src.get("filters", {}), src.get("mediaType", "MOVIE"))
                     break
+    return out
+
+
+def load_franchise_specs():
+    """Returns [(slug, label, sources_list)] for every folder whose first source
+    is a COLLECTION (a franchise pinned to a specific TMDB collection)."""
+    out = []
+    for col in _load_collections_json():
+        for fld in col["folders"]:
+            slug = fld["id"].replace("folder-carl-", "")
+            sources = fld.get("sources") or []
+            if sources and sources[0].get("tmdbSourceType") == "COLLECTION":
+                out.append((slug, fld["title"], sources))
     return out
 
 
@@ -497,13 +516,10 @@ SKIP_DISCOVER_SLUGS = {"anim-disney"}
 
 
 def _wants_handpicked(slug):
-    # "New X Movies/Series" rows are the most prominent at the top of each
-    # collection. Discover ends up giving identical covers when two such rows
-    # share a genre crossover hit (e.g. one trending horror-mystery title
-    # tops both withGenres=27 and withGenres=9648 by popularity). Force these
-    # to use the hand-picked iconic id so the rows stay visually distinct.
-    if slug.endswith("-new-movies") or slug.endswith("-new-series"):
-        return True
+    # Only actor tiles and the curated 'anim-disney' row keep the hand-picked
+    # path. Every other slug goes through TMDB Discover (or COLLECTION mode
+    # for franchises) so the cover image is drawn from the row's actual
+    # filter results.
     return slug in SKIP_DISCOVER_SLUGS or slug.startswith("actor-")
 
 
@@ -705,6 +721,82 @@ def copy_branded(slug, url, ext):
         return False
 
 
+def fetch_collection_backdrop(collection_id):
+    """For a TMDB collection: prefer the collection's own backdrop_path,
+    else the most popular member movie's backdrop. Returns bytes or None."""
+    coll = fetch_tmdb_collection(collection_id)
+    if not coll:
+        return None
+    path = coll.get("backdrop_path")
+    if not path:
+        parts = coll.get("parts") or []
+        parts = sorted(parts, key=lambda p: p.get("popularity") or 0, reverse=True)
+        for movie in parts:
+            if movie.get("backdrop_path"):
+                path = movie["backdrop_path"]
+                break
+    if not path:
+        return None
+    try:
+        return requests.get(
+            f"https://image.tmdb.org/t/p/original{path}", timeout=30,
+        ).content
+    except Exception:
+        return None
+
+
+def make_franchise_tile(slug, label, sources):
+    """Pull a backdrop for a fr-* franchise via the first viable source.
+
+    For COLLECTION sources: use the collection's backdrop (or its top movie's).
+    For DISCOVER sources (DC Universe etc.): standard Discover.
+    Always apply the Bebas Neue title overlay so the franchise name is on the
+    tile - no more rrevanth-style baked-in logos.
+    """
+    if already(slug):
+        print(f"  [skip] {slug}")
+        return True
+
+    bg_bytes = None
+    source = "?"
+
+    for src in sources:
+        kind = src.get("tmdbSourceType")
+        mt = src.get("mediaType", "MOVIE")
+        if kind == "COLLECTION":
+            cid = src.get("tmdbId")
+            if cid:
+                bg_bytes = fetch_collection_backdrop(cid)
+                if bg_bytes:
+                    source = f"collection {cid}"
+                    break
+        elif kind == "DISCOVER":
+            filters = src.get("filters", {})
+            tid, path = tmdb_discover_top(filters, mt)
+            if tid and path:
+                try:
+                    bg_bytes = requests.get(
+                        f"https://image.tmdb.org/t/p/original{path}", timeout=30,
+                    ).content
+                    source = f"discover→{tid}"
+                    break
+                except Exception as e:
+                    print(f"  [warn] {slug}: discover bg dl failed: {e}")
+
+    if not bg_bytes:
+        print(f"  [err]  {slug}: no backdrop found for franchise")
+        return False
+
+    try:
+        result = apply_text_overlay(bg_bytes, label)
+        (OUT_DIR / f"{slug}.jpg").write_bytes(result)
+        print(f"  [ok]   {slug:<22} '{label}' ({source})")
+        return True
+    except Exception as e:
+        print(f"  [err]  {slug}: overlay failed: {e}")
+        return False
+
+
 def fetch_franchise(slug, collection_id, label):
     """fanart.tv (bg+logo) → fanart.tv (bg+text) → TMDB (backdrop+text)."""
     if already(slug):
@@ -794,29 +886,23 @@ def run_parallel(label, items, fn):
 
 def main():
     print(f"Output: {OUT_DIR.absolute()}   OVERWRITE={OVERWRITE}   WORKERS={WORKERS}")
-    print(f"TMDB:   {'configured' if TMDB_KEY else 'NO KEY — themed + fallback art will skip'}")
+    print(f"TMDB:   {'configured' if TMDB_KEY else 'NO KEY — themed + franchise art will skip'}")
     print(f"FanArt: {'configured' if FANART_KEY else 'NO KEY — TMDB only'}")
     print(f"Font:   {FONT_PATH if Path(FONT_PATH).exists() else FALLBACK_FONT + ' (Bebas Neue not found)'}")
 
-    print("\n== Branded franchise art (from rrevanth) ==")
-    b_ok = sum(copy_branded(s, u, e) for s, (u, e) in BRANDED.items())
+    # Franchises (fr-*): drive entirely off the v13/v14 JSON, no rrevanth copy.
+    franchise_specs = load_franchise_specs()
+    print(f"\n== Franchises ({len(franchise_specs)} COLLECTION-mode tiles via TMDB) ==")
+    f_ok = 0
+    for slug, lbl, srcs in franchise_specs:
+        if make_franchise_tile(slug, lbl, srcs):
+            f_ok += 1
+        time.sleep(0.15)
 
-    print(f"\n== Franchise fallbacks ({len(TMDB_COLLECTIONS)} via fanart.tv → TMDB) ==")
-    if not (TMDB_KEY or FANART_KEY):
-        print("  Neither TMDB_API_KEY nor FANART_API_KEY set — skipping.")
-        f_ok = 0
-    else:
-        f_ok = 0
-        for slug, cid, lbl in TMDB_COLLECTIONS:
-            if fetch_franchise(slug, cid, lbl):
-                f_ok += 1
-            time.sleep(0.2)
+    t_ok = run_parallel("Themed tiles (Discover-driven backdrops + title)", THEMES, make_themed_tile)
+    a_ok = run_parallel("Actor tiles (TMDB headshot)", ACTORS, make_themed_tile)
 
-    t_ok = run_parallel("Themed tiles (iconic backdrops + title)", THEMES, make_themed_tile)
-    a_ok = run_parallel("Actor tiles (iconic role + actor name)", ACTORS, make_themed_tile)
-
-    print(f"\nDone. Branded {b_ok}/{len(BRANDED)}, "
-          f"Franchise {f_ok}/{len(TMDB_COLLECTIONS)}, "
+    print(f"\nDone. Franchise {f_ok}/{len(franchise_specs)}, "
           f"Themed {t_ok}/{len(THEMES)}, "
           f"Actors {a_ok}/{len(ACTORS)}.")
 
