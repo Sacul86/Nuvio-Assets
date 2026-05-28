@@ -46,12 +46,16 @@ jobs:
             echo "::error::FANART_API_KEY secret is missing or empty."
             exit 1
           fi
-          echo "Both secrets present."
+          if [ -z "${{ secrets.MDBLIST_API_KEY }}" ]; then
+            echo "::warning::MDBLIST_API_KEY not set; script will fall back to TMDB Discover only."
+          fi
+          echo "TMDB + fanart present."
 
       - name: Generate assets
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
           FANART_API_KEY: ${{ secrets.FANART_API_KEY }}
+          MDBLIST_API_KEY: ${{ secrets.MDBLIST_API_KEY }}
           OVERWRITE: ${{ inputs.overwrite && '1' || '0' }}
         run: python fetch_all_assets.py 2>&1 | tee /tmp/fetch.log
 

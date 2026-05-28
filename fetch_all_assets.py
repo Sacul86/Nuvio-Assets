@@ -44,6 +44,7 @@ except ImportError:
 WORKERS = int(os.environ.get("WORKERS", "6"))
 TMDB_KEY = os.environ.get("TMDB_API_KEY", "").strip()
 FANART_KEY = os.environ.get("FANART_API_KEY", "").strip()
+MDBLIST_KEY = os.environ.get("MDBLIST_API_KEY", "").strip()
 OVERWRITE = os.environ.get("OVERWRITE", "0") == "1"
 OUT_DIR = Path("assets")
 OUT_DIR.mkdir(exist_ok=True)
@@ -497,6 +498,128 @@ def _primary_genre_for(slug):
     return None
 
 
+# ─── MDBList: human-curated lists per row ───────────────────────────
+# MDBList serves curated public lists where humans pick "best disaster movies"
+# etc., so we get away from TMDB's noisy keyword tags (LOTR carrying the
+# 'disaster' keyword, Pulp Fiction carrying 'comedy'). Per-slug search queries
+# below; default falls back to the row label.
+MDBLIST_QUERIES = {
+    # Franchises - search by franchise name
+    "fr-starwars":    "star wars saga",
+    "fr-mcu":         "marvel cinematic universe",
+    "fr-harrypotter": "harry potter wizarding world",
+    "fr-middleearth": "lord of the rings hobbit",
+    "fr-jurassic":    "jurassic park world",
+    "fr-bond":        "james bond 007",
+    "fr-mi":          "mission impossible",
+    "fr-johnwick":    "john wick",
+    "fr-hungergames": "hunger games",
+    "fr-pirates":     "pirates of the caribbean",
+    "fr-indianajones":"indiana jones",
+    "fr-avatar":      "avatar james cameron",
+    "fr-dc":          "dc movies extended universe",
+    "fr-dune":        "dune denis villeneuve",
+    "fr-godfather":   "godfather trilogy",
+    "fr-transformers":"transformers movies",
+    "fr-xmen":        "x-men movies",
+    "fr-fast":        "fast and furious",
+    "fr-matrix":      "matrix trilogy",
+    "fr-terminator":  "terminator",
+    "fr-alien":       "alien franchise",
+    "fr-predator":    "predator movies",
+    "fr-madmax":      "mad max",
+    "fr-planetapes":  "planet of the apes",
+    "fr-monsterverse":"monsterverse godzilla kong",
+    "fr-startrek":    "star trek movies",
+    "fr-toystory":    "toy story pixar",
+    "fr-cars":        "cars pixar",
+    "fr-shrek":       "shrek movies",
+    "fr-httyd":       "how to train your dragon",
+    "fr-kungfupanda": "kung fu panda",
+    "fr-madagascar":  "madagascar dreamworks",
+    "fr-despicableme":"despicable me minions",
+    "fr-iceage":      "ice age",
+}
+
+
+def _mdblist_get(path, params=None):
+    """Wrapper for MDBList GET. Returns parsed JSON or None on any failure."""
+    if not MDBLIST_KEY:
+        return None
+    p = {"apikey": MDBLIST_KEY}
+    p.update(params or {})
+    try:
+        r = requests.get(f"https://api.mdblist.com{path}", params=p, timeout=15)
+        if r.status_code != 200:
+            return None
+        return r.json()
+    except Exception:
+        return None
+
+
+def _coerce_items(data):
+    """MDBList endpoints sometimes return a bare list, sometimes a dict with
+    'movies'/'shows'/'results' arrays. Normalize to a list of item dicts."""
+    if isinstance(data, list):
+        return data
+    if isinstance(data, dict):
+        for key in ("movies", "shows", "results", "items"):
+            v = data.get(key)
+            if isinstance(v, list):
+                return v
+    return []
+
+
+def _item_tmdb_id(item):
+    for key in ("tmdb", "tmdb_id", "tmdbid", "id"):
+        v = item.get(key)
+        if v:
+            try:
+                return int(v)
+            except (TypeError, ValueError):
+                pass
+    return None
+
+
+def _item_media_matches(item, media_type):
+    raw = (item.get("mediatype") or item.get("type") or item.get("media_type") or "").lower()
+    if media_type == "MOVIE":
+        return raw in ("", "movie", "film")
+    return raw in ("show", "tv", "series")
+
+
+def mdblist_top_tmdb(query, media_type):
+    """Search MDBList for `query`, walk the top 3 matching lists, return the
+    first item's TMDB id whose media type matches. Returns None on any miss."""
+    if not MDBLIST_KEY or not query:
+        return None
+    data = _mdblist_get("/lists/search", {"s": query})
+    lists = _coerce_items(data)
+    if not lists:
+        # Some MDBList revisions use 'query' instead of 's'.
+        data = _mdblist_get("/lists/search", {"query": query})
+        lists = _coerce_items(data)
+    for lst in lists[:3]:
+        list_id = lst.get("id") or lst.get("list_id")
+        if not list_id:
+            continue
+        items = _coerce_items(_mdblist_get(f"/lists/{list_id}/items"))
+        if not items:
+            continue
+        # Pass 1: media-type match.
+        for it in items[:10]:
+            if _item_media_matches(it, media_type):
+                tid = _item_tmdb_id(it)
+                if tid:
+                    return tid
+        # Pass 2: anything with a TMDB id.
+        for it in items[:1]:
+            tid = _item_tmdb_id(it)
+            if tid:
+                return tid
+    return None
+
+
 def tmdb_discover_top(filters, media_type, slug=None):
     """TMDB Discover with the row's filters, picked client-side.
 
@@ -780,8 +903,21 @@ def make_themed_tile(slug, label, tmdb_id, media_type):
     bg_bytes = None
     source = "?"
 
+    # MDBList path: human-curated lists are far better than TMDB tag queries
+    # at sourcing iconic covers. Try a list search first, only fall through to
+    # Discover if MDBList has nothing for this row.
+    if MDBLIST_KEY and not _wants_handpicked(slug):
+        query = MDBLIST_QUERIES.get(slug, label.lower())
+        mdbl_id = mdblist_top_tmdb(query, media_type)
+        if mdbl_id:
+            mt = "movie" if media_type == "MOVIE" else "tv"
+            mb, src_tag = fetch_tmdb_backdrop(mt, mdbl_id)
+            if mb:
+                bg_bytes = mb
+                source = f"mdblist:'{query}'→{mdbl_id} ({src_tag})"
+
     # Discover path (genre rows). Skipped for actor tiles and curated slugs.
-    if not _wants_handpicked(slug):
+    if not bg_bytes and not _wants_handpicked(slug):
         spec = SLUG_FILTERS.get(slug)
         if spec:
             filters, mt = spec
@@ -905,10 +1041,22 @@ def make_franchise_tile(slug, label, sources):
     bg_bytes = None
     source = "?"
 
+    # MDBList path: pull a top item from a community-curated franchise list,
+    # use that movie's backdrop. Falls through to COLLECTION/DISCOVER below
+    # if MDBList has nothing.
+    if MDBLIST_KEY:
+        query = MDBLIST_QUERIES.get(slug, label.lower())
+        mdbl_id = mdblist_top_tmdb(query, "MOVIE")
+        if mdbl_id:
+            mb, src_tag = fetch_tmdb_backdrop("movie", mdbl_id)
+            if mb:
+                bg_bytes = mb
+                source = f"mdblist:'{query}'→{mdbl_id} ({src_tag})"
+
     # Cover override: certain franchise rows (MCU, DC) use a broad
     # withCompanies filter that yields LEGO Batman / The Punisher as the top
     # hit. Point the COVER at a curated TMDB collection instead.
-    override_id = FRANCHISE_COVER_OVERRIDES.get(slug)
+    override_id = FRANCHISE_COVER_OVERRIDES.get(slug) if not bg_bytes else None
     if override_id:
         bg_bytes = fetch_collection_backdrop(override_id)
         if bg_bytes:
@@ -1044,6 +1192,7 @@ def main():
     print(f"Output: {OUT_DIR.absolute()}   OVERWRITE={OVERWRITE}   WORKERS={WORKERS}")
     print(f"TMDB:   {'configured' if TMDB_KEY else 'NO KEY — themed + franchise art will skip'}")
     print(f"FanArt: {'configured' if FANART_KEY else 'NO KEY — TMDB only'}")
+    print(f"MDBList:{'configured' if MDBLIST_KEY else ' NO KEY — TMDB Discover only for covers'}")
     print(f"Font:   {FONT_PATH if Path(FONT_PATH).exists() else FALLBACK_FONT + ' (Bebas Neue not found)'}")
 
     # Franchises (fr-*): drive entirely off the v13/v14 JSON, no rrevanth copy.
