@@ -1,16 +1,18 @@
 """
-fetch_all_assets.py v4 — AI-generated tiles via Pollinations.ai (free, no API key).
+fetch_all_assets.py v5 — AI-generated tiles via Pollinations.ai (free, no API key).
 
 Pollinations.ai is a free, no-signup AI image gen service backed by Flux models.
-Each tile is generated from a poster-style prompt with the title text baked in.
+Each tile is a pure cinematic scene with NO baked-in title text — Nuvio's row
+header provides the label, so the tile is just visual mood/imagery.
 
 Sources:
-  1. 41 themed tiles      — Pollinations (Flux) with cinematic genre prompts
-  2. 11 branded franchises — copied as-is from rrevanth (logos already on the art)
-  3.  8 franchise fallbacks — Pollinations (Flux) with iconic franchise prompts
+  1. 41 themed tiles      — Pollinations (Flux), no text, cinematic genre scenes
+  2. 11 branded franchises — copied as-is from rrevanth (official logos on the art)
+  3.  8 franchise fallbacks — Pollinations (Flux), no text, iconic franchise scenes
 
 Optional env vars:
   OVERWRITE=1   — regenerate existing files (default: skip)
+  WORKERS=N     — parallel AI requests (default: 6)
 """
 
 import os, sys, urllib.parse
@@ -126,12 +128,15 @@ def already(slug, ext="jpg"):
 
 
 def build_prompt(scene, title):
+    # title is kept in the data tuple for logging/documentation only.
+    # No text is requested from the AI — Flux's text rendering is unreliable
+    # and Nuvio's row header provides the title separately.
     return (
-        f"Movie streaming app collection banner tile. "
+        f"Movie streaming app collection banner art. "
         f"{STYLE}. "
         f"Scene: {scene}. "
-        f"Bold large title text '{title}' prominently rendered in clean white sans-serif "
-        f"letters integrated into the design at the bottom third of the composition. "
+        f"Atmospheric and evocative, no text, no title, no letters, no words, "
+        f"no logos, no captions, no signage. "
         f"{NEGATIVE}."
     )
 
