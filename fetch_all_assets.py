@@ -99,10 +99,10 @@ THEMES = [
     ("apoc-nuclear",           "Nuclear War",           872585, "MOVIE"),   # Oppenheimer
     ("apoc-dystopia",          "Dystopian Future",      9693,   "MOVIE"),   # Children of Men
     # Natural Disaster
-    ("disaster-new-movies",    "New Disaster Movies",   587732, "MOVIE"),   # Greenland
-    ("disaster-new-series",    "Disaster Series",       80388,  "TV"),      # Snowpiercer
+    ("disaster-new-movies",    "New Disaster Movies",   465,    "MOVIE"),   # The Day After Tomorrow
+    ("disaster-new-series",    "Disaster Series",       73021,  "TV"),      # Designated Survivor (post-disaster political drama)
     ("disaster-earth",         "Earthquakes & Volcanoes", 277216, "MOVIE"), # San Andreas
-    ("disaster-water",         "Tsunamis & Floods",     8865,   "MOVIE"),   # Deep Impact
+    ("disaster-water",         "Tsunamis & Floods",     84892,  "MOVIE"),   # The Impossible
     ("disaster-storm",         "Storms & Hurricanes",   9504,   "MOVIE"),   # Twister (1996)
     ("disaster-space",         "Asteroid & Cosmic",     95,     "MOVIE"),   # Armageddon
     # Horror sub-genres (extended)
@@ -122,6 +122,7 @@ THEMES = [
     ("comedy-new-series",      "New Comedy Series",     136315, "TV"),      # The Bear
     ("comedy-romcom",          "Romantic Comedy",       50546,  "MOVIE"),   # Crazy, Stupid, Love
     ("comedy-dark",            "Dark Comedy",           275,    "MOVIE"),   # Fargo (1996)
+    ("comedy-standup",         "Stand-up Specials",     115,    "MOVIE"),   # The Big Lebowski (cult comedy w/ rich TMDB art)
     ("comedy-buddy",           "Buddy Comedy",          4638,   "MOVIE"),   # Hot Fuzz
     ("comedy-sitcom",          "Sitcoms",               2316,   "TV"),      # The Office (US)
     ("comedy-parody",          "Parody & Spoof",        813,    "MOVIE"),   # Airplane!
@@ -143,7 +144,7 @@ THEMES = [
     ("drama-period",           "Period Drama",          4348,   "MOVIE"),   # Pride & Prejudice (2005)
     ("drama-biopic",           "Biographical",          424694, "MOVIE"),   # Bohemian Rhapsody
     ("drama-coming-age",       "Coming-of-Age",         391713, "MOVIE"),   # Lady Bird
-    ("drama-courtroom",        "Courtroom",             1614,   "MOVIE"),   # A Few Good Men
+    ("drama-courtroom",        "Courtroom",             389,    "MOVIE"),   # 12 Angry Men (1957)
     ("drama-medical",          "Medical",               1416,   "TV"),      # Grey's Anatomy
     ("drama-sports",           "Sports",                1366,   "MOVIE"),   # Rocky
     ("drama-family",           "Family",                39446,  "MOVIE"),   # The Kids Are All Right
@@ -364,27 +365,48 @@ def pick_best_tmdb_backdrop(backdrops):
 
 
 def fetch_tmdb_backdrop(media_type, tmdb_id):
-    """Return (bytes, source_tag) for the best backdrop on /movie or /tv."""
+    """Return (bytes, source_tag) for the best backdrop on /movie or /tv.
+
+    Tries /{type}/{id}/images first (richer set, ranked client-side). If that
+    comes back empty or errors, falls back to /{type}/{id}'s primary
+    backdrop_path field — TMDB sometimes exposes a primary backdrop even when
+    the /images endpoint returns nothing for that title.
+    """
     if not TMDB_KEY:
         return None, "no-tmdb-key"
+
+    # Pass 1: /images
     try:
         r = requests.get(
             f"https://api.themoviedb.org/3/{media_type}/{tmdb_id}/images",
-            # No include_image_language: some titles tag every backdrop with a
-            # non-English language code, which an "en,null" filter would empty out.
-            # We rank language preference client-side instead.
             params={"api_key": TMDB_KEY},
             timeout=20,
         )
         r.raise_for_status()
-        data = r.json()
-        path = pick_best_tmdb_backdrop(data.get("backdrops", []))
-        if not path:
-            return None, "tmdb-empty"
-        img = requests.get(
-            f"https://image.tmdb.org/t/p/original{path}", timeout=30,
-        ).content
-        return img, "tmdb"
+        path = pick_best_tmdb_backdrop(r.json().get("backdrops", []))
+        if path:
+            img = requests.get(
+                f"https://image.tmdb.org/t/p/original{path}", timeout=30,
+            ).content
+            return img, "tmdb-images"
+    except Exception as e:
+        print(f"  [warn] tmdb /images {media_type}/{tmdb_id} failed: {type(e).__name__}")
+
+    # Pass 2: /{type}/{id} primary backdrop_path
+    try:
+        r = requests.get(
+            f"https://api.themoviedb.org/3/{media_type}/{tmdb_id}",
+            params={"api_key": TMDB_KEY},
+            timeout=20,
+        )
+        r.raise_for_status()
+        path = r.json().get("backdrop_path")
+        if path:
+            img = requests.get(
+                f"https://image.tmdb.org/t/p/original{path}", timeout=30,
+            ).content
+            return img, "tmdb-primary"
+        return None, "tmdb-no-backdrop"
     except Exception as e:
         return None, f"tmdb-err:{type(e).__name__}"
 
