@@ -171,7 +171,7 @@ ACTORS = [
     ("actor-rgosling",     "Ryan Gosling",        64690,  "MOVIE"),   # Drive
     ("actor-mrobbie",      "Margot Robbie",       402431, "MOVIE"),   # I, Tonya
     ("actor-estone",       "Emma Stone",          792307, "MOVIE"),   # Poor Things
-    ("actor-fpugh",        "Florence Pugh",       569094, "MOVIE"),   # Black Widow
+    ("actor-fpugh",        "Florence Pugh",       530385, "MOVIE"),   # Midsommar (iconic solo lead)
     ("actor-atjoy",        "Anya Taylor-Joy",     87739,  "TV"),      # The Queen's Gambit
     ("actor-sjohansson",   "Scarlett Johansson",  153,    "MOVIE"),   # Lost in Translation
     ("actor-wsmith",       "Will Smith",          607,    "MOVIE"),   # Men in Black
@@ -491,15 +491,27 @@ def load_filters_from_v13():
 SLUG_FILTERS = None  # lazy-populated once
 
 
+# Slugs where Discover would return crossover/ensemble titles rather than
+# the curated iconic role - skip Discover entirely for these.
+SKIP_DISCOVER_SLUGS = {"anim-disney"}
+
+
+def _wants_handpicked(slug):
+    return slug in SKIP_DISCOVER_SLUGS or slug.startswith("actor-")
+
+
 def make_themed_tile(slug, label, tmdb_id, media_type):
     """Pick a representative backdrop and overlay the label.
 
-    Strategy (preferring matches over hand-picked guesses):
-      1. If v13 JSON has a DISCOVER filter for this slug, run TMDB Discover with
-         it and use the most popular result's backdrop. This is the strongest
-         guarantee that the cover image matches the content the user sees when
-         they open the row.
-      2. Otherwise fall back to the hard-coded tmdb_id (legacy iconic pick).
+    For actor tiles and a small set of curated slugs, use the hand-picked
+    tmdb_id directly - Discover would return whatever crossover movie they're
+    most popular in (Emma Stone -> Amazing Spider-Man), and that's a worse
+    cover than the iconic role we picked by hand (Poor Things).
+
+    For everything else, prefer Discover with the row's own DISCOVER filter
+    from v13 JSON - that way the cover image is drawn from the same pool of
+    titles Nuvio shows when the user clicks the row. Fall back to the
+    hand-picked id only if Discover returns nothing.
     """
     if already(slug):
         print(f"  [skip] {slug}")
@@ -512,46 +524,45 @@ def make_themed_tile(slug, label, tmdb_id, media_type):
     bg_bytes = None
     source = "?"
 
-    spec = SLUG_FILTERS.get(slug)
-    if spec:
-        filters, mt = spec
-        discover_id, discover_backdrop = tmdb_discover_top(filters, mt)
-        if discover_id:
-            # Try fanart.tv on the discovered movie first for nicer art.
-            if mt == "MOVIE":
-                bg_bytes = fetch_fanart_movie_bg(discover_id)
-                if bg_bytes:
-                    source = f"fanart.tv (discover→{discover_id})"
-            # Then the discover result's own backdrop_path.
-            if not bg_bytes and discover_backdrop:
-                try:
-                    bg_bytes = requests.get(
-                        f"https://image.tmdb.org/t/p/original{discover_backdrop}",
-                        timeout=30,
-                    ).content
-                    source = f"discover→{discover_id}"
-                except Exception as e:
-                    print(f"  [warn] {slug}: discover backdrop dl failed: {e}")
-            # And the /{type}/{id}/images endpoint as one more shot.
-            if not bg_bytes:
-                bg_bytes, s = fetch_tmdb_backdrop(
-                    "movie" if mt == "MOVIE" else "tv", discover_id,
-                )
-                if bg_bytes:
-                    source = f"{s} (discover→{discover_id})"
+    # Discover path (genre rows). Skipped for actor tiles and curated slugs.
+    if not _wants_handpicked(slug):
+        spec = SLUG_FILTERS.get(slug)
+        if spec:
+            filters, mt = spec
+            discover_id, discover_backdrop = tmdb_discover_top(filters, mt)
+            if discover_id:
+                if mt == "MOVIE":
+                    bg_bytes = fetch_fanart_movie_bg(discover_id)
+                    if bg_bytes:
+                        source = f"fanart.tv (discover→{discover_id})"
+                if not bg_bytes and discover_backdrop:
+                    try:
+                        bg_bytes = requests.get(
+                            f"https://image.tmdb.org/t/p/original{discover_backdrop}",
+                            timeout=30,
+                        ).content
+                        source = f"discover→{discover_id}"
+                    except Exception as e:
+                        print(f"  [warn] {slug}: discover backdrop dl failed: {e}")
+                if not bg_bytes:
+                    bg_bytes, s = fetch_tmdb_backdrop(
+                        "movie" if mt == "MOVIE" else "tv", discover_id,
+                    )
+                    if bg_bytes:
+                        source = f"{s} (discover→{discover_id})"
 
-    # Fall back to the legacy hand-picked tmdb_id if discover gave nothing.
+    # Hand-picked path (always for actor/curated, fallback for everyone else).
     if not bg_bytes:
         if media_type == "MOVIE":
             bg_bytes = fetch_fanart_movie_bg(tmdb_id)
             if bg_bytes:
-                source = f"fanart.tv (legacy {tmdb_id})"
+                source = f"fanart.tv (iconic {tmdb_id})"
         if not bg_bytes:
             bg_bytes, s = fetch_tmdb_backdrop(
                 "movie" if media_type == "MOVIE" else "tv", tmdb_id,
             )
             if bg_bytes:
-                source = f"{s} (legacy {tmdb_id})"
+                source = f"{s} (iconic {tmdb_id})"
 
     if not bg_bytes:
         print(f"  [err]  {slug}: no backdrop found")

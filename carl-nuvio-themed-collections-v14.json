@@ -1,0 +1,3678 @@
+[
+  {
+    "id": "collection-carl-horror",
+    "title": "👻 Horror",
+    "pinToTop": true,
+    "viewMode": "FOLLOW_LAYOUT",
+    "showAllTab": true,
+    "focusGlowEnabled": true,
+    "folders": [
+      {
+        "id": "folder-carl-horror-new-movies",
+        "title": "New Horror Movies",
+        "sources": [
+          {
+            "title": "New Horror Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "27",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/horror-new-movies.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/horror-new-movies.jpg"
+      },
+      {
+        "id": "folder-carl-horror-new-series",
+        "title": "New Horror Series",
+        "sources": [
+          {
+            "title": "New Horror Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "10292",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/horror-new-series.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/horror-new-series.jpg"
+      },
+      {
+        "id": "folder-carl-horror-supernatural",
+        "title": "Supernatural & Paranormal",
+        "sources": [
+          {
+            "title": "Supernatural Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "27",
+              "withKeywords": "6152|10330|4344",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/horror-supernatural.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/horror-supernatural.jpg"
+      },
+      {
+        "id": "folder-carl-horror-slasher",
+        "title": "Slasher & Serial Killer",
+        "sources": [
+          {
+            "title": "Slasher Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "27",
+              "withKeywords": "10349|2533",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/horror-slasher.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/horror-slasher.jpg"
+      },
+      {
+        "id": "folder-carl-horror-creature",
+        "title": "Creature Feature",
+        "sources": [
+          {
+            "title": "Creature Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "27",
+              "withKeywords": "6506|9951|11985",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/horror-creature.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/horror-creature.jpg"
+      },
+      {
+        "id": "folder-carl-horror-body",
+        "title": "Body Horror",
+        "sources": [
+          {
+            "title": "Body Horror",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "27",
+              "withKeywords": "10312",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/horror-body.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/horror-body.jpg"
+      },
+      {
+        "id": "folder-carl-horror-found-footage",
+        "title": "Found Footage",
+        "sources": [
+          {
+            "title": "Found Footage",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "27",
+              "withKeywords": "248",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/horror-found-footage.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/horror-found-footage.jpg"
+      },
+      {
+        "id": "folder-carl-horror-folk",
+        "title": "Folk Horror",
+        "sources": [
+          {
+            "title": "Folk Horror",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "27",
+              "withKeywords": "174232",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/horror-folk.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/horror-folk.jpg"
+      },
+      {
+        "id": "folder-carl-horror-cosmic",
+        "title": "Cosmic Horror",
+        "sources": [
+          {
+            "title": "Cosmic Horror",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "27",
+              "withKeywords": "2515|10329",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/horror-cosmic.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/horror-cosmic.jpg"
+      },
+      {
+        "id": "folder-carl-horror-vampire",
+        "title": "Vampires & Werewolves",
+        "sources": [
+          {
+            "title": "Vampires & Werewolves",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "3133|11218",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/horror-vampire.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/horror-vampire.jpg"
+      }
+    ]
+  },
+  {
+    "id": "collection-carl-thriller",
+    "title": "🔪 Thriller",
+    "pinToTop": false,
+    "viewMode": "FOLLOW_LAYOUT",
+    "showAllTab": true,
+    "focusGlowEnabled": true,
+    "folders": [
+      {
+        "id": "folder-carl-thriller-new-movies",
+        "title": "New Thriller Movies",
+        "sources": [
+          {
+            "title": "New Thriller Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "53",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/thriller-new-movies.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/thriller-new-movies.jpg"
+      },
+      {
+        "id": "folder-carl-thriller-new-series",
+        "title": "New Thriller Series",
+        "sources": [
+          {
+            "title": "New Thriller Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "10714",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/thriller-new-series.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/thriller-new-series.jpg"
+      },
+      {
+        "id": "folder-carl-thriller-psychological",
+        "title": "Psychological",
+        "sources": [
+          {
+            "title": "Psychological Thrillers",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "53",
+              "withKeywords": "10683|9849",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/thriller-psychological.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/thriller-psychological.jpg"
+      },
+      {
+        "id": "folder-carl-thriller-crime",
+        "title": "Crime Thriller",
+        "sources": [
+          {
+            "title": "Crime Thrillers",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "53,80",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/thriller-crime.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/thriller-crime.jpg"
+      },
+      {
+        "id": "folder-carl-thriller-action",
+        "title": "Action Thriller",
+        "sources": [
+          {
+            "title": "Action Thrillers",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "53,28",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/thriller-action.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/thriller-action.jpg"
+      }
+    ]
+  },
+  {
+    "id": "collection-carl-zombie",
+    "title": "🧟 Zombie",
+    "pinToTop": false,
+    "viewMode": "FOLLOW_LAYOUT",
+    "showAllTab": true,
+    "focusGlowEnabled": true,
+    "folders": [
+      {
+        "id": "folder-carl-zombie-new-movies",
+        "title": "New Zombie Movies",
+        "sources": [
+          {
+            "title": "New Zombie Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "186565|12377",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/zombie-new-movies.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/zombie-new-movies.jpg"
+      },
+      {
+        "id": "folder-carl-zombie-new-series",
+        "title": "New Zombie Series",
+        "sources": [
+          {
+            "title": "New Zombie Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "186565|12377",
+              "voteCountGte": 5,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/zombie-new-series.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/zombie-new-series.jpg"
+      },
+      {
+        "id": "folder-carl-zombie-comedy",
+        "title": "Zombie Comedy",
+        "sources": [
+          {
+            "title": "Zombie Comedies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "186565|12377",
+              "withGenres": "35",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/zombie-comedy.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/zombie-comedy.jpg"
+      },
+      {
+        "id": "folder-carl-zombie-survival",
+        "title": "Survival Horror",
+        "sources": [
+          {
+            "title": "Zombie Survival",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "186565|12377",
+              "withGenres": "27",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/zombie-survival.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/zombie-survival.jpg"
+      }
+    ]
+  },
+  {
+    "id": "collection-carl-space",
+    "title": "🚀 Space",
+    "pinToTop": false,
+    "viewMode": "FOLLOW_LAYOUT",
+    "showAllTab": true,
+    "focusGlowEnabled": true,
+    "folders": [
+      {
+        "id": "folder-carl-space-new-movies",
+        "title": "New Space Movies",
+        "sources": [
+          {
+            "title": "New Space Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "14544|697",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/space-new-movies.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/space-new-movies.jpg"
+      },
+      {
+        "id": "folder-carl-space-new-series",
+        "title": "New Space Series",
+        "sources": [
+          {
+            "title": "New Space Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "14544|697",
+              "voteCountGte": 5,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/space-new-series.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/space-new-series.jpg"
+      },
+      {
+        "id": "folder-carl-space-alien",
+        "title": "Alien Invasion",
+        "sources": [
+          {
+            "title": "Alien Invasion Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "9951|14643|10527",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/space-alien.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/space-alien.jpg"
+      },
+      {
+        "id": "folder-carl-space-exploration",
+        "title": "Space Exploration",
+        "sources": [
+          {
+            "title": "Space Exploration Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "9663|13085|13141",
+              "withGenres": "878",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/space-exploration.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/space-exploration.jpg"
+      },
+      {
+        "id": "folder-carl-space-opera",
+        "title": "Space Opera",
+        "sources": [
+          {
+            "title": "Space Opera",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "878,12",
+              "withKeywords": "14544|697",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/space-opera.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/space-opera.jpg"
+      }
+    ]
+  },
+  {
+    "id": "collection-carl-mystery",
+    "title": "🕵️ Mystery",
+    "pinToTop": false,
+    "viewMode": "FOLLOW_LAYOUT",
+    "showAllTab": true,
+    "focusGlowEnabled": true,
+    "folders": [
+      {
+        "id": "folder-carl-mystery-new-movies",
+        "title": "New Mystery Movies",
+        "sources": [
+          {
+            "title": "New Mystery Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "9648",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/mystery-new-movies.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/mystery-new-movies.jpg"
+      },
+      {
+        "id": "folder-carl-mystery-new-series",
+        "title": "New Mystery Series",
+        "sources": [
+          {
+            "title": "New Mystery Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "9648",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/mystery-new-series.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/mystery-new-series.jpg"
+      },
+      {
+        "id": "folder-carl-mystery-detective",
+        "title": "Detective",
+        "sources": [
+          {
+            "title": "Detective Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "9648",
+              "withKeywords": "2231|10399",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/mystery-detective.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/mystery-detective.jpg"
+      },
+      {
+        "id": "folder-carl-mystery-whodunit",
+        "title": "Whodunit",
+        "sources": [
+          {
+            "title": "Whodunit Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "9648",
+              "withKeywords": "10336|258604",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/mystery-whodunit.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/mystery-whodunit.jpg"
+      },
+      {
+        "id": "folder-carl-mystery-conspiracy",
+        "title": "Conspiracy",
+        "sources": [
+          {
+            "title": "Conspiracy Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "9743|10410",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/mystery-conspiracy.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/mystery-conspiracy.jpg"
+      }
+    ]
+  },
+  {
+    "id": "collection-carl-scifi",
+    "title": "🛸 Science Fiction",
+    "pinToTop": false,
+    "viewMode": "FOLLOW_LAYOUT",
+    "showAllTab": true,
+    "focusGlowEnabled": true,
+    "folders": [
+      {
+        "id": "folder-carl-scifi-new-movies",
+        "title": "New Sci-Fi Movies",
+        "sources": [
+          {
+            "title": "New Sci-Fi Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "878",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/scifi-new-movies.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/scifi-new-movies.jpg"
+      },
+      {
+        "id": "folder-carl-scifi-new-series",
+        "title": "New Sci-Fi Series",
+        "sources": [
+          {
+            "title": "New Sci-Fi & Fantasy Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10765",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/scifi-new-series.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/scifi-new-series.jpg"
+      },
+      {
+        "id": "folder-carl-scifi-dystopian",
+        "title": "Dystopian",
+        "sources": [
+          {
+            "title": "Dystopian Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "878",
+              "withKeywords": "10617|158718",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/scifi-dystopian.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/scifi-dystopian.jpg"
+      },
+      {
+        "id": "folder-carl-scifi-ai",
+        "title": "AI & Robots",
+        "sources": [
+          {
+            "title": "AI & Robot Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "878",
+              "withKeywords": "310|9714|11687",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/scifi-ai.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/scifi-ai.jpg"
+      },
+      {
+        "id": "folder-carl-scifi-timetravel",
+        "title": "Time Travel",
+        "sources": [
+          {
+            "title": "Time Travel Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "878",
+              "withKeywords": "4379",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/scifi-timetravel.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/scifi-timetravel.jpg"
+      },
+      {
+        "id": "folder-carl-scifi-cyberpunk",
+        "title": "Cyberpunk",
+        "sources": [
+          {
+            "title": "Cyberpunk",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "878",
+              "withKeywords": "11014",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/scifi-cyberpunk.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/scifi-cyberpunk.jpg"
+      },
+      {
+        "id": "folder-carl-scifi-hard",
+        "title": "Hard Sci-Fi",
+        "sources": [
+          {
+            "title": "Hard Sci-Fi",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "878",
+              "withKeywords": "14512",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/scifi-hard.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/scifi-hard.jpg"
+      },
+      {
+        "id": "folder-carl-scifi-steampunk",
+        "title": "Steampunk",
+        "sources": [
+          {
+            "title": "Steampunk",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "878",
+              "withKeywords": "155290",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/scifi-steampunk.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/scifi-steampunk.jpg"
+      },
+      {
+        "id": "folder-carl-scifi-multiverse",
+        "title": "Multiverse",
+        "sources": [
+          {
+            "title": "Multiverse",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "276714",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/scifi-multiverse.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/scifi-multiverse.jpg"
+      },
+      {
+        "id": "folder-carl-scifi-timeloop",
+        "title": "Time Loop",
+        "sources": [
+          {
+            "title": "Time Loop",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "878",
+              "withKeywords": "11651",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/scifi-timeloop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/scifi-timeloop.jpg"
+      }
+    ]
+  },
+  {
+    "id": "collection-carl-apocalyptic",
+    "title": "☢️ Apocalyptic",
+    "pinToTop": false,
+    "viewMode": "FOLLOW_LAYOUT",
+    "showAllTab": true,
+    "focusGlowEnabled": true,
+    "folders": [
+      {
+        "id": "folder-carl-apoc-new-movies",
+        "title": "New Apocalyptic Movies",
+        "sources": [
+          {
+            "title": "New Apocalyptic Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "12332",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/apoc-new-movies.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/apoc-new-movies.jpg"
+      },
+      {
+        "id": "folder-carl-apoc-new-series",
+        "title": "New Apocalyptic Series",
+        "sources": [
+          {
+            "title": "New Apocalyptic Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "12332",
+              "voteCountGte": 5,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/apoc-new-series.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/apoc-new-series.jpg"
+      },
+      {
+        "id": "folder-carl-apoc-post",
+        "title": "Post-Apocalyptic",
+        "sources": [
+          {
+            "title": "Post-Apocalyptic Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "4458",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/apoc-post.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/apoc-post.jpg"
+      },
+      {
+        "id": "folder-carl-apoc-pandemic",
+        "title": "Pandemic & Virus",
+        "sources": [
+          {
+            "title": "Pandemic Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "12377|10637|11244",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/apoc-pandemic.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/apoc-pandemic.jpg"
+      },
+      {
+        "id": "folder-carl-apoc-nuclear",
+        "title": "Nuclear War",
+        "sources": [
+          {
+            "title": "Nuclear War Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "9779|6917",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/apoc-nuclear.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/apoc-nuclear.jpg"
+      },
+      {
+        "id": "folder-carl-apoc-dystopia",
+        "title": "Dystopian Future",
+        "sources": [
+          {
+            "title": "Dystopian Future",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "10617",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/apoc-dystopia.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/apoc-dystopia.jpg"
+      }
+    ]
+  },
+  {
+    "id": "collection-carl-disaster",
+    "title": "🌪️ Natural Disaster",
+    "pinToTop": false,
+    "viewMode": "FOLLOW_LAYOUT",
+    "showAllTab": true,
+    "focusGlowEnabled": true,
+    "folders": [
+      {
+        "id": "folder-carl-disaster-new-movies",
+        "title": "New Disaster Movies",
+        "sources": [
+          {
+            "title": "New Disaster Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "9663",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/disaster-new-movies.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/disaster-new-movies.jpg"
+      },
+      {
+        "id": "folder-carl-disaster-new-series",
+        "title": "New Disaster Series",
+        "sources": [
+          {
+            "title": "New Disaster Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "9663",
+              "voteCountGte": 5,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/disaster-new-series.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/disaster-new-series.jpg"
+      },
+      {
+        "id": "folder-carl-disaster-earth",
+        "title": "Earthquakes & Volcanoes",
+        "sources": [
+          {
+            "title": "Earthquakes & Volcanoes",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "11574|11377",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/disaster-earth.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/disaster-earth.jpg"
+      },
+      {
+        "id": "folder-carl-disaster-water",
+        "title": "Tsunamis & Floods",
+        "sources": [
+          {
+            "title": "Tsunamis & Floods",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "9799|6149",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/disaster-water.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/disaster-water.jpg"
+      },
+      {
+        "id": "folder-carl-disaster-storm",
+        "title": "Storms & Hurricanes",
+        "sources": [
+          {
+            "title": "Storms & Hurricanes",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "9951|158020|161180",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/disaster-storm.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/disaster-storm.jpg"
+      },
+      {
+        "id": "folder-carl-disaster-space",
+        "title": "Asteroid & Cosmic",
+        "sources": [
+          {
+            "title": "Asteroid & Cosmic Disasters",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "9882|9663",
+              "withGenres": "878",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/disaster-space.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/disaster-space.jpg"
+      }
+    ]
+  },
+  {
+    "id": "collection-carl-comedy",
+    "title": "😂 Comedy",
+    "pinToTop": false,
+    "viewMode": "FOLLOW_LAYOUT",
+    "showAllTab": true,
+    "focusGlowEnabled": true,
+    "folders": [
+      {
+        "id": "folder-carl-comedy-new-movies",
+        "title": "New Comedy Movies",
+        "sources": [
+          {
+            "title": "New Comedy Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "35",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/comedy-new-movies.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/comedy-new-movies.jpg"
+      },
+      {
+        "id": "folder-carl-comedy-new-series",
+        "title": "New Comedy Series",
+        "sources": [
+          {
+            "title": "New Comedy Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "35",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/comedy-new-series.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/comedy-new-series.jpg"
+      },
+      {
+        "id": "folder-carl-comedy-romcom",
+        "title": "Romantic Comedy",
+        "sources": [
+          {
+            "title": "Romantic Comedy",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "35,10749",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/comedy-romcom.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/comedy-romcom.jpg"
+      },
+      {
+        "id": "folder-carl-comedy-dark",
+        "title": "Dark Comedy",
+        "sources": [
+          {
+            "title": "Dark Comedy",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "35",
+              "withKeywords": "174616",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/comedy-dark.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/comedy-dark.jpg"
+      },
+      {
+        "id": "folder-carl-comedy-standup",
+        "title": "Stand-up Specials",
+        "sources": [
+          {
+            "title": "Stand-up Specials",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "183522",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/comedy-standup.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/comedy-standup.jpg"
+      },
+      {
+        "id": "folder-carl-comedy-buddy",
+        "title": "Buddy Comedy",
+        "sources": [
+          {
+            "title": "Buddy Comedy",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "35",
+              "withKeywords": "9885",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/comedy-buddy.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/comedy-buddy.jpg"
+      },
+      {
+        "id": "folder-carl-comedy-sitcom",
+        "title": "Sitcoms",
+        "sources": [
+          {
+            "title": "Sitcoms",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "35",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/comedy-sitcom.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/comedy-sitcom.jpg"
+      },
+      {
+        "id": "folder-carl-comedy-parody",
+        "title": "Parody & Spoof",
+        "sources": [
+          {
+            "title": "Parody & Spoof",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "9707",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/comedy-parody.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/comedy-parody.jpg"
+      },
+      {
+        "id": "folder-carl-comedy-horror",
+        "title": "Comedy Horror",
+        "sources": [
+          {
+            "title": "Comedy Horror",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "27,35",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/comedy-horror.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/comedy-horror.jpg"
+      }
+    ]
+  },
+  {
+    "id": "collection-carl-action",
+    "title": "💥 Action",
+    "pinToTop": false,
+    "viewMode": "FOLLOW_LAYOUT",
+    "showAllTab": true,
+    "focusGlowEnabled": true,
+    "folders": [
+      {
+        "id": "folder-carl-action-new-movies",
+        "title": "New Action Movies",
+        "sources": [
+          {
+            "title": "New Action Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "28",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/action-new-movies.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/action-new-movies.jpg"
+      },
+      {
+        "id": "folder-carl-action-new-series",
+        "title": "New Action Series",
+        "sources": [
+          {
+            "title": "New Action Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10759",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/action-new-series.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/action-new-series.jpg"
+      },
+      {
+        "id": "folder-carl-action-martial-arts",
+        "title": "Martial Arts",
+        "sources": [
+          {
+            "title": "Martial Arts",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "9748",
+              "voteCountGte": 20,
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/action-martial-arts.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/action-martial-arts.jpg"
+      },
+      {
+        "id": "folder-carl-action-heist",
+        "title": "Heist",
+        "sources": [
+          {
+            "title": "Heist",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "10051",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/action-heist.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/action-heist.jpg"
+      },
+      {
+        "id": "folder-carl-action-war",
+        "title": "War",
+        "sources": [
+          {
+            "title": "War",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10752",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/action-war.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/action-war.jpg"
+      },
+      {
+        "id": "folder-carl-action-western",
+        "title": "Western",
+        "sources": [
+          {
+            "title": "Western",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "37",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/action-western.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/action-western.jpg"
+      },
+      {
+        "id": "folder-carl-action-military",
+        "title": "Military",
+        "sources": [
+          {
+            "title": "Military",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "10366",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/action-military.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/action-military.jpg"
+      },
+      {
+        "id": "folder-carl-action-spy",
+        "title": "Spy & Espionage",
+        "sources": [
+          {
+            "title": "Spy & Espionage",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "11451",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/action-spy.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/action-spy.jpg"
+      },
+      {
+        "id": "folder-carl-action-cop",
+        "title": "Cop & Police",
+        "sources": [
+          {
+            "title": "Cop & Police",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "80,28",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/action-cop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/action-cop.jpg"
+      },
+      {
+        "id": "folder-carl-action-vigilante",
+        "title": "Vigilante",
+        "sources": [
+          {
+            "title": "Vigilante",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "9933",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/action-vigilante.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/action-vigilante.jpg"
+      }
+    ]
+  },
+  {
+    "id": "collection-carl-drama",
+    "title": "🎭 Drama",
+    "pinToTop": false,
+    "viewMode": "FOLLOW_LAYOUT",
+    "showAllTab": true,
+    "focusGlowEnabled": true,
+    "folders": [
+      {
+        "id": "folder-carl-drama-new-movies",
+        "title": "New Drama Movies",
+        "sources": [
+          {
+            "title": "New Drama Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "18",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/drama-new-movies.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/drama-new-movies.jpg"
+      },
+      {
+        "id": "folder-carl-drama-new-series",
+        "title": "New Drama Series",
+        "sources": [
+          {
+            "title": "New Drama Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "18",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/drama-new-series.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/drama-new-series.jpg"
+      },
+      {
+        "id": "folder-carl-drama-period",
+        "title": "Period Drama",
+        "sources": [
+          {
+            "title": "Period Drama",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "18",
+              "withKeywords": "14951",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/drama-period.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/drama-period.jpg"
+      },
+      {
+        "id": "folder-carl-drama-biopic",
+        "title": "Biographical",
+        "sources": [
+          {
+            "title": "Biographical",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "5565",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/drama-biopic.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/drama-biopic.jpg"
+      },
+      {
+        "id": "folder-carl-drama-coming-age",
+        "title": "Coming-of-Age",
+        "sources": [
+          {
+            "title": "Coming-of-Age",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "9673",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/drama-coming-age.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/drama-coming-age.jpg"
+      },
+      {
+        "id": "folder-carl-drama-courtroom",
+        "title": "Courtroom",
+        "sources": [
+          {
+            "title": "Courtroom",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "378",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/drama-courtroom.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/drama-courtroom.jpg"
+      },
+      {
+        "id": "folder-carl-drama-medical",
+        "title": "Medical",
+        "sources": [
+          {
+            "title": "Medical",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "6092",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/drama-medical.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/drama-medical.jpg"
+      },
+      {
+        "id": "folder-carl-drama-sports",
+        "title": "Sports",
+        "sources": [
+          {
+            "title": "Sports",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "18",
+              "withKeywords": "6075",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/drama-sports.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/drama-sports.jpg"
+      },
+      {
+        "id": "folder-carl-drama-family",
+        "title": "Family",
+        "sources": [
+          {
+            "title": "Family",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "18,10751",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/drama-family.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/drama-family.jpg"
+      },
+      {
+        "id": "folder-carl-drama-political",
+        "title": "Political",
+        "sources": [
+          {
+            "title": "Political",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "9716",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en",
+              "withoutGenres": "16,35"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/drama-political.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/drama-political.jpg"
+      }
+    ]
+  },
+  {
+    "id": "collection-carl-animation",
+    "title": "🎬 Animation",
+    "pinToTop": false,
+    "viewMode": "FOLLOW_LAYOUT",
+    "showAllTab": true,
+    "focusGlowEnabled": true,
+    "folders": [
+      {
+        "id": "folder-carl-anim-new-movies",
+        "title": "New Animated Movies",
+        "sources": [
+          {
+            "title": "New Animated Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "16",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/anim-new-movies.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/anim-new-movies.jpg"
+      },
+      {
+        "id": "folder-carl-anim-new-series",
+        "title": "New Animated Series",
+        "sources": [
+          {
+            "title": "New Animated Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "16",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/anim-new-series.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/anim-new-series.jpg"
+      },
+      {
+        "id": "folder-carl-anim-disney",
+        "title": "Disney Classics",
+        "sources": [
+          {
+            "title": "Disney Classics",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withCompanies": "2",
+              "withGenres": "16",
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en",
+              "primaryReleaseDateLte": "1994-12-31"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/anim-disney.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/anim-disney.jpg"
+      },
+      {
+        "id": "folder-carl-anim-stopmotion",
+        "title": "Stop-Motion",
+        "sources": [
+          {
+            "title": "Stop-Motion",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "10227",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/anim-stopmotion.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/anim-stopmotion.jpg"
+      },
+      {
+        "id": "folder-carl-fr-toystory",
+        "title": "Toy Story",
+        "sources": [
+          {
+            "title": "Toy Story",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": "10194",
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-toystory.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-toystory.jpg",
+        "catalogSources": []
+      },
+      {
+        "id": "folder-carl-fr-cars",
+        "title": "Cars",
+        "sources": [
+          {
+            "title": "Cars",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": "87118",
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-cars.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-cars.jpg",
+        "catalogSources": []
+      },
+      {
+        "id": "folder-carl-fr-shrek",
+        "title": "Shrek",
+        "sources": [
+          {
+            "title": "Shrek",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": "2150",
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-shrek.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-shrek.jpg",
+        "catalogSources": []
+      },
+      {
+        "id": "folder-carl-fr-httyd",
+        "title": "How to Train Your Dragon",
+        "sources": [
+          {
+            "title": "How to Train Your Dragon",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": "89137",
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-httyd.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-httyd.jpg",
+        "catalogSources": []
+      },
+      {
+        "id": "folder-carl-fr-kungfupanda",
+        "title": "Kung Fu Panda",
+        "sources": [
+          {
+            "title": "Kung Fu Panda",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": "77816",
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-kungfupanda.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-kungfupanda.jpg",
+        "catalogSources": []
+      },
+      {
+        "id": "folder-carl-fr-madagascar",
+        "title": "Madagascar",
+        "sources": [
+          {
+            "title": "Madagascar",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": "14740",
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-madagascar.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-madagascar.jpg",
+        "catalogSources": []
+      },
+      {
+        "id": "folder-carl-fr-despicableme",
+        "title": "Despicable Me",
+        "sources": [
+          {
+            "title": "Despicable Me",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": "86066",
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-despicableme.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-despicableme.jpg",
+        "catalogSources": []
+      },
+      {
+        "id": "folder-carl-fr-iceage",
+        "title": "Ice Age",
+        "sources": [
+          {
+            "title": "Ice Age",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": "8354",
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-iceage.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-iceage.jpg",
+        "catalogSources": []
+      }
+    ]
+  },
+  {
+    "id": "collection-carl-actors",
+    "title": "⭐ Actors",
+    "pinToTop": false,
+    "viewMode": "FOLLOW_LAYOUT",
+    "showAllTab": true,
+    "focusGlowEnabled": true,
+    "folders": [
+      {
+        "id": "folder-carl-actor-tcruise",
+        "title": "Tom Cruise",
+        "sources": [
+          {
+            "title": "Tom Cruise",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withCast": "500",
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-tcruise.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-tcruise.jpg"
+      },
+      {
+        "id": "folder-carl-actor-ldicaprio",
+        "title": "Leonardo DiCaprio",
+        "sources": [
+          {
+            "title": "Leonardo DiCaprio",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withCast": "6193",
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-ldicaprio.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-ldicaprio.jpg"
+      },
+      {
+        "id": "folder-carl-actor-dwashington",
+        "title": "Denzel Washington",
+        "sources": [
+          {
+            "title": "Denzel Washington",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withCast": "5292",
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-dwashington.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-dwashington.jpg"
+      },
+      {
+        "id": "folder-carl-actor-thanks",
+        "title": "Tom Hanks",
+        "sources": [
+          {
+            "title": "Tom Hanks",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withCast": "31",
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-thanks.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-thanks.jpg"
+      },
+      {
+        "id": "folder-carl-actor-bpitt",
+        "title": "Brad Pitt",
+        "sources": [
+          {
+            "title": "Brad Pitt",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withCast": "287",
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-bpitt.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-bpitt.jpg"
+      },
+      {
+        "id": "folder-carl-actor-rdeniro",
+        "title": "Robert De Niro",
+        "sources": [
+          {
+            "title": "Robert De Niro",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withCast": "380",
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-rdeniro.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-rdeniro.jpg"
+      },
+      {
+        "id": "folder-carl-actor-cbale",
+        "title": "Christian Bale",
+        "sources": [
+          {
+            "title": "Christian Bale",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withCast": "3894",
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-cbale.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-cbale.jpg"
+      },
+      {
+        "id": "folder-carl-actor-jphoenix",
+        "title": "Joaquin Phoenix",
+        "sources": [
+          {
+            "title": "Joaquin Phoenix",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withCast": "73968",
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-jphoenix.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-jphoenix.jpg"
+      },
+      {
+        "id": "folder-carl-actor-rgosling",
+        "title": "Ryan Gosling",
+        "sources": [
+          {
+            "title": "Ryan Gosling",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withCast": "30614",
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-rgosling.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-rgosling.jpg"
+      },
+      {
+        "id": "folder-carl-actor-mrobbie",
+        "title": "Margot Robbie",
+        "sources": [
+          {
+            "title": "Margot Robbie",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withCast": "234352",
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-mrobbie.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-mrobbie.jpg"
+      },
+      {
+        "id": "folder-carl-actor-estone",
+        "title": "Emma Stone",
+        "sources": [
+          {
+            "title": "Emma Stone",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withCast": "54693",
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-estone.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-estone.jpg"
+      },
+      {
+        "id": "folder-carl-actor-fpugh",
+        "title": "Florence Pugh",
+        "sources": [
+          {
+            "title": "Florence Pugh",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withCast": "1373737",
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-fpugh.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-fpugh.jpg"
+      },
+      {
+        "id": "folder-carl-actor-atjoy",
+        "title": "Anya Taylor-Joy",
+        "sources": [
+          {
+            "title": "Anya Taylor-Joy",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withCast": "1267329",
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-atjoy.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-atjoy.jpg"
+      },
+      {
+        "id": "folder-carl-actor-sjohansson",
+        "title": "Scarlett Johansson",
+        "sources": [
+          {
+            "title": "Scarlett Johansson",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withCast": "1245",
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-sjohansson.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-sjohansson.jpg"
+      },
+      {
+        "id": "folder-carl-actor-wsmith",
+        "title": "Will Smith",
+        "sources": [
+          {
+            "title": "Will Smith",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withCast": "2888",
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-wsmith.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-wsmith.jpg"
+      },
+      {
+        "id": "folder-carl-actor-kreeves",
+        "title": "Keanu Reeves",
+        "sources": [
+          {
+            "title": "Keanu Reeves",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withCast": "6384",
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-kreeves.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-kreeves.jpg"
+      },
+      {
+        "id": "folder-carl-actor-hjackman",
+        "title": "Hugh Jackman",
+        "sources": [
+          {
+            "title": "Hugh Jackman",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withCast": "6968",
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-hjackman.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-hjackman.jpg"
+      },
+      {
+        "id": "folder-carl-actor-rreynolds",
+        "title": "Ryan Reynolds",
+        "sources": [
+          {
+            "title": "Ryan Reynolds",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withCast": "10859",
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-rreynolds.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-rreynolds.jpg"
+      },
+      {
+        "id": "folder-carl-actor-rdj",
+        "title": "Robert Downey Jr.",
+        "sources": [
+          {
+            "title": "Robert Downey Jr.",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withCast": "3223",
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-rdj.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-rdj.jpg"
+      },
+      {
+        "id": "folder-carl-actor-cpratt",
+        "title": "Chris Pratt",
+        "sources": [
+          {
+            "title": "Chris Pratt",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withCast": "73457",
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-cpratt.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-cpratt.jpg"
+      },
+      {
+        "id": "folder-carl-actor-jlawrence",
+        "title": "Jennifer Lawrence",
+        "sources": [
+          {
+            "title": "Jennifer Lawrence",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withCast": "72129",
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-jlawrence.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-jlawrence.jpg"
+      },
+      {
+        "id": "folder-carl-actor-zendaya",
+        "title": "Zendaya",
+        "sources": [
+          {
+            "title": "Zendaya",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withCast": "505710",
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-zendaya.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-zendaya.jpg"
+      },
+      {
+        "id": "folder-carl-actor-cblanchett",
+        "title": "Cate Blanchett",
+        "sources": [
+          {
+            "title": "Cate Blanchett",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withCast": "112",
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-cblanchett.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-cblanchett.jpg"
+      },
+      {
+        "id": "folder-carl-actor-ctheron",
+        "title": "Charlize Theron",
+        "sources": [
+          {
+            "title": "Charlize Theron",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withCast": "6885",
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "catalogSources": [],
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-ctheron.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/actor-ctheron.jpg"
+      }
+    ]
+  },
+  {
+    "id": "collection-carl-franchises",
+    "title": "🎞️ Franchises",
+    "pinToTop": false,
+    "viewMode": "FOLLOW_LAYOUT",
+    "showAllTab": true,
+    "focusGlowEnabled": true,
+    "folders": [
+      {
+        "id": "folder-carl-fr-starwars",
+        "title": "Star Wars",
+        "sources": [
+          {
+            "title": "Star Wars",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": "10",
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-starwars.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-starwars.jpg",
+        "catalogSources": []
+      },
+      {
+        "id": "folder-carl-fr-mcu",
+        "title": "Marvel (MCU)",
+        "sources": [
+          {
+            "title": "Marvel (MCU)",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withCompanies": "420",
+              "voteCountGte": 50
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-mcu.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-mcu.gif",
+        "catalogSources": []
+      },
+      {
+        "id": "folder-carl-fr-harrypotter",
+        "title": "Harry Potter",
+        "sources": [
+          {
+            "title": "Harry Potter",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": "1241",
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-harrypotter.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-harrypotter.png",
+        "catalogSources": []
+      },
+      {
+        "id": "folder-carl-fr-middleearth",
+        "title": "Middle-earth",
+        "sources": [
+          {
+            "title": "Lord of the Rings",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": "119",
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          },
+          {
+            "title": "The Hobbit",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": "121938",
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-middleearth.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-middleearth.jpg",
+        "catalogSources": []
+      },
+      {
+        "id": "folder-carl-fr-jurassic",
+        "title": "Jurassic Park",
+        "sources": [
+          {
+            "title": "Jurassic Park",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": "328",
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-jurassic.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-jurassic.jpg",
+        "catalogSources": []
+      },
+      {
+        "id": "folder-carl-fr-bond",
+        "title": "James Bond 007",
+        "sources": [
+          {
+            "title": "James Bond 007",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": "645",
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-bond.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-bond.jpg",
+        "catalogSources": []
+      },
+      {
+        "id": "folder-carl-fr-mi",
+        "title": "Mission: Impossible",
+        "sources": [
+          {
+            "title": "Mission: Impossible",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": "87359",
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-mi.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-mi.jpg",
+        "catalogSources": []
+      },
+      {
+        "id": "folder-carl-fr-fast",
+        "title": "Fast & Furious",
+        "sources": [
+          {
+            "title": "Fast & Furious",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": "9485",
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-fast.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-fast.jpg",
+        "catalogSources": []
+      },
+      {
+        "id": "folder-carl-fr-johnwick",
+        "title": "John Wick",
+        "sources": [
+          {
+            "title": "John Wick",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": "404609",
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-johnwick.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-johnwick.jpg",
+        "catalogSources": []
+      },
+      {
+        "id": "folder-carl-fr-matrix",
+        "title": "The Matrix",
+        "sources": [
+          {
+            "title": "The Matrix",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": "2344",
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-matrix.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-matrix.jpg",
+        "catalogSources": []
+      },
+      {
+        "id": "folder-carl-fr-terminator",
+        "title": "Terminator",
+        "sources": [
+          {
+            "title": "Terminator",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": "528",
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-terminator.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-terminator.jpg",
+        "catalogSources": []
+      },
+      {
+        "id": "folder-carl-fr-alien",
+        "title": "Alien",
+        "sources": [
+          {
+            "title": "Alien",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": "8091",
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-alien.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-alien.jpg",
+        "catalogSources": []
+      },
+      {
+        "id": "folder-carl-fr-predator",
+        "title": "Predator",
+        "sources": [
+          {
+            "title": "Predator",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": "399",
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-predator.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-predator.jpg",
+        "catalogSources": []
+      },
+      {
+        "id": "folder-carl-fr-hungergames",
+        "title": "The Hunger Games",
+        "sources": [
+          {
+            "title": "The Hunger Games",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": "131635",
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-hungergames.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-hungergames.jpg",
+        "catalogSources": []
+      },
+      {
+        "id": "folder-carl-fr-madmax",
+        "title": "Mad Max",
+        "sources": [
+          {
+            "title": "Mad Max",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": "8945",
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-madmax.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-madmax.jpg",
+        "catalogSources": []
+      },
+      {
+        "id": "folder-carl-fr-planetapes",
+        "title": "Planet of the Apes",
+        "sources": [
+          {
+            "title": "Planet of the Apes",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": "173710",
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-planetapes.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-planetapes.jpg",
+        "catalogSources": []
+      },
+      {
+        "id": "folder-carl-fr-monsterverse",
+        "title": "MonsterVerse",
+        "sources": [
+          {
+            "title": "MonsterVerse",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": "535313",
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-monsterverse.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-monsterverse.jpg",
+        "catalogSources": []
+      },
+      {
+        "id": "folder-carl-fr-pirates",
+        "title": "Pirates of the Caribbean",
+        "sources": [
+          {
+            "title": "Pirates of the Caribbean",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": "295",
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-pirates.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-pirates.jpg",
+        "catalogSources": []
+      },
+      {
+        "id": "folder-carl-fr-indianajones",
+        "title": "Indiana Jones",
+        "sources": [
+          {
+            "title": "Indiana Jones",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": "84",
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-indianajones.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-indianajones.jpg",
+        "catalogSources": []
+      },
+      {
+        "id": "folder-carl-fr-avatar",
+        "title": "Avatar",
+        "sources": [
+          {
+            "title": "Avatar",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": "87096",
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-avatar.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-avatar.jpg",
+        "catalogSources": []
+      },
+      {
+        "id": "folder-carl-fr-dune",
+        "title": "Dune",
+        "sources": [
+          {
+            "title": "Dune",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": "726871",
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-dune.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-dune.jpg",
+        "catalogSources": []
+      },
+      {
+        "id": "folder-carl-fr-godfather",
+        "title": "The Godfather",
+        "sources": [
+          {
+            "title": "The Godfather",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": "230",
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-godfather.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-godfather.jpg",
+        "catalogSources": []
+      },
+      {
+        "id": "folder-carl-fr-transformers",
+        "title": "Transformers",
+        "sources": [
+          {
+            "title": "Transformers",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": "8650",
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-transformers.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-transformers.jpg",
+        "catalogSources": []
+      },
+      {
+        "id": "folder-carl-fr-xmen",
+        "title": "X-Men",
+        "sources": [
+          {
+            "title": "X-Men",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": "748",
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-xmen.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-xmen.jpg",
+        "catalogSources": []
+      },
+      {
+        "id": "folder-carl-fr-dc",
+        "title": "DC Universe",
+        "sources": [
+          {
+            "title": "DC Universe",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withCompanies": "9993",
+              "voteCountGte": 50
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-dc.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-dc.jpg",
+        "catalogSources": []
+      },
+      {
+        "id": "folder-carl-fr-startrek",
+        "title": "Star Trek",
+        "sources": [
+          {
+            "title": "Star Trek",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": "115575",
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-startrek.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/fr-startrek.jpg",
+        "catalogSources": []
+      }
+    ]
+  }
+]
