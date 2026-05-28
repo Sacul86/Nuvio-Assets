@@ -466,52 +466,108 @@ def reserve_backdrop(path):
         return True
 
 
-def tmdb_discover_top(filters, media_type):
-    """Run TMDB Discover with the row's filters, then re-rank the top 20 tag-
-    matched results client-side by `vote_average * sqrt(vote_count)`.
+# For movie rows: which TMDB genre id we expect as the *primary* genre on
+# every candidate. Stops cross-tagged films (Pulp Fiction has Crime as
+# primary but Comedy as a secondary tag, so withGenres=35 lets it through)
+# from winning their genre's cover.
+PRIMARY_GENRE_BY_PREFIX = {
+    "horror-":   27,
+    "thriller-": 53,
+    "comedy-":   35,
+    "action-":   28,
+    "drama-":    18,
+    "scifi-":    878,
+    "mystery-":  9648,
+}
 
-    Why this formula rather than picking one TMDB sort:
-      - popularity.desc surfaces this week's trending title (The Boys for
-        horror TV, The Punisher for MCU).
-      - vote_count.desc surfaces long-running ensemble shows but doesn't
-        weigh quality (a low-rated show with many votes can win).
-      - vote_average.desc surfaces highly-rated indies with a handful of
-        votes (an obscure 9.0 short beats Endgame).
-      - vote_average * sqrt(vote_count) requires BOTH: a high rating AND
-        broad engagement. Empirically returns Stranger Things for horror
-        TV and Avengers: Endgame for MCU, which is what 'iconic for this
-        tag' should look like.
+# Rows where a specific *primary* genre check would over-restrict because the
+# row's tag is a keyword, not a genre - LOTR has the 'disaster' keyword and
+# would pass withKeywords=9663, but its primary genre (12 Adventure) is fine
+# for keyword rows. For these we still want the keyword filter but skip the
+# primary-genre check.
+NO_PRIMARY_GENRE_PREFIXES = ("zombie-", "space-", "apoc-", "disaster-", "anim-", "fr-", "actor-")
 
-    Filters out anything below 100 votes and anything missing a backdrop.
+
+def _primary_genre_for(slug):
+    if slug.startswith(NO_PRIMARY_GENRE_PREFIXES):
+        return None
+    for prefix, gid in PRIMARY_GENRE_BY_PREFIX.items():
+        if slug.startswith(prefix):
+            return gid
+    return None
+
+
+def tmdb_discover_top(filters, media_type, slug=None):
+    """TMDB Discover with the row's filters, picked client-side.
+
+    For non-actor, non-keyword genre rows we additionally require the
+    candidate's *primary* genre (genre_ids[0]) to be the row's genre. That
+    keeps Pulp Fiction (primary genre Crime, secondary Comedy) out of the
+    Comedy row.
+
+    For '*-new-movies' / '*-new-series' rows we re-rank candidates by recency
+    among those that meet a quality floor instead of pure vote score, so the
+    cover for 'New Comedy Movies' is actually a recent comedy rather than the
+    most universally-loved 30-year-old film with a comedy tag.
     """
     if not TMDB_KEY:
         return None, None
     endpoint = "movie" if media_type == "MOVIE" else "tv"
-    # Fetch the 20 highest-vote-count results that match the row's tags, then
-    # re-rank in Python. sort_by=vote_count.desc is just the prefetch order;
-    # the actual choice is made by the formula below.
-    params = {"api_key": TMDB_KEY, "sort_by": "vote_count.desc", "page": 1}
+    is_new_row = bool(slug) and (slug.endswith("-new-movies") or slug.endswith("-new-series"))
+
+    # Prefetch sort: latest-first for 'new' rows so we don't waste the 20-result
+    # window on classics; everything else stays vote_count.desc.
+    if is_new_row:
+        sort_param = "primary_release_date.desc" if media_type == "MOVIE" else "first_air_date.desc"
+    else:
+        sort_param = "vote_count.desc"
+
+    params = {"api_key": TMDB_KEY, "sort_by": sort_param, "page": 1}
     for k, v in (filters or {}).items():
         if k in FILTER_KEY_MAP:
             params[FILTER_KEY_MAP[k]] = v
+
+    primary_genre = _primary_genre_for(slug or "")
+
     try:
         r = requests.get(
             f"https://api.themoviedb.org/3/discover/{endpoint}",
             params=params, timeout=20,
         )
         r.raise_for_status()
+        results = r.json().get("results", [])
+
+        def has_primary(res):
+            if not primary_genre:
+                return True
+            ids = res.get("genre_ids") or []
+            return bool(ids) and ids[0] == primary_genre
+
         candidates = [
-            res for res in r.json().get("results", [])
-            if res.get("backdrop_path") and (res.get("vote_count") or 0) >= 100
+            res for res in results
+            if res.get("backdrop_path")
+            and (res.get("vote_count") or 0) >= 100
+            and has_primary(res)
         ]
         if not candidates:
-            # Loosen the floor for niche categories that don't have many
-            # 100+ vote titles (stop-motion shorts, obscure sub-genres).
-            candidates = [
-                res for res in r.json().get("results", [])
-                if res.get("backdrop_path")
-            ]
+            # Loosen vote floor first, then drop the primary-genre check, so
+            # niche sub-genres still get a cover.
+            candidates = [r for r in results if r.get("backdrop_path") and has_primary(r)]
+            if not candidates:
+                candidates = [r for r in results if r.get("backdrop_path")]
         if not candidates:
+            return None, None
+
+        if is_new_row:
+            # Want recent + decently rated: filter to vote_average>=6.5, take
+            # most recent. Fallback: skip the rating floor.
+            quality = [c for c in candidates if (c.get("vote_average") or 0) >= 6.5]
+            ranked = quality or candidates
+            # results are already sorted by release date desc by TMDB.
+            for cand in ranked:
+                path = cand.get("backdrop_path")
+                if reserve_backdrop(path):
+                    return cand.get("id"), path
             return None, None
 
         def score(b):
@@ -519,8 +575,6 @@ def tmdb_discover_top(filters, media_type):
             cnt = b.get("vote_count") or 0
             return avg * (cnt ** 0.5)
 
-        # Walk in score order; first one whose backdrop hasn't been claimed
-        # by another row wins. Guarantees no duplicate covers across the run.
         for cand in sorted(candidates, key=score, reverse=True):
             path = cand.get("backdrop_path")
             if reserve_backdrop(path):
@@ -731,7 +785,7 @@ def make_themed_tile(slug, label, tmdb_id, media_type):
         spec = SLUG_FILTERS.get(slug)
         if spec:
             filters, mt = spec
-            discover_id, discover_backdrop = tmdb_discover_top(filters, mt)
+            discover_id, discover_backdrop = tmdb_discover_top(filters, mt, slug=slug)
             if discover_id:
                 if mt == "MOVIE":
                     bg_bytes = fetch_fanart_movie_bg(discover_id)
@@ -874,7 +928,7 @@ def make_franchise_tile(slug, label, sources):
                     break
         elif kind == "DISCOVER":
             filters = src.get("filters", {})
-            tid, path = tmdb_discover_top(filters, mt)
+            tid, path = tmdb_discover_top(filters, mt, slug=slug)
             if tid and path:
                 try:
                     bg_bytes = requests.get(
