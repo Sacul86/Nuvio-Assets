@@ -36,7 +36,7 @@ from pathlib import Path
 
 try:
     import requests
-    from PIL import Image, ImageDraw, ImageFont, ImageOps
+    from PIL import Image, ImageDraw, ImageFilter, ImageFont, ImageOps
 except ImportError:
     sys.exit("Run: pip install requests Pillow")
 
@@ -500,6 +500,94 @@ def _wants_handpicked(slug):
     return slug in SKIP_DISCOVER_SLUGS or slug.startswith("actor-")
 
 
+# ─── Actor headshot tiles ───────────────────────────────────────────
+def fetch_actor_profile_url(person_id):
+    """Highest-rated TMDB profile image URL for a person, or None."""
+    if not TMDB_KEY:
+        return None
+    try:
+        r = requests.get(
+            f"https://api.themoviedb.org/3/person/{person_id}/images",
+            params={"api_key": TMDB_KEY},
+            timeout=20,
+        )
+        r.raise_for_status()
+        profiles = r.json().get("profiles", [])
+        if not profiles:
+            return None
+        best = max(
+            profiles,
+            key=lambda p: (p.get("vote_count") or 0) * ((p.get("vote_average") or 0) + 1),
+        )
+        return f"https://image.tmdb.org/t/p/original{best['file_path']}"
+    except Exception:
+        return None
+
+
+def composite_actor_headshot(profile_bytes, label):
+    """1920x1080 landscape tile: blurred headshot as background, portrait
+    centered on top, actor name in Bebas Neue at the bottom."""
+    portrait = Image.open(io.BytesIO(profile_bytes)).convert("RGB")
+
+    # Background: cover-fit the same image to landscape, then heavy blur + darken.
+    bg = ImageOps.fit(portrait, (TILE_W, TILE_H), Image.LANCZOS)
+    bg = bg.filter(ImageFilter.GaussianBlur(radius=70))
+    dim = Image.new("RGBA", (TILE_W, TILE_H), (0, 0, 0, 120))
+    bg = Image.alpha_composite(bg.convert("RGBA"), dim)
+
+    # Foreground portrait: scale so its height takes ~92% of the tile.
+    # If the source isn't a typical portrait shape, clamp width to 70% of the
+    # canvas so a square/landscape profile doesn't cover the whole tile.
+    pw, ph = portrait.size
+    target_h = int(TILE_H * 0.92)
+    target_w = int(pw * target_h / ph)
+    if target_w > int(TILE_W * 0.70):
+        target_w = int(TILE_W * 0.70)
+        target_h = int(ph * target_w / pw)
+    portrait = portrait.resize((target_w, target_h), Image.LANCZOS)
+    px = (TILE_W - target_w) // 2
+    py = (TILE_H - target_h) // 2 - 20
+    bg.paste(portrait, (px, py))
+
+    # Bottom band gradient + Bebas Neue name.
+    overlay = Image.new("RGBA", (TILE_W, TILE_H), (0, 0, 0, 0))
+    od = ImageDraw.Draw(overlay)
+    for y in range(TILE_H):
+        t = max(0.0, (y - TILE_H * 0.70) / (TILE_H * 0.30))
+        a = int(230 * (t ** 1.4))
+        od.line([(0, y), (TILE_W, y)], fill=(0, 0, 0, a))
+    bg = Image.alpha_composite(bg, overlay).convert("RGB")
+
+    draw = ImageDraw.Draw(bg)
+    text = label.upper()
+    font = fit_font(text, max_width=int(TILE_W * 0.80), max_size=200)
+    bbox = draw.textbbox((0, 0), text, font=font)
+    tw, th = bbox[2] - bbox[0], bbox[3] - bbox[1]
+    x = (TILE_W - tw) // 2
+    y = TILE_H - th - 60
+    draw.text((x, y), text, font=font, fill="white",
+              stroke_width=6, stroke_fill="black")
+
+    buf = io.BytesIO()
+    bg.save(buf, "JPEG", quality=92)
+    return buf.getvalue()
+
+
+def get_actor_person_id(slug):
+    """Pull the TMDB person ID out of the v13/v14 JSON's withCast filter for this slug."""
+    spec = SLUG_FILTERS.get(slug) if SLUG_FILTERS else None
+    if not spec:
+        return None
+    filters, _ = spec
+    cast = filters.get("withCast")
+    if not cast:
+        return None
+    try:
+        return int(str(cast).split(",")[0])
+    except (TypeError, ValueError):
+        return None
+
+
 def make_themed_tile(slug, label, tmdb_id, media_type):
     """Pick a representative backdrop and overlay the label.
 
@@ -520,6 +608,24 @@ def make_themed_tile(slug, label, tmdb_id, media_type):
     global SLUG_FILTERS
     if SLUG_FILTERS is None:
         SLUG_FILTERS = load_filters_from_v13()
+
+    # Actor tiles get a dedicated path: TMDB profile headshot composited on
+    # a blurred copy of the same image, with the actor's name overlaid.
+    if slug.startswith("actor-"):
+        person_id = get_actor_person_id(slug)
+        if person_id:
+            profile_url = fetch_actor_profile_url(person_id)
+            if profile_url:
+                try:
+                    profile_bytes = requests.get(profile_url, timeout=30).content
+                    result = composite_actor_headshot(profile_bytes, label)
+                    (OUT_DIR / f"{slug}.jpg").write_bytes(result)
+                    print(f"  [ok]   {slug:<22} '{label}' (TMDB person {person_id})")
+                    return True
+                except Exception as e:
+                    print(f"  [warn] {slug}: headshot composite failed ({e}); falling back to iconic role")
+        else:
+            print(f"  [warn] {slug}: no TMDB person id in v13 filter; falling back to iconic role")
 
     bg_bytes = None
     source = "?"
