@@ -1,17 +1,11 @@
 name: Fetch Nuvio Assets
 
 # Manual trigger only — click "Run workflow" in the Actions tab.
+# API keys come from repo Settings → Secrets → Actions, so the only thing
+# you ever need to decide at run time is whether to re-fetch existing tiles.
 on:
   workflow_dispatch:
     inputs:
-      tmdb_api_key:
-        description: "TMDB API key (v3 auth) — needed for franchise fallback art"
-        required: false
-        type: string
-      fanart_api_key:
-        description: "fanart.tv API key — backgrounds + logos for franchises"
-        required: false
-        type: string
       overwrite:
         description: "Re-fetch images that already exist?"
         type: boolean
@@ -44,8 +38,8 @@ jobs:
 
       - name: Generate assets
         env:
-          TMDB_API_KEY: ${{ inputs.tmdb_api_key }}
-          FANART_API_KEY: ${{ inputs.fanart_api_key }}
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          FANART_API_KEY: ${{ secrets.FANART_API_KEY }}
           OVERWRITE: ${{ inputs.overwrite && '1' || '0' }}
         run: python fetch_all_assets.py
 
