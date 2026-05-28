@@ -532,17 +532,22 @@ def tmdb_discover_top(filters, media_type):
 
 
 def _load_collections_json():
-    """Return the parsed v14 (or v13 fallback) collections JSON, or [] on miss."""
-    for fname in ("carl-nuvio-themed-collections-v14.json",
-                  "carl-nuvio-themed-collections-v13.json"):
-        path = Path(fname)
-        if path.exists():
-            try:
-                return json.loads(path.read_text())
-            except Exception as e:
-                print(f"  [warn] {fname} parse failed ({e})")
-                return []
-    print("  [warn] no v13/v14 JSON in repo")
+    """Find the highest-numbered carl-nuvio-themed-collections-v*.json in the
+    repo and return its parsed contents. Returns [] if nothing matches."""
+    paths = list(Path(".").glob("carl-nuvio-themed-collections-v*.json"))
+    if not paths:
+        print("  [warn] no collections JSON in repo")
+        return []
+    def version(p):
+        try:
+            return int(p.stem.rsplit("v", 1)[-1])
+        except ValueError:
+            return -1
+    for path in sorted(paths, key=version, reverse=True):
+        try:
+            return json.loads(path.read_text())
+        except Exception as e:
+            print(f"  [warn] {path.name} parse failed ({e})")
     return []
 
 
