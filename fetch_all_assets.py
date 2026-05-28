@@ -122,8 +122,6 @@ THEMES = [
     ("comedy-new-series",      "New Comedy Series",     136315, "TV"),      # The Bear
     ("comedy-romcom",          "Romantic Comedy",       50546,  "MOVIE"),   # Crazy, Stupid, Love
     ("comedy-dark",            "Dark Comedy",           275,    "MOVIE"),   # Fargo (1996)
-    ("comedy-animated",        "Animated Comedy",       137106, "MOVIE"),   # The Lego Movie
-    ("comedy-standup",         "Stand-up Specials",     805984, "MOVIE"),   # Bo Burnham: Inside
     ("comedy-buddy",           "Buddy Comedy",          4638,   "MOVIE"),   # Hot Fuzz
     ("comedy-sitcom",          "Sitcoms",               2316,   "TV"),      # The Office (US)
     ("comedy-parody",          "Parody & Spoof",        813,    "MOVIE"),   # Airplane!
@@ -154,7 +152,6 @@ THEMES = [
     ("anim-new-movies",        "New Animated Movies",   1022789,"MOVIE"),   # Inside Out 2
     ("anim-new-series",        "New Animated Series",   94605,  "TV"),      # Arcane
     ("anim-disney",            "Disney Classics",       8587,   "MOVIE"),   # The Lion King (1994)
-    ("anim-anime",             "Anime Movies",          129,    "MOVIE"),   # Spirited Away
     ("anim-stopmotion",        "Stop-Motion",           308531, "MOVIE"),   # Kubo and the Two Strings
 ]
 
