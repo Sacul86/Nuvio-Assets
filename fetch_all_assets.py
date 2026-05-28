@@ -1,10 +1,11 @@
 """
-fetch_all_assets.py v7 — themed tiles via AI + Bebas Neue text overlay.
+fetch_all_assets.py v8 — themed AI tiles + expanded franchise lineup.
 
 Sources:
   1. 41 themed tiles      — Pollinations (Flux) background + Bebas Neue title text
-  2. 11 branded franchises — copied as-is from rrevanth (official logos already on art)
-  3.  8 franchise fallbacks — TMDB collection backdrop + Bebas Neue title text
+  2. 17 branded franchises — copied as-is from rrevanth (official logos already on art)
+  3. 17 franchise fallbacks — TMDB collection backdrop + Bebas Neue title text
+                             (includes Pixar/DreamWorks/Illumination animation franchises)
 
 The TV the user runs Nuvio on doesn't render the row label, so every non-branded
 tile must carry its own title. Bebas Neue (Google Fonts, OFL licensed) is the
@@ -107,23 +108,33 @@ THEMES = [
 ]
 
 # ─── Branded franchises (copied as-is from rrevanth) ────────────────
+# 17 franchises with official key art. No text overlay applied (logos baked in).
 RREV = "https://raw.githubusercontent.com/rrevanth/nuvio-assets/main/franchises"
 BRANDED = {
-    "fr-starwars":    (f"{RREV}/star-wars/star-wars-landscape.jpg",                 "jpg"),
-    "fr-mcu":         (f"{RREV}/mcu/mcu-landscape.gif",                             "gif"),
-    "fr-harrypotter": (f"{RREV}/wizarding-world/wizarding-world-landscape.png",     "png"),
-    "fr-middleearth": (f"{RREV}/lord-of-the-rings/lord-of-the-rings-landscape.jpg", "jpg"),
-    "fr-jurassic":    (f"{RREV}/jurassic-world/jurassic-world-landscape.jpg",       "jpg"),
-    "fr-bond":        (f"{RREV}/007/007-landscape.jpg",                             "jpg"),
+    "fr-starwars":    (f"{RREV}/star-wars/star-wars-landscape.jpg",                  "jpg"),
+    "fr-mcu":         (f"{RREV}/mcu/mcu-landscape.gif",                              "gif"),
+    "fr-harrypotter": (f"{RREV}/wizarding-world/wizarding-world-landscape.png",      "png"),
+    "fr-middleearth": (f"{RREV}/lord-of-the-rings/lord-of-the-rings-landscape.jpg",  "jpg"),
+    "fr-jurassic":    (f"{RREV}/jurassic-world/jurassic-world-landscape.jpg",        "jpg"),
+    "fr-bond":        (f"{RREV}/007/007-landscape.jpg",                              "jpg"),
     "fr-mi":          (f"{RREV}/mission-impossible/mission-impossible-landscape.jpg","jpg"),
-    "fr-johnwick":    (f"{RREV}/john-wick/john-wick-landscape.jpg",                 "jpg"),
-    "fr-hungergames": (f"{RREV}/hunger-games/hunger-games-landscape.jpg",           "jpg"),
-    "fr-pirates":     (f"{RREV}/pirates-caribbean/pirates-caribbean-landscape.jpg", "jpg"),
-    "fr-indianajones":(f"{RREV}/indiana-jones/indiana-jones-landscape.jpg",         "jpg"),
+    "fr-johnwick":    (f"{RREV}/john-wick/john-wick-landscape.jpg",                  "jpg"),
+    "fr-hungergames": (f"{RREV}/hunger-games/hunger-games-landscape.jpg",            "jpg"),
+    "fr-pirates":     (f"{RREV}/pirates-caribbean/pirates-caribbean-landscape.jpg",  "jpg"),
+    "fr-indianajones":(f"{RREV}/indiana-jones/indiana-jones-landscape.jpg",          "jpg"),
+    "fr-avatar":      (f"{RREV}/avatar/avatar-landscape.jpg",                        "jpg"),
+    "fr-dc":          (f"{RREV}/dc-universe/dc-universe-landscape.jpg",              "jpg"),
+    "fr-dune":        (f"{RREV}/dune/dune-landscape.jpg",                            "jpg"),
+    "fr-godfather":   (f"{RREV}/godfather/godfather-landscape.jpg",                  "jpg"),
+    "fr-transformers":(f"{RREV}/transformers/transformers-landscape.jpg",            "jpg"),
+    "fr-xmen":        (f"{RREV}/x-men/x-men-landscape.jpg",                          "jpg"),
 }
 
-# ─── Franchise fallbacks: TMDB collection ID → real franchise art ──
+# ─── Franchise fallbacks: TMDB collection backdrop + Bebas Neue title ──
+# 17 franchises rrevanth doesn't have. TMDB backdrop quality varies — some are
+# proper franchise key art, some are just a movie still. Title overlay is added.
 TMDB_COLLECTIONS = [
+    # Live-action sci-fi / action franchises
     ("fr-fast",         "9485",   "Fast & Furious"),
     ("fr-matrix",       "2344",   "The Matrix"),
     ("fr-terminator",   "528",    "Terminator"),
@@ -132,6 +143,16 @@ TMDB_COLLECTIONS = [
     ("fr-madmax",       "8945",   "Mad Max"),
     ("fr-planetapes",   "173710", "Planet of the Apes"),
     ("fr-monsterverse", "535313", "MonsterVerse"),
+    ("fr-startrek",     "115575", "Star Trek"),
+    # Animation franchises (Pixar / DreamWorks / Illumination / Blue Sky)
+    ("fr-toystory",     "10194",  "Toy Story"),
+    ("fr-cars",         "87118",  "Cars"),
+    ("fr-shrek",        "2150",   "Shrek"),
+    ("fr-httyd",        "89137",  "How to Train Your Dragon"),
+    ("fr-kungfupanda",  "77816",  "Kung Fu Panda"),
+    ("fr-madagascar",   "14740",  "Madagascar"),
+    ("fr-despicableme", "86066",  "Despicable Me"),
+    ("fr-iceage",       "8354",   "Ice Age"),
 ]
 
 
