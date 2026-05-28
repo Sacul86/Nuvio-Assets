@@ -495,14 +495,17 @@ def load_filters_from_v13():
 
 
 def load_franchise_specs():
-    """Returns [(slug, label, sources_list)] for every folder whose first source
-    is a COLLECTION (a franchise pinned to a specific TMDB collection)."""
+    """Returns [(slug, label, sources_list)] for every fr-* folder, regardless
+    of whether the first source is COLLECTION (Star Wars, Toy Story etc.) or
+    DISCOVER (MCU, DC Universe). make_franchise_tile handles both modes."""
     out = []
     for col in _load_collections_json():
         for fld in col["folders"]:
             slug = fld["id"].replace("folder-carl-", "")
+            if not slug.startswith("fr-"):
+                continue
             sources = fld.get("sources") or []
-            if sources and sources[0].get("tmdbSourceType") == "COLLECTION":
+            if sources:
                 out.append((slug, fld["title"], sources))
     return out
 
