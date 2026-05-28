@@ -7,6 +7,9 @@ on:
       pexels_api_key:
         description: "Your Pexels API key (from https://www.pexels.com/api/)"
         required: true
+      tmdb_api_key:
+        description: "Your TMDB API key (from https://www.themoviedb.org/settings/api)"
+        required: true
       overwrite:
         description: "Re-fetch images that already exist?"
         type: boolean
@@ -29,11 +32,12 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install requests
+        run: pip install requests Pillow
 
-      - name: Fetch assets
+      - name: Fetch and label assets
         env:
           PEXELS_API_KEY: ${{ inputs.pexels_api_key }}
+          TMDB_API_KEY: ${{ inputs.tmdb_api_key }}
           OVERWRITE: ${{ inputs.overwrite && '1' || '0' }}
         run: python fetch_all_assets.py
 
