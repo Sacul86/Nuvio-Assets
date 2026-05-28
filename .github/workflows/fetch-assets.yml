@@ -4,6 +4,9 @@ name: Fetch Nuvio Assets
 on:
   workflow_dispatch:
     inputs:
+      pexels_api_key:
+        description: "Your Pexels API key (from https://www.pexels.com/api/)"
+        required: true
       overwrite:
         description: "Re-fetch images that already exist?"
         type: boolean
@@ -30,7 +33,7 @@ jobs:
 
       - name: Fetch assets
         env:
-          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PEXELS_API_KEY: ${{ inputs.pexels_api_key }}
           OVERWRITE: ${{ inputs.overwrite && '1' || '0' }}
         run: python fetch_all_assets.py
 
