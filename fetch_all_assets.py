@@ -1,11 +1,14 @@
 """
-fetch_all_assets.py v10 — every tile is a real movie/show backdrop.
+fetch_all_assets.py v11 — every tile is a real backdrop + expanded lineup.
 
 Sources:
-  1. 41 themed tiles      — TMDB/fanart.tv backdrop of an iconic representative
-                            film or series + Bebas Neue genre title overlay
-  2. 17 branded franchises — copied as-is from rrevanth (official logos already on art)
-  3. 17 franchise fallbacks — fanart.tv background composited with hdmovielogo,
+  1. 86 themed tiles       — TMDB/fanart.tv backdrop of an iconic representative
+                             film or series + Bebas Neue genre title overlay
+                             (existing 41 + 10 horror/sci-fi sub-genres + 10 comedy
+                              + 10 action + 10 drama + 5 animation sub-genres)
+  2. 24 actor tiles        — Backdrop of the actor's iconic role + name overlay
+  3. 17 branded franchises — copied as-is from rrevanth (official logos baked in)
+  4. 17 franchise fallbacks — fanart.tv background composited with hdmovielogo,
                               falling back to TMDB collection backdrop + Bebas Neue
 
 Priority chain (themed and franchise tiles both):
@@ -102,6 +105,86 @@ THEMES = [
     ("disaster-water",         "Tsunamis & Floods",     8865,   "MOVIE"),   # Deep Impact
     ("disaster-storm",         "Storms & Hurricanes",   9504,   "MOVIE"),   # Twister (1996)
     ("disaster-space",         "Asteroid & Cosmic",     95,     "MOVIE"),   # Armageddon
+    # Horror sub-genres (extended)
+    ("horror-body",            "Body Horror",           9426,   "MOVIE"),   # The Fly (1986)
+    ("horror-found-footage",   "Found Footage",         2667,   "MOVIE"),   # The Blair Witch Project
+    ("horror-folk",            "Folk Horror",           493922, "MOVIE"),   # Hereditary
+    ("horror-cosmic",          "Cosmic Horror",         440021, "MOVIE"),   # Color Out of Space
+    ("horror-vampire",         "Vampires & Werewolves", 628,    "MOVIE"),   # Interview with the Vampire
+    # Sci-Fi sub-genres (extended)
+    ("scifi-cyberpunk",        "Cyberpunk",             315837, "MOVIE"),   # Ghost in the Shell (2017)
+    ("scifi-hard",             "Hard Sci-Fi",           62,     "MOVIE"),   # 2001: A Space Odyssey
+    ("scifi-steampunk",        "Steampunk",             428078, "MOVIE"),   # Mortal Engines
+    ("scifi-multiverse",       "Multiverse",            545611, "MOVIE"),   # Everything Everywhere All At Once
+    ("scifi-timeloop",         "Time Loop",             137,    "MOVIE"),   # Groundhog Day
+    # Comedy
+    ("comedy-new-movies",      "New Comedy Movies",     346698, "MOVIE"),   # Barbie
+    ("comedy-new-series",      "New Comedy Series",     136315, "TV"),      # The Bear
+    ("comedy-romcom",          "Romantic Comedy",       50546,  "MOVIE"),   # Crazy, Stupid, Love
+    ("comedy-dark",            "Dark Comedy",           275,    "MOVIE"),   # Fargo (1996)
+    ("comedy-animated",        "Animated Comedy",       137106, "MOVIE"),   # The Lego Movie
+    ("comedy-standup",         "Stand-up Specials",     805984, "MOVIE"),   # Bo Burnham: Inside
+    ("comedy-buddy",           "Buddy Comedy",          4638,   "MOVIE"),   # Hot Fuzz
+    ("comedy-sitcom",          "Sitcoms",               2316,   "TV"),      # The Office (US)
+    ("comedy-parody",          "Parody & Spoof",        813,    "MOVIE"),   # Airplane!
+    ("comedy-horror",          "Comedy Horror",         102362, "TV"),      # What We Do in the Shadows TV
+    # Action
+    ("action-new-movies",      "New Action Movies",     575264, "MOVIE"),   # M:I Dead Reckoning
+    ("action-new-series",      "New Action Series",     108978, "TV"),      # Reacher
+    ("action-martial-arts",    "Martial Arts",          146,    "MOVIE"),   # Crouching Tiger, Hidden Dragon
+    ("action-heist",           "Heist",                 161,    "MOVIE"),   # Ocean's Eleven
+    ("action-war",             "War",                   857,    "MOVIE"),   # Saving Private Ryan
+    ("action-western",         "Western",               429,    "MOVIE"),   # The Good, the Bad and the Ugly
+    ("action-military",        "Military",              8093,   "MOVIE"),   # Black Hawk Down
+    ("action-spy",             "Spy & Espionage",       207703, "MOVIE"),   # Kingsman: The Secret Service
+    ("action-cop",             "Cop & Police",          3179,   "MOVIE"),   # Bad Boys
+    ("action-vigilante",       "Vigilante",             12159,  "MOVIE"),   # Death Wish (1974)
+    # Drama
+    ("drama-new-movies",       "New Drama Movies",      666277, "MOVIE"),   # Past Lives
+    ("drama-new-series",       "New Drama Series",      1535,   "TV"),      # Succession
+    ("drama-period",           "Period Drama",          4348,   "MOVIE"),   # Pride & Prejudice (2005)
+    ("drama-biopic",           "Biographical",          424694, "MOVIE"),   # Bohemian Rhapsody
+    ("drama-coming-age",       "Coming-of-Age",         391713, "MOVIE"),   # Lady Bird
+    ("drama-courtroom",        "Courtroom",             1614,   "MOVIE"),   # A Few Good Men
+    ("drama-medical",          "Medical",               1416,   "TV"),      # Grey's Anatomy
+    ("drama-sports",           "Sports",                1366,   "MOVIE"),   # Rocky
+    ("drama-family",           "Family",                39446,  "MOVIE"),   # The Kids Are All Right
+    ("drama-political",        "Political",             4608,   "TV"),      # The West Wing
+    # Animation (new sub-genre rows, separate from animation franchise tiles)
+    ("anim-new-movies",        "New Animated Movies",   1022789,"MOVIE"),   # Inside Out 2
+    ("anim-new-series",        "New Animated Series",   94605,  "TV"),      # Arcane
+    ("anim-disney",            "Disney Classics",       8587,   "MOVIE"),   # The Lion King (1994)
+    ("anim-anime",             "Anime Movies",          129,    "MOVIE"),   # Spirited Away
+    ("anim-stopmotion",        "Stop-Motion",           308531, "MOVIE"),   # Kubo and the Two Strings
+]
+
+# ─── Actors: (slug, label, iconic movie/show id, media_type) ────────
+# Each tile uses ONE iconic role's backdrop + the actor's name in Bebas Neue.
+ACTORS = [
+    ("actor-tcruise",      "Tom Cruise",          361743, "MOVIE"),   # Top Gun: Maverick
+    ("actor-ldicaprio",    "Leonardo DiCaprio",   27205,  "MOVIE"),   # Inception
+    ("actor-dwashington",  "Denzel Washington",   2675,   "MOVIE"),   # Training Day
+    ("actor-thanks",       "Tom Hanks",           13,     "MOVIE"),   # Forrest Gump
+    ("actor-bpitt",        "Brad Pitt",           550,    "MOVIE"),   # Fight Club
+    ("actor-rdeniro",      "Robert De Niro",      769,    "MOVIE"),   # Goodfellas
+    ("actor-cbale",        "Christian Bale",      1359,   "MOVIE"),   # American Psycho
+    ("actor-jphoenix",     "Joaquin Phoenix",     475557, "MOVIE"),   # Joker
+    ("actor-rgosling",     "Ryan Gosling",        64690,  "MOVIE"),   # Drive
+    ("actor-mrobbie",      "Margot Robbie",       402431, "MOVIE"),   # I, Tonya
+    ("actor-estone",       "Emma Stone",          792307, "MOVIE"),   # Poor Things
+    ("actor-fpugh",        "Florence Pugh",       569094, "MOVIE"),   # Black Widow
+    ("actor-atjoy",        "Anya Taylor-Joy",     87739,  "TV"),      # The Queen's Gambit
+    ("actor-sjohansson",   "Scarlett Johansson",  153,    "MOVIE"),   # Lost in Translation
+    ("actor-wsmith",       "Will Smith",          607,    "MOVIE"),   # Men in Black
+    ("actor-kreeves",      "Keanu Reeves",        603,    "MOVIE"),   # The Matrix
+    ("actor-hjackman",     "Hugh Jackman",        263115, "MOVIE"),   # Logan
+    ("actor-rreynolds",    "Ryan Reynolds",       293660, "MOVIE"),   # Deadpool
+    ("actor-rdj",          "Robert Downey Jr.",   1726,   "MOVIE"),   # Iron Man
+    ("actor-cpratt",       "Chris Pratt",         118340, "MOVIE"),   # Guardians of the Galaxy
+    ("actor-jlawrence",    "Jennifer Lawrence",   82693,  "MOVIE"),   # Silver Linings Playbook
+    ("actor-zendaya",      "Zendaya",             85552,  "TV"),      # Euphoria
+    ("actor-cblanchett",   "Cate Blanchett",      817758, "MOVIE"),   # Tár
+    ("actor-ctheron",      "Charlize Theron",     341013, "MOVIE"),   # Atomic Blonde
 ]
 
 # ─── Branded franchises (copied as-is from rrevanth) ────────────────
@@ -476,10 +559,12 @@ def main():
             time.sleep(0.2)
 
     t_ok = run_parallel("Themed tiles (iconic backdrops + title)", THEMES, make_themed_tile)
+    a_ok = run_parallel("Actor tiles (iconic role + actor name)", ACTORS, make_themed_tile)
 
     print(f"\nDone. Branded {b_ok}/{len(BRANDED)}, "
           f"Franchise {f_ok}/{len(TMDB_COLLECTIONS)}, "
-          f"Themed {t_ok}/{len(THEMES)}.")
+          f"Themed {t_ok}/{len(THEMES)}, "
+          f"Actors {a_ok}/{len(ACTORS)}.")
 
 
 if __name__ == "__main__":
