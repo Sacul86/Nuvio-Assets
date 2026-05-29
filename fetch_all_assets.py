@@ -45,6 +45,7 @@ WORKERS = int(os.environ.get("WORKERS", "6"))
 TMDB_KEY = os.environ.get("TMDB_API_KEY", "").strip()
 FANART_KEY = os.environ.get("FANART_API_KEY", "").strip()
 MDBLIST_KEY = os.environ.get("MDBLIST_API_KEY", "").strip()
+IDEOGRAM_KEY = os.environ.get("IDEOGRAM_API_KEY", "").strip()
 OVERWRITE = os.environ.get("OVERWRITE", "0") == "1"
 OUT_DIR = Path("assets")
 OUT_DIR.mkdir(exist_ok=True)
@@ -87,6 +88,67 @@ def _themed_prompt(slug, label):
         f"{style}. Widescreen 16:9 landscape composition, professional poster design, "
         f"no text, no letters, no words, no captions, no logos, no signage."
     )
+
+
+def _ideogram_prompt(slug, label):
+    """Per-genre Ideogram prompt that ALSO instructs the model to render the
+    row title as styled typography inside the image. Ideogram's whole pitch
+    is reliably spelling text inside generated art, so for genre tiles this
+    gives us the Diligent_Dream aesthetic - integrated stylized title text
+    in a genre-appropriate background."""
+    style = ""
+    for prefix, modifier in THEMED_STYLE_BY_PREFIX.items():
+        if slug.startswith(prefix):
+            style = modifier
+            break
+    if not style:
+        style = "cinematic movie collection cover, dramatic atmospheric lighting"
+    text = label.upper()
+    return (
+        f"Movie streaming collection cover poster with the bold stylized title text "
+        f"'{text}' as the central visual element. {style}. "
+        f"16:9 widescreen landscape composition, professional cinematic poster design, "
+        f"the title is the only text in the image."
+    )
+
+
+def fetch_ideogram_bg(slug, label):
+    """POST to Ideogram's /generate endpoint, return the JPEG/PNG bytes of the
+    first returned image. Falls open (None) on any failure so the caller can
+    fall back to Pollinations or TMDB Discover."""
+    if not IDEOGRAM_KEY:
+        return None
+    prompt = _ideogram_prompt(slug, label)
+    try:
+        r = requests.post(
+            "https://api.ideogram.ai/generate",
+            headers={"Api-Key": IDEOGRAM_KEY, "Content-Type": "application/json"},
+            json={
+                "image_request": {
+                    "prompt": prompt,
+                    "aspect_ratio": "ASPECT_16_9",
+                    "model": "V_2",
+                    "magic_prompt_option": "AUTO",
+                }
+            },
+            timeout=90,
+        )
+        if r.status_code != 200:
+            print(f"  [warn] ideogram {slug}: HTTP {r.status_code}")
+            return None
+        data = r.json()
+        imgs = data.get("data") or []
+        if not imgs:
+            return None
+        img_url = imgs[0].get("url")
+        if not img_url:
+            return None
+        ir = requests.get(img_url, timeout=30)
+        ir.raise_for_status()
+        return ir.content
+    except Exception as e:
+        print(f"  [warn] ideogram {slug}: {type(e).__name__}")
+        return None
 
 
 def fetch_pollinations_bg(slug, label):
@@ -1100,12 +1162,30 @@ def make_themed_tile(slug, label, tmdb_id, media_type):
     bg_bytes = None
     source = "?"
 
-    # Pollinations path: user's reference build (Diligent_Dream_4667's
-    # "Nuvio Horror + Thriller Build") uses stylized designed tiles rather
-    # than movie backdrops. Closest we can get automatically is an AI-
-    # generated genre-aesthetic background + Bebas Neue title overlay. The
-    # prompts forbid text inside the AI image so the overlay isn't fighting
-    # garbled letters.
+    # Ideogram path: paid AI service that actually renders text correctly. The
+    # prompt instructs it to draw the row's title as the central styled
+    # typographic element of the cover, matching the reference build the user
+    # showed (Diligent_Dream's pack with 'SLASHERS & GORE' in dripping red
+    # blood text on dark gothic background). When Ideogram succeeds, the
+    # title is already in the image so we SKIP the Bebas Neue overlay.
+    ideogram_succeeded = False
+    if IDEOGRAM_KEY and not _wants_handpicked(slug):
+        ai = fetch_ideogram_bg(slug, label)
+        if ai:
+            try:
+                img = Image.open(io.BytesIO(ai)).convert("RGB")
+                img = ImageOps.fit(img, (TILE_W, TILE_H), Image.LANCZOS)
+                buf = io.BytesIO()
+                img.save(buf, "JPEG", quality=92)
+                (OUT_DIR / f"{slug}.jpg").write_bytes(buf.getvalue())
+                print(f"  [ok]   {slug:<22} '{label}' (ideogram)")
+                return True
+            except Exception as e:
+                print(f"  [warn] {slug}: ideogram post-process failed: {e}")
+
+    # Pollinations fallback: free, no key. Generates a genre-aesthetic
+    # background; Bebas Neue is overlaid below since Pollinations Flux can't
+    # reliably spell.
     if not _wants_handpicked(slug):
         ai = fetch_pollinations_bg(slug, label)
         if ai:
@@ -1387,6 +1467,7 @@ def main():
     print(f"TMDB:   {'configured' if TMDB_KEY else 'NO KEY — themed + franchise art will skip'}")
     print(f"FanArt: {'configured' if FANART_KEY else 'NO KEY — TMDB only'}")
     print(f"MDBList:{'configured' if MDBLIST_KEY else ' NO KEY — TMDB Discover only for covers'}")
+    print(f"Ideogram:{'configured' if IDEOGRAM_KEY else ' NO KEY — Pollinations only for themed covers'}")
     print(f"Font:   {FONT_PATH if Path(FONT_PATH).exists() else FALLBACK_FONT + ' (Bebas Neue not found)'}")
 
     # Franchises (fr-*): drive entirely off the v13/v14 JSON, no rrevanth copy.

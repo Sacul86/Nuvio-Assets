@@ -56,6 +56,7 @@ jobs:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
           FANART_API_KEY: ${{ secrets.FANART_API_KEY }}
           MDBLIST_API_KEY: ${{ secrets.MDBLIST_API_KEY }}
+          IDEOGRAM_API_KEY: ${{ secrets.IDEOGRAM_API_KEY }}
           OVERWRITE: ${{ inputs.overwrite && '1' || '0' }}
         run: python fetch_all_assets.py 2>&1 | tee /tmp/fetch.log
 
