@@ -5697,34 +5697,6 @@
         "title": "Action",
         "sources": [
           {
-            "title": "New Movies",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withGenres": "28",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "New Series",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withGenres": "10759",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
             "title": "Popular Movies",
             "sortBy": "popularity.desc",
             "tmdbId": null,
@@ -5824,34 +5796,6 @@
         "id": "folder-CSJVDVSC",
         "title": "Adventure",
         "sources": [
-          {
-            "title": "New Movies",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withGenres": "12",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "New Series",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withGenres": "10759",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
           {
             "title": "Popular Movies",
             "sortBy": "popularity.desc",
@@ -5953,34 +5897,6 @@
         "title": "Animation",
         "sources": [
           {
-            "title": "New Movies",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withGenres": "16",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "New Series",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withGenres": "16",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
             "title": "Popular Movies",
             "sortBy": "popularity.desc",
             "tmdbId": null,
@@ -6080,34 +5996,6 @@
         "id": "folder-IWC8T1WM",
         "title": "Comedy",
         "sources": [
-          {
-            "title": "New Movies",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withGenres": "35",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "New Series",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withGenres": "35",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
           {
             "title": "Popular Movies",
             "sortBy": "popularity.desc",
@@ -6209,34 +6097,6 @@
         "title": "Crime",
         "sources": [
           {
-            "title": "New Movies",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withGenres": "80",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "New Series",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withGenres": "80",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
             "title": "Popular Movies",
             "sortBy": "popularity.desc",
             "tmdbId": null,
@@ -6336,34 +6196,6 @@
         "id": "folder-6DUG1MQF",
         "title": "Documentary",
         "sources": [
-          {
-            "title": "New Movies",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withGenres": "99",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "New Series",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withGenres": "99",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
           {
             "title": "Popular Movies",
             "sortBy": "popularity.desc",
@@ -6465,34 +6297,6 @@
         "title": "Drama",
         "sources": [
           {
-            "title": "New Movies",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withGenres": "18",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "New Series",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withGenres": "18",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
             "title": "Popular Movies",
             "sortBy": "popularity.desc",
             "tmdbId": null,
@@ -6592,34 +6396,6 @@
         "id": "folder-FWKG65UR",
         "title": "Family",
         "sources": [
-          {
-            "title": "New Movies",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withGenres": "10751",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "New Series",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withGenres": "10751",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
           {
             "title": "Popular Movies",
             "sortBy": "popularity.desc",
@@ -6721,34 +6497,6 @@
         "title": "Fantasy",
         "sources": [
           {
-            "title": "New Movies",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withGenres": "14",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "New Series",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withGenres": "10765",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
             "title": "Popular Movies",
             "sortBy": "popularity.desc",
             "tmdbId": null,
@@ -6849,33 +6597,6 @@
         "title": "History",
         "sources": [
           {
-            "title": "New Movies",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withGenres": "36",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "New Series",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
             "title": "Popular Movies",
             "sortBy": "popularity.desc",
             "tmdbId": null,
@@ -6973,33 +6694,6 @@
         "title": "Horror",
         "sources": [
           {
-            "title": "New Movies",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withGenres": "27",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "New Series",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
             "title": "Popular Movies",
             "sortBy": "popularity.desc",
             "tmdbId": null,
@@ -7078,117 +6772,6 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Supernatural",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "27",
-              "withKeywords": "6152|10330|4344",
-              "voteCountGte": 20,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Slasher",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "27",
-              "withKeywords": "10349|2533",
-              "voteCountGte": 20,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Creature Feature",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "27",
-              "withKeywords": "6506|9951|11985",
-              "voteCountGte": 20,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Body Horror",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "27",
-              "withKeywords": "10312",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Found Footage",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "27",
-              "withKeywords": "248",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Folk Horror",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "27",
-              "withKeywords": "174232",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Cosmic Horror",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "27",
-              "withKeywords": "2515|10329",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Vampires & Werewolves",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withKeywords": "3133|11218",
-              "voteCountGte": 20,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER"
           }
         ],
@@ -7208,34 +6791,6 @@
         "title": "Mystery",
         "sources": [
           {
-            "title": "New Movies",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withGenres": "9648",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "New Series",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withGenres": "9648",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
             "title": "Popular Movies",
             "sortBy": "popularity.desc",
             "tmdbId": null,
@@ -7318,34 +6873,6 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Detective",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "9648",
-              "withKeywords": "2231|10399",
-              "voteCountGte": 20,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Whodunit",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "9648",
-              "withKeywords": "10336|258604",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
           }
         ],
         "hideTitle": true,
@@ -7363,20 +6890,6 @@
         "id": "folder-KQEZGAMF",
         "title": "Reality TV",
         "sources": [
-          {
-            "title": "New Series",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withGenres": "10764",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
           {
             "title": "Popular Series",
             "sortBy": "popularity.desc",
@@ -7435,34 +6948,6 @@
         "id": "folder-GXG1NG9E",
         "title": "Romance",
         "sources": [
-          {
-            "title": "New Movies",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withGenres": "10749",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "New Series",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withGenres": "10749",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
           {
             "title": "Popular Movies",
             "sortBy": "popularity.desc",
@@ -7564,34 +7049,6 @@
         "title": "Romantic Comedy",
         "sources": [
           {
-            "title": "New Movies",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withGenres": "10749,35",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "New Series",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withGenres": "10749,35",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
             "title": "Popular Movies",
             "sortBy": "popularity.desc",
             "tmdbId": null,
@@ -7692,34 +7149,6 @@
         "title": "Science Fiction",
         "sources": [
           {
-            "title": "New Movies",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withGenres": "878",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "New Series",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withGenres": "878",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
             "title": "Popular Movies",
             "sortBy": "popularity.desc",
             "tmdbId": null,
@@ -7802,89 +7231,6 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Dystopian",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "878",
-              "withKeywords": "10617|158718",
-              "voteCountGte": 20,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "AI & Robots",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "878",
-              "withKeywords": "310|9714|11687",
-              "voteCountGte": 20,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Time Travel",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "878",
-              "withKeywords": "4379",
-              "voteCountGte": 20,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Cyberpunk",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "878",
-              "withKeywords": "11014",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Multiverse",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withKeywords": "276714",
-              "voteCountGte": 20,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Time Loop",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "878",
-              "withKeywords": "11651",
-              "voteCountGte": 20,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
           }
         ],
         "hideTitle": true,
@@ -7902,34 +7248,6 @@
         "id": "folder-8B3PEI1Y",
         "title": "Stand-Up Comedy",
         "sources": [
-          {
-            "title": "New Movies",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "voteCountGte": 10,
-              "withKeywords": "9716",
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "New Series",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "voteCountGte": 10,
-              "withKeywords": "9716",
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
           {
             "title": "Popular Movies",
             "sortBy": "popularity.desc",
@@ -8031,34 +7349,6 @@
         "title": "Thriller",
         "sources": [
           {
-            "title": "New Movies",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withGenres": "53",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "New Series",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withGenres": "53",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
             "title": "Popular Movies",
             "sortBy": "popularity.desc",
             "tmdbId": null,
@@ -8141,33 +7431,6 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Psychological",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "53",
-              "withKeywords": "10683|9849",
-              "voteCountGte": 20,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Conspiracy",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withKeywords": "9743|10410",
-              "voteCountGte": 20,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
           }
         ],
         "hideTitle": true,
@@ -8185,34 +7448,6 @@
         "id": "folder-SY0BJAAJ",
         "title": "War",
         "sources": [
-          {
-            "title": "New Movies",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withGenres": "10752",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "New Series",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withGenres": "10768",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
           {
             "title": "Popular Movies",
             "sortBy": "popularity.desc",
@@ -8314,34 +7549,6 @@
         "title": "Western",
         "sources": [
           {
-            "title": "New Movies",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withGenres": "37",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "New Series",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withGenres": "37",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
             "title": "Popular Movies",
             "sortBy": "popularity.desc",
             "tmdbId": null,
@@ -8436,332 +7643,6 @@
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/genres/37-western/backdrops/t2_flat_1080p.jpg?raw=true"
-      },
-      {
-        "id": "folder-67FC360F",
-        "title": "Zombie",
-        "sources": [
-          {
-            "title": "New Zombie Movies",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withKeywords": "186565|12377",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "New Zombie Series",
-            "sortBy": "first_air_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withKeywords": "186565|12377",
-              "voteCountGte": 5,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Zombie Comedy",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withKeywords": "186565|12377",
-              "withGenres": "35",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Survival Horror",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withKeywords": "186565|12377",
-              "withGenres": "27",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/zombie-new-movies.jpg",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/zombie-new-movies.jpg",
-        "catalogSources": [],
-        "focusGifEnabled": true
-      },
-      {
-        "id": "folder-9BCA6321",
-        "title": "Space",
-        "sources": [
-          {
-            "title": "New Space Movies",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withKeywords": "14544|697",
-              "voteCountGte": 20,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "New Space Series",
-            "sortBy": "first_air_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withKeywords": "14544|697",
-              "voteCountGte": 5,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Alien Invasion",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withKeywords": "9951|14643|10527",
-              "voteCountGte": 20,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Space Exploration",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withKeywords": "9663|13085|13141",
-              "withGenres": "878",
-              "voteCountGte": 20,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Space Opera",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "878,12",
-              "withKeywords": "14544|697",
-              "voteCountGte": 20,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/space-new-movies.jpg",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/space-new-movies.jpg",
-        "catalogSources": [],
-        "focusGifEnabled": true
-      },
-      {
-        "id": "folder-0EEE5ED1",
-        "title": "Apocalyptic",
-        "sources": [
-          {
-            "title": "New Apocalyptic Movies",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withKeywords": "12332",
-              "voteCountGte": 20,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "New Apocalyptic Series",
-            "sortBy": "first_air_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withKeywords": "12332",
-              "voteCountGte": 5,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Post-Apocalyptic",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withKeywords": "4458",
-              "voteCountGte": 20,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Pandemic & Virus",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withKeywords": "12377|10637|11244",
-              "voteCountGte": 20,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Nuclear War",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withKeywords": "9779|6917",
-              "voteCountGte": 20,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Dystopian Future",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withKeywords": "10617",
-              "voteCountGte": 20,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/apoc-new-movies.jpg",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/apoc-new-movies.jpg",
-        "catalogSources": [],
-        "focusGifEnabled": true
-      },
-      {
-        "id": "folder-80569AA6",
-        "title": "Natural Disaster",
-        "sources": [
-          {
-            "title": "New Disaster Movies",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withKeywords": "9663",
-              "voteCountGte": 20,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "New Disaster Series",
-            "sortBy": "first_air_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withKeywords": "9663",
-              "voteCountGte": 5,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Earthquakes & Volcanoes",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withKeywords": "11574|11377",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Tsunamis & Floods",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withKeywords": "9799|6149",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Storms & Hurricanes",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withKeywords": "9951|158020|161180",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Asteroid & Cosmic",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withKeywords": "9882|9663",
-              "withGenres": "878",
-              "voteCountGte": 20,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/disaster-new-movies.jpg",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/Sacul86/nuvio-assets/master/assets/disaster-new-movies.jpg",
-        "catalogSources": [],
-        "focusGifEnabled": true
       }
     ],
     "pinToTop": true,
