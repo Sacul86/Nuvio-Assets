@@ -51,6 +51,63 @@ OUT_DIR.mkdir(exist_ok=True)
 
 TILE_W, TILE_H = 1920, 1080
 
+POLLINATIONS_BASE = "https://image.pollinations.ai/prompt/"
+
+# Per-category style modifier for AI-generated themed-tile backgrounds. The
+# row label gets a category-specific aesthetic prepended so 'horror-slasher'
+# yields dark moody slasher art and 'comedy-romcom' yields bright pink
+# romantic art, etc. Each prompt explicitly forbids text so the AI doesn't
+# bake garbled letters that fight with the Bebas Neue overlay we add later.
+THEMED_STYLE_BY_PREFIX = {
+    "horror-":   "dark moody horror movie poster aesthetic, blood spatter, shadowy ominous figures, red and black palette, gothic atmospheric lighting",
+    "thriller-": "noir crime thriller aesthetic, rainy neon-lit city street, deep shadows, brooding cinematic lighting",
+    "zombie-":   "post-apocalyptic zombie aesthetic, decayed urban ruins, green and grey desaturated palette, fog",
+    "space-":    "deep space cinematic vista, swirling nebula, distant stars, bright cosmic colors, sci-fi movie poster art",
+    "mystery-":  "noir mystery aesthetic, vintage detective office, smoky atmosphere, warm sepia and shadow",
+    "scifi-":    "futuristic cyberpunk poster art, neon cityscape, glowing blue and magenta, sleek sci-fi technology",
+    "apoc-":     "post-apocalyptic wasteland aesthetic, fiery sunset, ruined cityscape, desolation and ash",
+    "disaster-": "epic natural disaster aesthetic, dramatic storm clouds, swirling weather phenomena, cinematic catastrophe",
+    "comedy-":   "bright vibrant comedy aesthetic, playful colorful palette, energetic and lighthearted",
+    "action-":   "explosive action movie poster aesthetic, dramatic motion blur, fire and sparks, intense cinematic",
+    "drama-":    "emotional cinematic drama aesthetic, warm character-focused lighting, soft cinematic depth of field",
+    "anim-":     "stylized animated movie poster aesthetic, bright saturated colors, playful animation art",
+}
+
+
+def _themed_prompt(slug, label):
+    style = ""
+    for prefix, modifier in THEMED_STYLE_BY_PREFIX.items():
+        if slug.startswith(prefix):
+            style = modifier
+            break
+    if not style:
+        style = "cinematic movie streaming collection cover art, dramatic atmospheric lighting"
+    return (
+        f"Streaming app collection cover art representing the genre {label}. "
+        f"{style}. Widescreen 16:9 landscape composition, professional poster design, "
+        f"no text, no letters, no words, no captions, no logos, no signage."
+    )
+
+
+def fetch_pollinations_bg(slug, label):
+    """Fetch a 1920x1080 image from Pollinations.ai (free, no key)."""
+    import urllib.parse
+    prompt = _themed_prompt(slug, label)
+    seed = abs(hash(prompt)) % 1_000_000
+    url = (
+        f"{POLLINATIONS_BASE}{urllib.parse.quote(prompt, safe='')}"
+        f"?width={TILE_W}&height={TILE_H}&model=flux&seed={seed}"
+        f"&nologo=true&private=true&enhance=true"
+    )
+    try:
+        r = requests.get(url, timeout=180)
+        r.raise_for_status()
+        return r.content
+    except Exception as e:
+        print(f"  [warn] pollinations failed for {slug}: {type(e).__name__}")
+        return None
+
+
 # Bebas Neue — downloaded by the workflow before this script runs.
 FONT_PATH = os.environ.get("FONT_PATH", "/tmp/BebasNeue-Regular.ttf")
 FALLBACK_FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
@@ -1043,10 +1100,17 @@ def make_themed_tile(slug, label, tmdb_id, media_type):
     bg_bytes = None
     source = "?"
 
-    # MDBList path: disabled. Tried search-based MDBList lookup with TMDB
-    # validation but the per-tile API call count made the workflow time out
-    # and produce no commit. Logic preserved above for future tinkering, but
-    # not invoked here.
+    # Pollinations path: user's reference build (Diligent_Dream_4667's
+    # "Nuvio Horror + Thriller Build") uses stylized designed tiles rather
+    # than movie backdrops. Closest we can get automatically is an AI-
+    # generated genre-aesthetic background + Bebas Neue title overlay. The
+    # prompts forbid text inside the AI image so the overlay isn't fighting
+    # garbled letters.
+    if not _wants_handpicked(slug):
+        ai = fetch_pollinations_bg(slug, label)
+        if ai:
+            bg_bytes = ai
+            source = "pollinations"
 
     # Discover path (genre rows). Skipped for actor tiles and curated slugs.
     if not bg_bytes and not _wants_handpicked(slug):
