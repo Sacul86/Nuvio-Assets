@@ -801,6 +801,53 @@ def tmdb_discover_top(filters, media_type, slug=None):
         return None, None
 
 
+# ─── Rrevanth's 17 branded franchises (professional curated key art) ─
+# Use rrevanth's pre-existing franchise art for the 17 slugs he has. Beats
+# every algorithmic approach we've tried because the images are
+# hand-designed marketing posters with franchise logos already on them.
+RREV_BASE = "https://raw.githubusercontent.com/rrevanth/nuvio-assets/main/franchises"
+RREVANTH_BRANDED = {
+    "fr-starwars":    f"{RREV_BASE}/star-wars/star-wars-landscape.jpg",
+    "fr-mcu":         f"{RREV_BASE}/mcu/mcu-landscape.gif",
+    "fr-harrypotter": f"{RREV_BASE}/wizarding-world/wizarding-world-landscape.png",
+    "fr-middleearth": f"{RREV_BASE}/lord-of-the-rings/lord-of-the-rings-landscape.jpg",
+    "fr-jurassic":    f"{RREV_BASE}/jurassic-world/jurassic-world-landscape.jpg",
+    "fr-bond":        f"{RREV_BASE}/007/007-landscape.jpg",
+    "fr-mi":          f"{RREV_BASE}/mission-impossible/mission-impossible-landscape.jpg",
+    "fr-johnwick":    f"{RREV_BASE}/john-wick/john-wick-landscape.jpg",
+    "fr-hungergames": f"{RREV_BASE}/hunger-games/hunger-games-landscape.jpg",
+    "fr-pirates":     f"{RREV_BASE}/pirates-caribbean/pirates-caribbean-landscape.jpg",
+    "fr-indianajones":f"{RREV_BASE}/indiana-jones/indiana-jones-landscape.jpg",
+    "fr-avatar":      f"{RREV_BASE}/avatar/avatar-landscape.jpg",
+    "fr-dc":          f"{RREV_BASE}/dc-universe/dc-universe-landscape.jpg",
+    "fr-dune":        f"{RREV_BASE}/dune/dune-landscape.jpg",
+    "fr-godfather":   f"{RREV_BASE}/godfather/godfather-landscape.jpg",
+    "fr-transformers":f"{RREV_BASE}/transformers/transformers-landscape.jpg",
+    "fr-xmen":        f"{RREV_BASE}/x-men/x-men-landscape.jpg",
+}
+
+
+def fetch_rrevanth_as_jpg(slug):
+    """Fetch rrevanth's franchise art for `slug` and return JPG bytes. For
+    .gif (MCU) and .png (Harry Potter) sources, the first frame / RGB
+    version is saved as JPEG so v15/v16 JSON's .jpg URL resolves correctly."""
+    url = RREVANTH_BRANDED.get(slug)
+    if not url:
+        return None
+    try:
+        raw = requests.get(url, timeout=30).content
+        if url.lower().endswith(".jpg") or url.lower().endswith(".jpeg"):
+            return raw
+        # GIF or PNG -> convert to JPEG via Pillow.
+        img = Image.open(io.BytesIO(raw)).convert("RGB")
+        buf = io.BytesIO()
+        img.save(buf, "JPEG", quality=92)
+        return buf.getvalue()
+    except Exception as e:
+        print(f"  [warn] rrevanth fetch failed for {slug}: {e}")
+        return None
+
+
 def _load_collections_json():
     """Find the highest-numbered carl-nuvio-themed-collections-v*.json in the
     repo and return its parsed contents. Returns [] if nothing matches."""
@@ -996,26 +1043,10 @@ def make_themed_tile(slug, label, tmdb_id, media_type):
     bg_bytes = None
     source = "?"
 
-    # MDBList path: human-curated lists are far better than TMDB tag queries
-    # at sourcing iconic covers. Try a list search first, only fall through to
-    # Discover if MDBList has nothing matching the row's filter.
-    if MDBLIST_KEY and not _wants_handpicked(slug):
-        query = MDBLIST_QUERIES.get(slug, label.lower())
-        spec = SLUG_FILTERS.get(slug)
-        row_filters = spec[0] if spec else {}
-        primary_genre = _primary_genre_for(slug)
-        expected_kw = _parse_filter_keyword_ids(row_filters)
-        mdbl_id = mdblist_top_tmdb(
-            query, media_type,
-            primary_genre=primary_genre,
-            expected_keyword_ids=expected_kw,
-        )
-        if mdbl_id:
-            mt = "movie" if media_type == "MOVIE" else "tv"
-            mb, src_tag = fetch_tmdb_backdrop(mt, mdbl_id)
-            if mb:
-                bg_bytes = mb
-                source = f"mdblist:'{query}'→{mdbl_id} ({src_tag})"
+    # MDBList path: disabled. Tried search-based MDBList lookup with TMDB
+    # validation but the per-tile API call count made the workflow time out
+    # and produce no commit. Logic preserved above for future tinkering, but
+    # not invoked here.
 
     # Discover path (genre rows). Skipped for actor tiles and curated slugs.
     if not bg_bytes and not _wants_handpicked(slug):
@@ -1142,22 +1173,20 @@ def make_franchise_tile(slug, label, sources):
     bg_bytes = None
     source = "?"
 
-    # MDBList path: pull a top item from a community-curated franchise list,
-    # use that movie's backdrop. Falls through to COLLECTION/DISCOVER below
-    # if MDBList has nothing.
-    if MDBLIST_KEY:
-        query = MDBLIST_QUERIES.get(slug, label.lower())
-        mdbl_id = mdblist_top_tmdb(query, "MOVIE")
-        if mdbl_id:
-            mb, src_tag = fetch_tmdb_backdrop("movie", mdbl_id)
-            if mb:
-                bg_bytes = mb
-                source = f"mdblist:'{query}'→{mdbl_id} ({src_tag})"
+    # Rrevanth path: 17 franchises have professionally-designed key art with
+    # logos baked in. Always preferred when available - no overlay needed.
+    if slug in RREVANTH_BRANDED:
+        raw = fetch_rrevanth_as_jpg(slug)
+        if raw:
+            (OUT_DIR / f"{slug}.jpg").write_bytes(raw)
+            print(f"  [ok]   {slug:<22} '{label}' (rrevanth)")
+            return True
+        # Fall through to TMDB if rrevanth's CDN is down.
 
-    # Cover override: certain franchise rows (MCU, DC) use a broad
-    # withCompanies filter that yields LEGO Batman / The Punisher as the top
-    # hit. Point the COVER at a curated TMDB collection instead.
-    override_id = FRANCHISE_COVER_OVERRIDES.get(slug) if not bg_bytes else None
+    # TMDB Collection backdrop override for franchise rows whose source
+    # filter is a broad company id (kept for the post-rrevanth fallback path,
+    # though now redundant since rrevanth covers those slugs).
+    override_id = FRANCHISE_COVER_OVERRIDES.get(slug)
     if override_id:
         bg_bytes = fetch_collection_backdrop(override_id)
         if bg_bytes:
