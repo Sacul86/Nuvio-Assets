@@ -2333,10 +2333,10 @@
         "hideTitle": false,
         "tileShape": "POSTER",
         "coverEmoji": "🎨",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/focused/time-travel.webp",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@9faf80b1497e2ef8120972c5cd19c4dfa0674ae5/assets/time-travel.jpg",
         "heroVideoUrl": null,
-        "titleLogoUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/title/time-travel.webp",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/cover/time-travel.webp",
+        "titleLogoUrl": null,
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@9faf80b1497e2ef8120972c5cd19c4dfa0674ae5/assets/time-travel.jpg",
         "catalogSources": [
           {
             "type": "movie",
@@ -2352,7 +2352,7 @@
           }
         ],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/backdrop/time-travel.webp"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@9faf80b1497e2ef8120972c5cd19c4dfa0674ae5/assets/time-travel.jpg"
       },
       {
         "id": "collections.themes.revenge",
@@ -2392,10 +2392,10 @@
         "hideTitle": false,
         "tileShape": "POSTER",
         "coverEmoji": "🎨",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/focused/revenge.webp",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@9faf80b1497e2ef8120972c5cd19c4dfa0674ae5/assets/revenge.jpg",
         "heroVideoUrl": null,
-        "titleLogoUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/title/revenge.webp",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/cover/revenge.webp",
+        "titleLogoUrl": null,
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@9faf80b1497e2ef8120972c5cd19c4dfa0674ae5/assets/revenge.jpg",
         "catalogSources": [
           {
             "type": "movie",
@@ -2411,7 +2411,7 @@
           }
         ],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/backdrop/revenge.webp"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@9faf80b1497e2ef8120972c5cd19c4dfa0674ae5/assets/revenge.jpg"
       },
       {
         "id": "collections.themes.spy",
@@ -2451,10 +2451,10 @@
         "hideTitle": false,
         "tileShape": "POSTER",
         "coverEmoji": "🎨",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/focused/spy.webp",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@9faf80b1497e2ef8120972c5cd19c4dfa0674ae5/assets/spy.jpg",
         "heroVideoUrl": null,
-        "titleLogoUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/title/spy.webp",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/cover/spy.webp",
+        "titleLogoUrl": null,
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@9faf80b1497e2ef8120972c5cd19c4dfa0674ae5/assets/spy.jpg",
         "catalogSources": [
           {
             "type": "movie",
@@ -2470,7 +2470,7 @@
           }
         ],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/backdrop/spy.webp"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@9faf80b1497e2ef8120972c5cd19c4dfa0674ae5/assets/spy.jpg"
       },
       {
         "id": "collections.themes.magic",
@@ -2510,10 +2510,10 @@
         "hideTitle": false,
         "tileShape": "POSTER",
         "coverEmoji": "🎨",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/focused/magic.webp",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@9faf80b1497e2ef8120972c5cd19c4dfa0674ae5/assets/magic.jpg",
         "heroVideoUrl": null,
-        "titleLogoUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/title/magic.webp",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/cover/magic.webp",
+        "titleLogoUrl": null,
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@9faf80b1497e2ef8120972c5cd19c4dfa0674ae5/assets/magic.jpg",
         "catalogSources": [
           {
             "type": "movie",
@@ -2529,7 +2529,7 @@
           }
         ],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/backdrop/magic.webp"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@9faf80b1497e2ef8120972c5cd19c4dfa0674ae5/assets/magic.jpg"
       },
       {
         "id": "collections.themes.treasure-hunt",
@@ -2569,10 +2569,10 @@
         "hideTitle": false,
         "tileShape": "POSTER",
         "coverEmoji": "🎨",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/focused/treasure-hunt.webp",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@9faf80b1497e2ef8120972c5cd19c4dfa0674ae5/assets/treasure-hunt.jpg",
         "heroVideoUrl": null,
-        "titleLogoUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/title/treasure-hunt.webp",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/cover/treasure-hunt.webp",
+        "titleLogoUrl": null,
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@9faf80b1497e2ef8120972c5cd19c4dfa0674ae5/assets/treasure-hunt.jpg",
         "catalogSources": [
           {
             "type": "movie",
@@ -2588,7 +2588,7 @@
           }
         ],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/backdrop/treasure-hunt.webp"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@9faf80b1497e2ef8120972c5cd19c4dfa0674ae5/assets/treasure-hunt.jpg"
       },
       {
         "id": "collections.themes.coming-of-age",
@@ -2628,10 +2628,10 @@
         "hideTitle": false,
         "tileShape": "POSTER",
         "coverEmoji": "🎨",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/focused/coming-of-age.webp",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@9faf80b1497e2ef8120972c5cd19c4dfa0674ae5/assets/coming-of-age.jpg",
         "heroVideoUrl": null,
-        "titleLogoUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/title/coming-of-age.webp",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/cover/coming-of-age.webp",
+        "titleLogoUrl": null,
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@9faf80b1497e2ef8120972c5cd19c4dfa0674ae5/assets/coming-of-age.jpg",
         "catalogSources": [
           {
             "type": "movie",
@@ -2647,7 +2647,7 @@
           }
         ],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/backdrop/coming-of-age.webp"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@9faf80b1497e2ef8120972c5cd19c4dfa0674ae5/assets/coming-of-age.jpg"
       },
       {
         "id": "collections.themes.space",
@@ -2687,10 +2687,10 @@
         "hideTitle": false,
         "tileShape": "POSTER",
         "coverEmoji": "🎨",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/focused/space.webp",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@9faf80b1497e2ef8120972c5cd19c4dfa0674ae5/assets/space.jpg",
         "heroVideoUrl": null,
-        "titleLogoUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/title/space.webp",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/cover/space.webp",
+        "titleLogoUrl": null,
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@9faf80b1497e2ef8120972c5cd19c4dfa0674ae5/assets/space.jpg",
         "catalogSources": [
           {
             "type": "movie",
@@ -2706,7 +2706,7 @@
           }
         ],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/backdrop/space.webp"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@9faf80b1497e2ef8120972c5cd19c4dfa0674ae5/assets/space.jpg"
       },
       {
         "id": "collections.themes.martial-arts",
@@ -2746,10 +2746,10 @@
         "hideTitle": false,
         "tileShape": "POSTER",
         "coverEmoji": "🎨",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/focused/martial-arts.webp",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@9faf80b1497e2ef8120972c5cd19c4dfa0674ae5/assets/martial-arts.jpg",
         "heroVideoUrl": null,
-        "titleLogoUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/title/martial-arts.webp",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/cover/martial-arts.webp",
+        "titleLogoUrl": null,
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@9faf80b1497e2ef8120972c5cd19c4dfa0674ae5/assets/martial-arts.jpg",
         "catalogSources": [
           {
             "type": "movie",
@@ -2765,7 +2765,7 @@
           }
         ],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/backdrop/martial-arts.webp"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@9faf80b1497e2ef8120972c5cd19c4dfa0674ae5/assets/martial-arts.jpg"
       },
       {
         "id": "collections.themes.vampire",
@@ -2805,10 +2805,10 @@
         "hideTitle": false,
         "tileShape": "POSTER",
         "coverEmoji": "🎨",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/focused/vampire.webp",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@9faf80b1497e2ef8120972c5cd19c4dfa0674ae5/assets/vampire.jpg",
         "heroVideoUrl": null,
-        "titleLogoUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/title/vampire.webp",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/cover/vampire.webp",
+        "titleLogoUrl": null,
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@9faf80b1497e2ef8120972c5cd19c4dfa0674ae5/assets/vampire.jpg",
         "catalogSources": [
           {
             "type": "movie",
@@ -2824,7 +2824,7 @@
           }
         ],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/backdrop/vampire.webp"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@9faf80b1497e2ef8120972c5cd19c4dfa0674ae5/assets/vampire.jpg"
       },
       {
         "id": "collections.themes.satire",
@@ -2864,10 +2864,10 @@
         "hideTitle": false,
         "tileShape": "POSTER",
         "coverEmoji": "🎨",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/focused/satire.webp",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@9faf80b1497e2ef8120972c5cd19c4dfa0674ae5/assets/satire.jpg",
         "heroVideoUrl": null,
-        "titleLogoUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/title/satire.webp",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/cover/satire.webp",
+        "titleLogoUrl": null,
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@9faf80b1497e2ef8120972c5cd19c4dfa0674ae5/assets/satire.jpg",
         "catalogSources": [
           {
             "type": "movie",
@@ -2883,7 +2883,7 @@
           }
         ],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/backdrop/satire.webp"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@9faf80b1497e2ef8120972c5cd19c4dfa0674ae5/assets/satire.jpg"
       },
       {
         "id": "collections.themes.zombie",
