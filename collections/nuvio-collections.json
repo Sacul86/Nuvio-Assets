@@ -959,65 +959,6 @@
         "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@43d9d7c6660ddcba842521e5926d05996586286a/assets/streaming-peacock.jpg"
       },
       {
-        "id": "collections.streaming.crunchyroll",
-        "title": "Crunchyroll",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.streaming.crunchyroll",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.streaming.crunchyroll",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@43d9d7c6660ddcba842521e5926d05996586286a/assets/streaming-crunchyroll.jpg",
-        "heroVideoUrl": null,
-        "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@43d9d7c6660ddcba842521e5926d05996586286a/assets/streaming-crunchyroll.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.streaming.crunchyroll"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.streaming.crunchyroll"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@43d9d7c6660ddcba842521e5926d05996586286a/assets/streaming-crunchyroll.jpg"
-      },
-      {
         "id": "collections.streaming.discovery-plus",
         "title": "Discovery Plus",
         "sources": [
@@ -3662,65 +3603,6 @@
         ],
         "focusGifEnabled": false,
         "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@43d9d7c6660ddcba842521e5926d05996586286a/assets/studios-dreamworks.jpg"
-      },
-      {
-        "id": "collections.studios.ghibli",
-        "title": "Ghibli",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.studios.ghibli",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.studios.ghibli",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "🏰",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@43d9d7c6660ddcba842521e5926d05996586286a/assets/studios-ghibli.jpg",
-        "heroVideoUrl": null,
-        "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@43d9d7c6660ddcba842521e5926d05996586286a/assets/studios-ghibli.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.studios.ghibli"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.studios.ghibli"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@43d9d7c6660ddcba842521e5926d05996586286a/assets/studios-ghibli.jpg"
       },
       {
         "id": "collections.studios.marvel",
