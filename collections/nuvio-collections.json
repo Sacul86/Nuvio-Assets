@@ -2650,65 +2650,6 @@
         "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/backdrop/coming-of-age.webp"
       },
       {
-        "id": "collections.themes.superhero",
-        "title": "Superhero",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.theme.superhero",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.theme.superhero",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "POSTER",
-        "coverEmoji": "🎨",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/focused/superhero.webp",
-        "heroVideoUrl": null,
-        "titleLogoUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/title/superhero.webp",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/cover/superhero.webp",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.theme.superhero"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.theme.superhero"
-          }
-        ],
-        "focusGifEnabled": true,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/themes/backdrop/superhero.webp"
-      },
-      {
         "id": "collections.themes.space",
         "title": "Space",
         "sources": [
