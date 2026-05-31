@@ -1317,10 +1317,10 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎭",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@61ca156de7e2fd1905e5c461626aca654e1168cf/assets/genre-action.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-action.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@61ca156de7e2fd1905e5c461626aca654e1168cf/assets/genre-action.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-action.jpg",
         "catalogSources": [
           {
             "type": "movie",
@@ -1342,7 +1342,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@61ca156de7e2fd1905e5c461626aca654e1168cf/assets/genre-action.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-action.jpg"
       },
       {
         "id": "collections.genres.animation",
@@ -1382,10 +1382,10 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎭",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@61ca156de7e2fd1905e5c461626aca654e1168cf/assets/genre-animation.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-animation.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@61ca156de7e2fd1905e5c461626aca654e1168cf/assets/genre-animation.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-animation.jpg",
         "catalogSources": [
           {
             "type": "movie",
@@ -1401,7 +1401,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@61ca156de7e2fd1905e5c461626aca654e1168cf/assets/genre-animation.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-animation.jpg"
       },
       {
         "id": "collections.genres.comedy",
@@ -1441,10 +1441,10 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎭",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@61ca156de7e2fd1905e5c461626aca654e1168cf/assets/genre-comedy.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-comedy.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@61ca156de7e2fd1905e5c461626aca654e1168cf/assets/genre-comedy.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-comedy.jpg",
         "catalogSources": [
           {
             "type": "movie",
@@ -1460,7 +1460,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@61ca156de7e2fd1905e5c461626aca654e1168cf/assets/genre-comedy.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-comedy.jpg"
       },
       {
         "id": "collections.genres.crime",
@@ -1500,10 +1500,10 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎭",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@61ca156de7e2fd1905e5c461626aca654e1168cf/assets/genre-crime.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-crime.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@61ca156de7e2fd1905e5c461626aca654e1168cf/assets/genre-crime.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-crime.jpg",
         "catalogSources": [
           {
             "type": "movie",
@@ -1519,7 +1519,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@61ca156de7e2fd1905e5c461626aca654e1168cf/assets/genre-crime.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-crime.jpg"
       },
       {
         "id": "collections.genres.documentary",
@@ -1559,10 +1559,10 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎭",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@61ca156de7e2fd1905e5c461626aca654e1168cf/assets/genre-documentary.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-documentary.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@61ca156de7e2fd1905e5c461626aca654e1168cf/assets/genre-documentary.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-documentary.jpg",
         "catalogSources": [
           {
             "type": "movie",
@@ -1578,7 +1578,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@61ca156de7e2fd1905e5c461626aca654e1168cf/assets/genre-documentary.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-documentary.jpg"
       },
       {
         "id": "collections.genres.drama",
@@ -1618,10 +1618,10 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎭",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@61ca156de7e2fd1905e5c461626aca654e1168cf/assets/genre-drama.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-drama.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@61ca156de7e2fd1905e5c461626aca654e1168cf/assets/genre-drama.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-drama.jpg",
         "catalogSources": [
           {
             "type": "movie",
@@ -1637,7 +1637,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@61ca156de7e2fd1905e5c461626aca654e1168cf/assets/genre-drama.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-drama.jpg"
       },
       {
         "id": "collections.genres.family",
@@ -1677,10 +1677,10 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎭",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@61ca156de7e2fd1905e5c461626aca654e1168cf/assets/genre-family.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-family.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@61ca156de7e2fd1905e5c461626aca654e1168cf/assets/genre-family.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-family.jpg",
         "catalogSources": [
           {
             "type": "movie",
@@ -1696,7 +1696,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@61ca156de7e2fd1905e5c461626aca654e1168cf/assets/genre-family.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-family.jpg"
       },
       {
         "id": "collections.genres.fantasy",
@@ -1751,10 +1751,10 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎭",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@61ca156de7e2fd1905e5c461626aca654e1168cf/assets/genre-fantasy.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-fantasy.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@61ca156de7e2fd1905e5c461626aca654e1168cf/assets/genre-fantasy.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-fantasy.jpg",
         "catalogSources": [
           {
             "type": "movie",
@@ -1776,7 +1776,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@61ca156de7e2fd1905e5c461626aca654e1168cf/assets/genre-fantasy.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-fantasy.jpg"
       },
       {
         "id": "collections.genres.history",
@@ -1831,10 +1831,10 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎭",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@61ca156de7e2fd1905e5c461626aca654e1168cf/assets/genre-history.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-history.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@61ca156de7e2fd1905e5c461626aca654e1168cf/assets/genre-history.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-history.jpg",
         "catalogSources": [
           {
             "type": "movie",
@@ -1856,7 +1856,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@61ca156de7e2fd1905e5c461626aca654e1168cf/assets/genre-history.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-history.jpg"
       },
       {
         "id": "collections.genres.horror",
@@ -1881,10 +1881,10 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎭",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@61ca156de7e2fd1905e5c461626aca654e1168cf/assets/genre-horror.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-horror.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@61ca156de7e2fd1905e5c461626aca654e1168cf/assets/genre-horror.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-horror.jpg",
         "catalogSources": [
           {
             "type": "movie",
@@ -1894,7 +1894,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@61ca156de7e2fd1905e5c461626aca654e1168cf/assets/genre-horror.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-horror.jpg"
       },
       {
         "id": "collections.genres.music",
@@ -1919,10 +1919,10 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎭",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@61ca156de7e2fd1905e5c461626aca654e1168cf/assets/genre-music.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-music.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@61ca156de7e2fd1905e5c461626aca654e1168cf/assets/genre-music.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-music.jpg",
         "catalogSources": [
           {
             "type": "movie",
@@ -1932,7 +1932,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@61ca156de7e2fd1905e5c461626aca654e1168cf/assets/genre-music.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-music.jpg"
       },
       {
         "id": "collections.genres.mystery",
@@ -1970,12 +1970,12 @@
           }
         ],
         "hideTitle": false,
-        "tileShape": "POSTER",
+        "tileShape": "LANDSCAPE",
         "coverEmoji": "🎭",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/genres/focused/mystery.webp",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-mystery.jpg",
         "heroVideoUrl": null,
-        "titleLogoUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/genres/title/mystery.webp",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/genres/cover/mystery.webp",
+        "titleLogoUrl": null,
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-mystery.jpg",
         "catalogSources": [
           {
             "type": "movie",
@@ -1990,8 +1990,8 @@
             "catalogId": "tmdb.discover.series.genres.mystery"
           }
         ],
-        "focusGifEnabled": true,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/genres/backdrop/mystery.webp"
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-mystery.jpg"
       },
       {
         "id": "collections.genres.talk",
@@ -2029,12 +2029,12 @@
           }
         ],
         "hideTitle": false,
-        "tileShape": "POSTER",
+        "tileShape": "LANDSCAPE",
         "coverEmoji": "🎭",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/genres/focused/talk.webp",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-talk.jpg",
         "heroVideoUrl": null,
-        "titleLogoUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/genres/title/talk.webp",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/genres/cover/talk.webp",
+        "titleLogoUrl": null,
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-talk.jpg",
         "catalogSources": [
           {
             "type": "series",
@@ -2049,8 +2049,8 @@
             "catalogId": "tmdb.discover.series.genres.talk"
           }
         ],
-        "focusGifEnabled": true,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/genres/backdrop/talk.webp"
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-talk.jpg"
       },
       {
         "id": "collections.genres.reality",
@@ -2088,12 +2088,12 @@
           }
         ],
         "hideTitle": false,
-        "tileShape": "POSTER",
+        "tileShape": "LANDSCAPE",
         "coverEmoji": "🎭",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/genres/focused/reality.webp",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-reality.jpg",
         "heroVideoUrl": null,
-        "titleLogoUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/genres/title/reality.webp",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/genres/cover/reality.webp",
+        "titleLogoUrl": null,
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-reality.jpg",
         "catalogSources": [
           {
             "type": "series",
@@ -2108,8 +2108,8 @@
             "catalogId": "tmdb.discover.series.genres.soap"
           }
         ],
-        "focusGifEnabled": true,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/genres/backdrop/reality.webp"
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-reality.jpg"
       },
       {
         "id": "collections.genres.romance",
@@ -2132,12 +2132,12 @@
           }
         ],
         "hideTitle": false,
-        "tileShape": "POSTER",
+        "tileShape": "LANDSCAPE",
         "coverEmoji": "🎭",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/genres/focused/romance.webp",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-romance.jpg",
         "heroVideoUrl": null,
-        "titleLogoUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/genres/title/romance.webp",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/genres/cover/romance.webp",
+        "titleLogoUrl": null,
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-romance.jpg",
         "catalogSources": [
           {
             "type": "movie",
@@ -2146,8 +2146,8 @@
             "catalogId": "tmdb.discover.movie.genres.romance"
           }
         ],
-        "focusGifEnabled": true,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/genres/backdrop/romance.webp"
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-romance.jpg"
       },
       {
         "id": "collections.genres.thriller",
@@ -2170,12 +2170,12 @@
           }
         ],
         "hideTitle": false,
-        "tileShape": "POSTER",
+        "tileShape": "LANDSCAPE",
         "coverEmoji": "🎭",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/genres/focused/thriller.webp",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-thriller.jpg",
         "heroVideoUrl": null,
-        "titleLogoUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/genres/title/thriller.webp",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/genres/cover/thriller.webp",
+        "titleLogoUrl": null,
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-thriller.jpg",
         "catalogSources": [
           {
             "type": "movie",
@@ -2184,8 +2184,8 @@
             "catalogId": "tmdb.discover.movie.genres.thriller"
           }
         ],
-        "focusGifEnabled": true,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/genres/backdrop/thriller.webp"
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-thriller.jpg"
       },
       {
         "id": "collections.genres.tv",
@@ -2210,10 +2210,10 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎭",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@61ca156de7e2fd1905e5c461626aca654e1168cf/assets/genre-tv.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-tv.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@61ca156de7e2fd1905e5c461626aca654e1168cf/assets/genre-tv.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-tv.jpg",
         "catalogSources": [
           {
             "type": "movie",
@@ -2223,7 +2223,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@61ca156de7e2fd1905e5c461626aca654e1168cf/assets/genre-tv.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-tv.jpg"
       },
       {
         "id": "collections.genres.western",
@@ -2263,10 +2263,10 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎭",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@61ca156de7e2fd1905e5c461626aca654e1168cf/assets/genre-western.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-western.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@61ca156de7e2fd1905e5c461626aca654e1168cf/assets/genre-western.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-western.jpg",
         "catalogSources": [
           {
             "type": "movie",
@@ -2282,7 +2282,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@61ca156de7e2fd1905e5c461626aca654e1168cf/assets/genre-western.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-western.jpg"
       }
     ],
     "pinToTop": true,
