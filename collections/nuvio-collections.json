@@ -4576,21 +4576,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.tom-cruise",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -4606,12 +4591,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.tom-cruise"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.tom-cruise"
           }
         ],
         "focusGifEnabled": false,
@@ -4635,21 +4614,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.leonardo-dicaprio",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -4665,12 +4629,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.leonardo-dicaprio"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.leonardo-dicaprio"
           }
         ],
         "focusGifEnabled": false,
@@ -4694,21 +4652,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.dwayne-johnson",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -4724,12 +4667,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.dwayne-johnson"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.dwayne-johnson"
           }
         ],
         "focusGifEnabled": false,
@@ -4753,21 +4690,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.robert-downey-jr",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -4783,12 +4705,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.robert-downey-jr"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.robert-downey-jr"
           }
         ],
         "focusGifEnabled": false,
@@ -4812,21 +4728,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.denzel-washington",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -4842,12 +4743,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.denzel-washington"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.denzel-washington"
           }
         ],
         "focusGifEnabled": false,
@@ -4871,21 +4766,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.brad-pitt",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -4901,12 +4781,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.brad-pitt"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.brad-pitt"
           }
         ],
         "focusGifEnabled": false,
@@ -4930,21 +4804,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.will-smith",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -4960,12 +4819,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.will-smith"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.will-smith"
           }
         ],
         "focusGifEnabled": false,
@@ -4989,21 +4842,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.tom-hanks",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -5019,12 +4857,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.tom-hanks"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.tom-hanks"
           }
         ],
         "focusGifEnabled": false,
@@ -5048,21 +4880,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.scarlett-johansson",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -5078,12 +4895,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.scarlett-johansson"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.scarlett-johansson"
           }
         ],
         "focusGifEnabled": false,
@@ -5107,21 +4918,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.keanu-reeves",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -5137,12 +4933,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.keanu-reeves"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.keanu-reeves"
           }
         ],
         "focusGifEnabled": false,
@@ -5166,21 +4956,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.margot-robbie",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -5196,12 +4971,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.margot-robbie"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.margot-robbie"
           }
         ],
         "focusGifEnabled": false,
@@ -5225,21 +4994,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.ryan-gosling",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -5255,12 +5009,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.ryan-gosling"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.ryan-gosling"
           }
         ],
         "focusGifEnabled": false,
@@ -5284,21 +5032,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.christian-bale",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -5314,12 +5047,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.christian-bale"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.christian-bale"
           }
         ],
         "focusGifEnabled": false,
@@ -5343,21 +5070,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.joaquin-phoenix",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -5373,12 +5085,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.joaquin-phoenix"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.joaquin-phoenix"
           }
         ],
         "focusGifEnabled": false,
@@ -5402,21 +5108,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.matthew-mcconaughey",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -5432,12 +5123,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.matthew-mcconaughey"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.matthew-mcconaughey"
           }
         ],
         "focusGifEnabled": false,
@@ -5461,21 +5146,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.ryan-reynolds",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -5491,12 +5161,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.ryan-reynolds"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.ryan-reynolds"
           }
         ],
         "focusGifEnabled": false,
@@ -5520,21 +5184,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.chris-hemsworth",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -5550,12 +5199,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.chris-hemsworth"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.chris-hemsworth"
           }
         ],
         "focusGifEnabled": false,
@@ -5579,21 +5222,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.chris-evans",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -5609,12 +5237,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.chris-evans"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.chris-evans"
           }
         ],
         "focusGifEnabled": false,
@@ -5638,21 +5260,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.chris-pratt",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -5668,12 +5275,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.chris-pratt"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.chris-pratt"
           }
         ],
         "focusGifEnabled": false,
@@ -5697,21 +5298,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.hugh-jackman",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -5727,12 +5313,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.hugh-jackman"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.hugh-jackman"
           }
         ],
         "focusGifEnabled": false,
@@ -5756,21 +5336,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.jake-gyllenhaal",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -5786,12 +5351,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.jake-gyllenhaal"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.jake-gyllenhaal"
           }
         ],
         "focusGifEnabled": false,
@@ -5815,21 +5374,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.matt-damon",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -5845,12 +5389,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.matt-damon"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.matt-damon"
           }
         ],
         "focusGifEnabled": false,
@@ -5874,21 +5412,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.samuel-l-jackson",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -5904,12 +5427,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.samuel-l-jackson"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.samuel-l-jackson"
           }
         ],
         "focusGifEnabled": false,
@@ -5933,21 +5450,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.morgan-freeman",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -5963,12 +5465,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.morgan-freeman"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.morgan-freeman"
           }
         ],
         "focusGifEnabled": false,
@@ -5992,21 +5488,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.anthony-hopkins",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -6022,12 +5503,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.anthony-hopkins"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.anthony-hopkins"
           }
         ],
         "focusGifEnabled": false,
@@ -6051,21 +5526,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.robert-de-niro",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -6081,12 +5541,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.robert-de-niro"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.robert-de-niro"
           }
         ],
         "focusGifEnabled": false,
@@ -6110,21 +5564,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.al-pacino",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -6140,12 +5579,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.al-pacino"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.al-pacino"
           }
         ],
         "focusGifEnabled": false,
@@ -6169,21 +5602,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.tom-hardy",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -6199,12 +5617,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.tom-hardy"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.tom-hardy"
           }
         ],
         "focusGifEnabled": false,
@@ -6228,21 +5640,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.cillian-murphy",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -6258,12 +5655,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.cillian-murphy"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.cillian-murphy"
           }
         ],
         "focusGifEnabled": false,
@@ -6287,21 +5678,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.pedro-pascal",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -6317,12 +5693,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.pedro-pascal"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.pedro-pascal"
           }
         ],
         "focusGifEnabled": false,
@@ -6346,21 +5716,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.idris-elba",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -6376,12 +5731,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.idris-elba"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.idris-elba"
           }
         ],
         "focusGifEnabled": false,
@@ -6405,21 +5754,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.jason-statham",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -6435,12 +5769,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.jason-statham"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.jason-statham"
           }
         ],
         "focusGifEnabled": false,
@@ -6464,21 +5792,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.timothee-chalamet",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -6494,12 +5807,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.timothee-chalamet"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.timothee-chalamet"
           }
         ],
         "focusGifEnabled": false,
@@ -6523,21 +5830,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.jennifer-lawrence",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -6553,12 +5845,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.jennifer-lawrence"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.jennifer-lawrence"
           }
         ],
         "focusGifEnabled": false,
@@ -6582,21 +5868,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.emma-stone",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -6612,12 +5883,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.emma-stone"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.emma-stone"
           }
         ],
         "focusGifEnabled": false,
@@ -6641,21 +5906,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.charlize-theron",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -6671,12 +5921,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.charlize-theron"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.charlize-theron"
           }
         ],
         "focusGifEnabled": false,
@@ -6700,21 +5944,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.natalie-portman",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -6730,12 +5959,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.natalie-portman"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.natalie-portman"
           }
         ],
         "focusGifEnabled": false,
@@ -6759,21 +5982,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.cate-blanchett",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -6789,12 +5997,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.cate-blanchett"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.cate-blanchett"
           }
         ],
         "focusGifEnabled": false,
@@ -6818,21 +6020,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.meryl-streep",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -6848,12 +6035,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.meryl-streep"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.meryl-streep"
           }
         ],
         "focusGifEnabled": false,
@@ -6877,21 +6058,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.sandra-bullock",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -6907,12 +6073,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.sandra-bullock"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.sandra-bullock"
           }
         ],
         "focusGifEnabled": false,
@@ -6936,21 +6096,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.angelina-jolie",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -6966,12 +6111,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.angelina-jolie"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.angelina-jolie"
           }
         ],
         "focusGifEnabled": false,
@@ -6995,21 +6134,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.nicole-kidman",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -7025,12 +6149,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.nicole-kidman"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.nicole-kidman"
           }
         ],
         "focusGifEnabled": false,
@@ -7054,21 +6172,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.emily-blunt",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -7084,12 +6187,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.emily-blunt"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.emily-blunt"
           }
         ],
         "focusGifEnabled": false,
@@ -7113,21 +6210,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.zendaya",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -7143,12 +6225,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.zendaya"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.zendaya"
           }
         ],
         "focusGifEnabled": false,
@@ -7172,21 +6248,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.florence-pugh",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -7202,12 +6263,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.florence-pugh"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.florence-pugh"
           }
         ],
         "focusGifEnabled": false,
@@ -7231,21 +6286,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.anya-taylor-joy",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -7261,12 +6301,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.anya-taylor-joy"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.anya-taylor-joy"
           }
         ],
         "focusGifEnabled": false,
@@ -7290,21 +6324,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.gary-oldman",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -7320,12 +6339,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.gary-oldman"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.gary-oldman"
           }
         ],
         "focusGifEnabled": false,
@@ -7349,21 +6362,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.jodie-foster",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -7379,12 +6377,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.jodie-foster"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.jodie-foster"
           }
         ],
         "focusGifEnabled": false,
@@ -7408,21 +6400,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.viola-davis",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -7438,12 +6415,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.viola-davis"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.viola-davis"
           }
         ],
         "focusGifEnabled": false,
@@ -7467,21 +6438,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.jamie-lee-curtis",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -7497,12 +6453,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.jamie-lee-curtis"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.jamie-lee-curtis"
           }
         ],
         "focusGifEnabled": false,
@@ -7526,21 +6476,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.michael-b-jordan",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -7556,12 +6491,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.michael-b-jordan"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.michael-b-jordan"
           }
         ],
         "focusGifEnabled": false,
@@ -7585,21 +6514,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.saoirse-ronan",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -7615,12 +6529,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.saoirse-ronan"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.saoirse-ronan"
           }
         ],
         "focusGifEnabled": false,
@@ -7644,21 +6552,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.willem-dafoe",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -7674,12 +6567,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.willem-dafoe"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.willem-dafoe"
           }
         ],
         "focusGifEnabled": false,
@@ -7703,21 +6590,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.actors.jeff-bridges",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -7733,12 +6605,6 @@
             "genre": null,
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.actors.jeff-bridges"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.actors.jeff-bridges"
           }
         ],
         "focusGifEnabled": false,
