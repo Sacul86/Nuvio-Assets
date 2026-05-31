@@ -1876,6 +1876,216 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
+          },
+          {
+            "type": "movie",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.movie.horror.slasher",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.series.horror.slasher",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          },
+          {
+            "type": "movie",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.movie.horror.supernatural",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.series.horror.supernatural",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          },
+          {
+            "type": "movie",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.movie.horror.creature",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.series.horror.creature",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          },
+          {
+            "type": "movie",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.movie.horror.psychological",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.series.horror.psychological",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          },
+          {
+            "type": "movie",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.movie.horror.found-footage",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.series.horror.found-footage",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          },
+          {
+            "type": "movie",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.movie.horror.folk-occult",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.series.horror.folk-occult",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          },
+          {
+            "type": "movie",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.movie.horror.new-movies",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.series.horror.new-series",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -1891,6 +2101,90 @@
             "genre": "Horror",
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.genres.horror"
+          },
+          {
+            "type": "movie",
+            "genre": null,
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.movie.horror.slasher"
+          },
+          {
+            "type": "series",
+            "genre": null,
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.series.horror.slasher"
+          },
+          {
+            "type": "movie",
+            "genre": null,
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.movie.horror.supernatural"
+          },
+          {
+            "type": "series",
+            "genre": null,
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.series.horror.supernatural"
+          },
+          {
+            "type": "movie",
+            "genre": null,
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.movie.horror.creature"
+          },
+          {
+            "type": "series",
+            "genre": null,
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.series.horror.creature"
+          },
+          {
+            "type": "movie",
+            "genre": null,
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.movie.horror.psychological"
+          },
+          {
+            "type": "series",
+            "genre": null,
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.series.horror.psychological"
+          },
+          {
+            "type": "movie",
+            "genre": null,
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.movie.horror.found-footage"
+          },
+          {
+            "type": "series",
+            "genre": null,
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.series.horror.found-footage"
+          },
+          {
+            "type": "movie",
+            "genre": null,
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.movie.horror.folk-occult"
+          },
+          {
+            "type": "series",
+            "genre": null,
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.series.horror.folk-occult"
+          },
+          {
+            "type": "movie",
+            "genre": null,
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.movie.horror.new-movies"
+          },
+          {
+            "type": "series",
+            "genre": null,
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.series.horror.new-series"
           }
         ],
         "focusGifEnabled": false,
@@ -3244,446 +3538,6 @@
     "viewMode": "FOLLOW_LAYOUT",
     "showAllTab": true,
     "backdropImageUrl": null,
-    "focusGlowEnabled": true
-  },
-  {
-    "id": "collections-horror",
-    "title": "🩸 Horror",
-    "folders": [
-      {
-        "id": "collections.horror.slasher",
-        "title": "Slasher",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.horror.slasher",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.horror.slasher",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "🩸",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/horror-slasher.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/horror-slasher.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.horror.slasher"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.horror.slasher"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/horror-slasher.jpg",
-        "heroVideoUrl": null,
-        "titleLogoUrl": null
-      },
-      {
-        "id": "collections.horror.supernatural",
-        "title": "Supernatural",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.horror.supernatural",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.horror.supernatural",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "🩸",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/horror-supernatural.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/horror-supernatural.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.horror.supernatural"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.horror.supernatural"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/horror-supernatural.jpg",
-        "heroVideoUrl": null,
-        "titleLogoUrl": null
-      },
-      {
-        "id": "collections.horror.creature",
-        "title": "Creature Feature",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.horror.creature",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.horror.creature",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "🩸",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/horror-creature.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/horror-creature.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.horror.creature"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.horror.creature"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/horror-creature.jpg",
-        "heroVideoUrl": null,
-        "titleLogoUrl": null
-      },
-      {
-        "id": "collections.horror.psychological",
-        "title": "Psychological",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.horror.psychological",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.horror.psychological",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "🩸",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/horror-psychological.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/horror-psychological.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.horror.psychological"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.horror.psychological"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/horror-psychological.jpg",
-        "heroVideoUrl": null,
-        "titleLogoUrl": null
-      },
-      {
-        "id": "collections.horror.found-footage",
-        "title": "Found Footage",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.horror.found-footage",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.horror.found-footage",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "🩸",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/horror-found-footage.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/horror-found-footage.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.horror.found-footage"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.horror.found-footage"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/horror-found-footage.jpg",
-        "heroVideoUrl": null,
-        "titleLogoUrl": null
-      },
-      {
-        "id": "collections.horror.folk-occult",
-        "title": "Folk & Occult",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.horror.folk-occult",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          },
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.horror.folk-occult",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "🩸",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/horror-folk-occult.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/horror-folk-occult.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.horror.folk-occult"
-          },
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.horror.folk-occult"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/horror-folk-occult.jpg",
-        "heroVideoUrl": null,
-        "titleLogoUrl": null
-      },
-      {
-        "id": "collections.horror.new-movies",
-        "title": "New Horror Movies",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.horror.new-movies",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "🩸",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/horror-new-movies.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/horror-new-movies.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.horror.new-movies"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/horror-new-movies.jpg",
-        "heroVideoUrl": null,
-        "titleLogoUrl": null
-      },
-      {
-        "id": "collections.horror.new-series",
-        "title": "New Horror Series",
-        "sources": [
-          {
-            "type": "series",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.series.horror.new-series",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "🩸",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/horror-new-series.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/horror-new-series.jpg",
-        "catalogSources": [
-          {
-            "type": "series",
-            "genre": null,
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.series.horror.new-series"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/horror-new-series.jpg",
-        "heroVideoUrl": null,
-        "titleLogoUrl": null
-      }
-    ],
-    "pinToTop": true,
-    "viewMode": "FOLLOW_LAYOUT",
-    "showAllTab": true,
     "focusGlowEnabled": true
   },
   {
