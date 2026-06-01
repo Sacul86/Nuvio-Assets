@@ -98,562 +98,6 @@
     "focusGlowEnabled": true
   },
   {
-    "id": "collections-streaming",
-    "title": "🎬 Streaming",
-    "folders": [
-      {
-        "id": "folder-stream-netflix",
-        "title": "Netflix",
-        "sources": [
-          {
-            "title": "Popular Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withNetworks": "213",
-              "voteCountGte": 25,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Recent Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withNetworks": "213",
-              "voteCountGte": 5,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/streaming-netflix.jpg",
-        "heroVideoUrl": null,
-        "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/streaming-netflix.jpg",
-        "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/streaming-netflix.jpg"
-      },
-      {
-        "id": "folder-stream-disney-plus",
-        "title": "Disney+",
-        "sources": [
-          {
-            "title": "Popular Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withNetworks": "2739",
-              "voteCountGte": 25,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Recent Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withNetworks": "2739",
-              "voteCountGte": 5,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/streaming-disney-plus.jpg",
-        "heroVideoUrl": null,
-        "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/streaming-disney-plus.jpg",
-        "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/streaming-disney-plus.jpg"
-      },
-      {
-        "id": "folder-stream-prime-video",
-        "title": "Prime Video",
-        "sources": [
-          {
-            "title": "Popular Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withNetworks": "1024",
-              "voteCountGte": 25,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Recent Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withNetworks": "1024",
-              "voteCountGte": 5,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/streaming-prime-video.jpg",
-        "heroVideoUrl": null,
-        "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/streaming-prime-video.jpg",
-        "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/streaming-prime-video.jpg"
-      },
-      {
-        "id": "folder-stream-apple-tv",
-        "title": "Apple TV+",
-        "sources": [
-          {
-            "title": "Popular Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withNetworks": "2552",
-              "voteCountGte": 25,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Recent Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withNetworks": "2552",
-              "voteCountGte": 5,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/streaming-apple-tv.jpg",
-        "heroVideoUrl": null,
-        "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/streaming-apple-tv.jpg",
-        "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/streaming-apple-tv.jpg"
-      },
-      {
-        "id": "folder-stream-hbo-max",
-        "title": "HBO Max",
-        "sources": [
-          {
-            "title": "Popular Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withNetworks": "3186",
-              "voteCountGte": 25,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Recent Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withNetworks": "3186",
-              "voteCountGte": 5,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/streaming-hbo-max.jpg",
-        "heroVideoUrl": null,
-        "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/streaming-hbo-max.jpg",
-        "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/streaming-hbo-max.jpg"
-      },
-      {
-        "id": "folder-stream-hulu",
-        "title": "Hulu",
-        "sources": [
-          {
-            "title": "Popular Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withNetworks": "453",
-              "voteCountGte": 25,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Recent Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withNetworks": "453",
-              "voteCountGte": 5,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/streaming-hulu.jpg",
-        "heroVideoUrl": null,
-        "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/streaming-hulu.jpg",
-        "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/streaming-hulu.jpg"
-      },
-      {
-        "id": "folder-stream-paramount-plus",
-        "title": "Paramount+",
-        "sources": [
-          {
-            "title": "Popular Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withNetworks": "4330",
-              "voteCountGte": 25,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Recent Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withNetworks": "4330",
-              "voteCountGte": 5,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/streaming-paramount-plus.jpg",
-        "heroVideoUrl": null,
-        "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/streaming-paramount-plus.jpg",
-        "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/streaming-paramount-plus.jpg"
-      },
-      {
-        "id": "folder-stream-peacock",
-        "title": "Peacock",
-        "sources": [
-          {
-            "title": "Popular Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withNetworks": "3353",
-              "voteCountGte": 25,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Recent Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withNetworks": "3353",
-              "voteCountGte": 5,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/streaming-peacock.jpg",
-        "heroVideoUrl": null,
-        "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/streaming-peacock.jpg",
-        "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/streaming-peacock.jpg"
-      },
-      {
-        "id": "folder-stream-amc",
-        "title": "AMC",
-        "sources": [
-          {
-            "title": "Popular Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withNetworks": "174",
-              "voteCountGte": 25,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Recent Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withNetworks": "174",
-              "voteCountGte": 5,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/streaming-amc.jpg",
-        "heroVideoUrl": null,
-        "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/streaming-amc.jpg",
-        "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/streaming-amc.jpg"
-      },
-      {
-        "id": "folder-stream-fx",
-        "title": "FX",
-        "sources": [
-          {
-            "title": "Popular Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withNetworks": "88",
-              "voteCountGte": 25,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Recent Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withNetworks": "88",
-              "voteCountGte": 5,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/streaming-fx.jpg",
-        "heroVideoUrl": null,
-        "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/streaming-fx.jpg",
-        "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/streaming-fx.jpg"
-      },
-      {
-        "id": "folder-stream-showtime",
-        "title": "Showtime",
-        "sources": [
-          {
-            "title": "Popular Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withNetworks": "67",
-              "voteCountGte": 25,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Recent Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withNetworks": "67",
-              "voteCountGte": 5,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/streaming-showtime.jpg",
-        "heroVideoUrl": null,
-        "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/streaming-showtime.jpg",
-        "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/streaming-showtime.jpg"
-      },
-      {
-        "id": "folder-stream-starz",
-        "title": "Starz",
-        "sources": [
-          {
-            "title": "Popular Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withNetworks": "318",
-              "voteCountGte": 25,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Recent Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withNetworks": "318",
-              "voteCountGte": 5,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/streaming-starz.jpg",
-        "heroVideoUrl": null,
-        "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/streaming-starz.jpg",
-        "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/streaming-starz.jpg"
-      },
-      {
-        "id": "folder-stream-bbc-one",
-        "title": "BBC One",
-        "sources": [
-          {
-            "title": "Popular Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withNetworks": "4",
-              "voteCountGte": 25,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Recent Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withNetworks": "4",
-              "voteCountGte": 5,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/streaming-bbc-one.jpg",
-        "heroVideoUrl": null,
-        "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/streaming-bbc-one.jpg",
-        "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/streaming-bbc-one.jpg"
-      }
-    ],
-    "pinToTop": true,
-    "viewMode": "FOLLOW_LAYOUT",
-    "showAllTab": true,
-    "focusGlowEnabled": true
-  },
-  {
     "id": "collections-genres",
     "title": "🎭 Genres",
     "folders": [
@@ -682,7 +126,8 @@
               "withGenres": "28",
               "voteCountGte": 10,
               "withOriginalLanguage": "en",
-              "year": 2026
+              "year": 2026,
+              "releaseDateLte": "2026-06-01"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -751,7 +196,8 @@
               "withGenres": "12",
               "voteCountGte": 10,
               "withOriginalLanguage": "en",
-              "year": 2026
+              "year": 2026,
+              "releaseDateLte": "2026-06-01"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -774,13 +220,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎭",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-adventure.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@c2a2f0dd13c1435da0f2ccd3150fee102f41d9e7/assets/genre-adventure.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-adventure.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@c2a2f0dd13c1435da0f2ccd3150fee102f41d9e7/assets/genre-adventure.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-adventure.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@c2a2f0dd13c1435da0f2ccd3150fee102f41d9e7/assets/genre-adventure.jpg"
       },
       {
         "id": "folder-genre-animation",
@@ -807,7 +253,8 @@
               "withGenres": "16",
               "voteCountGte": 10,
               "withOriginalLanguage": "en",
-              "year": 2026
+              "year": 2026,
+              "releaseDateLte": "2026-06-01"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -876,7 +323,8 @@
               "withGenres": "35",
               "voteCountGte": 10,
               "withOriginalLanguage": "en",
-              "year": 2026
+              "year": 2026,
+              "releaseDateLte": "2026-06-01"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -945,7 +393,8 @@
               "withGenres": "80",
               "voteCountGte": 10,
               "withOriginalLanguage": "en",
-              "year": 2026
+              "year": 2026,
+              "releaseDateLte": "2026-06-01"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1014,7 +463,8 @@
               "withGenres": "99",
               "voteCountGte": 10,
               "withOriginalLanguage": "en",
-              "year": 2026
+              "year": 2026,
+              "releaseDateLte": "2026-06-01"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1083,7 +533,8 @@
               "withGenres": "18",
               "voteCountGte": 10,
               "withOriginalLanguage": "en",
-              "year": 2026
+              "year": 2026,
+              "releaseDateLte": "2026-06-01"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1152,7 +603,8 @@
               "withGenres": "10751",
               "voteCountGte": 10,
               "withOriginalLanguage": "en",
-              "year": 2026
+              "year": 2026,
+              "releaseDateLte": "2026-06-01"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1221,7 +673,8 @@
               "withGenres": "14",
               "voteCountGte": 10,
               "withOriginalLanguage": "en",
-              "year": 2026
+              "year": 2026,
+              "releaseDateLte": "2026-06-01"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1277,7 +730,8 @@
               "withGenres": "36",
               "voteCountGte": 10,
               "withOriginalLanguage": "en",
-              "year": 2026
+              "year": 2026,
+              "releaseDateLte": "2026-06-01"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1333,7 +787,8 @@
               "withGenres": "27",
               "voteCountGte": 10,
               "withOriginalLanguage": "en",
-              "year": 2026
+              "year": 2026,
+              "releaseDateLte": "2026-06-01"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1389,7 +844,8 @@
               "withGenres": "10402",
               "voteCountGte": 10,
               "withOriginalLanguage": "en",
-              "year": 2026
+              "year": 2026,
+              "releaseDateLte": "2026-06-01"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1445,7 +901,8 @@
               "withGenres": "9648",
               "voteCountGte": 10,
               "withOriginalLanguage": "en",
-              "year": 2026
+              "year": 2026,
+              "releaseDateLte": "2026-06-01"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1543,7 +1000,8 @@
               "withGenres": "10749",
               "voteCountGte": 10,
               "withOriginalLanguage": "en",
-              "year": 2026
+              "year": 2026,
+              "releaseDateLte": "2026-06-01"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1599,7 +1057,8 @@
               "withGenres": "53",
               "voteCountGte": 10,
               "withOriginalLanguage": "en",
-              "year": 2026
+              "year": 2026,
+              "releaseDateLte": "2026-06-01"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1655,7 +1114,8 @@
               "withGenres": "878",
               "voteCountGte": 10,
               "withOriginalLanguage": "en",
-              "year": 2026
+              "year": 2026,
+              "releaseDateLte": "2026-06-01"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1724,7 +1184,8 @@
               "withGenres": "37",
               "voteCountGte": 10,
               "withOriginalLanguage": "en",
-              "year": 2026
+              "year": 2026,
+              "releaseDateLte": "2026-06-01"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2410,7 +1871,8 @@
             "tmdbId": 7899,
             "filters": {
               "voteCountGte": 5,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "releaseDateLte": "2026-06-01"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2462,7 +1924,8 @@
             "tmdbId": 521,
             "filters": {
               "voteCountGte": 5,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "releaseDateLte": "2026-06-01"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2502,7 +1965,8 @@
             "tmdbId": 2348,
             "filters": {
               "voteCountGte": 5,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "releaseDateLte": "2026-06-01"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2554,7 +2018,8 @@
             "tmdbId": 3,
             "filters": {
               "voteCountGte": 5,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "releaseDateLte": "2026-06-01"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2594,7 +2059,8 @@
             "tmdbId": 1,
             "filters": {
               "voteCountGte": 5,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "releaseDateLte": "2026-06-01"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2634,7 +2100,8 @@
             "tmdbId": 10342,
             "filters": {
               "voteCountGte": 5,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "releaseDateLte": "2026-06-01"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2674,7 +2141,8 @@
             "tmdbId": 41077,
             "filters": {
               "voteCountGte": 5,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "releaseDateLte": "2026-06-01"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2714,7 +2182,8 @@
             "tmdbId": 3172,
             "filters": {
               "voteCountGte": 5,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "releaseDateLte": "2026-06-01"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2754,7 +2223,8 @@
             "tmdbId": 923,
             "filters": {
               "voteCountGte": 5,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "releaseDateLte": "2026-06-01"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2794,7 +2264,8 @@
             "tmdbId": 12,
             "filters": {
               "voteCountGte": 5,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "releaseDateLte": "2026-06-01"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2834,7 +2305,8 @@
             "tmdbId": 33,
             "filters": {
               "voteCountGte": 5,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "releaseDateLte": "2026-06-01"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2874,7 +2346,8 @@
             "tmdbId": 174,
             "filters": {
               "voteCountGte": 5,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "releaseDateLte": "2026-06-01"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2914,7 +2387,8 @@
             "tmdbId": 5,
             "filters": {
               "voteCountGte": 5,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "releaseDateLte": "2026-06-01"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2954,7 +2428,8 @@
             "tmdbId": 1632,
             "filters": {
               "voteCountGte": 5,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "releaseDateLte": "2026-06-01"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2994,7 +2469,8 @@
             "tmdbId": 10146,
             "filters": {
               "voteCountGte": 5,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "releaseDateLte": "2026-06-01"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -3034,7 +2510,8 @@
             "tmdbId": 127928,
             "filters": {
               "voteCountGte": 5,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "releaseDateLte": "2026-06-01"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -3074,7 +2551,8 @@
             "tmdbId": 56,
             "filters": {
               "voteCountGte": 5,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "releaseDateLte": "2026-06-01"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -3124,7 +2602,8 @@
             "tmdbId": 420,
             "filters": {
               "voteCountGte": 5,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "releaseDateLte": "2026-06-01"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -3164,7 +2643,8 @@
             "tmdbId": 429,
             "filters": {
               "voteCountGte": 5,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "releaseDateLte": "2026-06-01"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
