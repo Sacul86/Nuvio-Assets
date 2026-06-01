@@ -4,7 +4,7 @@
     "title": "🔭 Discover",
     "folders": [
       {
-        "id": "folder-popular",
+        "id": "folder-disc-popular",
         "title": "Popular",
         "sources": [
           {
@@ -12,28 +12,39 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "28",
               "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 200,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
           }
         ],
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
-        "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/popular.jpg",
+        "coverEmoji": "🔭",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/popular.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/popular.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/popular.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/popular.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/popular.jpg"
       },
       {
-        "id": "folder-trending",
+        "id": "folder-disc-trending",
         "title": "Trending",
         "sources": [
           {
@@ -41,29 +52,42 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "28",
-              "voteCountGte": 100,
+              "voteCountGte": 80,
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2025-01-01"
+              "year": 2026,
+              "releaseDateLte": "2026-06-01"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Trending Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en",
+              "year": 2026
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
             "tmdbSourceType": "DISCOVER"
           }
         ],
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
-        "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/trending.jpg",
+        "coverEmoji": "🔭",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/trending.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/trending.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/trending.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/trending.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/trending.jpg"
       },
       {
-        "id": "folder-top-rated",
+        "id": "folder-disc-top-rated",
         "title": "Top Rated",
         "sources": [
           {
@@ -71,25 +95,36 @@
             "sortBy": "vote_average.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "18",
-              "voteCountGte": 500,
+              "voteCountGte": 2000,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 500,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
           }
         ],
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
-        "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/top-rated.jpg",
+        "coverEmoji": "🔭",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/top-rated.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/top-rated.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/top-rated.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/top-rated.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/top-rated.jpg"
       }
     ],
     "pinToTop": true,
@@ -110,9 +145,9 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "28",
               "voteCountGte": 50,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withGenres": "28"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -123,24 +158,11 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "28",
               "voteCountGte": 10,
               "withOriginalLanguage": "en",
+              "withGenres": "28",
               "year": 2026,
               "releaseDateLte": "2026-06-01"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "28",
-              "voteCountGte": 300,
-              "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -151,9 +173,9 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "10759",
               "voteCountGte": 25,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withGenres": "10759"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -163,13 +185,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎭",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-action.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-action.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-action.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-action.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-action.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-action.jpg"
       },
       {
         "id": "folder-genre-adventure",
@@ -180,9 +202,9 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "12",
               "voteCountGte": 50,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withGenres": "12"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -193,24 +215,11 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "12",
               "voteCountGte": 10,
               "withOriginalLanguage": "en",
+              "withGenres": "12",
               "year": 2026,
               "releaseDateLte": "2026-06-01"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "12",
-              "voteCountGte": 300,
-              "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -220,13 +229,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎭",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@c2a2f0dd13c1435da0f2ccd3150fee102f41d9e7/assets/genre-adventure.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-adventure.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@c2a2f0dd13c1435da0f2ccd3150fee102f41d9e7/assets/genre-adventure.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-adventure.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@c2a2f0dd13c1435da0f2ccd3150fee102f41d9e7/assets/genre-adventure.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-adventure.jpg"
       },
       {
         "id": "folder-genre-animation",
@@ -237,9 +246,9 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "16",
               "voteCountGte": 50,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withGenres": "16"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -250,24 +259,11 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "16",
               "voteCountGte": 10,
               "withOriginalLanguage": "en",
+              "withGenres": "16",
               "year": 2026,
               "releaseDateLte": "2026-06-01"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "16",
-              "voteCountGte": 300,
-              "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -278,9 +274,9 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "16",
               "voteCountGte": 25,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withGenres": "16"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -290,13 +286,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎭",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-animation.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-animation.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-animation.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-animation.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-animation.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-animation.jpg"
       },
       {
         "id": "folder-genre-comedy",
@@ -307,9 +303,9 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "35",
               "voteCountGte": 50,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withGenres": "35"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -320,24 +316,11 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "35",
               "voteCountGte": 10,
               "withOriginalLanguage": "en",
+              "withGenres": "35",
               "year": 2026,
               "releaseDateLte": "2026-06-01"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "35",
-              "voteCountGte": 300,
-              "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -348,9 +331,9 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "35",
               "voteCountGte": 25,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withGenres": "35"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -360,13 +343,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎭",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-comedy.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-comedy.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-comedy.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-comedy.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-comedy.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-comedy.jpg"
       },
       {
         "id": "folder-genre-crime",
@@ -377,9 +360,9 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "80",
               "voteCountGte": 50,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withGenres": "80"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -390,24 +373,11 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "80",
               "voteCountGte": 10,
               "withOriginalLanguage": "en",
+              "withGenres": "80",
               "year": 2026,
               "releaseDateLte": "2026-06-01"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "80",
-              "voteCountGte": 300,
-              "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -418,9 +388,9 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "80",
               "voteCountGte": 25,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withGenres": "80"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -430,13 +400,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎭",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-crime.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-crime.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-crime.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-crime.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-crime.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-crime.jpg"
       },
       {
         "id": "folder-genre-documentary",
@@ -447,9 +417,9 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "99",
               "voteCountGte": 50,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withGenres": "99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -460,24 +430,11 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "99",
               "voteCountGte": 10,
               "withOriginalLanguage": "en",
+              "withGenres": "99",
               "year": 2026,
               "releaseDateLte": "2026-06-01"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "99",
-              "voteCountGte": 300,
-              "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -488,9 +445,9 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "99",
               "voteCountGte": 25,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withGenres": "99"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -500,13 +457,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎭",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-documentary.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-documentary.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-documentary.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-documentary.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-documentary.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-documentary.jpg"
       },
       {
         "id": "folder-genre-drama",
@@ -517,9 +474,9 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "18",
               "voteCountGte": 50,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withGenres": "18"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -530,24 +487,11 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "18",
               "voteCountGte": 10,
               "withOriginalLanguage": "en",
+              "withGenres": "18",
               "year": 2026,
               "releaseDateLte": "2026-06-01"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "18",
-              "voteCountGte": 300,
-              "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -558,9 +502,9 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "18",
               "voteCountGte": 25,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withGenres": "18"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -570,13 +514,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎭",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-drama.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-drama.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-drama.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-drama.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-drama.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-drama.jpg"
       },
       {
         "id": "folder-genre-family",
@@ -587,9 +531,9 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "10751",
               "voteCountGte": 50,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withGenres": "10751"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -600,24 +544,11 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "10751",
               "voteCountGte": 10,
               "withOriginalLanguage": "en",
+              "withGenres": "10751",
               "year": 2026,
               "releaseDateLte": "2026-06-01"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "10751",
-              "voteCountGte": 300,
-              "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -628,9 +559,9 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "10751",
               "voteCountGte": 25,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withGenres": "10751"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -640,13 +571,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎭",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-family.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-family.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-family.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-family.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-family.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-family.jpg"
       },
       {
         "id": "folder-genre-fantasy",
@@ -657,9 +588,9 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "14",
               "voteCountGte": 50,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withGenres": "14"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -670,24 +601,11 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "14",
               "voteCountGte": 10,
               "withOriginalLanguage": "en",
+              "withGenres": "14",
               "year": 2026,
               "releaseDateLte": "2026-06-01"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "14",
-              "voteCountGte": 300,
-              "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -697,13 +615,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎭",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-fantasy.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-fantasy.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-fantasy.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-fantasy.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-fantasy.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-fantasy.jpg"
       },
       {
         "id": "folder-genre-history",
@@ -714,9 +632,9 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "36",
               "voteCountGte": 50,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withGenres": "36"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -727,24 +645,11 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "36",
               "voteCountGte": 10,
               "withOriginalLanguage": "en",
+              "withGenres": "36",
               "year": 2026,
               "releaseDateLte": "2026-06-01"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "36",
-              "voteCountGte": 300,
-              "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -754,13 +659,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎭",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-history.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-history.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-history.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-history.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-history.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-history.jpg"
       },
       {
         "id": "folder-genre-horror",
@@ -771,9 +676,9 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "27",
               "voteCountGte": 50,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withGenres": "27"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -784,24 +689,11 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "27",
               "voteCountGte": 10,
               "withOriginalLanguage": "en",
+              "withGenres": "27",
               "year": 2026,
               "releaseDateLte": "2026-06-01"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "27",
-              "voteCountGte": 300,
-              "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -811,13 +703,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎭",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-horror.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-horror.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-horror.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-horror.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-horror.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-horror.jpg"
       },
       {
         "id": "folder-genre-music",
@@ -828,9 +720,9 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "10402",
               "voteCountGte": 50,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withGenres": "10402"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -841,24 +733,11 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "10402",
               "voteCountGte": 10,
               "withOriginalLanguage": "en",
+              "withGenres": "10402",
               "year": 2026,
               "releaseDateLte": "2026-06-01"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "10402",
-              "voteCountGte": 300,
-              "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -868,13 +747,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎭",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-music.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-music.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-music.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-music.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-music.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-music.jpg"
       },
       {
         "id": "folder-genre-mystery",
@@ -885,9 +764,9 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "9648",
               "voteCountGte": 50,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withGenres": "9648"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -898,24 +777,11 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "9648",
               "voteCountGte": 10,
               "withOriginalLanguage": "en",
+              "withGenres": "9648",
               "year": 2026,
               "releaseDateLte": "2026-06-01"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "9648",
-              "voteCountGte": 300,
-              "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -926,9 +792,9 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "9648",
               "voteCountGte": 25,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withGenres": "9648"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -938,13 +804,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎭",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-mystery.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-mystery.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-mystery.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-mystery.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-mystery.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-mystery.jpg"
       },
       {
         "id": "folder-genre-reality",
@@ -955,9 +821,9 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "10764",
               "voteCountGte": 25,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withGenres": "10764"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -967,13 +833,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎭",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-reality.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-reality.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-reality.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-reality.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-reality.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-reality.jpg"
       },
       {
         "id": "folder-genre-romance",
@@ -984,9 +850,9 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "10749",
               "voteCountGte": 50,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withGenres": "10749"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -997,24 +863,11 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "10749",
               "voteCountGte": 10,
               "withOriginalLanguage": "en",
+              "withGenres": "10749",
               "year": 2026,
               "releaseDateLte": "2026-06-01"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "10749",
-              "voteCountGte": 300,
-              "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1024,13 +877,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎭",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-romance.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-romance.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-romance.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-romance.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-romance.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-romance.jpg"
       },
       {
         "id": "folder-genre-thriller",
@@ -1041,9 +894,9 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "53",
               "voteCountGte": 50,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withGenres": "53"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1054,24 +907,11 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "53",
               "voteCountGte": 10,
               "withOriginalLanguage": "en",
+              "withGenres": "53",
               "year": 2026,
               "releaseDateLte": "2026-06-01"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "53",
-              "voteCountGte": 300,
-              "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1081,13 +921,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎭",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-thriller.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-thriller.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-thriller.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-thriller.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-thriller.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-thriller.jpg"
       },
       {
         "id": "folder-genre-tv",
@@ -1098,9 +938,9 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "878",
               "voteCountGte": 50,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withGenres": "878"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1111,24 +951,11 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "878",
               "voteCountGte": 10,
               "withOriginalLanguage": "en",
+              "withGenres": "878",
               "year": 2026,
               "releaseDateLte": "2026-06-01"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "878",
-              "voteCountGte": 300,
-              "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1139,9 +966,9 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "10765",
               "voteCountGte": 25,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withGenres": "10765"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1151,13 +978,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎭",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-tv.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-tv.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-tv.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-tv.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-tv.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-tv.jpg"
       },
       {
         "id": "folder-genre-western",
@@ -1168,9 +995,9 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "37",
               "voteCountGte": 50,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withGenres": "37"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1181,24 +1008,11 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "37",
               "voteCountGte": 10,
               "withOriginalLanguage": "en",
+              "withGenres": "37",
               "year": 2026,
               "releaseDateLte": "2026-06-01"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "37",
-              "voteCountGte": 300,
-              "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1209,9 +1023,9 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "37",
               "voteCountGte": 25,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withGenres": "37"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1221,13 +1035,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎭",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-western.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-western.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-western.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-western.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@92b5d3bf425a1d3f229668c1a658a970b88bd29e/assets/genre-western.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/genre-western.jpg"
       }
     ],
     "pinToTop": true,
@@ -1244,46 +1058,45 @@
         "title": "Time Travel",
         "sources": [
           {
-            "title": "Popular (keyword test)",
+            "title": "Popular",
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "withKeywords": "4379|10854|186760",
+              "voteCountGte": 30,
+              "withOriginalLanguage": "en",
               "withGenres": "878",
-              "voteCountGte": 50,
-              "withOriginalLanguage": "en"
+              "withKeywords": "4379|10854|186760"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER"
           },
           {
-            "title": "Popular",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 4308678
-          },
-          {
             "title": "New",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en",
+              "withGenres": "878",
+              "withKeywords": "4379|10854|186760",
+              "releaseDateLte": "2026-06-01"
+            },
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 4308678
+            "tmdbSourceType": "DISCOVER"
           }
         ],
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎨",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/time-travel.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/time-travel.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/time-travel.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/time-travel.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/time-travel.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/time-travel.jpg"
       },
       {
         "id": "folder-theme-revenge",
@@ -1291,31 +1104,44 @@
         "sources": [
           {
             "title": "Popular",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 30,
+              "withOriginalLanguage": "en",
+              "withGenres": "28|53",
+              "withKeywords": "9748|232766|155244"
+            },
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 22105492
+            "tmdbSourceType": "DISCOVER"
           },
           {
             "title": "New",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en",
+              "withGenres": "28|53",
+              "withKeywords": "9748|232766|155244",
+              "releaseDateLte": "2026-06-01"
+            },
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 22105492
+            "tmdbSourceType": "DISCOVER"
           }
         ],
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎨",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/revenge.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/revenge.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/revenge.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/revenge.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/revenge.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/revenge.jpg"
       },
       {
         "id": "folder-theme-spy",
@@ -1323,31 +1149,44 @@
         "sources": [
           {
             "title": "Popular",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 30,
+              "withOriginalLanguage": "en",
+              "withGenres": "28|53",
+              "withKeywords": "470|5265|4289|4654|3637"
+            },
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 29765943
+            "tmdbSourceType": "DISCOVER"
           },
           {
             "title": "New",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en",
+              "withGenres": "28|53",
+              "withKeywords": "470|5265|4289|4654|3637",
+              "releaseDateLte": "2026-06-01"
+            },
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 29765943
+            "tmdbSourceType": "DISCOVER"
           }
         ],
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎨",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/spy.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/spy.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/spy.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/spy.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/spy.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/spy.jpg"
       },
       {
         "id": "folder-theme-magic",
@@ -1355,31 +1194,44 @@
         "sources": [
           {
             "title": "Popular",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 30,
+              "withOriginalLanguage": "en",
+              "withGenres": "14",
+              "withKeywords": "2343|177912|5147|40931|10821"
+            },
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 1848041
+            "tmdbSourceType": "DISCOVER"
           },
           {
             "title": "New",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en",
+              "withGenres": "14",
+              "withKeywords": "2343|177912|5147|40931|10821",
+              "releaseDateLte": "2026-06-01"
+            },
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 1848041
+            "tmdbSourceType": "DISCOVER"
           }
         ],
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎨",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/magic.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/magic.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/magic.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/magic.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/magic.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/magic.jpg"
       },
       {
         "id": "folder-theme-treasure-hunt",
@@ -1387,31 +1239,44 @@
         "sources": [
           {
             "title": "Popular",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 30,
+              "withOriginalLanguage": "en",
+              "withGenres": "12|28",
+              "withKeywords": "6956|208278|11088|215470|41586"
+            },
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 23422309
+            "tmdbSourceType": "DISCOVER"
           },
           {
             "title": "New",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en",
+              "withGenres": "12|28",
+              "withKeywords": "6956|208278|11088|215470|41586",
+              "releaseDateLte": "2026-06-01"
+            },
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 23422309
+            "tmdbSourceType": "DISCOVER"
           }
         ],
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎨",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/treasure-hunt.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/treasure-hunt.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/treasure-hunt.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/treasure-hunt.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/treasure-hunt.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/treasure-hunt.jpg"
       },
       {
         "id": "folder-theme-coming-of-age",
@@ -1419,31 +1284,44 @@
         "sources": [
           {
             "title": "Popular",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 30,
+              "withOriginalLanguage": "en",
+              "withGenres": "18",
+              "withKeywords": "10683|704|10049"
+            },
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 1795003
+            "tmdbSourceType": "DISCOVER"
           },
           {
             "title": "New",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en",
+              "withGenres": "18",
+              "withKeywords": "10683|704|10049",
+              "releaseDateLte": "2026-06-01"
+            },
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 1795003
+            "tmdbSourceType": "DISCOVER"
           }
         ],
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎨",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/coming-of-age.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/coming-of-age.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/coming-of-age.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/coming-of-age.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/coming-of-age.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/coming-of-age.jpg"
       },
       {
         "id": "folder-theme-space",
@@ -1451,31 +1329,44 @@
         "sources": [
           {
             "title": "Popular",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 30,
+              "withOriginalLanguage": "en",
+              "withGenres": "878|12",
+              "withKeywords": "9882|3801|252937|14626|161176"
+            },
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 20718697
+            "tmdbSourceType": "DISCOVER"
           },
           {
             "title": "New",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en",
+              "withGenres": "878|12",
+              "withKeywords": "9882|3801|252937|14626|161176",
+              "releaseDateLte": "2026-06-01"
+            },
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 20718697
+            "tmdbSourceType": "DISCOVER"
           }
         ],
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎨",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/space.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/space.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/space.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/space.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/space.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/space.jpg"
       },
       {
         "id": "folder-theme-martial-arts",
@@ -1483,31 +1374,44 @@
         "sources": [
           {
             "title": "Popular",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 30,
+              "withOriginalLanguage": "en",
+              "withGenres": "28",
+              "withKeywords": "779|780|3436|156159|156162|14731"
+            },
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 20287305
+            "tmdbSourceType": "DISCOVER"
           },
           {
             "title": "New",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en",
+              "withGenres": "28",
+              "withKeywords": "779|780|3436|156159|156162|14731",
+              "releaseDateLte": "2026-06-01"
+            },
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 20287305
+            "tmdbSourceType": "DISCOVER"
           }
         ],
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎨",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/martial-arts.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/martial-arts.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/martial-arts.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/martial-arts.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/martial-arts.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/martial-arts.jpg"
       },
       {
         "id": "folder-theme-vampire",
@@ -1515,31 +1419,44 @@
         "sources": [
           {
             "title": "Popular",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 30,
+              "withOriginalLanguage": "en",
+              "withGenres": "27|14",
+              "withKeywords": "3133|9259|342966|185629"
+            },
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 11446335
+            "tmdbSourceType": "DISCOVER"
           },
           {
             "title": "New",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en",
+              "withGenres": "27|14",
+              "withKeywords": "3133|9259|342966|185629",
+              "releaseDateLte": "2026-06-01"
+            },
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 11446335
+            "tmdbSourceType": "DISCOVER"
           }
         ],
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎨",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/vampire.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/vampire.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/vampire.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/vampire.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/vampire.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/vampire.jpg"
       },
       {
         "id": "folder-theme-satire",
@@ -1547,31 +1464,44 @@
         "sources": [
           {
             "title": "Popular",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 30,
+              "withOriginalLanguage": "en",
+              "withGenres": "35",
+              "withKeywords": "8201|169086|11514|252201|362329"
+            },
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 1588602
+            "tmdbSourceType": "DISCOVER"
           },
           {
             "title": "New",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en",
+              "withGenres": "35",
+              "withKeywords": "8201|169086|11514|252201|362329",
+              "releaseDateLte": "2026-06-01"
+            },
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 1588602
+            "tmdbSourceType": "DISCOVER"
           }
         ],
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎨",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/satire.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/satire.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/satire.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/satire.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/satire.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/satire.jpg"
       },
       {
         "id": "folder-theme-zombie",
@@ -1579,31 +1509,44 @@
         "sources": [
           {
             "title": "Popular",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 30,
+              "withOriginalLanguage": "en",
+              "withGenres": "27|53|878",
+              "withKeywords": "12377|186565|9925|356202|325470|360949|369289|360877|325469"
+            },
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 30750715
+            "tmdbSourceType": "DISCOVER"
           },
           {
             "title": "New",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en",
+              "withGenres": "27|53|878",
+              "withKeywords": "12377|186565|9925|356202|325470|360949|369289|360877|325469",
+              "releaseDateLte": "2026-06-01"
+            },
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 30750715
+            "tmdbSourceType": "DISCOVER"
           }
         ],
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎨",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/zombie.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/zombie.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/zombie.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/zombie.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/zombie.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/zombie.jpg"
       },
       {
         "id": "folder-theme-natural-disasters",
@@ -1611,31 +1554,44 @@
         "sources": [
           {
             "title": "Popular",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 30,
+              "withOriginalLanguage": "en",
+              "withGenres": "878|28|18|12",
+              "withKeywords": "356191|5096|4803|163398|3528|6941"
+            },
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 30731033
+            "tmdbSourceType": "DISCOVER"
           },
           {
             "title": "New",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en",
+              "withGenres": "878|28|18|12",
+              "withKeywords": "356191|5096|4803|163398|3528|6941",
+              "releaseDateLte": "2026-06-01"
+            },
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 30731033
+            "tmdbSourceType": "DISCOVER"
           }
         ],
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎨",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/natural-disasters.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/natural-disasters.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/natural-disasters.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/natural-disasters.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/natural-disasters.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/natural-disasters.jpg"
       },
       {
         "id": "folder-theme-pandemic",
@@ -1643,31 +1599,44 @@
         "sources": [
           {
             "title": "Popular",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 30,
+              "withOriginalLanguage": "en",
+              "withGenres": "27|53|878|18",
+              "withKeywords": "188973|17995|188957|9744|6898"
+            },
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 11016726
+            "tmdbSourceType": "DISCOVER"
           },
           {
             "title": "New",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en",
+              "withGenres": "27|53|878|18",
+              "withKeywords": "188973|17995|188957|9744|6898",
+              "releaseDateLte": "2026-06-01"
+            },
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 11016726
+            "tmdbSourceType": "DISCOVER"
           }
         ],
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎨",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/pandemic.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/pandemic.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/pandemic.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/pandemic.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/pandemic.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/pandemic.jpg"
       },
       {
         "id": "folder-theme-alien-invasion",
@@ -1675,31 +1644,44 @@
         "sources": [
           {
             "title": "Popular",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 30,
+              "withOriginalLanguage": "en",
+              "withGenres": "878|28|12",
+              "withKeywords": "14909|9739|160515|273439|9738"
+            },
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 24212450
+            "tmdbSourceType": "DISCOVER"
           },
           {
             "title": "New",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en",
+              "withGenres": "878|28|12",
+              "withKeywords": "14909|9739|160515|273439|9738",
+              "releaseDateLte": "2026-06-01"
+            },
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 24212450
+            "tmdbSourceType": "DISCOVER"
           }
         ],
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎨",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/alien-invasion.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/alien-invasion.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/alien-invasion.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/alien-invasion.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/alien-invasion.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/alien-invasion.jpg"
       },
       {
         "id": "folder-theme-kaiju-monsters",
@@ -1707,31 +1689,44 @@
         "sources": [
           {
             "title": "Popular",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 30,
+              "withOriginalLanguage": "en",
+              "withGenres": "27|878|28",
+              "withKeywords": "161791|11100|7994"
+            },
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 24253433
+            "tmdbSourceType": "DISCOVER"
           },
           {
             "title": "New",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en",
+              "withGenres": "27|878|28",
+              "withKeywords": "161791|11100|7994",
+              "releaseDateLte": "2026-06-01"
+            },
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 24253433
+            "tmdbSourceType": "DISCOVER"
           }
         ],
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎨",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/kaiju-monsters.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/kaiju-monsters.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/kaiju-monsters.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/kaiju-monsters.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5fd3d2c60b599e0803732b1c802de7f9dbbc6c33/assets/kaiju-monsters.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/kaiju-monsters.jpg"
       }
     ],
     "pinToTop": true,
@@ -1760,7 +1755,7 @@
             "tmdbSourceType": "COMPANY"
           },
           {
-            "title": "Recent",
+            "title": "New",
             "sortBy": "primary_release_date.desc",
             "tmdbId": 7899,
             "filters": {
@@ -1788,13 +1783,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🏰",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/studios-cartoon-network.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-cartoon-network.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/studios-cartoon-network.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-cartoon-network.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/studios-cartoon-network.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-cartoon-network.jpg"
       },
       {
         "id": "folder-studio-dreamworks",
@@ -1813,7 +1808,7 @@
             "tmdbSourceType": "COMPANY"
           },
           {
-            "title": "Recent",
+            "title": "New",
             "sortBy": "primary_release_date.desc",
             "tmdbId": 521,
             "filters": {
@@ -1829,13 +1824,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🏰",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/studios-dreamworks.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-dreamworks.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/studios-dreamworks.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-dreamworks.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/studios-dreamworks.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-dreamworks.jpg"
       },
       {
         "id": "folder-studio-nickelodeon",
@@ -1854,7 +1849,7 @@
             "tmdbSourceType": "COMPANY"
           },
           {
-            "title": "Recent",
+            "title": "New",
             "sortBy": "primary_release_date.desc",
             "tmdbId": 2348,
             "filters": {
@@ -1882,13 +1877,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🏰",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/studios-nickelodeon.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-nickelodeon.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/studios-nickelodeon.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-nickelodeon.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/studios-nickelodeon.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-nickelodeon.jpg"
       },
       {
         "id": "folder-studio-pixar",
@@ -1907,7 +1902,7 @@
             "tmdbSourceType": "COMPANY"
           },
           {
-            "title": "Recent",
+            "title": "New",
             "sortBy": "primary_release_date.desc",
             "tmdbId": 3,
             "filters": {
@@ -1923,13 +1918,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🏰",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/studios-pixar.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-pixar.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/studios-pixar.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-pixar.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/studios-pixar.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-pixar.jpg"
       },
       {
         "id": "folder-studio-lucasfilm",
@@ -1948,7 +1943,7 @@
             "tmdbSourceType": "COMPANY"
           },
           {
-            "title": "Recent",
+            "title": "New",
             "sortBy": "primary_release_date.desc",
             "tmdbId": 1,
             "filters": {
@@ -1964,13 +1959,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🏰",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/studios-lucasfilm.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-lucasfilm.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/studios-lucasfilm.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-lucasfilm.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@71b76b043a8cde916355aa8004b5325fdfdc4678/assets/studios-lucasfilm.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-lucasfilm.jpg"
       },
       {
         "id": "folder-studio-ghibli",
@@ -1989,7 +1984,7 @@
             "tmdbSourceType": "COMPANY"
           },
           {
-            "title": "Recent",
+            "title": "New",
             "sortBy": "primary_release_date.desc",
             "tmdbId": 10342,
             "filters": {
@@ -2005,13 +2000,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🏰",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@3449cd6eefb64e6286a31781e1fd3a01ac155286/assets/studios-ghibli.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-ghibli.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@3449cd6eefb64e6286a31781e1fd3a01ac155286/assets/studios-ghibli.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-ghibli.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@3449cd6eefb64e6286a31781e1fd3a01ac155286/assets/studios-ghibli.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-ghibli.jpg"
       },
       {
         "id": "folder-studio-a24",
@@ -2030,7 +2025,7 @@
             "tmdbSourceType": "COMPANY"
           },
           {
-            "title": "Recent",
+            "title": "New",
             "sortBy": "primary_release_date.desc",
             "tmdbId": 41077,
             "filters": {
@@ -2046,13 +2041,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🏰",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@3449cd6eefb64e6286a31781e1fd3a01ac155286/assets/studios-a24.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-a24.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@3449cd6eefb64e6286a31781e1fd3a01ac155286/assets/studios-a24.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-a24.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@3449cd6eefb64e6286a31781e1fd3a01ac155286/assets/studios-a24.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-a24.jpg"
       },
       {
         "id": "folder-studio-blumhouse",
@@ -2071,7 +2066,7 @@
             "tmdbSourceType": "COMPANY"
           },
           {
-            "title": "Recent",
+            "title": "New",
             "sortBy": "primary_release_date.desc",
             "tmdbId": 3172,
             "filters": {
@@ -2087,13 +2082,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🏰",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@3449cd6eefb64e6286a31781e1fd3a01ac155286/assets/studios-blumhouse.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-blumhouse.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@3449cd6eefb64e6286a31781e1fd3a01ac155286/assets/studios-blumhouse.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-blumhouse.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@3449cd6eefb64e6286a31781e1fd3a01ac155286/assets/studios-blumhouse.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-blumhouse.jpg"
       },
       {
         "id": "folder-studio-legendary",
@@ -2112,7 +2107,7 @@
             "tmdbSourceType": "COMPANY"
           },
           {
-            "title": "Recent",
+            "title": "New",
             "sortBy": "primary_release_date.desc",
             "tmdbId": 923,
             "filters": {
@@ -2128,13 +2123,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🏰",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@3449cd6eefb64e6286a31781e1fd3a01ac155286/assets/studios-legendary.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-legendary.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@3449cd6eefb64e6286a31781e1fd3a01ac155286/assets/studios-legendary.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-legendary.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@3449cd6eefb64e6286a31781e1fd3a01ac155286/assets/studios-legendary.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-legendary.jpg"
       },
       {
         "id": "folder-studio-new-line",
@@ -2153,7 +2148,7 @@
             "tmdbSourceType": "COMPANY"
           },
           {
-            "title": "Recent",
+            "title": "New",
             "sortBy": "primary_release_date.desc",
             "tmdbId": 12,
             "filters": {
@@ -2169,13 +2164,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🏰",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@3449cd6eefb64e6286a31781e1fd3a01ac155286/assets/studios-new-line.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-new-line.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@3449cd6eefb64e6286a31781e1fd3a01ac155286/assets/studios-new-line.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-new-line.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@3449cd6eefb64e6286a31781e1fd3a01ac155286/assets/studios-new-line.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-new-line.jpg"
       },
       {
         "id": "folder-studio-universal",
@@ -2194,7 +2189,7 @@
             "tmdbSourceType": "COMPANY"
           },
           {
-            "title": "Recent",
+            "title": "New",
             "sortBy": "primary_release_date.desc",
             "tmdbId": 33,
             "filters": {
@@ -2210,13 +2205,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🏰",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@3449cd6eefb64e6286a31781e1fd3a01ac155286/assets/studios-universal.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-universal.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@3449cd6eefb64e6286a31781e1fd3a01ac155286/assets/studios-universal.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-universal.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@3449cd6eefb64e6286a31781e1fd3a01ac155286/assets/studios-universal.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-universal.jpg"
       },
       {
         "id": "folder-studio-warner-bros",
@@ -2235,7 +2230,7 @@
             "tmdbSourceType": "COMPANY"
           },
           {
-            "title": "Recent",
+            "title": "New",
             "sortBy": "primary_release_date.desc",
             "tmdbId": 174,
             "filters": {
@@ -2251,13 +2246,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🏰",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@3449cd6eefb64e6286a31781e1fd3a01ac155286/assets/studios-warner-bros.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-warner-bros.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@3449cd6eefb64e6286a31781e1fd3a01ac155286/assets/studios-warner-bros.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-warner-bros.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@3449cd6eefb64e6286a31781e1fd3a01ac155286/assets/studios-warner-bros.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-warner-bros.jpg"
       },
       {
         "id": "folder-studio-sony",
@@ -2276,7 +2271,7 @@
             "tmdbSourceType": "COMPANY"
           },
           {
-            "title": "Recent",
+            "title": "New",
             "sortBy": "primary_release_date.desc",
             "tmdbId": 5,
             "filters": {
@@ -2292,13 +2287,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🏰",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@3449cd6eefb64e6286a31781e1fd3a01ac155286/assets/studios-sony.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-sony.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@3449cd6eefb64e6286a31781e1fd3a01ac155286/assets/studios-sony.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-sony.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@3449cd6eefb64e6286a31781e1fd3a01ac155286/assets/studios-sony.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-sony.jpg"
       },
       {
         "id": "folder-studio-lionsgate",
@@ -2317,7 +2312,7 @@
             "tmdbSourceType": "COMPANY"
           },
           {
-            "title": "Recent",
+            "title": "New",
             "sortBy": "primary_release_date.desc",
             "tmdbId": 1632,
             "filters": {
@@ -2333,13 +2328,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🏰",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@d858319609377195ced71e48e91b89b549c8a6cd/assets/studios-lionsgate.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-lionsgate.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@d858319609377195ced71e48e91b89b549c8a6cd/assets/studios-lionsgate.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-lionsgate.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@d858319609377195ced71e48e91b89b549c8a6cd/assets/studios-lionsgate.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-lionsgate.jpg"
       },
       {
         "id": "folder-studio-focus-features",
@@ -2358,7 +2353,7 @@
             "tmdbSourceType": "COMPANY"
           },
           {
-            "title": "Recent",
+            "title": "New",
             "sortBy": "primary_release_date.desc",
             "tmdbId": 10146,
             "filters": {
@@ -2374,13 +2369,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🏰",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@d858319609377195ced71e48e91b89b549c8a6cd/assets/studios-focus-features.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-focus-features.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@d858319609377195ced71e48e91b89b549c8a6cd/assets/studios-focus-features.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-focus-features.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@d858319609377195ced71e48e91b89b549c8a6cd/assets/studios-focus-features.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-focus-features.jpg"
       },
       {
         "id": "folder-studio-20th-century",
@@ -2399,7 +2394,7 @@
             "tmdbSourceType": "COMPANY"
           },
           {
-            "title": "Recent",
+            "title": "New",
             "sortBy": "primary_release_date.desc",
             "tmdbId": 127928,
             "filters": {
@@ -2415,13 +2410,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🏰",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@d858319609377195ced71e48e91b89b549c8a6cd/assets/studios-20th-century.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-20th-century.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@d858319609377195ced71e48e91b89b549c8a6cd/assets/studios-20th-century.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-20th-century.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@d858319609377195ced71e48e91b89b549c8a6cd/assets/studios-20th-century.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-20th-century.jpg"
       },
       {
         "id": "folder-studio-amblin",
@@ -2440,7 +2435,7 @@
             "tmdbSourceType": "COMPANY"
           },
           {
-            "title": "Recent",
+            "title": "New",
             "sortBy": "primary_release_date.desc",
             "tmdbId": 56,
             "filters": {
@@ -2456,13 +2451,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🏰",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@d858319609377195ced71e48e91b89b549c8a6cd/assets/studios-amblin.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-amblin.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@d858319609377195ced71e48e91b89b549c8a6cd/assets/studios-amblin.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-amblin.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@d858319609377195ced71e48e91b89b549c8a6cd/assets/studios-amblin.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/studios-amblin.jpg"
       }
     ],
     "pinToTop": true,
@@ -2507,13 +2502,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-mcu.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-mcu.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-mcu.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-mcu.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-mcu.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-mcu.jpg"
       },
       {
         "id": "folder-fr-dc",
@@ -2548,13 +2543,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-dc.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-dc.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-dc.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-dc.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-dc.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-dc.jpg"
       },
       {
         "id": "folder-fr-star-wars",
@@ -2573,13 +2568,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-star-wars.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-star-wars.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-star-wars.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-star-wars.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-star-wars.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-star-wars.jpg"
       },
       {
         "id": "folder-fr-harry-potter",
@@ -2598,13 +2593,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-harry-potter.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-harry-potter.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-harry-potter.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-harry-potter.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-harry-potter.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-harry-potter.jpg"
       },
       {
         "id": "folder-fr-james-bond",
@@ -2623,13 +2618,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-james-bond.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-james-bond.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-james-bond.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-james-bond.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-james-bond.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-james-bond.jpg"
       },
       {
         "id": "folder-fr-fast-furious",
@@ -2648,13 +2643,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-fast-furious.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-fast-furious.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-fast-furious.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-fast-furious.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-fast-furious.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-fast-furious.jpg"
       },
       {
         "id": "folder-fr-jurassic",
@@ -2673,13 +2668,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-jurassic.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-jurassic.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-jurassic.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-jurassic.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-jurassic.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-jurassic.jpg"
       },
       {
         "id": "folder-fr-lotr",
@@ -2698,13 +2693,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-lotr.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-lotr.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-lotr.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-lotr.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-lotr.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-lotr.jpg"
       },
       {
         "id": "folder-fr-john-wick",
@@ -2723,13 +2718,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-john-wick.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-john-wick.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-john-wick.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-john-wick.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-john-wick.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-john-wick.jpg"
       },
       {
         "id": "folder-fr-mission-impossible",
@@ -2748,13 +2743,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-mission-impossible.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-mission-impossible.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-mission-impossible.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-mission-impossible.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-mission-impossible.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-mission-impossible.jpg"
       },
       {
         "id": "folder-fr-conjuring",
@@ -2773,13 +2768,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-conjuring.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-conjuring.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-conjuring.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-conjuring.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-conjuring.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-conjuring.jpg"
       },
       {
         "id": "folder-fr-insidious",
@@ -2798,13 +2793,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-insidious.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-insidious.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-insidious.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-insidious.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-insidious.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-insidious.jpg"
       },
       {
         "id": "folder-fr-pirates",
@@ -2823,13 +2818,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-pirates.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-pirates.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-pirates.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-pirates.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-pirates.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-pirates.jpg"
       },
       {
         "id": "folder-fr-matrix",
@@ -2848,13 +2843,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-matrix.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-matrix.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-matrix.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-matrix.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-matrix.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-matrix.jpg"
       },
       {
         "id": "folder-fr-hunger-games",
@@ -2873,13 +2868,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-hunger-games.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-hunger-games.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-hunger-games.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-hunger-games.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-hunger-games.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-hunger-games.jpg"
       },
       {
         "id": "folder-fr-indiana-jones",
@@ -2898,13 +2893,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-indiana-jones.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-indiana-jones.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-indiana-jones.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-indiana-jones.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-indiana-jones.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-indiana-jones.jpg"
       },
       {
         "id": "folder-fr-back-to-the-future",
@@ -2923,13 +2918,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-back-to-the-future.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-back-to-the-future.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-back-to-the-future.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-back-to-the-future.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-back-to-the-future.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-back-to-the-future.jpg"
       },
       {
         "id": "folder-fr-mad-max",
@@ -2948,13 +2943,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-mad-max.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-mad-max.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-mad-max.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-mad-max.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-mad-max.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-mad-max.jpg"
       },
       {
         "id": "folder-fr-bourne",
@@ -2973,13 +2968,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-bourne.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-bourne.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-bourne.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-bourne.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-bourne.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-bourne.jpg"
       },
       {
         "id": "folder-fr-rocky",
@@ -2998,13 +2993,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-rocky.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-rocky.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-rocky.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-rocky.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-rocky.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-rocky.jpg"
       },
       {
         "id": "folder-fr-rambo",
@@ -3023,13 +3018,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-rambo.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-rambo.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-rambo.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-rambo.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-rambo.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-rambo.jpg"
       },
       {
         "id": "folder-fr-dune",
@@ -3048,13 +3043,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-dune.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-dune.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-dune.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-dune.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-dune.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-dune.jpg"
       },
       {
         "id": "folder-fr-avatar",
@@ -3073,13 +3068,13 @@
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "🎬",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-avatar.jpg",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-avatar.jpg",
         "heroVideoUrl": null,
         "titleLogoUrl": null,
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-avatar.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-avatar.jpg",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@5f292235b6739e5dd0ed48fc402005a3c01bfaa1/assets/franchise-avatar.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@093f58f22ee1bc375929887a542d66b39dd39cdb/assets/franchise-avatar.jpg"
       },
       {
         "id": "folder-fr-transformers",
@@ -3129,14 +3124,6 @@
             "traktListId": 34819170
           },
           {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819170
-          },
-          {
             "title": "New",
             "sortBy": "released",
             "sortHow": "desc",
@@ -3164,14 +3151,6 @@
             "title": "Popular",
             "sortBy": "popularity",
             "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819172
-          },
-          {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819172
@@ -3209,14 +3188,6 @@
             "traktListId": 34819173
           },
           {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819173
-          },
-          {
             "title": "New",
             "sortBy": "released",
             "sortHow": "desc",
@@ -3244,14 +3215,6 @@
             "title": "Popular",
             "sortBy": "popularity",
             "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819177
-          },
-          {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819177
@@ -3289,14 +3252,6 @@
             "traktListId": 34819182
           },
           {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819182
-          },
-          {
             "title": "New",
             "sortBy": "released",
             "sortHow": "desc",
@@ -3324,14 +3279,6 @@
             "title": "Popular",
             "sortBy": "popularity",
             "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819188
-          },
-          {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819188
@@ -3369,14 +3316,6 @@
             "traktListId": 34819196
           },
           {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819196
-          },
-          {
             "title": "New",
             "sortBy": "released",
             "sortHow": "desc",
@@ -3404,14 +3343,6 @@
             "title": "Popular",
             "sortBy": "popularity",
             "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819198
-          },
-          {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819198
@@ -3449,14 +3380,6 @@
             "traktListId": 34819200
           },
           {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819200
-          },
-          {
             "title": "New",
             "sortBy": "released",
             "sortHow": "desc",
@@ -3484,14 +3407,6 @@
             "title": "Popular",
             "sortBy": "popularity",
             "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819202
-          },
-          {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819202
@@ -3529,14 +3444,6 @@
             "traktListId": 34819204
           },
           {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819204
-          },
-          {
             "title": "New",
             "sortBy": "released",
             "sortHow": "desc",
@@ -3564,14 +3471,6 @@
             "title": "Popular",
             "sortBy": "popularity",
             "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819208
-          },
-          {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819208
@@ -3609,14 +3508,6 @@
             "traktListId": 34819217
           },
           {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819217
-          },
-          {
             "title": "New",
             "sortBy": "released",
             "sortHow": "desc",
@@ -3644,14 +3535,6 @@
             "title": "Popular",
             "sortBy": "popularity",
             "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819220
-          },
-          {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819220
@@ -3689,14 +3572,6 @@
             "traktListId": 34819224
           },
           {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819224
-          },
-          {
             "title": "New",
             "sortBy": "released",
             "sortHow": "desc",
@@ -3724,14 +3599,6 @@
             "title": "Popular",
             "sortBy": "popularity",
             "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819228
-          },
-          {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819228
@@ -3769,14 +3636,6 @@
             "traktListId": 34819230
           },
           {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819230
-          },
-          {
             "title": "New",
             "sortBy": "released",
             "sortHow": "desc",
@@ -3804,14 +3663,6 @@
             "title": "Popular",
             "sortBy": "popularity",
             "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819232
-          },
-          {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819232
@@ -3849,14 +3700,6 @@
             "traktListId": 34819240
           },
           {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819240
-          },
-          {
             "title": "New",
             "sortBy": "released",
             "sortHow": "desc",
@@ -3884,14 +3727,6 @@
             "title": "Popular",
             "sortBy": "popularity",
             "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819242
-          },
-          {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819242
@@ -3929,14 +3764,6 @@
             "traktListId": 34819246
           },
           {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819246
-          },
-          {
             "title": "New",
             "sortBy": "released",
             "sortHow": "desc",
@@ -3964,14 +3791,6 @@
             "title": "Popular",
             "sortBy": "popularity",
             "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819248
-          },
-          {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819248
@@ -4009,14 +3828,6 @@
             "traktListId": 34819256
           },
           {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819256
-          },
-          {
             "title": "New",
             "sortBy": "released",
             "sortHow": "desc",
@@ -4044,14 +3855,6 @@
             "title": "Popular",
             "sortBy": "popularity",
             "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819257
-          },
-          {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819257
@@ -4089,14 +3892,6 @@
             "traktListId": 34819259
           },
           {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819259
-          },
-          {
             "title": "New",
             "sortBy": "released",
             "sortHow": "desc",
@@ -4124,14 +3919,6 @@
             "title": "Popular",
             "sortBy": "popularity",
             "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819261
-          },
-          {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819261
@@ -4169,14 +3956,6 @@
             "traktListId": 34819265
           },
           {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819265
-          },
-          {
             "title": "New",
             "sortBy": "released",
             "sortHow": "desc",
@@ -4204,14 +3983,6 @@
             "title": "Popular",
             "sortBy": "popularity",
             "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819271
-          },
-          {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819271
@@ -4249,14 +4020,6 @@
             "traktListId": 34819277
           },
           {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819277
-          },
-          {
             "title": "New",
             "sortBy": "released",
             "sortHow": "desc",
@@ -4284,14 +4047,6 @@
             "title": "Popular",
             "sortBy": "popularity",
             "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819279
-          },
-          {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819279
@@ -4329,14 +4084,6 @@
             "traktListId": 34819281
           },
           {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819281
-          },
-          {
             "title": "New",
             "sortBy": "released",
             "sortHow": "desc",
@@ -4364,14 +4111,6 @@
             "title": "Popular",
             "sortBy": "popularity",
             "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819283
-          },
-          {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819283
@@ -4409,14 +4148,6 @@
             "traktListId": 34819285
           },
           {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819285
-          },
-          {
             "title": "New",
             "sortBy": "released",
             "sortHow": "desc",
@@ -4444,14 +4175,6 @@
             "title": "Popular",
             "sortBy": "popularity",
             "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819287
-          },
-          {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819287
@@ -4489,14 +4212,6 @@
             "traktListId": 34819291
           },
           {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819291
-          },
-          {
             "title": "New",
             "sortBy": "released",
             "sortHow": "desc",
@@ -4524,14 +4239,6 @@
             "title": "Popular",
             "sortBy": "popularity",
             "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819295
-          },
-          {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819295
@@ -4569,14 +4276,6 @@
             "traktListId": 34819301
           },
           {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819301
-          },
-          {
             "title": "New",
             "sortBy": "released",
             "sortHow": "desc",
@@ -4604,14 +4303,6 @@
             "title": "Popular",
             "sortBy": "popularity",
             "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819307
-          },
-          {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819307
@@ -4649,14 +4340,6 @@
             "traktListId": 34819309
           },
           {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819309
-          },
-          {
             "title": "New",
             "sortBy": "released",
             "sortHow": "desc",
@@ -4684,14 +4367,6 @@
             "title": "Popular",
             "sortBy": "popularity",
             "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819312
-          },
-          {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819312
@@ -4729,14 +4404,6 @@
             "traktListId": 34819316
           },
           {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819316
-          },
-          {
             "title": "New",
             "sortBy": "released",
             "sortHow": "desc",
@@ -4764,14 +4431,6 @@
             "title": "Popular",
             "sortBy": "popularity",
             "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819320
-          },
-          {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819320
@@ -4809,14 +4468,6 @@
             "traktListId": 34819322
           },
           {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819322
-          },
-          {
             "title": "New",
             "sortBy": "released",
             "sortHow": "desc",
@@ -4844,14 +4495,6 @@
             "title": "Popular",
             "sortBy": "popularity",
             "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819324
-          },
-          {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819324
@@ -4889,14 +4532,6 @@
             "traktListId": 34819333
           },
           {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819333
-          },
-          {
             "title": "New",
             "sortBy": "released",
             "sortHow": "desc",
@@ -4924,14 +4559,6 @@
             "title": "Popular",
             "sortBy": "popularity",
             "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819337
-          },
-          {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819337
@@ -4969,14 +4596,6 @@
             "traktListId": 34819339
           },
           {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819339
-          },
-          {
             "title": "New",
             "sortBy": "released",
             "sortHow": "desc",
@@ -5004,14 +4623,6 @@
             "title": "Popular",
             "sortBy": "popularity",
             "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819341
-          },
-          {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819341
@@ -5049,14 +4660,6 @@
             "traktListId": 34819343
           },
           {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819343
-          },
-          {
             "title": "New",
             "sortBy": "released",
             "sortHow": "desc",
@@ -5084,14 +4687,6 @@
             "title": "Popular",
             "sortBy": "popularity",
             "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819345
-          },
-          {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819345
@@ -5129,14 +4724,6 @@
             "traktListId": 34819347
           },
           {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819347
-          },
-          {
             "title": "New",
             "sortBy": "released",
             "sortHow": "desc",
@@ -5164,14 +4751,6 @@
             "title": "Popular",
             "sortBy": "popularity",
             "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819349
-          },
-          {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819349
@@ -5209,14 +4788,6 @@
             "traktListId": 34819355
           },
           {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819355
-          },
-          {
             "title": "New",
             "sortBy": "released",
             "sortHow": "desc",
@@ -5244,14 +4815,6 @@
             "title": "Popular",
             "sortBy": "popularity",
             "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819359
-          },
-          {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819359
@@ -5289,14 +4852,6 @@
             "traktListId": 34819363
           },
           {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819363
-          },
-          {
             "title": "New",
             "sortBy": "released",
             "sortHow": "desc",
@@ -5324,14 +4879,6 @@
             "title": "Popular",
             "sortBy": "popularity",
             "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819365
-          },
-          {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819365
@@ -5369,14 +4916,6 @@
             "traktListId": 34819368
           },
           {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819368
-          },
-          {
             "title": "New",
             "sortBy": "released",
             "sortHow": "desc",
@@ -5404,14 +4943,6 @@
             "title": "Popular",
             "sortBy": "popularity",
             "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819372
-          },
-          {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819372
