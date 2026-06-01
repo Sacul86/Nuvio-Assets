@@ -1244,6 +1244,20 @@
         "title": "Time Travel",
         "sources": [
           {
+            "title": "Popular (keyword test)",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "4379|10854|186760",
+              "withGenres": "878",
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
             "title": "Popular",
             "sortBy": "popularity",
             "sortHow": "desc",
