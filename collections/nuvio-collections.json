@@ -1252,14 +1252,6 @@
             "traktListId": 4308678
           },
           {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 4308678
-          },
-          {
             "title": "New",
             "sortBy": "released",
             "sortHow": "desc",
@@ -1287,14 +1279,6 @@
             "title": "Popular",
             "sortBy": "popularity",
             "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 22105492
-          },
-          {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 22105492
@@ -1332,14 +1316,6 @@
             "traktListId": 29765943
           },
           {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 29765943
-          },
-          {
             "title": "New",
             "sortBy": "released",
             "sortHow": "desc",
@@ -1367,14 +1343,6 @@
             "title": "Popular",
             "sortBy": "popularity",
             "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 1848041
-          },
-          {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 1848041
@@ -1412,14 +1380,6 @@
             "traktListId": 23422309
           },
           {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 23422309
-          },
-          {
             "title": "New",
             "sortBy": "released",
             "sortHow": "desc",
@@ -1447,14 +1407,6 @@
             "title": "Popular",
             "sortBy": "popularity",
             "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 1795003
-          },
-          {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 1795003
@@ -1492,14 +1444,6 @@
             "traktListId": 20718697
           },
           {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 20718697
-          },
-          {
             "title": "New",
             "sortBy": "released",
             "sortHow": "desc",
@@ -1527,14 +1471,6 @@
             "title": "Popular",
             "sortBy": "popularity",
             "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 20287305
-          },
-          {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 20287305
@@ -1572,14 +1508,6 @@
             "traktListId": 11446335
           },
           {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 11446335
-          },
-          {
             "title": "New",
             "sortBy": "released",
             "sortHow": "desc",
@@ -1607,14 +1535,6 @@
             "title": "Popular",
             "sortBy": "popularity",
             "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 1588602
-          },
-          {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 1588602
@@ -1652,14 +1572,6 @@
             "traktListId": 30750715
           },
           {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 30750715
-          },
-          {
             "title": "New",
             "sortBy": "released",
             "sortHow": "desc",
@@ -1687,14 +1599,6 @@
             "title": "Popular",
             "sortBy": "popularity",
             "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 30731033
-          },
-          {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 30731033
@@ -1732,14 +1636,6 @@
             "traktListId": 11016726
           },
           {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 11016726
-          },
-          {
             "title": "New",
             "sortBy": "released",
             "sortHow": "desc",
@@ -1772,14 +1668,6 @@
             "traktListId": 24212450
           },
           {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 24212450
-          },
-          {
             "title": "New",
             "sortBy": "released",
             "sortHow": "desc",
@@ -1807,14 +1695,6 @@
             "title": "Popular",
             "sortBy": "popularity",
             "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 24253433
-          },
-          {
-            "title": "Top Rated",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 24253433
