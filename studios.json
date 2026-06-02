@@ -1,0 +1,15 @@
+{
+  "marvel-studios": {"id": 420, "label": "Marvel Studios"},
+  "dc-studios": {"id": 184898, "label": "DC Studios"},
+  "walt-disney-pictures": {"id": 2, "label": "Walt Disney Pictures"},
+  "paramount": {"id": 4, "label": "Paramount Pictures"},
+  "mgm": {"id": 21, "label": "Metro-Goldwyn-Mayer"},
+  "illumination": {"id": 6704, "label": "Illumination"},
+  "searchlight": {"id": 43, "label": "Fox Searchlight Pictures"},
+  "hbo": {"id": 3268, "label": "HBO"},
+  "bbc": {"id": 288, "label": "BBC Film"},
+  "working-title": {"id": 10163, "label": "Working Title Films"},
+  "miramax": {"id": 14, "label": "Miramax"},
+  "bad-robot": {"id": 11461, "label": "Bad Robot"},
+  "skydance": {"id": 82819, "label": "Skydance Media"}
+}

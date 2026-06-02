@@ -6348,546 +6348,6 @@
         }
       },
       {
-        "id": "tmdb.discover.movie.actors.tom-cruise",
-        "type": "movie",
-        "name": "⭐ Tom Cruise",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "500",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Tom Cruise",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 500,
-                  "label": "Tom Cruise"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.leonardo-dicaprio",
-        "type": "movie",
-        "name": "⭐ Leonardo DiCaprio",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "6193",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Leonardo DiCaprio",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 6193,
-                  "label": "Leonardo DiCaprio"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.dwayne-johnson",
-        "type": "movie",
-        "name": "⭐ Dwayne Johnson",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "18918",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Dwayne Johnson",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 18918,
-                  "label": "Dwayne Johnson"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.robert-downey-jr",
-        "type": "movie",
-        "name": "⭐ Robert Downey Jr.",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "3223",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Robert Downey Jr.",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 3223,
-                  "label": "Robert Downey Jr."
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.denzel-washington",
-        "type": "movie",
-        "name": "⭐ Denzel Washington",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "5292",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Denzel Washington",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 5292,
-                  "label": "Denzel Washington"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.brad-pitt",
-        "type": "movie",
-        "name": "⭐ Brad Pitt",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "287",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Brad Pitt",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 287,
-                  "label": "Brad Pitt"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.will-smith",
-        "type": "movie",
-        "name": "⭐ Will Smith",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "2888",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Will Smith",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 2888,
-                  "label": "Will Smith"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.tom-hanks",
-        "type": "movie",
-        "name": "⭐ Tom Hanks",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "31",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Tom Hanks",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 31,
-                  "label": "Tom Hanks"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.scarlett-johansson",
-        "type": "movie",
-        "name": "⭐ Scarlett Johansson",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "1245",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Scarlett Johansson",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 1245,
-                  "label": "Scarlett Johansson"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.keanu-reeves",
-        "type": "movie",
-        "name": "⭐ Keanu Reeves",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "6384",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Keanu Reeves",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 6384,
-                  "label": "Keanu Reeves"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.margot-robbie",
-        "type": "movie",
-        "name": "⭐ Margot Robbie",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "234352",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Margot Robbie",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 234352,
-                  "label": "Margot Robbie"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.ryan-gosling",
-        "type": "movie",
-        "name": "⭐ Ryan Gosling",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "30614",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Ryan Gosling",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 30614,
-                  "label": "Ryan Gosling"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
         "id": "mdblist.155432",
         "type": "movie",
         "name": "Star Wars",
@@ -8265,1896 +7725,6 @@
               ],
               "companyJoinMode": "or",
               "voteCountMin": 5,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.christian-bale",
-        "type": "movie",
-        "name": "⭐ Christian Bale",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "3894",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Christian Bale",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 3894,
-                  "label": "Christian Bale"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.joaquin-phoenix",
-        "type": "movie",
-        "name": "⭐ Joaquin Phoenix",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "73421",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Joaquin Phoenix",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 73421,
-                  "label": "Joaquin Phoenix"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.matthew-mcconaughey",
-        "type": "movie",
-        "name": "⭐ Matthew McConaughey",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "10297",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Matthew McConaughey",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 10297,
-                  "label": "Matthew McConaughey"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.ryan-reynolds",
-        "type": "movie",
-        "name": "⭐ Ryan Reynolds",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "10859",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Ryan Reynolds",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 10859,
-                  "label": "Ryan Reynolds"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.chris-hemsworth",
-        "type": "movie",
-        "name": "⭐ Chris Hemsworth",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "74568",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Chris Hemsworth",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 74568,
-                  "label": "Chris Hemsworth"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.chris-evans",
-        "type": "movie",
-        "name": "⭐ Chris Evans",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "16828",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Chris Evans",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 16828,
-                  "label": "Chris Evans"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.chris-pratt",
-        "type": "movie",
-        "name": "⭐ Chris Pratt",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "73457",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Chris Pratt",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 73457,
-                  "label": "Chris Pratt"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.hugh-jackman",
-        "type": "movie",
-        "name": "⭐ Hugh Jackman",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "6968",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Hugh Jackman",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 6968,
-                  "label": "Hugh Jackman"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.jake-gyllenhaal",
-        "type": "movie",
-        "name": "⭐ Jake Gyllenhaal",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "131",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Jake Gyllenhaal",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 131,
-                  "label": "Jake Gyllenhaal"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.matt-damon",
-        "type": "movie",
-        "name": "⭐ Matt Damon",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "1892",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Matt Damon",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 1892,
-                  "label": "Matt Damon"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.samuel-l-jackson",
-        "type": "movie",
-        "name": "⭐ Samuel L. Jackson",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "2231",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Samuel L. Jackson",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 2231,
-                  "label": "Samuel L. Jackson"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.morgan-freeman",
-        "type": "movie",
-        "name": "⭐ Morgan Freeman",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "192",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Morgan Freeman",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 192,
-                  "label": "Morgan Freeman"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.anthony-hopkins",
-        "type": "movie",
-        "name": "⭐ Anthony Hopkins",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "4173",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Anthony Hopkins",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 4173,
-                  "label": "Anthony Hopkins"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.robert-de-niro",
-        "type": "movie",
-        "name": "⭐ Robert De Niro",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "380",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Robert De Niro",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 380,
-                  "label": "Robert De Niro"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.al-pacino",
-        "type": "movie",
-        "name": "⭐ Al Pacino",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "1158",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Al Pacino",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 1158,
-                  "label": "Al Pacino"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.tom-hardy",
-        "type": "movie",
-        "name": "⭐ Tom Hardy",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "2524",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Tom Hardy",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 2524,
-                  "label": "Tom Hardy"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.cillian-murphy",
-        "type": "movie",
-        "name": "⭐ Cillian Murphy",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "2037",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Cillian Murphy",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 2037,
-                  "label": "Cillian Murphy"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.pedro-pascal",
-        "type": "movie",
-        "name": "⭐ Pedro Pascal",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "1253360",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Pedro Pascal",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 1253360,
-                  "label": "Pedro Pascal"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.idris-elba",
-        "type": "movie",
-        "name": "⭐ Idris Elba",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "17605",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Idris Elba",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 17605,
-                  "label": "Idris Elba"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.jason-statham",
-        "type": "movie",
-        "name": "⭐ Jason Statham",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "976",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Jason Statham",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 976,
-                  "label": "Jason Statham"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.timothee-chalamet",
-        "type": "movie",
-        "name": "⭐ Timothée Chalamet",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "1190668",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Timothée Chalamet",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 1190668,
-                  "label": "Timothée Chalamet"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.jennifer-lawrence",
-        "type": "movie",
-        "name": "⭐ Jennifer Lawrence",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "72129",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Jennifer Lawrence",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 72129,
-                  "label": "Jennifer Lawrence"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.emma-stone",
-        "type": "movie",
-        "name": "⭐ Emma Stone",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "54693",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Emma Stone",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 54693,
-                  "label": "Emma Stone"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.charlize-theron",
-        "type": "movie",
-        "name": "⭐ Charlize Theron",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "6885",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Charlize Theron",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 6885,
-                  "label": "Charlize Theron"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.natalie-portman",
-        "type": "movie",
-        "name": "⭐ Natalie Portman",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "524",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Natalie Portman",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 524,
-                  "label": "Natalie Portman"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.cate-blanchett",
-        "type": "movie",
-        "name": "⭐ Cate Blanchett",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "112",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Cate Blanchett",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 112,
-                  "label": "Cate Blanchett"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.meryl-streep",
-        "type": "movie",
-        "name": "⭐ Meryl Streep",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "5064",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Meryl Streep",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 5064,
-                  "label": "Meryl Streep"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.sandra-bullock",
-        "type": "movie",
-        "name": "⭐ Sandra Bullock",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "18277",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Sandra Bullock",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 18277,
-                  "label": "Sandra Bullock"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.angelina-jolie",
-        "type": "movie",
-        "name": "⭐ Angelina Jolie",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "11701",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Angelina Jolie",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 11701,
-                  "label": "Angelina Jolie"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.nicole-kidman",
-        "type": "movie",
-        "name": "⭐ Nicole Kidman",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "2227",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Nicole Kidman",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 2227,
-                  "label": "Nicole Kidman"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.emily-blunt",
-        "type": "movie",
-        "name": "⭐ Emily Blunt",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "5081",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Emily Blunt",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 5081,
-                  "label": "Emily Blunt"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.zendaya",
-        "type": "movie",
-        "name": "⭐ Zendaya",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "505710",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Zendaya",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 505710,
-                  "label": "Zendaya"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.florence-pugh",
-        "type": "movie",
-        "name": "⭐ Florence Pugh",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "1373737",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Florence Pugh",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 1373737,
-                  "label": "Florence Pugh"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.anya-taylor-joy",
-        "type": "movie",
-        "name": "⭐ Anya Taylor-Joy",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "1397778",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Anya Taylor-Joy",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 1397778,
-                  "label": "Anya Taylor-Joy"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.gary-oldman",
-        "type": "movie",
-        "name": "⭐ Gary Oldman",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "64",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Gary Oldman",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 64,
-                  "label": "Gary Oldman"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.jodie-foster",
-        "type": "movie",
-        "name": "⭐ Jodie Foster",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "1038",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Jodie Foster",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 1038,
-                  "label": "Jodie Foster"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.viola-davis",
-        "type": "movie",
-        "name": "⭐ Viola Davis",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "19492",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Viola Davis",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 19492,
-                  "label": "Viola Davis"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.jamie-lee-curtis",
-        "type": "movie",
-        "name": "⭐ Jamie Lee Curtis",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "8944",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Jamie Lee Curtis",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 8944,
-                  "label": "Jamie Lee Curtis"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.michael-b-jordan",
-        "type": "movie",
-        "name": "⭐ Michael B. Jordan",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "135651",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Michael B. Jordan",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 135651,
-                  "label": "Michael B. Jordan"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.saoirse-ronan",
-        "type": "movie",
-        "name": "⭐ Saoirse Ronan",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "36592",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Saoirse Ronan",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 36592,
-                  "label": "Saoirse Ronan"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.willem-dafoe",
-        "type": "movie",
-        "name": "⭐ Willem Dafoe",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "5293",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Willem Dafoe",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 5293,
-                  "label": "Willem Dafoe"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
-              "excludeKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
-        "id": "tmdb.discover.movie.actors.jeff-bridges",
-        "type": "movie",
-        "name": "⭐ Jeff Bridges",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_cast": "1229",
-              "vote_count.gte": 50,
-              "without_keywords": "210024",
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "⭐ Jeff Bridges",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "selectedPeople": [
-                {
-                  "id": 1229,
-                  "label": "Jeff Bridges"
-                }
-              ],
-              "peopleJoinMode": "or",
-              "voteCountMin": 50,
               "excludeKeywords": [
                 {
                   "id": 210024,
@@ -12696,6 +10266,2872 @@
                   "label": "modern-day western"
                 }
               ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.theme.dinosaurs",
+        "type": "movie",
+        "name": "🎨 Dinosaurs",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "12616|358244|283841",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🎨 Dinosaurs",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withKeywords": [
+                {
+                  "id": 12616,
+                  "label": "dinosaur"
+                },
+                {
+                  "id": 358244,
+                  "label": "dinosaurs"
+                },
+                {
+                  "id": 283841,
+                  "label": "robot dinosaur"
+                }
+              ],
+              "voteCountMin": 20,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.series.theme.dinosaurs",
+        "type": "series",
+        "name": "🎨 Dinosaurs",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "tv",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "12616|358244|283841",
+              "vote_count.gte": 10,
+              "with_status": "0|3|4|5",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🎨 Dinosaurs",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "series",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withKeywords": [
+                {
+                  "id": 12616,
+                  "label": "dinosaur"
+                },
+                {
+                  "id": 358244,
+                  "label": "dinosaurs"
+                },
+                {
+                  "id": 283841,
+                  "label": "robot dinosaur"
+                }
+              ],
+              "voteCountMin": 10,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.theme.dragons",
+        "type": "movie",
+        "name": "🎨 Dragons",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "12554|342640|307221|197319|269692",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🎨 Dragons",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withKeywords": [
+                {
+                  "id": 12554,
+                  "label": "dragon"
+                },
+                {
+                  "id": 342640,
+                  "label": "dragons"
+                },
+                {
+                  "id": 307221,
+                  "label": "dragon rider"
+                },
+                {
+                  "id": 197319,
+                  "label": "giant dragon"
+                },
+                {
+                  "id": 269692,
+                  "label": "dragon egg"
+                }
+              ],
+              "voteCountMin": 20,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.series.theme.dragons",
+        "type": "series",
+        "name": "🎨 Dragons",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "tv",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "12554|342640|307221|197319|269692",
+              "vote_count.gte": 10,
+              "with_status": "0|3|4|5",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🎨 Dragons",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "series",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withKeywords": [
+                {
+                  "id": 12554,
+                  "label": "dragon"
+                },
+                {
+                  "id": 342640,
+                  "label": "dragons"
+                },
+                {
+                  "id": 307221,
+                  "label": "dragon rider"
+                },
+                {
+                  "id": 197319,
+                  "label": "giant dragon"
+                },
+                {
+                  "id": 269692,
+                  "label": "dragon egg"
+                }
+              ],
+              "voteCountMin": 10,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.theme.werewolves",
+        "type": "movie",
+        "name": "🎨 Werewolves",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "12564|180084|310600|375188|350919|162532",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🎨 Werewolves",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withKeywords": [
+                {
+                  "id": 12564,
+                  "label": "werewolf"
+                },
+                {
+                  "id": 180084,
+                  "label": "werewolf child"
+                },
+                {
+                  "id": 310600,
+                  "label": "werewolf film"
+                },
+                {
+                  "id": 375188,
+                  "label": "teenage werewolf"
+                },
+                {
+                  "id": 350919,
+                  "label": "shapeshifter"
+                },
+                {
+                  "id": 162532,
+                  "label": "shape shifter"
+                }
+              ],
+              "voteCountMin": 20,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.series.theme.werewolves",
+        "type": "series",
+        "name": "🎨 Werewolves",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "tv",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "12564|180084|310600|375188|350919|162532",
+              "vote_count.gte": 10,
+              "with_status": "0|3|4|5",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🎨 Werewolves",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "series",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withKeywords": [
+                {
+                  "id": 12564,
+                  "label": "werewolf"
+                },
+                {
+                  "id": 180084,
+                  "label": "werewolf child"
+                },
+                {
+                  "id": 310600,
+                  "label": "werewolf film"
+                },
+                {
+                  "id": 375188,
+                  "label": "teenage werewolf"
+                },
+                {
+                  "id": 350919,
+                  "label": "shapeshifter"
+                },
+                {
+                  "id": 162532,
+                  "label": "shape shifter"
+                }
+              ],
+              "voteCountMin": 10,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.theme.witches",
+        "type": "movie",
+        "name": "🎨 Witches",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "616|40931|177894|181820|310426|177901",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🎨 Witches",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withKeywords": [
+                {
+                  "id": 616,
+                  "label": "witch"
+                },
+                {
+                  "id": 40931,
+                  "label": "witchcraft"
+                },
+                {
+                  "id": 177894,
+                  "label": "witch hunt"
+                },
+                {
+                  "id": 181820,
+                  "label": "witch trial"
+                },
+                {
+                  "id": 310426,
+                  "label": "witch hunter"
+                },
+                {
+                  "id": 177901,
+                  "label": "evil witch"
+                }
+              ],
+              "voteCountMin": 20,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.series.theme.witches",
+        "type": "series",
+        "name": "🎨 Witches",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "tv",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "616|40931|177894|181820|310426|177901",
+              "vote_count.gte": 10,
+              "with_status": "0|3|4|5",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🎨 Witches",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "series",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withKeywords": [
+                {
+                  "id": 616,
+                  "label": "witch"
+                },
+                {
+                  "id": 40931,
+                  "label": "witchcraft"
+                },
+                {
+                  "id": 177894,
+                  "label": "witch hunt"
+                },
+                {
+                  "id": 181820,
+                  "label": "witch trial"
+                },
+                {
+                  "id": 310426,
+                  "label": "witch hunter"
+                },
+                {
+                  "id": 177901,
+                  "label": "evil witch"
+                }
+              ],
+              "voteCountMin": 10,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.theme.ghosts",
+        "type": "movie",
+        "name": "🎨 Ghosts & Hauntings",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "162846|3358|159939|41411|166701|15040",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🎨 Ghosts & Hauntings",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withKeywords": [
+                {
+                  "id": 162846,
+                  "label": "ghost"
+                },
+                {
+                  "id": 3358,
+                  "label": "haunted house"
+                },
+                {
+                  "id": 159939,
+                  "label": "ghost hunter"
+                },
+                {
+                  "id": 41411,
+                  "label": "vengeful ghost"
+                },
+                {
+                  "id": 166701,
+                  "label": "ghost town"
+                },
+                {
+                  "id": 15040,
+                  "label": "ghost hunting"
+                }
+              ],
+              "voteCountMin": 20,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.series.theme.ghosts",
+        "type": "series",
+        "name": "🎨 Ghosts & Hauntings",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "tv",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "162846|3358|159939|41411|166701|15040",
+              "vote_count.gte": 10,
+              "with_status": "0|3|4|5",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🎨 Ghosts & Hauntings",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "series",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withKeywords": [
+                {
+                  "id": 162846,
+                  "label": "ghost"
+                },
+                {
+                  "id": 3358,
+                  "label": "haunted house"
+                },
+                {
+                  "id": 159939,
+                  "label": "ghost hunter"
+                },
+                {
+                  "id": 41411,
+                  "label": "vengeful ghost"
+                },
+                {
+                  "id": 166701,
+                  "label": "ghost town"
+                },
+                {
+                  "id": 15040,
+                  "label": "ghost hunting"
+                }
+              ],
+              "voteCountMin": 10,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.theme.boxing",
+        "type": "movie",
+        "name": "🎨 Boxing",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "209476|249834|245031|308144|156330|333329",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🎨 Boxing",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withKeywords": [
+                {
+                  "id": 209476,
+                  "label": "boxing"
+                },
+                {
+                  "id": 249834,
+                  "label": "boxing ring"
+                },
+                {
+                  "id": 245031,
+                  "label": "boxing champion"
+                },
+                {
+                  "id": 308144,
+                  "label": "boxing match"
+                },
+                {
+                  "id": 156330,
+                  "label": "boxing trainer"
+                },
+                {
+                  "id": 333329,
+                  "label": "boxing sport"
+                }
+              ],
+              "voteCountMin": 20,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.series.theme.boxing",
+        "type": "series",
+        "name": "🎨 Boxing",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "tv",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "209476|249834|245031|308144|156330|333329",
+              "vote_count.gte": 10,
+              "with_status": "0|3|4|5",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🎨 Boxing",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "series",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withKeywords": [
+                {
+                  "id": 209476,
+                  "label": "boxing"
+                },
+                {
+                  "id": 249834,
+                  "label": "boxing ring"
+                },
+                {
+                  "id": 245031,
+                  "label": "boxing champion"
+                },
+                {
+                  "id": 308144,
+                  "label": "boxing match"
+                },
+                {
+                  "id": 156330,
+                  "label": "boxing trainer"
+                },
+                {
+                  "id": 333329,
+                  "label": "boxing sport"
+                }
+              ],
+              "voteCountMin": 10,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.theme.road-trip",
+        "type": "movie",
+        "name": "🎨 Road Trip",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "7312|240484|374437|343856",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🎨 Road Trip",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withKeywords": [
+                {
+                  "id": 7312,
+                  "label": "road trip"
+                },
+                {
+                  "id": 240484,
+                  "label": "roadtrip"
+                },
+                {
+                  "id": 374437,
+                  "label": "road trip movie"
+                },
+                {
+                  "id": 343856,
+                  "label": "holiday road trip"
+                }
+              ],
+              "voteCountMin": 20,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.series.theme.road-trip",
+        "type": "series",
+        "name": "🎨 Road Trip",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "tv",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "7312|240484|374437|343856",
+              "vote_count.gte": 10,
+              "with_status": "0|3|4|5",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🎨 Road Trip",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "series",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withKeywords": [
+                {
+                  "id": 7312,
+                  "label": "road trip"
+                },
+                {
+                  "id": 240484,
+                  "label": "roadtrip"
+                },
+                {
+                  "id": 374437,
+                  "label": "road trip movie"
+                },
+                {
+                  "id": 343856,
+                  "label": "holiday road trip"
+                }
+              ],
+              "voteCountMin": 10,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.theme.sports",
+        "type": "movie",
+        "name": "🎨 Sports",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "6075|167882|300423|274126|215754|163097",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🎨 Sports",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withKeywords": [
+                {
+                  "id": 6075,
+                  "label": "sports"
+                },
+                {
+                  "id": 167882,
+                  "label": "professional sports"
+                },
+                {
+                  "id": 300423,
+                  "label": "team sports"
+                },
+                {
+                  "id": 274126,
+                  "label": "athlete"
+                },
+                {
+                  "id": 215754,
+                  "label": "professional athlete"
+                },
+                {
+                  "id": 163097,
+                  "label": "female athlete"
+                }
+              ],
+              "voteCountMin": 20,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.series.theme.sports",
+        "type": "series",
+        "name": "🎨 Sports",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "tv",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "6075|167882|300423|274126|215754|163097",
+              "vote_count.gte": 10,
+              "with_status": "0|3|4|5",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🎨 Sports",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "series",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withKeywords": [
+                {
+                  "id": 6075,
+                  "label": "sports"
+                },
+                {
+                  "id": 167882,
+                  "label": "professional sports"
+                },
+                {
+                  "id": 300423,
+                  "label": "team sports"
+                },
+                {
+                  "id": 274126,
+                  "label": "athlete"
+                },
+                {
+                  "id": 215754,
+                  "label": "professional athlete"
+                },
+                {
+                  "id": 163097,
+                  "label": "female athlete"
+                }
+              ],
+              "voteCountMin": 10,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.theme.cars-racing",
+        "type": "movie",
+        "name": "🎨 Cars & Racing",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "298953|6315|266725",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🎨 Cars & Racing",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withKeywords": [
+                {
+                  "id": 298953,
+                  "label": "car racing"
+                },
+                {
+                  "id": 6315,
+                  "label": "stock car racing"
+                },
+                {
+                  "id": 266725,
+                  "label": "street racing"
+                }
+              ],
+              "voteCountMin": 20,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.series.theme.cars-racing",
+        "type": "series",
+        "name": "🎨 Cars & Racing",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "tv",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "298953|6315|266725",
+              "vote_count.gte": 10,
+              "with_status": "0|3|4|5",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🎨 Cars & Racing",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "series",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withKeywords": [
+                {
+                  "id": 298953,
+                  "label": "car racing"
+                },
+                {
+                  "id": 6315,
+                  "label": "stock car racing"
+                },
+                {
+                  "id": 266725,
+                  "label": "street racing"
+                }
+              ],
+              "voteCountMin": 10,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.theme.multiverse",
+        "type": "movie",
+        "name": "🎨 Multiverse",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "336874|243230|9820",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🎨 Multiverse",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withKeywords": [
+                {
+                  "id": 336874,
+                  "label": "multiverse"
+                },
+                {
+                  "id": 243230,
+                  "label": "parallel universe"
+                },
+                {
+                  "id": 9820,
+                  "label": "alternate dimension"
+                }
+              ],
+              "voteCountMin": 20,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.series.theme.multiverse",
+        "type": "series",
+        "name": "🎨 Multiverse",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "tv",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "336874|243230|9820",
+              "vote_count.gte": 10,
+              "with_status": "0|3|4|5",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🎨 Multiverse",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "series",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withKeywords": [
+                {
+                  "id": 336874,
+                  "label": "multiverse"
+                },
+                {
+                  "id": 243230,
+                  "label": "parallel universe"
+                },
+                {
+                  "id": 9820,
+                  "label": "alternate dimension"
+                }
+              ],
+              "voteCountMin": 10,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.theme.wedding",
+        "type": "movie",
+        "name": "🎨 Weddings",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "13027|6038|155049|2381|309422|10955",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🎨 Weddings",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withKeywords": [
+                {
+                  "id": 13027,
+                  "label": "wedding"
+                },
+                {
+                  "id": 6038,
+                  "label": "marriage"
+                },
+                {
+                  "id": 155049,
+                  "label": "wedding dress"
+                },
+                {
+                  "id": 2381,
+                  "label": "wedding planner"
+                },
+                {
+                  "id": 309422,
+                  "label": "destination wedding"
+                },
+                {
+                  "id": 10955,
+                  "label": "wedding party"
+                }
+              ],
+              "voteCountMin": 20,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.series.theme.wedding",
+        "type": "series",
+        "name": "🎨 Weddings",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "tv",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "13027|6038|155049|2381|309422|10955",
+              "vote_count.gte": 10,
+              "with_status": "0|3|4|5",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🎨 Weddings",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "series",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withKeywords": [
+                {
+                  "id": 13027,
+                  "label": "wedding"
+                },
+                {
+                  "id": 6038,
+                  "label": "marriage"
+                },
+                {
+                  "id": 155049,
+                  "label": "wedding dress"
+                },
+                {
+                  "id": 2381,
+                  "label": "wedding planner"
+                },
+                {
+                  "id": 309422,
+                  "label": "destination wedding"
+                },
+                {
+                  "id": 10955,
+                  "label": "wedding party"
+                }
+              ],
+              "voteCountMin": 10,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.theme.money-finance",
+        "type": "movie",
+        "name": "🎨 Money & Wall Street",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "5636|177493|246911|281170|5332|156338",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🎨 Money & Wall Street",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withKeywords": [
+                {
+                  "id": 5636,
+                  "label": "wall street"
+                },
+                {
+                  "id": 177493,
+                  "label": "stock market"
+                },
+                {
+                  "id": 246911,
+                  "label": "finance"
+                },
+                {
+                  "id": 281170,
+                  "label": "high finance"
+                },
+                {
+                  "id": 5332,
+                  "label": "greed"
+                },
+                {
+                  "id": 156338,
+                  "label": "corporate greed"
+                }
+              ],
+              "voteCountMin": 20,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.series.theme.money-finance",
+        "type": "series",
+        "name": "🎨 Money & Wall Street",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "tv",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "5636|177493|246911|281170|5332|156338",
+              "vote_count.gte": 10,
+              "with_status": "0|3|4|5",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🎨 Money & Wall Street",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "series",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withKeywords": [
+                {
+                  "id": 5636,
+                  "label": "wall street"
+                },
+                {
+                  "id": 177493,
+                  "label": "stock market"
+                },
+                {
+                  "id": 246911,
+                  "label": "finance"
+                },
+                {
+                  "id": 281170,
+                  "label": "high finance"
+                },
+                {
+                  "id": 5332,
+                  "label": "greed"
+                },
+                {
+                  "id": 156338,
+                  "label": "corporate greed"
+                }
+              ],
+              "voteCountMin": 10,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.theme.faith-religion",
+        "type": "movie",
+        "name": "🎨 Faith & Religion",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "11001|6150|10093|172391|273060|355358",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🎨 Faith & Religion",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withKeywords": [
+                {
+                  "id": 11001,
+                  "label": "religion"
+                },
+                {
+                  "id": 6150,
+                  "label": "faith"
+                },
+                {
+                  "id": 10093,
+                  "label": "priest"
+                },
+                {
+                  "id": 172391,
+                  "label": "catholic priest"
+                },
+                {
+                  "id": 273060,
+                  "label": "christian faith"
+                },
+                {
+                  "id": 355358,
+                  "label": "catholic religion"
+                }
+              ],
+              "voteCountMin": 20,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.series.theme.faith-religion",
+        "type": "series",
+        "name": "🎨 Faith & Religion",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "tv",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "11001|6150|10093|172391|273060|355358",
+              "vote_count.gte": 10,
+              "with_status": "0|3|4|5",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🎨 Faith & Religion",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "series",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withKeywords": [
+                {
+                  "id": 11001,
+                  "label": "religion"
+                },
+                {
+                  "id": 6150,
+                  "label": "faith"
+                },
+                {
+                  "id": 10093,
+                  "label": "priest"
+                },
+                {
+                  "id": 172391,
+                  "label": "catholic priest"
+                },
+                {
+                  "id": 273060,
+                  "label": "christian faith"
+                },
+                {
+                  "id": 355358,
+                  "label": "catholic religion"
+                }
+              ],
+              "voteCountMin": 10,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.theme.animals-pets",
+        "type": "movie",
+        "name": "🎨 Animals & Pets",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "18165|15162|2551|2589|250816|236988",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🎨 Animals & Pets",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withKeywords": [
+                {
+                  "id": 18165,
+                  "label": "animals"
+                },
+                {
+                  "id": 15162,
+                  "label": "dog"
+                },
+                {
+                  "id": 2551,
+                  "label": "pet"
+                },
+                {
+                  "id": 2589,
+                  "label": "pet shop"
+                },
+                {
+                  "id": 250816,
+                  "label": "pet owner"
+                },
+                {
+                  "id": 236988,
+                  "label": "pet adoption"
+                }
+              ],
+              "voteCountMin": 20,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.series.theme.animals-pets",
+        "type": "series",
+        "name": "🎨 Animals & Pets",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "tv",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "18165|15162|2551|2589|250816|236988",
+              "vote_count.gte": 10,
+              "with_status": "0|3|4|5",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🎨 Animals & Pets",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "series",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withKeywords": [
+                {
+                  "id": 18165,
+                  "label": "animals"
+                },
+                {
+                  "id": 15162,
+                  "label": "dog"
+                },
+                {
+                  "id": 2551,
+                  "label": "pet"
+                },
+                {
+                  "id": 2589,
+                  "label": "pet shop"
+                },
+                {
+                  "id": 250816,
+                  "label": "pet owner"
+                },
+                {
+                  "id": 236988,
+                  "label": "pet adoption"
+                }
+              ],
+              "voteCountMin": 10,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.studios.marvel-studios",
+        "type": "movie",
+        "name": "🏰 Marvel Studios",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_companies": "420",
+              "vote_count.gte": 10,
+              "without_keywords": "210024",
+              "with_release_type": "4|5|6"
+            },
+            "formState": {
+              "catalogName": "🏰 Marvel Studios",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withCompanies": [
+                {
+                  "id": 420,
+                  "label": "Marvel Studios"
+                }
+              ],
+              "companyJoinMode": "or",
+              "voteCountMin": 10,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.series.studios.marvel-studios",
+        "type": "series",
+        "name": "🏰 Marvel Studios",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "tv",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_companies": "420",
+              "vote_count.gte": 5,
+              "without_keywords": "210024",
+              "with_status": "0|3|4|5"
+            },
+            "formState": {
+              "catalogName": "🏰 Marvel Studios",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "series",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withCompanies": [
+                {
+                  "id": 420,
+                  "label": "Marvel Studios"
+                }
+              ],
+              "companyJoinMode": "or",
+              "voteCountMin": 5,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.studios.dc-studios",
+        "type": "movie",
+        "name": "🏰 DC Studios",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_companies": "184898",
+              "vote_count.gte": 10,
+              "without_keywords": "210024",
+              "with_release_type": "4|5|6"
+            },
+            "formState": {
+              "catalogName": "🏰 DC Studios",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withCompanies": [
+                {
+                  "id": 184898,
+                  "label": "DC Studios"
+                }
+              ],
+              "companyJoinMode": "or",
+              "voteCountMin": 10,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.series.studios.dc-studios",
+        "type": "series",
+        "name": "🏰 DC Studios",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "tv",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_companies": "184898",
+              "vote_count.gte": 5,
+              "without_keywords": "210024",
+              "with_status": "0|3|4|5"
+            },
+            "formState": {
+              "catalogName": "🏰 DC Studios",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "series",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withCompanies": [
+                {
+                  "id": 184898,
+                  "label": "DC Studios"
+                }
+              ],
+              "companyJoinMode": "or",
+              "voteCountMin": 5,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.studios.walt-disney-pictures",
+        "type": "movie",
+        "name": "🏰 Walt Disney",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_companies": "2",
+              "vote_count.gte": 10,
+              "without_keywords": "210024",
+              "with_release_type": "4|5|6"
+            },
+            "formState": {
+              "catalogName": "🏰 Walt Disney",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withCompanies": [
+                {
+                  "id": 2,
+                  "label": "Walt Disney Pictures"
+                }
+              ],
+              "companyJoinMode": "or",
+              "voteCountMin": 10,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.series.studios.walt-disney-pictures",
+        "type": "series",
+        "name": "🏰 Walt Disney",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "tv",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_companies": "2",
+              "vote_count.gte": 5,
+              "without_keywords": "210024",
+              "with_status": "0|3|4|5"
+            },
+            "formState": {
+              "catalogName": "🏰 Walt Disney",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "series",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withCompanies": [
+                {
+                  "id": 2,
+                  "label": "Walt Disney Pictures"
+                }
+              ],
+              "companyJoinMode": "or",
+              "voteCountMin": 5,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.studios.paramount",
+        "type": "movie",
+        "name": "🏰 Paramount",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_companies": "4",
+              "vote_count.gte": 10,
+              "without_keywords": "210024",
+              "with_release_type": "4|5|6"
+            },
+            "formState": {
+              "catalogName": "🏰 Paramount",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withCompanies": [
+                {
+                  "id": 4,
+                  "label": "Paramount Pictures"
+                }
+              ],
+              "companyJoinMode": "or",
+              "voteCountMin": 10,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.series.studios.paramount",
+        "type": "series",
+        "name": "🏰 Paramount",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "tv",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_companies": "4",
+              "vote_count.gte": 5,
+              "without_keywords": "210024",
+              "with_status": "0|3|4|5"
+            },
+            "formState": {
+              "catalogName": "🏰 Paramount",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "series",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withCompanies": [
+                {
+                  "id": 4,
+                  "label": "Paramount Pictures"
+                }
+              ],
+              "companyJoinMode": "or",
+              "voteCountMin": 5,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.studios.mgm",
+        "type": "movie",
+        "name": "🏰 MGM",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_companies": "21",
+              "vote_count.gte": 10,
+              "without_keywords": "210024",
+              "with_release_type": "4|5|6"
+            },
+            "formState": {
+              "catalogName": "🏰 MGM",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withCompanies": [
+                {
+                  "id": 21,
+                  "label": "Metro-Goldwyn-Mayer"
+                }
+              ],
+              "companyJoinMode": "or",
+              "voteCountMin": 10,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.series.studios.mgm",
+        "type": "series",
+        "name": "🏰 MGM",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "tv",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_companies": "21",
+              "vote_count.gte": 5,
+              "without_keywords": "210024",
+              "with_status": "0|3|4|5"
+            },
+            "formState": {
+              "catalogName": "🏰 MGM",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "series",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withCompanies": [
+                {
+                  "id": 21,
+                  "label": "Metro-Goldwyn-Mayer"
+                }
+              ],
+              "companyJoinMode": "or",
+              "voteCountMin": 5,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.studios.illumination",
+        "type": "movie",
+        "name": "🏰 Illumination",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_companies": "6704",
+              "vote_count.gte": 10,
+              "without_keywords": "210024",
+              "with_release_type": "4|5|6"
+            },
+            "formState": {
+              "catalogName": "🏰 Illumination",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withCompanies": [
+                {
+                  "id": 6704,
+                  "label": "Illumination"
+                }
+              ],
+              "companyJoinMode": "or",
+              "voteCountMin": 10,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.series.studios.illumination",
+        "type": "series",
+        "name": "🏰 Illumination",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "tv",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_companies": "6704",
+              "vote_count.gte": 5,
+              "without_keywords": "210024",
+              "with_status": "0|3|4|5"
+            },
+            "formState": {
+              "catalogName": "🏰 Illumination",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "series",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withCompanies": [
+                {
+                  "id": 6704,
+                  "label": "Illumination"
+                }
+              ],
+              "companyJoinMode": "or",
+              "voteCountMin": 5,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.studios.searchlight",
+        "type": "movie",
+        "name": "🏰 Searchlight",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_companies": "43",
+              "vote_count.gte": 10,
+              "without_keywords": "210024",
+              "with_release_type": "4|5|6"
+            },
+            "formState": {
+              "catalogName": "🏰 Searchlight",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withCompanies": [
+                {
+                  "id": 43,
+                  "label": "Fox Searchlight Pictures"
+                }
+              ],
+              "companyJoinMode": "or",
+              "voteCountMin": 10,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.series.studios.searchlight",
+        "type": "series",
+        "name": "🏰 Searchlight",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "tv",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_companies": "43",
+              "vote_count.gte": 5,
+              "without_keywords": "210024",
+              "with_status": "0|3|4|5"
+            },
+            "formState": {
+              "catalogName": "🏰 Searchlight",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "series",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withCompanies": [
+                {
+                  "id": 43,
+                  "label": "Fox Searchlight Pictures"
+                }
+              ],
+              "companyJoinMode": "or",
+              "voteCountMin": 5,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.studios.hbo",
+        "type": "movie",
+        "name": "🏰 HBO",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_companies": "3268",
+              "vote_count.gte": 10,
+              "without_keywords": "210024",
+              "with_release_type": "4|5|6"
+            },
+            "formState": {
+              "catalogName": "🏰 HBO",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withCompanies": [
+                {
+                  "id": 3268,
+                  "label": "HBO"
+                }
+              ],
+              "companyJoinMode": "or",
+              "voteCountMin": 10,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.series.studios.hbo",
+        "type": "series",
+        "name": "🏰 HBO",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "tv",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_companies": "3268",
+              "vote_count.gte": 5,
+              "without_keywords": "210024",
+              "with_status": "0|3|4|5"
+            },
+            "formState": {
+              "catalogName": "🏰 HBO",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "series",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withCompanies": [
+                {
+                  "id": 3268,
+                  "label": "HBO"
+                }
+              ],
+              "companyJoinMode": "or",
+              "voteCountMin": 5,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.studios.bbc",
+        "type": "movie",
+        "name": "🏰 BBC",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_companies": "288",
+              "vote_count.gte": 10,
+              "without_keywords": "210024",
+              "with_release_type": "4|5|6"
+            },
+            "formState": {
+              "catalogName": "🏰 BBC",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withCompanies": [
+                {
+                  "id": 288,
+                  "label": "BBC Film"
+                }
+              ],
+              "companyJoinMode": "or",
+              "voteCountMin": 10,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.series.studios.bbc",
+        "type": "series",
+        "name": "🏰 BBC",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "tv",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_companies": "288",
+              "vote_count.gte": 5,
+              "without_keywords": "210024",
+              "with_status": "0|3|4|5"
+            },
+            "formState": {
+              "catalogName": "🏰 BBC",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "series",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withCompanies": [
+                {
+                  "id": 288,
+                  "label": "BBC Film"
+                }
+              ],
+              "companyJoinMode": "or",
+              "voteCountMin": 5,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.studios.working-title",
+        "type": "movie",
+        "name": "🏰 Working Title",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_companies": "10163",
+              "vote_count.gte": 10,
+              "without_keywords": "210024",
+              "with_release_type": "4|5|6"
+            },
+            "formState": {
+              "catalogName": "🏰 Working Title",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withCompanies": [
+                {
+                  "id": 10163,
+                  "label": "Working Title Films"
+                }
+              ],
+              "companyJoinMode": "or",
+              "voteCountMin": 10,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.series.studios.working-title",
+        "type": "series",
+        "name": "🏰 Working Title",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "tv",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_companies": "10163",
+              "vote_count.gte": 5,
+              "without_keywords": "210024",
+              "with_status": "0|3|4|5"
+            },
+            "formState": {
+              "catalogName": "🏰 Working Title",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "series",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withCompanies": [
+                {
+                  "id": 10163,
+                  "label": "Working Title Films"
+                }
+              ],
+              "companyJoinMode": "or",
+              "voteCountMin": 5,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.studios.miramax",
+        "type": "movie",
+        "name": "🏰 Miramax",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_companies": "14",
+              "vote_count.gte": 10,
+              "without_keywords": "210024",
+              "with_release_type": "4|5|6"
+            },
+            "formState": {
+              "catalogName": "🏰 Miramax",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withCompanies": [
+                {
+                  "id": 14,
+                  "label": "Miramax"
+                }
+              ],
+              "companyJoinMode": "or",
+              "voteCountMin": 10,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.series.studios.miramax",
+        "type": "series",
+        "name": "🏰 Miramax",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "tv",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_companies": "14",
+              "vote_count.gte": 5,
+              "without_keywords": "210024",
+              "with_status": "0|3|4|5"
+            },
+            "formState": {
+              "catalogName": "🏰 Miramax",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "series",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withCompanies": [
+                {
+                  "id": 14,
+                  "label": "Miramax"
+                }
+              ],
+              "companyJoinMode": "or",
+              "voteCountMin": 5,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.studios.bad-robot",
+        "type": "movie",
+        "name": "🏰 Bad Robot",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_companies": "11461",
+              "vote_count.gte": 10,
+              "without_keywords": "210024",
+              "with_release_type": "4|5|6"
+            },
+            "formState": {
+              "catalogName": "🏰 Bad Robot",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withCompanies": [
+                {
+                  "id": 11461,
+                  "label": "Bad Robot"
+                }
+              ],
+              "companyJoinMode": "or",
+              "voteCountMin": 10,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.series.studios.bad-robot",
+        "type": "series",
+        "name": "🏰 Bad Robot",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "tv",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_companies": "11461",
+              "vote_count.gte": 5,
+              "without_keywords": "210024",
+              "with_status": "0|3|4|5"
+            },
+            "formState": {
+              "catalogName": "🏰 Bad Robot",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "series",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withCompanies": [
+                {
+                  "id": 11461,
+                  "label": "Bad Robot"
+                }
+              ],
+              "companyJoinMode": "or",
+              "voteCountMin": 5,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.studios.skydance",
+        "type": "movie",
+        "name": "🏰 Skydance",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_companies": "82819",
+              "vote_count.gte": 10,
+              "without_keywords": "210024",
+              "with_release_type": "4|5|6"
+            },
+            "formState": {
+              "catalogName": "🏰 Skydance",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withCompanies": [
+                {
+                  "id": 82819,
+                  "label": "Skydance Media"
+                }
+              ],
+              "companyJoinMode": "or",
+              "voteCountMin": 10,
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.series.studios.skydance",
+        "type": "series",
+        "name": "🏰 Skydance",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "tv",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_companies": "82819",
+              "vote_count.gte": 5,
+              "without_keywords": "210024",
+              "with_status": "0|3|4|5"
+            },
+            "formState": {
+              "catalogName": "🏰 Skydance",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "series",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "withCompanies": [
+                {
+                  "id": 82819,
+                  "label": "Skydance Media"
+                }
+              ],
+              "companyJoinMode": "or",
+              "voteCountMin": 5,
               "excludeKeywords": [
                 {
                   "id": 210024,

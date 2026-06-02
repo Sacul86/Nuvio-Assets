@@ -21,6 +21,8 @@ import json
 SRC_PROFILE = "/root/.claude/uploads/6e87b92e-c854-4fd7-b108-9d8c2c61369e/1e87ba4c-nuviocollectionsprofile120260602.json"
 SRC_CONFIG = "/root/.claude/uploads/6e87b92e-c854-4fd7-b108-9d8c2c61369e/6b962f4b-aiometadataconfig20260602_1.json"
 KEYWORDS = "/home/user/Nuvio-Assets/keywords.json"
+THEMES = "/home/user/Nuvio-Assets/themes.json"
+STUDIOS = "/home/user/Nuvio-Assets/studios.json"
 OUT_PROFILE = "/home/user/Nuvio-Assets/nuvio-collections-profile.json"
 OUT_CONFIG = "/home/user/Nuvio-Assets/nuvio-metadata-config.json"
 
@@ -180,6 +182,90 @@ GENRE_LAYOUT = [
 ]
 
 
+# --- new Themes & Studios (refill the budget freed by removing all Actor rows) ---
+# slug -> display title (plain; folder coverEmoji supplies the icon)
+NEW_THEMES = {
+    "dinosaurs": "Dinosaurs", "dragons": "Dragons", "werewolves": "Werewolves",
+    "witches": "Witches", "ghosts": "Ghosts & Hauntings", "boxing": "Boxing",
+    "road-trip": "Road Trip", "sports": "Sports", "cars-racing": "Cars & Racing",
+    "multiverse": "Multiverse", "wedding": "Weddings",
+    "money-finance": "Money & Wall Street", "faith-religion": "Faith & Religion",
+    "animals-pets": "Animals & Pets",
+}
+NEW_STUDIOS = {
+    "marvel-studios": "Marvel Studios", "dc-studios": "DC Studios",
+    "walt-disney-pictures": "Walt Disney", "paramount": "Paramount", "mgm": "MGM",
+    "illumination": "Illumination", "searchlight": "Searchlight", "hbo": "HBO",
+    "bbc": "BBC", "working-title": "Working Title", "miramax": "Miramax",
+    "bad-robot": "Bad Robot", "skydance": "Skydance",
+}
+
+
+def make_theme_catalog(slug, title, keywords, media):
+    """Keyword-based theme catalog, movie ('movie') or series ('tv')."""
+    name = f"🎨 {title}"
+    kw = "|".join(str(k["id"]) for k in keywords)
+    if media == "movie":
+        params = {"sort_by": "popularity.desc", "include_adult": False,
+                  "with_keywords": kw, "vote_count.gte": 20,
+                  "with_release_type": "4|5|6", "without_keywords": "210024"}
+        ctype = "movie"
+    else:
+        params = {"sort_by": "popularity.desc", "include_adult": False,
+                  "with_keywords": kw, "vote_count.gte": 10,
+                  "with_status": "0|3|4|5", "without_keywords": "210024"}
+        ctype = "series"
+    form = {"catalogName": name, "discoverSource": "tmdb", "sortBy": "popularity.desc",
+            "catalogType": ctype, "includeAdult": False, "releasedOnly": True,
+            "withKeywords": [{"id": k["id"], "label": k["label"]} for k in keywords],
+            "voteCountMin": params["vote_count.gte"],
+            "excludeKeywords": [{"id": 210024, "label": "anime"}]}
+    cid = f"tmdb.discover.{'movie' if media=='movie' else 'series'}.theme.{slug}"
+    return {"id": cid, "type": ctype, "name": name, "enabled": True,
+            "showInHome": False, "source": "tmdb",
+            "metadata": {"discover": {"version": 2, "source": "tmdb", "mediaType": media,
+                                      "params": params, "formState": form}}}
+
+
+def make_studio_catalog(slug, title, company, media):
+    """Company-based studio catalog, movie ('movie') or series ('tv')."""
+    name = f"🏰 {title}"
+    if media == "movie":
+        params = {"sort_by": "popularity.desc", "include_adult": False,
+                  "with_companies": str(company["id"]), "vote_count.gte": 10,
+                  "without_keywords": "210024", "with_release_type": "4|5|6"}
+        ctype = "movie"
+    else:
+        params = {"sort_by": "popularity.desc", "include_adult": False,
+                  "with_companies": str(company["id"]), "vote_count.gte": 5,
+                  "without_keywords": "210024", "with_status": "0|3|4|5"}
+        ctype = "series"
+    form = {"catalogName": name, "discoverSource": "tmdb", "sortBy": "popularity.desc",
+            "catalogType": ctype, "includeAdult": False, "releasedOnly": True,
+            "withCompanies": [{"id": company["id"], "label": company["label"]}],
+            "companyJoinMode": "or", "voteCountMin": params["vote_count.gte"],
+            "excludeKeywords": [{"id": 210024, "label": "anime"}]}
+    cid = f"tmdb.discover.{'movie' if media=='movie' else 'series'}.studios.{slug}"
+    return {"id": cid, "type": ctype, "name": name, "enabled": True,
+            "showInHome": False, "source": "tmdb",
+            "metadata": {"discover": {"version": 2, "source": "tmdb", "mediaType": media,
+                                      "params": params, "formState": form}}}
+
+
+def collection_folder(template, fid, title, emoji, asset_slug, movie_cid, series_cid):
+    """Clone a Themes/Studios folder, retargeting its id/title/images/sources."""
+    f = json.loads(json.dumps(template))
+    f["id"] = fid
+    f["title"] = title
+    f["coverEmoji"] = emoji
+    base = template["coverImageUrl"].rsplit("/", 1)[0]
+    img = f"{base}/{asset_slug}.jpg"
+    f["focusGifUrl"] = f["coverImageUrl"] = f["heroBackdropUrl"] = img
+    f["sources"] = [src_row("movie", movie_cid, "None"), src_row("series", series_cid, "None")]
+    f["catalogSources"] = [cat_src("movie", movie_cid, "None"), cat_src("series", series_cid, "None")]
+    return f
+
+
 def src_row(typ, catalog_id, genre_label):
     return {
         "type": typ, "genre": genre_label, "title": None, "sortBy": None,
@@ -230,6 +316,8 @@ def main():
     profile = json.load(open(SRC_PROFILE))
     config = json.load(open(SRC_CONFIG))
     kwmap = json.load(open(KEYWORDS))
+    thememap = json.load(open(THEMES))
+    studiomap = json.load(open(STUDIOS))
 
     # validate: each subgenre slug is assigned to exactly one genre folder
     layout_slugs = []
@@ -250,14 +338,36 @@ def main():
                 raise SystemExit(f"DUPLICATE keyword {k['id']} ({k['label']}) in {slug} and {seen_kw[k['id']]}")
             seen_kw[k["id"]] = slug
 
-    # 1. drop streaming collection
-    profile = [c for c in profile if c.get("id") != "collections-streaming"]
+    # 1. drop streaming collection + 6. drop the entire Actors collection
+    profile = [c for c in profile
+               if c.get("id") not in ("collections-streaming", "collections-actors")]
     genres_col = next(c for c in profile if c["id"] == "collections-genres")
     studios_col = next(c for c in profile if c["id"] == "collections-studios")
+    themes_col = next(c for c in profile if c["id"] == "collections-themes")
 
     # 5. drop Studio Ghibli folder
     studios_col["folders"] = [f for f in studios_col["folders"]
                               if f["id"] != "collections.studios.ghibli"]
+
+    # 7. expand Themes & Studios (refills the budget freed by removing Actors)
+    extra_catalogs = []
+    theme_tmpl = themes_col["folders"][0]
+    for slug, title in NEW_THEMES.items():
+        mcid = f"tmdb.discover.movie.theme.{slug}"
+        scid = f"tmdb.discover.series.theme.{slug}"
+        extra_catalogs.append(make_theme_catalog(slug, title, thememap[slug], "movie"))
+        extra_catalogs.append(make_theme_catalog(slug, title, thememap[slug], "tv"))
+        themes_col["folders"].append(collection_folder(
+            theme_tmpl, f"collections.themes.{slug}", title, "🎨", slug, mcid, scid))
+    studio_tmpl = studios_col["folders"][0]
+    for slug, title in NEW_STUDIOS.items():
+        mcid = f"tmdb.discover.movie.studios.{slug}"
+        scid = f"tmdb.discover.series.studios.{slug}"
+        extra_catalogs.append(make_studio_catalog(slug, title, studiomap[slug], "movie"))
+        extra_catalogs.append(make_studio_catalog(slug, title, studiomap[slug], "tv"))
+        studios_col["folders"].append(collection_folder(
+            studio_tmpl, f"collections.studios.{slug}", title, "🏰",
+            f"studios-{slug}", mcid, scid))
 
     existing = {f["title"]: f for f in genres_col["folders"]}
     action_meta = existing["Action"]
@@ -320,12 +430,13 @@ def main():
 
     genres_col["folders"] = new_folders
 
-    # ---- metadata config: remove streaming + ghibli, append new subgenre catalogs ----
+    # ---- metadata config: remove streaming + ghibli + all actors, append new catalogs ----
     cats = config["config"]["catalogs"]
     cats = [c for c in cats if ".streaming." not in c.get("id", "")
+            and ".actors." not in c.get("id", "")
             and not c.get("id", "").endswith(".studios.ghibli")]
     existing_ids = {c["id"] for c in cats}
-    for c in new_catalogs:
+    for c in new_catalogs + extra_catalogs:
         if c["id"] not in existing_ids:
             cats.append(c)
             existing_ids.add(c["id"])
@@ -343,13 +454,16 @@ def main():
                     raise SystemExit(f"DANGLING source catalogId in {f['id']}: {cid}")
     blob = json.dumps(profile)
     assert ".streaming." not in blob and ".studios.ghibli" not in blob
+    assert ".actors." not in blob and "collections-actors" not in blob
 
     json.dump(profile, open(OUT_PROFILE, "w"), indent=2, ensure_ascii=False)
     open(OUT_PROFILE, "a").write("\n")
     json.dump(config, open(OUT_CONFIG, "w"), indent=2, ensure_ascii=False)
     open(OUT_CONFIG, "a").write("\n")
 
-    print(f"new subgenre catalogs: {len(new_catalogs)} | total catalogs: {len(cats)} | enabled: {config['metadata']['enabledCatalogs']}")
+    print(f"new subgenre catalogs: {len(new_catalogs)} | new theme/studio catalogs: {len(extra_catalogs)}")
+    print(f"themes folders: {len(themes_col['folders'])} | studios folders: {len(studios_col['folders'])} | actors: removed")
+    print(f"total catalogs: {len(cats)} | enabled: {config['metadata']['enabledCatalogs']}")
     print("genre folders:")
     for f in genres_col["folders"]:
         movies = [s["catalogId"].split('.')[-1] for s in f["sources"] if s["type"] == "movie"]

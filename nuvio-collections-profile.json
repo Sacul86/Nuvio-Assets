@@ -3326,6 +3326,804 @@
         ],
         "focusGifEnabled": false,
         "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/kaiju-monsters.jpg"
+      },
+      {
+        "id": "collections.themes.dinosaurs",
+        "title": "Dinosaurs",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.movie.theme.dinosaurs",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.series.theme.dinosaurs",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "coverEmoji": "🎨",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/dinosaurs.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/dinosaurs.jpg",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.movie.theme.dinosaurs"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.series.theme.dinosaurs"
+          }
+        ],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/dinosaurs.jpg"
+      },
+      {
+        "id": "collections.themes.dragons",
+        "title": "Dragons",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.movie.theme.dragons",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.series.theme.dragons",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "coverEmoji": "🎨",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/dragons.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/dragons.jpg",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.movie.theme.dragons"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.series.theme.dragons"
+          }
+        ],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/dragons.jpg"
+      },
+      {
+        "id": "collections.themes.werewolves",
+        "title": "Werewolves",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.movie.theme.werewolves",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.series.theme.werewolves",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "coverEmoji": "🎨",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/werewolves.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/werewolves.jpg",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.movie.theme.werewolves"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.series.theme.werewolves"
+          }
+        ],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/werewolves.jpg"
+      },
+      {
+        "id": "collections.themes.witches",
+        "title": "Witches",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.movie.theme.witches",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.series.theme.witches",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "coverEmoji": "🎨",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/witches.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/witches.jpg",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.movie.theme.witches"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.series.theme.witches"
+          }
+        ],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/witches.jpg"
+      },
+      {
+        "id": "collections.themes.ghosts",
+        "title": "Ghosts & Hauntings",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.movie.theme.ghosts",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.series.theme.ghosts",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "coverEmoji": "🎨",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/ghosts.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/ghosts.jpg",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.movie.theme.ghosts"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.series.theme.ghosts"
+          }
+        ],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/ghosts.jpg"
+      },
+      {
+        "id": "collections.themes.boxing",
+        "title": "Boxing",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.movie.theme.boxing",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.series.theme.boxing",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "coverEmoji": "🎨",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/boxing.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/boxing.jpg",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.movie.theme.boxing"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.series.theme.boxing"
+          }
+        ],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/boxing.jpg"
+      },
+      {
+        "id": "collections.themes.road-trip",
+        "title": "Road Trip",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.movie.theme.road-trip",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.series.theme.road-trip",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "coverEmoji": "🎨",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/road-trip.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/road-trip.jpg",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.movie.theme.road-trip"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.series.theme.road-trip"
+          }
+        ],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/road-trip.jpg"
+      },
+      {
+        "id": "collections.themes.sports",
+        "title": "Sports",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.movie.theme.sports",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.series.theme.sports",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "coverEmoji": "🎨",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/sports.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/sports.jpg",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.movie.theme.sports"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.series.theme.sports"
+          }
+        ],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/sports.jpg"
+      },
+      {
+        "id": "collections.themes.cars-racing",
+        "title": "Cars & Racing",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.movie.theme.cars-racing",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.series.theme.cars-racing",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "coverEmoji": "🎨",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/cars-racing.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/cars-racing.jpg",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.movie.theme.cars-racing"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.series.theme.cars-racing"
+          }
+        ],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/cars-racing.jpg"
+      },
+      {
+        "id": "collections.themes.multiverse",
+        "title": "Multiverse",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.movie.theme.multiverse",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.series.theme.multiverse",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "coverEmoji": "🎨",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/multiverse.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/multiverse.jpg",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.movie.theme.multiverse"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.series.theme.multiverse"
+          }
+        ],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/multiverse.jpg"
+      },
+      {
+        "id": "collections.themes.wedding",
+        "title": "Weddings",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.movie.theme.wedding",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.series.theme.wedding",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "coverEmoji": "🎨",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/wedding.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/wedding.jpg",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.movie.theme.wedding"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.series.theme.wedding"
+          }
+        ],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/wedding.jpg"
+      },
+      {
+        "id": "collections.themes.money-finance",
+        "title": "Money & Wall Street",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.movie.theme.money-finance",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.series.theme.money-finance",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "coverEmoji": "🎨",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/money-finance.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/money-finance.jpg",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.movie.theme.money-finance"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.series.theme.money-finance"
+          }
+        ],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/money-finance.jpg"
+      },
+      {
+        "id": "collections.themes.faith-religion",
+        "title": "Faith & Religion",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.movie.theme.faith-religion",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.series.theme.faith-religion",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "coverEmoji": "🎨",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/faith-religion.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/faith-religion.jpg",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.movie.theme.faith-religion"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.series.theme.faith-religion"
+          }
+        ],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/faith-religion.jpg"
+      },
+      {
+        "id": "collections.themes.animals-pets",
+        "title": "Animals & Pets",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.movie.theme.animals-pets",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.series.theme.animals-pets",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "coverEmoji": "🎨",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/animals-pets.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/animals-pets.jpg",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.movie.theme.animals-pets"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.series.theme.animals-pets"
+          }
+        ],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/animals-pets.jpg"
       }
     ],
     "pinToTop": true,
@@ -4248,56 +5046,10 @@
         ],
         "focusGifEnabled": false,
         "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-amblin.jpg"
-      }
-    ],
-    "pinToTop": true,
-    "viewMode": "FOLLOW_LAYOUT",
-    "showAllTab": true,
-    "focusGlowEnabled": true
-  },
-  {
-    "id": "collections-actors",
-    "title": "⭐ Actors",
-    "folders": [
-      {
-        "id": "collections.actors.tom-cruise",
-        "title": "Tom Cruise",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.tom-cruise",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-tom-cruise.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-tom-cruise.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.tom-cruise"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-tom-cruise.jpg"
       },
       {
-        "id": "collections.actors.leonardo-dicaprio",
-        "title": "Leonardo DiCaprio",
+        "id": "collections.studios.marvel-studios",
+        "title": "Marvel Studios",
         "sources": [
           {
             "type": "movie",
@@ -4309,7 +5061,22 @@
             "filters": null,
             "sortHow": null,
             "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.leonardo-dicaprio",
+            "catalogId": "tmdb.discover.movie.studios.marvel-studios",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.series.studios.marvel-studios",
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
@@ -4317,23 +5084,29 @@
         ],
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-leonardo-dicaprio.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-leonardo-dicaprio.jpg",
+        "coverEmoji": "🏰",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-marvel-studios.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-marvel-studios.jpg",
         "catalogSources": [
           {
             "type": "movie",
             "genre": "None",
             "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.leonardo-dicaprio"
+            "catalogId": "tmdb.discover.movie.studios.marvel-studios"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.series.studios.marvel-studios"
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-leonardo-dicaprio.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-marvel-studios.jpg"
       },
       {
-        "id": "collections.actors.dwayne-johnson",
-        "title": "Dwayne Johnson",
+        "id": "collections.studios.dc-studios",
+        "title": "DC Studios",
         "sources": [
           {
             "type": "movie",
@@ -4345,7 +5118,22 @@
             "filters": null,
             "sortHow": null,
             "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.dwayne-johnson",
+            "catalogId": "tmdb.discover.movie.studios.dc-studios",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.series.studios.dc-studios",
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
@@ -4353,23 +5141,29 @@
         ],
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-dwayne-johnson.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-dwayne-johnson.jpg",
+        "coverEmoji": "🏰",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-dc-studios.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-dc-studios.jpg",
         "catalogSources": [
           {
             "type": "movie",
             "genre": "None",
             "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.dwayne-johnson"
+            "catalogId": "tmdb.discover.movie.studios.dc-studios"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.series.studios.dc-studios"
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-dwayne-johnson.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-dc-studios.jpg"
       },
       {
-        "id": "collections.actors.robert-downey-jr",
-        "title": "Robert Downey Jr.",
+        "id": "collections.studios.walt-disney-pictures",
+        "title": "Walt Disney",
         "sources": [
           {
             "type": "movie",
@@ -4381,7 +5175,22 @@
             "filters": null,
             "sortHow": null,
             "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.robert-downey-jr",
+            "catalogId": "tmdb.discover.movie.studios.walt-disney-pictures",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.series.studios.walt-disney-pictures",
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
@@ -4389,23 +5198,29 @@
         ],
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-robert-downey-jr.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-robert-downey-jr.jpg",
+        "coverEmoji": "🏰",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-walt-disney-pictures.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-walt-disney-pictures.jpg",
         "catalogSources": [
           {
             "type": "movie",
             "genre": "None",
             "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.robert-downey-jr"
+            "catalogId": "tmdb.discover.movie.studios.walt-disney-pictures"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.series.studios.walt-disney-pictures"
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-robert-downey-jr.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-walt-disney-pictures.jpg"
       },
       {
-        "id": "collections.actors.denzel-washington",
-        "title": "Denzel Washington",
+        "id": "collections.studios.paramount",
+        "title": "Paramount",
         "sources": [
           {
             "type": "movie",
@@ -4417,7 +5232,22 @@
             "filters": null,
             "sortHow": null,
             "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.denzel-washington",
+            "catalogId": "tmdb.discover.movie.studios.paramount",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.series.studios.paramount",
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
@@ -4425,23 +5255,29 @@
         ],
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-denzel-washington.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-denzel-washington.jpg",
+        "coverEmoji": "🏰",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-paramount.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-paramount.jpg",
         "catalogSources": [
           {
             "type": "movie",
             "genre": "None",
             "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.denzel-washington"
+            "catalogId": "tmdb.discover.movie.studios.paramount"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.series.studios.paramount"
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-denzel-washington.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-paramount.jpg"
       },
       {
-        "id": "collections.actors.brad-pitt",
-        "title": "Brad Pitt",
+        "id": "collections.studios.mgm",
+        "title": "MGM",
         "sources": [
           {
             "type": "movie",
@@ -4453,7 +5289,22 @@
             "filters": null,
             "sortHow": null,
             "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.brad-pitt",
+            "catalogId": "tmdb.discover.movie.studios.mgm",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.series.studios.mgm",
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
@@ -4461,23 +5312,29 @@
         ],
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-brad-pitt.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-brad-pitt.jpg",
+        "coverEmoji": "🏰",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-mgm.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-mgm.jpg",
         "catalogSources": [
           {
             "type": "movie",
             "genre": "None",
             "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.brad-pitt"
+            "catalogId": "tmdb.discover.movie.studios.mgm"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.series.studios.mgm"
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-brad-pitt.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-mgm.jpg"
       },
       {
-        "id": "collections.actors.will-smith",
-        "title": "Will Smith",
+        "id": "collections.studios.illumination",
+        "title": "Illumination",
         "sources": [
           {
             "type": "movie",
@@ -4489,7 +5346,22 @@
             "filters": null,
             "sortHow": null,
             "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.will-smith",
+            "catalogId": "tmdb.discover.movie.studios.illumination",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.series.studios.illumination",
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
@@ -4497,23 +5369,29 @@
         ],
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-will-smith.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-will-smith.jpg",
+        "coverEmoji": "🏰",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-illumination.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-illumination.jpg",
         "catalogSources": [
           {
             "type": "movie",
             "genre": "None",
             "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.will-smith"
+            "catalogId": "tmdb.discover.movie.studios.illumination"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.series.studios.illumination"
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-will-smith.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-illumination.jpg"
       },
       {
-        "id": "collections.actors.tom-hanks",
-        "title": "Tom Hanks",
+        "id": "collections.studios.searchlight",
+        "title": "Searchlight",
         "sources": [
           {
             "type": "movie",
@@ -4525,7 +5403,22 @@
             "filters": null,
             "sortHow": null,
             "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.tom-hanks",
+            "catalogId": "tmdb.discover.movie.studios.searchlight",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.series.studios.searchlight",
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
@@ -4533,23 +5426,29 @@
         ],
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-tom-hanks.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-tom-hanks.jpg",
+        "coverEmoji": "🏰",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-searchlight.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-searchlight.jpg",
         "catalogSources": [
           {
             "type": "movie",
             "genre": "None",
             "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.tom-hanks"
+            "catalogId": "tmdb.discover.movie.studios.searchlight"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.series.studios.searchlight"
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-tom-hanks.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-searchlight.jpg"
       },
       {
-        "id": "collections.actors.scarlett-johansson",
-        "title": "Scarlett Johansson",
+        "id": "collections.studios.hbo",
+        "title": "HBO",
         "sources": [
           {
             "type": "movie",
@@ -4561,7 +5460,22 @@
             "filters": null,
             "sortHow": null,
             "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.scarlett-johansson",
+            "catalogId": "tmdb.discover.movie.studios.hbo",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.series.studios.hbo",
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
@@ -4569,23 +5483,29 @@
         ],
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-scarlett-johansson.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-scarlett-johansson.jpg",
+        "coverEmoji": "🏰",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-hbo.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-hbo.jpg",
         "catalogSources": [
           {
             "type": "movie",
             "genre": "None",
             "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.scarlett-johansson"
+            "catalogId": "tmdb.discover.movie.studios.hbo"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.series.studios.hbo"
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-scarlett-johansson.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-hbo.jpg"
       },
       {
-        "id": "collections.actors.keanu-reeves",
-        "title": "Keanu Reeves",
+        "id": "collections.studios.bbc",
+        "title": "BBC",
         "sources": [
           {
             "type": "movie",
@@ -4597,7 +5517,22 @@
             "filters": null,
             "sortHow": null,
             "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.keanu-reeves",
+            "catalogId": "tmdb.discover.movie.studios.bbc",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.series.studios.bbc",
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
@@ -4605,23 +5540,29 @@
         ],
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-keanu-reeves.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-keanu-reeves.jpg",
+        "coverEmoji": "🏰",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-bbc.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-bbc.jpg",
         "catalogSources": [
           {
             "type": "movie",
             "genre": "None",
             "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.keanu-reeves"
+            "catalogId": "tmdb.discover.movie.studios.bbc"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.series.studios.bbc"
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-keanu-reeves.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-bbc.jpg"
       },
       {
-        "id": "collections.actors.margot-robbie",
-        "title": "Margot Robbie",
+        "id": "collections.studios.working-title",
+        "title": "Working Title",
         "sources": [
           {
             "type": "movie",
@@ -4633,7 +5574,22 @@
             "filters": null,
             "sortHow": null,
             "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.margot-robbie",
+            "catalogId": "tmdb.discover.movie.studios.working-title",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.series.studios.working-title",
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
@@ -4641,23 +5597,29 @@
         ],
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-margot-robbie.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-margot-robbie.jpg",
+        "coverEmoji": "🏰",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-working-title.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-working-title.jpg",
         "catalogSources": [
           {
             "type": "movie",
             "genre": "None",
             "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.margot-robbie"
+            "catalogId": "tmdb.discover.movie.studios.working-title"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.series.studios.working-title"
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-margot-robbie.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-working-title.jpg"
       },
       {
-        "id": "collections.actors.ryan-gosling",
-        "title": "Ryan Gosling",
+        "id": "collections.studios.miramax",
+        "title": "Miramax",
         "sources": [
           {
             "type": "movie",
@@ -4669,7 +5631,22 @@
             "filters": null,
             "sortHow": null,
             "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.ryan-gosling",
+            "catalogId": "tmdb.discover.movie.studios.miramax",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.series.studios.miramax",
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
@@ -4677,23 +5654,29 @@
         ],
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-ryan-gosling.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-ryan-gosling.jpg",
+        "coverEmoji": "🏰",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-miramax.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-miramax.jpg",
         "catalogSources": [
           {
             "type": "movie",
             "genre": "None",
             "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.ryan-gosling"
+            "catalogId": "tmdb.discover.movie.studios.miramax"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.series.studios.miramax"
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-ryan-gosling.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-miramax.jpg"
       },
       {
-        "id": "collections.actors.christian-bale",
-        "title": "Christian Bale",
+        "id": "collections.studios.bad-robot",
+        "title": "Bad Robot",
         "sources": [
           {
             "type": "movie",
@@ -4705,7 +5688,22 @@
             "filters": null,
             "sortHow": null,
             "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.christian-bale",
+            "catalogId": "tmdb.discover.movie.studios.bad-robot",
+            "mediaType": null,
+            "traktListId": null,
+            "tmdbSourceType": null
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "title": null,
+            "sortBy": null,
+            "tmdbId": null,
+            "addonId": "aio-metadata",
+            "filters": null,
+            "sortHow": null,
+            "provider": "addon",
+            "catalogId": "tmdb.discover.series.studios.bad-robot",
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
@@ -4713,23 +5711,29 @@
         ],
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-christian-bale.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-christian-bale.jpg",
+        "coverEmoji": "🏰",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-bad-robot.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-bad-robot.jpg",
         "catalogSources": [
           {
             "type": "movie",
             "genre": "None",
             "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.christian-bale"
+            "catalogId": "tmdb.discover.movie.studios.bad-robot"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.series.studios.bad-robot"
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-christian-bale.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-bad-robot.jpg"
       },
       {
-        "id": "collections.actors.joaquin-phoenix",
-        "title": "Joaquin Phoenix",
+        "id": "collections.studios.skydance",
+        "title": "Skydance",
         "sources": [
           {
             "type": "movie",
@@ -4741,34 +5745,13 @@
             "filters": null,
             "sortHow": null,
             "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.joaquin-phoenix",
+            "catalogId": "tmdb.discover.movie.studios.skydance",
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-joaquin-phoenix.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-joaquin-phoenix.jpg",
-        "catalogSources": [
+          },
           {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.joaquin-phoenix"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-joaquin-phoenix.jpg"
-      },
-      {
-        "id": "collections.actors.matthew-mcconaughey",
-        "title": "Matthew McConaughey",
-        "sources": [
-          {
-            "type": "movie",
+            "type": "series",
             "genre": "None",
             "title": null,
             "sortBy": null,
@@ -4777,7 +5760,7 @@
             "filters": null,
             "sortHow": null,
             "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.matthew-mcconaughey",
+            "catalogId": "tmdb.discover.series.studios.skydance",
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
@@ -4785,1423 +5768,25 @@
         ],
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-matthew-mcconaughey.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-matthew-mcconaughey.jpg",
+        "coverEmoji": "🏰",
+        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-skydance.jpg",
+        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-skydance.jpg",
         "catalogSources": [
           {
             "type": "movie",
             "genre": "None",
             "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.matthew-mcconaughey"
+            "catalogId": "tmdb.discover.movie.studios.skydance"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "tmdb.discover.series.studios.skydance"
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-matthew-mcconaughey.jpg"
-      },
-      {
-        "id": "collections.actors.ryan-reynolds",
-        "title": "Ryan Reynolds",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.ryan-reynolds",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-ryan-reynolds.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-ryan-reynolds.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.ryan-reynolds"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-ryan-reynolds.jpg"
-      },
-      {
-        "id": "collections.actors.chris-hemsworth",
-        "title": "Chris Hemsworth",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.chris-hemsworth",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-chris-hemsworth.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-chris-hemsworth.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.chris-hemsworth"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-chris-hemsworth.jpg"
-      },
-      {
-        "id": "collections.actors.chris-evans",
-        "title": "Chris Evans",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.chris-evans",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-chris-evans.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-chris-evans.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.chris-evans"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-chris-evans.jpg"
-      },
-      {
-        "id": "collections.actors.chris-pratt",
-        "title": "Chris Pratt",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.chris-pratt",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-chris-pratt.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-chris-pratt.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.chris-pratt"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-chris-pratt.jpg"
-      },
-      {
-        "id": "collections.actors.hugh-jackman",
-        "title": "Hugh Jackman",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.hugh-jackman",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-hugh-jackman.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-hugh-jackman.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.hugh-jackman"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-hugh-jackman.jpg"
-      },
-      {
-        "id": "collections.actors.jake-gyllenhaal",
-        "title": "Jake Gyllenhaal",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.jake-gyllenhaal",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-jake-gyllenhaal.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-jake-gyllenhaal.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.jake-gyllenhaal"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-jake-gyllenhaal.jpg"
-      },
-      {
-        "id": "collections.actors.matt-damon",
-        "title": "Matt Damon",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.matt-damon",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-matt-damon.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-matt-damon.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.matt-damon"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-matt-damon.jpg"
-      },
-      {
-        "id": "collections.actors.samuel-l-jackson",
-        "title": "Samuel L. Jackson",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.samuel-l-jackson",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-samuel-l-jackson.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-samuel-l-jackson.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.samuel-l-jackson"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-samuel-l-jackson.jpg"
-      },
-      {
-        "id": "collections.actors.morgan-freeman",
-        "title": "Morgan Freeman",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.morgan-freeman",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-morgan-freeman.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-morgan-freeman.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.morgan-freeman"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-morgan-freeman.jpg"
-      },
-      {
-        "id": "collections.actors.anthony-hopkins",
-        "title": "Anthony Hopkins",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.anthony-hopkins",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-anthony-hopkins.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-anthony-hopkins.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.anthony-hopkins"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-anthony-hopkins.jpg"
-      },
-      {
-        "id": "collections.actors.robert-de-niro",
-        "title": "Robert De Niro",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.robert-de-niro",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-robert-de-niro.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-robert-de-niro.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.robert-de-niro"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-robert-de-niro.jpg"
-      },
-      {
-        "id": "collections.actors.al-pacino",
-        "title": "Al Pacino",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.al-pacino",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-al-pacino.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-al-pacino.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.al-pacino"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-al-pacino.jpg"
-      },
-      {
-        "id": "collections.actors.tom-hardy",
-        "title": "Tom Hardy",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.tom-hardy",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-tom-hardy.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-tom-hardy.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.tom-hardy"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-tom-hardy.jpg"
-      },
-      {
-        "id": "collections.actors.cillian-murphy",
-        "title": "Cillian Murphy",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.cillian-murphy",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-cillian-murphy.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-cillian-murphy.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.cillian-murphy"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-cillian-murphy.jpg"
-      },
-      {
-        "id": "collections.actors.pedro-pascal",
-        "title": "Pedro Pascal",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.pedro-pascal",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-pedro-pascal.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-pedro-pascal.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.pedro-pascal"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-pedro-pascal.jpg"
-      },
-      {
-        "id": "collections.actors.idris-elba",
-        "title": "Idris Elba",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.idris-elba",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-idris-elba.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-idris-elba.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.idris-elba"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-idris-elba.jpg"
-      },
-      {
-        "id": "collections.actors.jason-statham",
-        "title": "Jason Statham",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.jason-statham",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-jason-statham.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-jason-statham.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.jason-statham"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-jason-statham.jpg"
-      },
-      {
-        "id": "collections.actors.timothee-chalamet",
-        "title": "Timothée Chalamet",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.timothee-chalamet",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-timothee-chalamet.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-timothee-chalamet.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.timothee-chalamet"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-timothee-chalamet.jpg"
-      },
-      {
-        "id": "collections.actors.jennifer-lawrence",
-        "title": "Jennifer Lawrence",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.jennifer-lawrence",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-jennifer-lawrence.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-jennifer-lawrence.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.jennifer-lawrence"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-jennifer-lawrence.jpg"
-      },
-      {
-        "id": "collections.actors.emma-stone",
-        "title": "Emma Stone",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.emma-stone",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-emma-stone.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-emma-stone.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.emma-stone"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-emma-stone.jpg"
-      },
-      {
-        "id": "collections.actors.charlize-theron",
-        "title": "Charlize Theron",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.charlize-theron",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-charlize-theron.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-charlize-theron.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.charlize-theron"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-charlize-theron.jpg"
-      },
-      {
-        "id": "collections.actors.natalie-portman",
-        "title": "Natalie Portman",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.natalie-portman",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-natalie-portman.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-natalie-portman.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.natalie-portman"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-natalie-portman.jpg"
-      },
-      {
-        "id": "collections.actors.cate-blanchett",
-        "title": "Cate Blanchett",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.cate-blanchett",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-cate-blanchett.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-cate-blanchett.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.cate-blanchett"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-cate-blanchett.jpg"
-      },
-      {
-        "id": "collections.actors.meryl-streep",
-        "title": "Meryl Streep",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.meryl-streep",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-meryl-streep.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-meryl-streep.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.meryl-streep"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-meryl-streep.jpg"
-      },
-      {
-        "id": "collections.actors.sandra-bullock",
-        "title": "Sandra Bullock",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.sandra-bullock",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-sandra-bullock.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-sandra-bullock.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.sandra-bullock"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-sandra-bullock.jpg"
-      },
-      {
-        "id": "collections.actors.angelina-jolie",
-        "title": "Angelina Jolie",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.angelina-jolie",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-angelina-jolie.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-angelina-jolie.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.angelina-jolie"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-angelina-jolie.jpg"
-      },
-      {
-        "id": "collections.actors.nicole-kidman",
-        "title": "Nicole Kidman",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.nicole-kidman",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-nicole-kidman.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-nicole-kidman.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.nicole-kidman"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-nicole-kidman.jpg"
-      },
-      {
-        "id": "collections.actors.emily-blunt",
-        "title": "Emily Blunt",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.emily-blunt",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-emily-blunt.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-emily-blunt.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.emily-blunt"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-emily-blunt.jpg"
-      },
-      {
-        "id": "collections.actors.zendaya",
-        "title": "Zendaya",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.zendaya",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-zendaya.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-zendaya.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.zendaya"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-zendaya.jpg"
-      },
-      {
-        "id": "collections.actors.florence-pugh",
-        "title": "Florence Pugh",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.florence-pugh",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-florence-pugh.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-florence-pugh.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.florence-pugh"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-florence-pugh.jpg"
-      },
-      {
-        "id": "collections.actors.anya-taylor-joy",
-        "title": "Anya Taylor-Joy",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.anya-taylor-joy",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-anya-taylor-joy.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-anya-taylor-joy.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.anya-taylor-joy"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-anya-taylor-joy.jpg"
-      },
-      {
-        "id": "collections.actors.gary-oldman",
-        "title": "Gary Oldman",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.gary-oldman",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-gary-oldman.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-gary-oldman.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.gary-oldman"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-gary-oldman.jpg"
-      },
-      {
-        "id": "collections.actors.jodie-foster",
-        "title": "Jodie Foster",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.jodie-foster",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-jodie-foster.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-jodie-foster.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.jodie-foster"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-jodie-foster.jpg"
-      },
-      {
-        "id": "collections.actors.viola-davis",
-        "title": "Viola Davis",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.viola-davis",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-viola-davis.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-viola-davis.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.viola-davis"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-viola-davis.jpg"
-      },
-      {
-        "id": "collections.actors.jamie-lee-curtis",
-        "title": "Jamie Lee Curtis",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.jamie-lee-curtis",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-jamie-lee-curtis.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-jamie-lee-curtis.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.jamie-lee-curtis"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-jamie-lee-curtis.jpg"
-      },
-      {
-        "id": "collections.actors.michael-b-jordan",
-        "title": "Michael B. Jordan",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.michael-b-jordan",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-michael-b-jordan.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-michael-b-jordan.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.michael-b-jordan"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-michael-b-jordan.jpg"
-      },
-      {
-        "id": "collections.actors.saoirse-ronan",
-        "title": "Saoirse Ronan",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.saoirse-ronan",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-saoirse-ronan.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-saoirse-ronan.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.saoirse-ronan"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-saoirse-ronan.jpg"
-      },
-      {
-        "id": "collections.actors.willem-dafoe",
-        "title": "Willem Dafoe",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.willem-dafoe",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-willem-dafoe.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-willem-dafoe.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.willem-dafoe"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-willem-dafoe.jpg"
-      },
-      {
-        "id": "collections.actors.jeff-bridges",
-        "title": "Jeff Bridges",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.actors.jeff-bridges",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          }
-        ],
-        "hideTitle": false,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "⭐",
-        "focusGifUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-jeff-bridges.jpg",
-        "coverImageUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-jeff-bridges.jpg",
-        "catalogSources": [
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.actors.jeff-bridges"
-          }
-        ],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/actor-jeff-bridges.jpg"
+        "heroBackdropUrl": "https://cdn.jsdelivr.net/gh/Sacul86/Nuvio-Assets@8e339e6b51db522f1ad58201dcbb9397d233dc63/assets/studios-skydance.jpg"
       }
     ],
     "pinToTop": true,

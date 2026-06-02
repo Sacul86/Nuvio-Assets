@@ -1,0 +1,16 @@
+{
+  "dinosaurs": [{"id": 12616, "label": "dinosaur"}, {"id": 358244, "label": "dinosaurs"}, {"id": 283841, "label": "robot dinosaur"}],
+  "dragons": [{"id": 12554, "label": "dragon"}, {"id": 342640, "label": "dragons"}, {"id": 307221, "label": "dragon rider"}, {"id": 197319, "label": "giant dragon"}, {"id": 269692, "label": "dragon egg"}],
+  "werewolves": [{"id": 12564, "label": "werewolf"}, {"id": 180084, "label": "werewolf child"}, {"id": 310600, "label": "werewolf film"}, {"id": 375188, "label": "teenage werewolf"}, {"id": 350919, "label": "shapeshifter"}, {"id": 162532, "label": "shape shifter"}],
+  "witches": [{"id": 616, "label": "witch"}, {"id": 40931, "label": "witchcraft"}, {"id": 177894, "label": "witch hunt"}, {"id": 181820, "label": "witch trial"}, {"id": 310426, "label": "witch hunter"}, {"id": 177901, "label": "evil witch"}],
+  "ghosts": [{"id": 162846, "label": "ghost"}, {"id": 3358, "label": "haunted house"}, {"id": 159939, "label": "ghost hunter"}, {"id": 41411, "label": "vengeful ghost"}, {"id": 166701, "label": "ghost town"}, {"id": 15040, "label": "ghost hunting"}],
+  "boxing": [{"id": 209476, "label": "boxing"}, {"id": 249834, "label": "boxing ring"}, {"id": 245031, "label": "boxing champion"}, {"id": 308144, "label": "boxing match"}, {"id": 156330, "label": "boxing trainer"}, {"id": 333329, "label": "boxing sport"}],
+  "road-trip": [{"id": 7312, "label": "road trip"}, {"id": 240484, "label": "roadtrip"}, {"id": 374437, "label": "road trip movie"}, {"id": 343856, "label": "holiday road trip"}],
+  "sports": [{"id": 6075, "label": "sports"}, {"id": 167882, "label": "professional sports"}, {"id": 300423, "label": "team sports"}, {"id": 274126, "label": "athlete"}, {"id": 215754, "label": "professional athlete"}, {"id": 163097, "label": "female athlete"}],
+  "cars-racing": [{"id": 298953, "label": "car racing"}, {"id": 6315, "label": "stock car racing"}, {"id": 266725, "label": "street racing"}],
+  "multiverse": [{"id": 336874, "label": "multiverse"}, {"id": 243230, "label": "parallel universe"}, {"id": 9820, "label": "alternate dimension"}],
+  "wedding": [{"id": 13027, "label": "wedding"}, {"id": 6038, "label": "marriage"}, {"id": 155049, "label": "wedding dress"}, {"id": 2381, "label": "wedding planner"}, {"id": 309422, "label": "destination wedding"}, {"id": 10955, "label": "wedding party"}],
+  "money-finance": [{"id": 5636, "label": "wall street"}, {"id": 177493, "label": "stock market"}, {"id": 246911, "label": "finance"}, {"id": 281170, "label": "high finance"}, {"id": 5332, "label": "greed"}, {"id": 156338, "label": "corporate greed"}],
+  "faith-religion": [{"id": 11001, "label": "religion"}, {"id": 6150, "label": "faith"}, {"id": 10093, "label": "priest"}, {"id": 172391, "label": "catholic priest"}, {"id": 273060, "label": "christian faith"}, {"id": 355358, "label": "catholic religion"}],
+  "animals-pets": [{"id": 18165, "label": "animals"}, {"id": 15162, "label": "dog"}, {"id": 2551, "label": "pet"}, {"id": 2589, "label": "pet shop"}, {"id": 250816, "label": "pet owner"}, {"id": 236988, "label": "pet adoption"}]
+}
