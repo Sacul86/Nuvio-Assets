@@ -67,47 +67,59 @@ SUBGENRE = {
     "heist":              ("💰 Heist",               [28, 80, 53]),
     "superhero":          ("🦸 Superhero",           [28, 878, 12, 14]),
     "car-racing":         ("🏎️ Racing & Cars",       [28, 53]),
+    "assassins":          ("🎯 Assassins & Hitmen",  [28, 53, 80]),
     # Adventure
-    "swashbuckler":       ("🏴‍☠️ Pirates & Swashbucklers", [12, 28]),
+    "swashbuckler-pirates": ("🏴‍☠️ Pirates & Swashbucklers", [12, 28]),
     "survival":           ("🏕️ Survival",            [12, 18, 53]),
-    "jungle":             ("🌴 Jungle & Lost Worlds", [12, 28]),
+    "jungle-lost-world":  ("🌴 Jungle & Lost Worlds", [12, 28]),
+    "road-trip":          ("🛣️ Road Trip",           [12, 35, 18]),
     # Animation
     "anime":              ("🇯🇵 Anime",              [16]),
     "stop-motion":        ("🪀 Stop Motion",         [16]),
     "adult-animation":    ("🔞 Adult Animation",     [16, 35]),
+    "computer-animation": ("🖥️ Computer Animation",  [16]),
     # Comedy
     "romantic-comedy":    ("💘 Romantic Comedy",     [35, 10749]),
     "parody-spoof":       ("🤡 Parody & Spoof",      [35]),
     "buddy-comedy":       ("👯 Buddy Comedy",        [35, 28]),
+    "dark-comedy":        ("🖤 Dark Comedy",         [35, 18]),
+    "slapstick":          ("🤸 Slapstick",           [35]),
     # Crime
     "mafia-gangster":     ("🔫 Mafia & Gangster",    [80, 18]),
     "drug-cartel":        ("💊 Drugs & Cartels",     [80, 18, 53]),
     "prison":             ("🔒 Prison",              [80, 18]),
+    "detective-pi":       ("🕵️ Detective & PI",      [80, 9648, 53]),
     # Documentary
     "true-crime":         ("🔪 True Crime",          [99, 80]),
     "nature-wildlife":    ("🌿 Nature & Wildlife",   [99]),
     "sports-doc":         ("🏅 Sports",              [99]),
+    "history-doc":        ("📜 History",             [99, 36]),
     # Music
     "musical":            ("🎬 Musical",             [10402, 35, 10749]),
     "concert-performance":("🎤 Concert & Live",      [10402, 99]),
     "music-biopic":       ("🎸 Music Biopic",        [10402, 18, 36]),
+    "dance":              ("💃 Dance",               [10402, 18]),
     # Drama
     "legal-courtroom":    ("⚖️ Legal & Courtroom",   [18, 53, 80]),
     "biographical":       ("🎩 Biographical",        [18, 36]),
     "political-drama":    ("🏛️ Political",           [18, 53]),
+    "family-drama":       ("👨‍👩‍👧 Family Drama",       [18]),
     # Family
     "talking-animals":    ("🐾 Talking Animals",     [10751, 16]),
     "holiday-christmas":  ("🎄 Holiday & Christmas", [10751, 35]),
     "fairy-tale":         ("🧚 Fairy Tale",          [10751, 14]),
+    "school-friendship":  ("🎒 School & Friendship", [10751, 18, 35]),
     # Fantasy (sci-fi + fantasy umbrella)
     "cyberpunk":          ("🤖 Cyberpunk",           [878, 53]),
     "dystopian":          ("🌆 Dystopian",           [878, 18]),
     "robots-ai":          ("🦾 Robots & AI",         [878]),
     "mythology":          ("⚡ Mythology",           [14, 12]),
+    "steampunk":          ("⚙️ Steampunk",           [878, 14, 12]),
     # History
     "period-drama":       ("👑 Period Drama",        [36, 18]),
     "ancient-world":      ("🏛️ Ancient World",       [36, 12, 28]),
     "war-film":           ("⚔️ War Films",           [36, 10752, 18]),
+    "medieval":           ("🏰 Medieval",            [36, 12, 14]),
     # Horror (new ones added to existing curated)
     "body-horror":        ("🫀 Body Horror",         [27, 878]),
     "gothic-horror":      ("🦇 Gothic Horror",       [27, 18]),
@@ -120,37 +132,41 @@ SUBGENRE = {
     "historical-romance": ("📜 Historical Romance",  [10749, 36, 18]),
     "forbidden-tragic":   ("💔 Forbidden & Tragic",  [10749, 18]),
     "teen-romance":       ("💕 Teen Romance",        [10749, 35, 18]),
+    "lgbtq-romance":      ("🏳️‍🌈 LGBTQ+ Romance",     [10749, 18]),
+    "paranormal-romance": ("🌙 Paranormal Romance",  [10749, 14, 27]),
     # Thriller
     "psychological-thriller": ("🧠 Psychological Thriller", [53, 9648, 18]),
     "crime-thriller":     ("🔪 Crime Thriller",      [53, 80]),
     "techno-thriller":    ("💻 Techno-Thriller",     [53, 878]),
+    "erotic-thriller":    ("🔥 Erotic Thriller",     [53, 18]),
     # Western
     "spaghetti-western":  ("🌵 Spaghetti Western",   [37]),
     "revisionist-western":("🤠 Revisionist Western", [37, 18]),
     "neo-western":        ("🏜️ Neo-Western",         [37, 18, 80]),
+    "outlaws":            ("🐎 Outlaws & Gunslingers", [37, 28]),
 }
 
 # genre folder -> (catalogId slug prefix, main genre name, [subgenre slugs], series label)
 GENRE_LAYOUT = [
-    ("Action",      "action",      "Action",      ["heist", "superhero", "car-racing"], "Action & Adventure"),
-    ("Adventure",   "adventure",   "Adventure",   ["swashbuckler", "survival", "jungle"], "Action & Adventure"),
-    ("Animation",   "animation",   "Animation",   ["anime", "stop-motion", "adult-animation"], "Animation"),
-    ("Comedy",      "comedy",      "Comedy",      ["romantic-comedy", "parody-spoof", "buddy-comedy"], "Comedy"),
-    ("Crime",       "crime",       "Crime",       ["mafia-gangster", "drug-cartel", "prison"], "Crime"),
-    ("Documentary", "documentary", "Documentary", ["true-crime", "nature-wildlife", "sports-doc"], "Documentary"),
-    ("Drama",       "drama",       "Drama",       ["legal-courtroom", "biographical", "political-drama"], "Drama"),
-    ("Family",      "family",      "Family",      ["talking-animals", "holiday-christmas", "fairy-tale"], "Family"),
-    ("Fantasy",     "fantasy",     "Fantasy",     ["cyberpunk", "dystopian", "robots-ai", "mythology"], "Sci-Fi & Fantasy"),
-    ("History",     "history",     "History",     ["period-drama", "ancient-world", "war-film"], "War & Politics"),
+    ("Action",      "action",      "Action",      ["heist", "superhero", "car-racing", "assassins"], "Action & Adventure"),
+    ("Adventure",   "adventure",   "Adventure",   ["swashbuckler-pirates", "survival", "jungle-lost-world", "road-trip"], "Action & Adventure"),
+    ("Animation",   "animation",   "Animation",   ["anime", "stop-motion", "computer-animation", "adult-animation"], "Animation"),
+    ("Comedy",      "comedy",      "Comedy",      ["romantic-comedy", "buddy-comedy", "dark-comedy", "parody-spoof", "slapstick"], "Comedy"),
+    ("Crime",       "crime",       "Crime",       ["mafia-gangster", "drug-cartel", "prison", "detective-pi"], "Crime"),
+    ("Documentary", "documentary", "Documentary", ["true-crime", "nature-wildlife", "sports-doc", "history-doc"], "Documentary"),
+    ("Drama",       "drama",       "Drama",       ["legal-courtroom", "biographical", "political-drama", "family-drama"], "Drama"),
+    ("Family",      "family",      "Family",      ["talking-animals", "holiday-christmas", "fairy-tale", "school-friendship"], "Family"),
+    ("Fantasy",     "fantasy",     "Fantasy",     ["mythology", "cyberpunk", "dystopian", "robots-ai", "steampunk"], "Sci-Fi & Fantasy"),
+    ("History",     "history",     "History",     ["period-drama", "medieval", "ancient-world", "war-film"], "War & Politics"),
     ("Horror",      "horror",      "Horror",      "__HORROR__", "__HORROR_SERIES__"),
-    ("Music",       "music",       "Music",       ["musical", "concert-performance", "music-biopic"], None),
-    ("Mystery",     "mystery",     "Mystery",     ["noir", "whodunit", "conspiracy"], "Mystery"),
+    ("Music",       "music",       "Music",       ["musical", "concert-performance", "music-biopic", "dance"], None),
+    ("Mystery",     "mystery",     "Mystery",     ["whodunit", "noir", "conspiracy"], "Mystery"),
     ("Talk",        None,          None,          "__KEEP__", None),
     ("Reality",     None,          None,          "__KEEP__", None),
-    ("Romance",     "romance",     "Romance",     ["historical-romance", "forbidden-tragic", "teen-romance"], None),
-    ("Thriller",    "thriller",    "Thriller",    ["psychological-thriller", "crime-thriller", "techno-thriller"], None),
+    ("Romance",     "romance",     "Romance",     ["historical-romance", "forbidden-tragic", "teen-romance", "lgbtq-romance", "paranormal-romance"], None),
+    ("Thriller",    "thriller",    "Thriller",    ["psychological-thriller", "crime-thriller", "techno-thriller", "erotic-thriller"], None),
     ("TV",          "tv",          "TV Movie",    [], None),
-    ("Western",     "western",     "Western",     ["spaghetti-western", "revisionist-western", "neo-western"], None),
+    ("Western",     "western",     "Western",     ["spaghetti-western", "revisionist-western", "neo-western", "outlaws"], None),
 ]
 
 
@@ -204,6 +220,15 @@ def main():
     profile = json.load(open(SRC_PROFILE))
     config = json.load(open(SRC_CONFIG))
     kwmap = json.load(open(KEYWORDS))
+
+    # validate: each subgenre slug is assigned to exactly one genre folder
+    layout_slugs = []
+    for _, _, _, spec, _ in GENRE_LAYOUT:
+        if isinstance(spec, list):
+            layout_slugs += spec
+    layout_slugs += ["body-horror", "gothic-horror", "comedy-horror"]  # horror adds
+    dupe_slugs = {s for s in layout_slugs if layout_slugs.count(s) > 1}
+    assert not dupe_slugs, f"subgenre(s) assigned to multiple genres: {dupe_slugs}"
 
     # validate keyword map: every non-horror-existing subgenre present + no reuse across slugs
     seen_kw = {}

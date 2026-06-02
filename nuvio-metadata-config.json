@@ -10164,6 +10164,4214 @@
             }
           }
         }
+      },
+      {
+        "id": "tmdb.discover.movie.action.heist",
+        "type": "movie",
+        "name": "💰 Heist",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "10051|191845|250043|40903",
+              "with_genres": "28|80|53",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "💰 Heist",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 28,
+                  "label": "Action"
+                },
+                {
+                  "id": 80,
+                  "label": "Crime"
+                },
+                {
+                  "id": 53,
+                  "label": "Thriller"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 10051,
+                  "label": "heist"
+                },
+                {
+                  "id": 191845,
+                  "label": "bank heist"
+                },
+                {
+                  "id": 250043,
+                  "label": "art heist"
+                },
+                {
+                  "id": 40903,
+                  "label": "diamond heist"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.action.superhero",
+        "type": "movie",
+        "name": "🦸 Superhero",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "9715|155030|376117|5451",
+              "with_genres": "28|878|12|14",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🦸 Superhero",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 28,
+                  "label": "Action"
+                },
+                {
+                  "id": 878,
+                  "label": "Science Fiction"
+                },
+                {
+                  "id": 12,
+                  "label": "Adventure"
+                },
+                {
+                  "id": 14,
+                  "label": "Fantasy"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 9715,
+                  "label": "superhero"
+                },
+                {
+                  "id": 155030,
+                  "label": "superhero team"
+                },
+                {
+                  "id": 376117,
+                  "label": "superhero film"
+                },
+                {
+                  "id": 5451,
+                  "label": "comic book"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.action.car-racing",
+        "type": "movie",
+        "name": "🏎️ Racing & Cars",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "266725|298953|6315|238783",
+              "with_genres": "28|53",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🏎️ Racing & Cars",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 28,
+                  "label": "Action"
+                },
+                {
+                  "id": 53,
+                  "label": "Thriller"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 266725,
+                  "label": "street racing"
+                },
+                {
+                  "id": 298953,
+                  "label": "car racing"
+                },
+                {
+                  "id": 6315,
+                  "label": "stock car racing"
+                },
+                {
+                  "id": 238783,
+                  "label": "fast car"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.action.assassins",
+        "type": "movie",
+        "name": "🎯 Assassins & Hitmen",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "782|2708|177964|206041|12366",
+              "with_genres": "28|53|80",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🎯 Assassins & Hitmen",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 28,
+                  "label": "Action"
+                },
+                {
+                  "id": 53,
+                  "label": "Thriller"
+                },
+                {
+                  "id": 80,
+                  "label": "Crime"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 782,
+                  "label": "assassin"
+                },
+                {
+                  "id": 2708,
+                  "label": "hitman"
+                },
+                {
+                  "id": 177964,
+                  "label": "contract killer"
+                },
+                {
+                  "id": 206041,
+                  "label": "professional assassin"
+                },
+                {
+                  "id": 12366,
+                  "label": "hitwoman"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.adventure.swashbuckler-pirates",
+        "type": "movie",
+        "name": "🏴‍☠️ Pirates & Swashbucklers",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "12988|157186|291537|185200",
+              "with_genres": "12|28",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🏴‍☠️ Pirates & Swashbucklers",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 12,
+                  "label": "Adventure"
+                },
+                {
+                  "id": 28,
+                  "label": "Action"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 12988,
+                  "label": "pirate"
+                },
+                {
+                  "id": 157186,
+                  "label": "swashbuckler"
+                },
+                {
+                  "id": 291537,
+                  "label": "pirate captain"
+                },
+                {
+                  "id": 185200,
+                  "label": "pirate ship"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.adventure.survival",
+        "type": "movie",
+        "name": "🏕️ Survival",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "10349|349761|327857|327462",
+              "with_genres": "12|18|53",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🏕️ Survival",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 12,
+                  "label": "Adventure"
+                },
+                {
+                  "id": 18,
+                  "label": "Drama"
+                },
+                {
+                  "id": 53,
+                  "label": "Thriller"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 10349,
+                  "label": "survival"
+                },
+                {
+                  "id": 349761,
+                  "label": "wilderness survival"
+                },
+                {
+                  "id": 327857,
+                  "label": "survival adventure"
+                },
+                {
+                  "id": 327462,
+                  "label": "desert survival"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.adventure.jungle-lost-world",
+        "type": "movie",
+        "name": "🌴 Jungle & Lost Worlds",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "10787|204975|1963|315709",
+              "with_genres": "12|28",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🌴 Jungle & Lost Worlds",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 12,
+                  "label": "Adventure"
+                },
+                {
+                  "id": 28,
+                  "label": "Action"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 10787,
+                  "label": "jungle"
+                },
+                {
+                  "id": 204975,
+                  "label": "lost world"
+                },
+                {
+                  "id": 1963,
+                  "label": "expedition"
+                },
+                {
+                  "id": 315709,
+                  "label": "jungle adventure"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.adventure.road-trip",
+        "type": "movie",
+        "name": "🛣️ Road Trip",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "7312|167043|374437",
+              "with_genres": "12|35|18",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🛣️ Road Trip",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 12,
+                  "label": "Adventure"
+                },
+                {
+                  "id": 35,
+                  "label": "Comedy"
+                },
+                {
+                  "id": 18,
+                  "label": "Drama"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 7312,
+                  "label": "road trip"
+                },
+                {
+                  "id": 167043,
+                  "label": "road movie"
+                },
+                {
+                  "id": 374437,
+                  "label": "road trip movie"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.animation.anime",
+        "type": "movie",
+        "name": "🇯🇵 Anime",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "210024|222243|290799",
+              "with_genres": "16",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6"
+            },
+            "formState": {
+              "catalogName": "🇯🇵 Anime",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 16,
+                  "label": "Animation"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                },
+                {
+                  "id": 222243,
+                  "label": "based on anime"
+                },
+                {
+                  "id": 290799,
+                  "label": "idol anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.animation.stop-motion",
+        "type": "movie",
+        "name": "🪀 Stop Motion",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "10121|358482|197065",
+              "with_genres": "16",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🪀 Stop Motion",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 16,
+                  "label": "Animation"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 10121,
+                  "label": "stop motion"
+                },
+                {
+                  "id": 358482,
+                  "label": "stop motion animation"
+                },
+                {
+                  "id": 197065,
+                  "label": "claymation"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.animation.computer-animation",
+        "type": "movie",
+        "name": "🖥️ Computer Animation",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "10159|360047|307787",
+              "with_genres": "16",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🖥️ Computer Animation",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 16,
+                  "label": "Animation"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 10159,
+                  "label": "computer animation"
+                },
+                {
+                  "id": 360047,
+                  "label": "cgi"
+                },
+                {
+                  "id": 307787,
+                  "label": "cgi effects"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.animation.adult-animation",
+        "type": "movie",
+        "name": "🔞 Adult Animation",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "161919|362782",
+              "with_genres": "16|35",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🔞 Adult Animation",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 16,
+                  "label": "Animation"
+                },
+                {
+                  "id": 35,
+                  "label": "Comedy"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 161919,
+                  "label": "adult animation"
+                },
+                {
+                  "id": 362782,
+                  "label": "french adult animation"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.comedy.romantic-comedy",
+        "type": "movie",
+        "name": "💘 Romantic Comedy",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "375047",
+              "with_genres": "35|10749",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "💘 Romantic Comedy",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 35,
+                  "label": "Comedy"
+                },
+                {
+                  "id": 10749,
+                  "label": "Romance"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 375047,
+                  "label": "romantic comedy"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.comedy.buddy-comedy",
+        "type": "movie",
+        "name": "👯 Buddy Comedy",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "167541|15214|167316|222863",
+              "with_genres": "35|28",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "👯 Buddy Comedy",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 35,
+                  "label": "Comedy"
+                },
+                {
+                  "id": 28,
+                  "label": "Action"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 167541,
+                  "label": "buddy comedy"
+                },
+                {
+                  "id": 15214,
+                  "label": "buddy"
+                },
+                {
+                  "id": 167316,
+                  "label": "buddy cop"
+                },
+                {
+                  "id": 222863,
+                  "label": "buddy movie"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.comedy.dark-comedy",
+        "type": "movie",
+        "name": "🖤 Dark Comedy",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "373401|10123|197707|329044",
+              "with_genres": "35|18",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🖤 Dark Comedy",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 35,
+                  "label": "Comedy"
+                },
+                {
+                  "id": 18,
+                  "label": "Drama"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 373401,
+                  "label": "black comedy"
+                },
+                {
+                  "id": 10123,
+                  "label": "dark comedy"
+                },
+                {
+                  "id": 197707,
+                  "label": "bleak comedy"
+                },
+                {
+                  "id": 329044,
+                  "label": "dry comedy"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.comedy.parody-spoof",
+        "type": "movie",
+        "name": "🤡 Parody & Spoof",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "9755|11931|333720|325685",
+              "with_genres": "35",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🤡 Parody & Spoof",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 35,
+                  "label": "Comedy"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 9755,
+                  "label": "parody"
+                },
+                {
+                  "id": 11931,
+                  "label": "spoof"
+                },
+                {
+                  "id": 333720,
+                  "label": "spoof film"
+                },
+                {
+                  "id": 325685,
+                  "label": "parody comedy"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.comedy.slapstick",
+        "type": "movie",
+        "name": "🤸 Slapstick",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "364753|9253|368088|366055",
+              "with_genres": "35",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🤸 Slapstick",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 35,
+                  "label": "Comedy"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 364753,
+                  "label": "slapstick"
+                },
+                {
+                  "id": 9253,
+                  "label": "slapstick comedy"
+                },
+                {
+                  "id": 368088,
+                  "label": "slapstick humor"
+                },
+                {
+                  "id": 366055,
+                  "label": "physical comedy"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.crime.mafia-gangster",
+        "type": "movie",
+        "name": "🔫 Mafia & Gangster",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "10391|3149|6220|10291",
+              "with_genres": "80|18",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🔫 Mafia & Gangster",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 80,
+                  "label": "Crime"
+                },
+                {
+                  "id": 18,
+                  "label": "Drama"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 10391,
+                  "label": "mafia"
+                },
+                {
+                  "id": 3149,
+                  "label": "gangster"
+                },
+                {
+                  "id": 6220,
+                  "label": "mafia boss"
+                },
+                {
+                  "id": 10291,
+                  "label": "organized crime"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.crime.drug-cartel",
+        "type": "movie",
+        "name": "💊 Drugs & Cartels",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "10175|2149|18026",
+              "with_genres": "80|18|53",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "💊 Drugs & Cartels",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 80,
+                  "label": "Crime"
+                },
+                {
+                  "id": 18,
+                  "label": "Drama"
+                },
+                {
+                  "id": 53,
+                  "label": "Thriller"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 10175,
+                  "label": "drug cartel"
+                },
+                {
+                  "id": 2149,
+                  "label": "drug trafficking"
+                },
+                {
+                  "id": 18026,
+                  "label": "drug lord"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.crime.prison",
+        "type": "movie",
+        "name": "🔒 Prison",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "378|9777|191047",
+              "with_genres": "80|18",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🔒 Prison",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 80,
+                  "label": "Crime"
+                },
+                {
+                  "id": 18,
+                  "label": "Drama"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 378,
+                  "label": "prison"
+                },
+                {
+                  "id": 9777,
+                  "label": "prison escape"
+                },
+                {
+                  "id": 191047,
+                  "label": "prison break"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.crime.detective-pi",
+        "type": "movie",
+        "name": "🕵️ Detective & PI",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "155790|11168|331333|215296",
+              "with_genres": "80|9648|53",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🕵️ Detective & PI",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 80,
+                  "label": "Crime"
+                },
+                {
+                  "id": 9648,
+                  "label": "Mystery"
+                },
+                {
+                  "id": 53,
+                  "label": "Thriller"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 155790,
+                  "label": "private detective"
+                },
+                {
+                  "id": 11168,
+                  "label": "private investigator"
+                },
+                {
+                  "id": 331333,
+                  "label": "private detective agency"
+                },
+                {
+                  "id": 215296,
+                  "label": "female private detective"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.documentary.true-crime",
+        "type": "movie",
+        "name": "🔪 True Crime",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "33722|2151",
+              "with_genres": "99|80",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🔪 True Crime",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 99,
+                  "label": "Documentary"
+                },
+                {
+                  "id": 80,
+                  "label": "Crime"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 33722,
+                  "label": "true crime"
+                },
+                {
+                  "id": 2151,
+                  "label": "drug crime"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.documentary.nature-wildlife",
+        "type": "movie",
+        "name": "🌿 Nature & Wildlife",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "9902|18330|221355|324404|18165",
+              "with_genres": "99",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🌿 Nature & Wildlife",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 99,
+                  "label": "Documentary"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 9902,
+                  "label": "wildlife"
+                },
+                {
+                  "id": 18330,
+                  "label": "nature"
+                },
+                {
+                  "id": 221355,
+                  "label": "nature documentary"
+                },
+                {
+                  "id": 324404,
+                  "label": "wildlife documentary"
+                },
+                {
+                  "id": 18165,
+                  "label": "animals"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.documentary.sports-doc",
+        "type": "movie",
+        "name": "🏅 Sports",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "6075|167882|300423|333328",
+              "with_genres": "99",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🏅 Sports",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 99,
+                  "label": "Documentary"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 6075,
+                  "label": "sports"
+                },
+                {
+                  "id": 167882,
+                  "label": "professional sports"
+                },
+                {
+                  "id": 300423,
+                  "label": "team sports"
+                },
+                {
+                  "id": 333328,
+                  "label": "sport"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.documentary.history-doc",
+        "type": "movie",
+        "name": "📜 History",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "15126|321490|351835|208436",
+              "with_genres": "99|36",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "📜 History",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 99,
+                  "label": "Documentary"
+                },
+                {
+                  "id": 36,
+                  "label": "History"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 15126,
+                  "label": "historical"
+                },
+                {
+                  "id": 321490,
+                  "label": "historical documentary"
+                },
+                {
+                  "id": 351835,
+                  "label": "historical footage"
+                },
+                {
+                  "id": 208436,
+                  "label": "historical reenactment"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.drama.legal-courtroom",
+        "type": "movie",
+        "name": "⚖️ Legal & Courtroom",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "33519|214780|10909|11038",
+              "with_genres": "18|53|80",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "⚖️ Legal & Courtroom",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 18,
+                  "label": "Drama"
+                },
+                {
+                  "id": 53,
+                  "label": "Thriller"
+                },
+                {
+                  "id": 80,
+                  "label": "Crime"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 33519,
+                  "label": "courtroom"
+                },
+                {
+                  "id": 214780,
+                  "label": "courtroom drama"
+                },
+                {
+                  "id": 10909,
+                  "label": "lawyer"
+                },
+                {
+                  "id": 11038,
+                  "label": "trial"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.drama.biographical",
+        "type": "movie",
+        "name": "🎩 Biographical",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "5565|9672|372518",
+              "with_genres": "18|36",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🎩 Biographical",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 18,
+                  "label": "Drama"
+                },
+                {
+                  "id": 36,
+                  "label": "History"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 5565,
+                  "label": "biography"
+                },
+                {
+                  "id": 9672,
+                  "label": "based on true story"
+                },
+                {
+                  "id": 372518,
+                  "label": "historical biography"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.drama.political-drama",
+        "type": "movie",
+        "name": "🏛️ Political",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "6078|264792|298528",
+              "with_genres": "18|53",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🏛️ Political",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 18,
+                  "label": "Drama"
+                },
+                {
+                  "id": 53,
+                  "label": "Thriller"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 6078,
+                  "label": "politics"
+                },
+                {
+                  "id": 264792,
+                  "label": "political"
+                },
+                {
+                  "id": 298528,
+                  "label": "political drama"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.drama.family-drama",
+        "type": "movie",
+        "name": "👨‍👩‍👧 Family Drama",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "10041|10235|155294|224935",
+              "with_genres": "18",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "👨‍👩‍👧 Family Drama",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 18,
+                  "label": "Drama"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 10041,
+                  "label": "dysfunctional family"
+                },
+                {
+                  "id": 10235,
+                  "label": "family relationships"
+                },
+                {
+                  "id": 155294,
+                  "label": "family conflict"
+                },
+                {
+                  "id": 224935,
+                  "label": "family conflicts"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.family.talking-animals",
+        "type": "movie",
+        "name": "🐾 Talking Animals",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "267848|11477|338226|317421",
+              "with_genres": "10751|16",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🐾 Talking Animals",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 10751,
+                  "label": "Family"
+                },
+                {
+                  "id": 16,
+                  "label": "Animation"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 267848,
+                  "label": "talking animal"
+                },
+                {
+                  "id": 11477,
+                  "label": "anthropomorphism"
+                },
+                {
+                  "id": 338226,
+                  "label": "anthropomorphic"
+                },
+                {
+                  "id": 317421,
+                  "label": "singing animals"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.family.holiday-christmas",
+        "type": "movie",
+        "name": "🎄 Holiday & Christmas",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "207317|65|260365",
+              "with_genres": "10751|35",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🎄 Holiday & Christmas",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 10751,
+                  "label": "Family"
+                },
+                {
+                  "id": 35,
+                  "label": "Comedy"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 207317,
+                  "label": "christmas"
+                },
+                {
+                  "id": 65,
+                  "label": "holiday"
+                },
+                {
+                  "id": 260365,
+                  "label": "christmas eve"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.family.fairy-tale",
+        "type": "movie",
+        "name": "🧚 Fairy Tale",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "3205|179411|210586",
+              "with_genres": "10751|14",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🧚 Fairy Tale",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 10751,
+                  "label": "Family"
+                },
+                {
+                  "id": 14,
+                  "label": "Fantasy"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 3205,
+                  "label": "fairy tale"
+                },
+                {
+                  "id": 179411,
+                  "label": "based on fairy tale"
+                },
+                {
+                  "id": 210586,
+                  "label": "dark fairy tale"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.family.school-friendship",
+        "type": "movie",
+        "name": "🎒 School & Friendship",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "6054|160246|10873|292334|167982",
+              "with_genres": "10751|18|35",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🎒 School & Friendship",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 10751,
+                  "label": "Family"
+                },
+                {
+                  "id": 18,
+                  "label": "Drama"
+                },
+                {
+                  "id": 35,
+                  "label": "Comedy"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 6054,
+                  "label": "friendship"
+                },
+                {
+                  "id": 160246,
+                  "label": "childhood friends"
+                },
+                {
+                  "id": 10873,
+                  "label": "school"
+                },
+                {
+                  "id": 292334,
+                  "label": "teenage friendship"
+                },
+                {
+                  "id": 167982,
+                  "label": "unlikely friendship"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.fantasy.mythology",
+        "type": "movie",
+        "name": "⚡ Mythology",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "2035|2036|179101|256046",
+              "with_genres": "14|12",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "⚡ Mythology",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 14,
+                  "label": "Fantasy"
+                },
+                {
+                  "id": 12,
+                  "label": "Adventure"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 2035,
+                  "label": "mythology"
+                },
+                {
+                  "id": 2036,
+                  "label": "greek mythology"
+                },
+                {
+                  "id": 179101,
+                  "label": "norse mythology"
+                },
+                {
+                  "id": 256046,
+                  "label": "arthurian mythology"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.fantasy.cyberpunk",
+        "type": "movie",
+        "name": "🤖 Cyberpunk",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "12190|309101",
+              "with_genres": "878|53",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🤖 Cyberpunk",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 878,
+                  "label": "Science Fiction"
+                },
+                {
+                  "id": 53,
+                  "label": "Thriller"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 12190,
+                  "label": "cyberpunk"
+                },
+                {
+                  "id": 309101,
+                  "label": "post-cyberpunk"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.fantasy.dystopian",
+        "type": "movie",
+        "name": "🌆 Dystopian",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "4565|350338|348204|371870",
+              "with_genres": "878|18",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🌆 Dystopian",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 878,
+                  "label": "Science Fiction"
+                },
+                {
+                  "id": 18,
+                  "label": "Drama"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 4565,
+                  "label": "dystopia"
+                },
+                {
+                  "id": 350338,
+                  "label": "dystopian future"
+                },
+                {
+                  "id": 348204,
+                  "label": "dystopian"
+                },
+                {
+                  "id": 371870,
+                  "label": "dystopian society"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.fantasy.robots-ai",
+        "type": "movie",
+        "name": "🦾 Robots & AI",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "371846|310|14544|803",
+              "with_genres": "878",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🦾 Robots & AI",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 878,
+                  "label": "Science Fiction"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 371846,
+                  "label": "artificial intelligence"
+                },
+                {
+                  "id": 310,
+                  "label": "artificial intelligence (a.i.)"
+                },
+                {
+                  "id": 14544,
+                  "label": "robot"
+                },
+                {
+                  "id": 803,
+                  "label": "android"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.fantasy.steampunk",
+        "type": "movie",
+        "name": "⚙️ Steampunk",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "10028|371966|12026",
+              "with_genres": "878|14|12",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "⚙️ Steampunk",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 878,
+                  "label": "Science Fiction"
+                },
+                {
+                  "id": 14,
+                  "label": "Fantasy"
+                },
+                {
+                  "id": 12,
+                  "label": "Adventure"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 10028,
+                  "label": "steampunk"
+                },
+                {
+                  "id": 371966,
+                  "label": "steampunk sci fi"
+                },
+                {
+                  "id": 12026,
+                  "label": "alternate history"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.history.period-drama",
+        "type": "movie",
+        "name": "👑 Period Drama",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "15060|195013",
+              "with_genres": "36|18",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "👑 Period Drama",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 36,
+                  "label": "History"
+                },
+                {
+                  "id": 18,
+                  "label": "Drama"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 15060,
+                  "label": "period drama"
+                },
+                {
+                  "id": 195013,
+                  "label": "costume drama"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.history.medieval",
+        "type": "movie",
+        "name": "🏰 Medieval",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "161257|355987|10466|271888|361817",
+              "with_genres": "36|12|14",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🏰 Medieval",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 36,
+                  "label": "History"
+                },
+                {
+                  "id": 12,
+                  "label": "Adventure"
+                },
+                {
+                  "id": 14,
+                  "label": "Fantasy"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 161257,
+                  "label": "medieval"
+                },
+                {
+                  "id": 355987,
+                  "label": "middle ages"
+                },
+                {
+                  "id": 10466,
+                  "label": "knight"
+                },
+                {
+                  "id": 271888,
+                  "label": "medieval knight"
+                },
+                {
+                  "id": 361817,
+                  "label": "medieval warfare"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.history.ancient-world",
+        "type": "movie",
+        "name": "🏛️ Ancient World",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "5049|317728",
+              "with_genres": "36|12|28",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🏛️ Ancient World",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 36,
+                  "label": "History"
+                },
+                {
+                  "id": 12,
+                  "label": "Adventure"
+                },
+                {
+                  "id": 28,
+                  "label": "Action"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 5049,
+                  "label": "ancient rome"
+                },
+                {
+                  "id": 317728,
+                  "label": "sword and sandal"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.history.war-film",
+        "type": "movie",
+        "name": "⚔️ War Films",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "1956|2504|258077",
+              "with_genres": "36|10752|18",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "⚔️ War Films",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 36,
+                  "label": "History"
+                },
+                {
+                  "id": 10752,
+                  "label": "War"
+                },
+                {
+                  "id": 18,
+                  "label": "Drama"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 1956,
+                  "label": "world war ii"
+                },
+                {
+                  "id": 2504,
+                  "label": "world war i"
+                },
+                {
+                  "id": 258077,
+                  "label": "world war"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.horror.body-horror",
+        "type": "movie",
+        "name": "🫀 Body Horror",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "283085",
+              "with_genres": "27|878",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🫀 Body Horror",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 27,
+                  "label": "Horror"
+                },
+                {
+                  "id": 878,
+                  "label": "Science Fiction"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 283085,
+                  "label": "body horror"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.horror.gothic-horror",
+        "type": "movie",
+        "name": "🦇 Gothic Horror",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "15032|33505|221882",
+              "with_genres": "27|18",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🦇 Gothic Horror",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 27,
+                  "label": "Horror"
+                },
+                {
+                  "id": 18,
+                  "label": "Drama"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 15032,
+                  "label": "gothic horror"
+                },
+                {
+                  "id": 33505,
+                  "label": "gothic"
+                },
+                {
+                  "id": 221882,
+                  "label": "gothic romance"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.horror.comedy-horror",
+        "type": "movie",
+        "name": "😱 Comedy Horror",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "352581|12416|249969",
+              "with_genres": "27|35",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "😱 Comedy Horror",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 27,
+                  "label": "Horror"
+                },
+                {
+                  "id": 35,
+                  "label": "Comedy"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 352581,
+                  "label": "comedy horror"
+                },
+                {
+                  "id": 12416,
+                  "label": "horror spoof"
+                },
+                {
+                  "id": 249969,
+                  "label": "horror parody"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.music.musical",
+        "type": "movie",
+        "name": "🎬 Musical",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "4344|165643|165241|286529",
+              "with_genres": "10402|35|10749",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🎬 Musical",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 10402,
+                  "label": "Music"
+                },
+                {
+                  "id": 35,
+                  "label": "Comedy"
+                },
+                {
+                  "id": 10749,
+                  "label": "Romance"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 4344,
+                  "label": "musical"
+                },
+                {
+                  "id": 165643,
+                  "label": "song and dance"
+                },
+                {
+                  "id": 165241,
+                  "label": "broadway musical"
+                },
+                {
+                  "id": 286529,
+                  "label": "jukebox musical"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.music.concert-performance",
+        "type": "movie",
+        "name": "🎤 Concert & Live",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "6029|156205|11634|318730",
+              "with_genres": "10402|99",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🎤 Concert & Live",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 10402,
+                  "label": "Music"
+                },
+                {
+                  "id": 99,
+                  "label": "Documentary"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 6029,
+                  "label": "concert"
+                },
+                {
+                  "id": 156205,
+                  "label": "concert film"
+                },
+                {
+                  "id": 11634,
+                  "label": "live performance"
+                },
+                {
+                  "id": 318730,
+                  "label": "live concert"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.music.music-biopic",
+        "type": "movie",
+        "name": "🎸 Music Biopic",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "4048|18001|270404",
+              "with_genres": "10402|18|36",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🎸 Music Biopic",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 10402,
+                  "label": "Music"
+                },
+                {
+                  "id": 18,
+                  "label": "Drama"
+                },
+                {
+                  "id": 36,
+                  "label": "History"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 4048,
+                  "label": "musician"
+                },
+                {
+                  "id": 18001,
+                  "label": "rock band"
+                },
+                {
+                  "id": 270404,
+                  "label": "classical musician"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.music.dance",
+        "type": "movie",
+        "name": "💃 Dance",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "1691|733|10551|286880|10104",
+              "with_genres": "10402|18",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "💃 Dance",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 10402,
+                  "label": "Music"
+                },
+                {
+                  "id": 18,
+                  "label": "Drama"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 1691,
+                  "label": "dance"
+                },
+                {
+                  "id": 733,
+                  "label": "dancer"
+                },
+                {
+                  "id": 10551,
+                  "label": "ballet"
+                },
+                {
+                  "id": 286880,
+                  "label": "break dance"
+                },
+                {
+                  "id": 10104,
+                  "label": "dance competition"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.mystery.whodunit",
+        "type": "movie",
+        "name": "🔍 Whodunit",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "12570|207046|364800",
+              "with_genres": "9648|80",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🔍 Whodunit",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 9648,
+                  "label": "Mystery"
+                },
+                {
+                  "id": 80,
+                  "label": "Crime"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 12570,
+                  "label": "whodunit"
+                },
+                {
+                  "id": 207046,
+                  "label": "murder mystery"
+                },
+                {
+                  "id": 364800,
+                  "label": "whodunnit"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.mystery.noir",
+        "type": "movie",
+        "name": "🌃 Noir & Neo-Noir",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "9807|207268|365978",
+              "with_genres": "9648|80|53",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🌃 Noir & Neo-Noir",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 9648,
+                  "label": "Mystery"
+                },
+                {
+                  "id": 80,
+                  "label": "Crime"
+                },
+                {
+                  "id": 53,
+                  "label": "Thriller"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 9807,
+                  "label": "film noir"
+                },
+                {
+                  "id": 207268,
+                  "label": "neo-noir"
+                },
+                {
+                  "id": 365978,
+                  "label": "neon noir"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.mystery.conspiracy",
+        "type": "movie",
+        "name": "🕳️ Conspiracy",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "10410|181635|11208|298530",
+              "with_genres": "9648|53",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🕳️ Conspiracy",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 9648,
+                  "label": "Mystery"
+                },
+                {
+                  "id": 53,
+                  "label": "Thriller"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 10410,
+                  "label": "conspiracy"
+                },
+                {
+                  "id": 181635,
+                  "label": "government conspiracy"
+                },
+                {
+                  "id": 11208,
+                  "label": "conspiracy theory"
+                },
+                {
+                  "id": 298530,
+                  "label": "conspiracy thriller"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.romance.historical-romance",
+        "type": "movie",
+        "name": "📜 Historical Romance",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "248451|361772",
+              "with_genres": "10749|36|18",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "📜 Historical Romance",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 10749,
+                  "label": "Romance"
+                },
+                {
+                  "id": 36,
+                  "label": "History"
+                },
+                {
+                  "id": 18,
+                  "label": "Drama"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 248451,
+                  "label": "historical romance"
+                },
+                {
+                  "id": 361772,
+                  "label": "period romance"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.romance.forbidden-tragic",
+        "type": "movie",
+        "name": "💔 Forbidden & Tragic",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "3691|10703",
+              "with_genres": "10749|18",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "💔 Forbidden & Tragic",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 10749,
+                  "label": "Romance"
+                },
+                {
+                  "id": 18,
+                  "label": "Drama"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 3691,
+                  "label": "forbidden love"
+                },
+                {
+                  "id": 10703,
+                  "label": "tragic love"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.romance.teen-romance",
+        "type": "movie",
+        "name": "💕 Teen Romance",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "368947|269719|6270",
+              "with_genres": "10749|35|18",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "💕 Teen Romance",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 10749,
+                  "label": "Romance"
+                },
+                {
+                  "id": 35,
+                  "label": "Comedy"
+                },
+                {
+                  "id": 18,
+                  "label": "Drama"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 368947,
+                  "label": "teen romance"
+                },
+                {
+                  "id": 269719,
+                  "label": "high school romance"
+                },
+                {
+                  "id": 6270,
+                  "label": "high school"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.romance.lgbtq-romance",
+        "type": "movie",
+        "name": "🏳️‍🌈 LGBTQ+ Romance",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "158718|353629|240305|319872|264386",
+              "with_genres": "10749|18",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🏳️‍🌈 LGBTQ+ Romance",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 10749,
+                  "label": "Romance"
+                },
+                {
+                  "id": 18,
+                  "label": "Drama"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 158718,
+                  "label": "lgbt"
+                },
+                {
+                  "id": 353629,
+                  "label": "lgbt romance"
+                },
+                {
+                  "id": 240305,
+                  "label": "gay romance"
+                },
+                {
+                  "id": 319872,
+                  "label": "lesbian romance"
+                },
+                {
+                  "id": 264386,
+                  "label": "lesbian"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.romance.paranormal-romance",
+        "type": "movie",
+        "name": "🌙 Paranormal Romance",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "363666",
+              "with_genres": "10749|14|27",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🌙 Paranormal Romance",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 10749,
+                  "label": "Romance"
+                },
+                {
+                  "id": 14,
+                  "label": "Fantasy"
+                },
+                {
+                  "id": 27,
+                  "label": "Horror"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 363666,
+                  "label": "supernatural romance"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.thriller.psychological-thriller",
+        "type": "movie",
+        "name": "🧠 Psychological Thriller",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "12565",
+              "with_genres": "53|9648|18",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🧠 Psychological Thriller",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 53,
+                  "label": "Thriller"
+                },
+                {
+                  "id": 9648,
+                  "label": "Mystery"
+                },
+                {
+                  "id": 18,
+                  "label": "Drama"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 12565,
+                  "label": "psychological thriller"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.thriller.crime-thriller",
+        "type": "movie",
+        "name": "🔪 Crime Thriller",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "355372",
+              "with_genres": "53|80",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🔪 Crime Thriller",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 53,
+                  "label": "Thriller"
+                },
+                {
+                  "id": 80,
+                  "label": "Crime"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 355372,
+                  "label": "crime thriller"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.thriller.techno-thriller",
+        "type": "movie",
+        "name": "💻 Techno-Thriller",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "2157|12361|218132|10919",
+              "with_genres": "53|878",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "💻 Techno-Thriller",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 53,
+                  "label": "Thriller"
+                },
+                {
+                  "id": 878,
+                  "label": "Science Fiction"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 2157,
+                  "label": "hacker"
+                },
+                {
+                  "id": 12361,
+                  "label": "hacking"
+                },
+                {
+                  "id": 218132,
+                  "label": "cyber thriller"
+                },
+                {
+                  "id": 10919,
+                  "label": "cyber"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.thriller.erotic-thriller",
+        "type": "movie",
+        "name": "🔥 Erotic Thriller",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "207767|3182|155080|267340",
+              "with_genres": "53|18",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🔥 Erotic Thriller",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 53,
+                  "label": "Thriller"
+                },
+                {
+                  "id": 18,
+                  "label": "Drama"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 207767,
+                  "label": "erotic thriller"
+                },
+                {
+                  "id": 3182,
+                  "label": "seduction"
+                },
+                {
+                  "id": 155080,
+                  "label": "art of seduction"
+                },
+                {
+                  "id": 267340,
+                  "label": "attempted seduction"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.western.spaghetti-western",
+        "type": "movie",
+        "name": "🌵 Spaghetti Western",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "156212",
+              "with_genres": "37",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🌵 Spaghetti Western",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 37,
+                  "label": "Western"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 156212,
+                  "label": "spaghetti western"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.western.revisionist-western",
+        "type": "movie",
+        "name": "🤠 Revisionist Western",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "256930",
+              "with_genres": "37|18",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🤠 Revisionist Western",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 37,
+                  "label": "Western"
+                },
+                {
+                  "id": 18,
+                  "label": "Drama"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 256930,
+                  "label": "revisionist western"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.western.neo-western",
+        "type": "movie",
+        "name": "🏜️ Neo-Western",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "168713|178402|160798",
+              "with_genres": "37|18|80",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🏜️ Neo-Western",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 37,
+                  "label": "Western"
+                },
+                {
+                  "id": 18,
+                  "label": "Drama"
+                },
+                {
+                  "id": 80,
+                  "label": "Crime"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 168713,
+                  "label": "neo-western"
+                },
+                {
+                  "id": 178402,
+                  "label": "modern western"
+                },
+                {
+                  "id": 160798,
+                  "label": "modern-day western"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "tmdb.discover.movie.western.outlaws",
+        "type": "movie",
+        "name": "🐎 Outlaws & Gunslingers",
+        "enabled": true,
+        "showInHome": false,
+        "source": "tmdb",
+        "metadata": {
+          "discover": {
+            "version": 2,
+            "source": "tmdb",
+            "mediaType": "movie",
+            "params": {
+              "sort_by": "popularity.desc",
+              "include_adult": false,
+              "with_keywords": "9503|75|163674|188924|343884",
+              "with_genres": "37|28",
+              "vote_count.gte": 20,
+              "with_release_type": "4|5|6",
+              "without_keywords": "210024"
+            },
+            "formState": {
+              "catalogName": "🐎 Outlaws & Gunslingers",
+              "discoverSource": "tmdb",
+              "sortBy": "popularity.desc",
+              "catalogType": "movie",
+              "includeAdult": false,
+              "releasedOnly": true,
+              "includeGenres": [
+                {
+                  "id": 37,
+                  "label": "Western"
+                },
+                {
+                  "id": 28,
+                  "label": "Action"
+                }
+              ],
+              "voteCountMin": 20,
+              "withKeywords": [
+                {
+                  "id": 9503,
+                  "label": "outlaw"
+                },
+                {
+                  "id": 75,
+                  "label": "gunslinger"
+                },
+                {
+                  "id": 163674,
+                  "label": "gunfighter"
+                },
+                {
+                  "id": 188924,
+                  "label": "outlaw gang"
+                },
+                {
+                  "id": 343884,
+                  "label": "outlaws"
+                }
+              ],
+              "excludeKeywords": [
+                {
+                  "id": 210024,
+                  "label": "anime"
+                }
+              ]
+            }
+          }
+        }
       }
     ],
     "lastModified": 1780262473492,
@@ -10173,7 +14381,7 @@
   },
   "metadata": {
     "apiKeysExcluded": false,
-    "totalCatalogs": 222,
-    "enabledCatalogs": 211
+    "totalCatalogs": 287,
+    "enabledCatalogs": 276
   }
 }
