@@ -74,7 +74,6 @@ SUBGENRE = {
     "jungle-lost-world":  ("🌴 Jungle & Lost Worlds", [12, 28]),
     "road-trip":          ("🛣️ Road Trip",           [12, 35, 18]),
     # Animation
-    "anime":              ("🇯🇵 Anime",              [16]),
     "stop-motion":        ("🪀 Stop Motion",         [16]),
     "adult-animation":    ("🔞 Adult Animation",     [16, 35]),
     "computer-animation": ("🖥️ Computer Animation",  [16]),
@@ -150,7 +149,7 @@ SUBGENRE = {
 GENRE_LAYOUT = [
     ("Action",      "action",      "Action",      ["heist", "superhero", "car-racing", "assassins"], "Action & Adventure"),
     ("Adventure",   "adventure",   "Adventure",   ["swashbuckler-pirates", "survival", "jungle-lost-world", "road-trip"], "Action & Adventure"),
-    ("Animation",   "animation",   "Animation",   ["anime", "stop-motion", "computer-animation", "adult-animation"], "Animation"),
+    ("Animation",   "animation",   "Animation",   ["stop-motion", "computer-animation", "adult-animation"], "Animation"),
     ("Comedy",      "comedy",      "Comedy",      ["romantic-comedy", "buddy-comedy", "dark-comedy", "parody-spoof", "slapstick"], "Comedy"),
     ("Crime",       "crime",       "Crime",       ["mafia-gangster", "drug-cartel", "prison", "detective-pi"], "Crime"),
     ("Documentary", "documentary", "Documentary", ["true-crime", "nature-wildlife", "sports-doc", "history-doc"], "Documentary"),

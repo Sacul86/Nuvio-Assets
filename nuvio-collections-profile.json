@@ -772,21 +772,6 @@
             "filters": null,
             "sortHow": null,
             "provider": "addon",
-            "catalogId": "tmdb.discover.movie.animation.anime",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
             "catalogId": "tmdb.discover.movie.animation.stop-motion",
             "mediaType": null,
             "traktListId": null,
@@ -849,12 +834,6 @@
             "genre": "Animation",
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.genres.animation"
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.animation.anime"
           },
           {
             "type": "movie",

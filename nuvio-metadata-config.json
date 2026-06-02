@@ -10726,58 +10726,6 @@
         }
       },
       {
-        "id": "tmdb.discover.movie.animation.anime",
-        "type": "movie",
-        "name": "🇯🇵 Anime",
-        "enabled": true,
-        "showInHome": false,
-        "source": "tmdb",
-        "metadata": {
-          "discover": {
-            "version": 2,
-            "source": "tmdb",
-            "mediaType": "movie",
-            "params": {
-              "sort_by": "popularity.desc",
-              "include_adult": false,
-              "with_keywords": "210024|222243|290799",
-              "with_genres": "16",
-              "vote_count.gte": 20,
-              "with_release_type": "4|5|6"
-            },
-            "formState": {
-              "catalogName": "🇯🇵 Anime",
-              "discoverSource": "tmdb",
-              "sortBy": "popularity.desc",
-              "catalogType": "movie",
-              "includeAdult": false,
-              "releasedOnly": true,
-              "includeGenres": [
-                {
-                  "id": 16,
-                  "label": "Animation"
-                }
-              ],
-              "voteCountMin": 20,
-              "withKeywords": [
-                {
-                  "id": 210024,
-                  "label": "anime"
-                },
-                {
-                  "id": 222243,
-                  "label": "based on anime"
-                },
-                {
-                  "id": 290799,
-                  "label": "idol anime"
-                }
-              ]
-            }
-          }
-        }
-      },
-      {
         "id": "tmdb.discover.movie.animation.stop-motion",
         "type": "movie",
         "name": "🪀 Stop Motion",
@@ -14381,7 +14329,7 @@
   },
   "metadata": {
     "apiKeysExcluded": false,
-    "totalCatalogs": 287,
-    "enabledCatalogs": 276
+    "totalCatalogs": 286,
+    "enabledCatalogs": 275
   }
 }

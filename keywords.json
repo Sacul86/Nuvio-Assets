@@ -7,7 +7,6 @@
   "survival": [{"id": 10349, "label": "survival"}, {"id": 349761, "label": "wilderness survival"}, {"id": 327857, "label": "survival adventure"}, {"id": 327462, "label": "desert survival"}],
   "jungle-lost-world": [{"id": 10787, "label": "jungle"}, {"id": 204975, "label": "lost world"}, {"id": 1963, "label": "expedition"}, {"id": 315709, "label": "jungle adventure"}],
   "road-trip": [{"id": 7312, "label": "road trip"}, {"id": 167043, "label": "road movie"}, {"id": 374437, "label": "road trip movie"}],
-  "anime": [{"id": 210024, "label": "anime"}, {"id": 222243, "label": "based on anime"}, {"id": 290799, "label": "idol anime"}],
   "stop-motion": [{"id": 10121, "label": "stop motion"}, {"id": 358482, "label": "stop motion animation"}, {"id": 197065, "label": "claymation"}],
   "adult-animation": [{"id": 161919, "label": "adult animation"}, {"id": 362782, "label": "french adult animation"}],
   "computer-animation": [{"id": 10159, "label": "computer animation"}, {"id": 360047, "label": "cgi"}, {"id": 307787, "label": "cgi effects"}],
