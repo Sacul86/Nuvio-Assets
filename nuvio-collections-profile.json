@@ -520,21 +520,6 @@
             "filters": null,
             "sortHow": null,
             "provider": "addon",
-            "catalogId": "tmdb.discover.movie.action.car-racing",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
             "catalogId": "tmdb.discover.movie.action.assassins",
             "mediaType": null,
             "traktListId": null,
@@ -579,12 +564,6 @@
             "genre": "None",
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.action.superhero"
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.action.car-racing"
           },
           {
             "type": "movie",
@@ -652,36 +631,6 @@
             "tmdbSourceType": null
           },
           {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.adventure.jungle-lost-world",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.adventure.road-trip",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          },
-          {
             "type": "series",
             "genre": "Action & Adventure",
             "title": null,
@@ -720,18 +669,6 @@
             "genre": "None",
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.adventure.survival"
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.adventure.jungle-lost-world"
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.adventure.road-trip"
           },
           {
             "type": "series",
@@ -778,36 +715,6 @@
             "tmdbSourceType": null
           },
           {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.animation.computer-animation",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.animation.adult-animation",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          },
-          {
             "type": "series",
             "genre": "Animation",
             "title": null,
@@ -840,18 +747,6 @@
             "genre": "None",
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.animation.stop-motion"
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.animation.computer-animation"
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.animation.adult-animation"
           },
           {
             "type": "series",
@@ -907,52 +802,7 @@
             "filters": null,
             "sortHow": null,
             "provider": "addon",
-            "catalogId": "tmdb.discover.movie.comedy.buddy-comedy",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
             "catalogId": "tmdb.discover.movie.comedy.dark-comedy",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.comedy.parody-spoof",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.comedy.slapstick",
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
@@ -995,25 +845,7 @@
             "type": "movie",
             "genre": "None",
             "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.comedy.buddy-comedy"
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.comedy.dark-comedy"
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.comedy.parody-spoof"
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.comedy.slapstick"
           },
           {
             "type": "series",
@@ -1090,21 +922,6 @@
             "tmdbSourceType": null
           },
           {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.crime.detective-pi",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          },
-          {
             "type": "series",
             "genre": "Crime",
             "title": null,
@@ -1149,12 +966,6 @@
             "genre": "None",
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.crime.prison"
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.crime.detective-pi"
           },
           {
             "type": "series",
@@ -1231,21 +1042,6 @@
             "tmdbSourceType": null
           },
           {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.documentary.history-doc",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          },
-          {
             "type": "series",
             "genre": "Documentary",
             "title": null,
@@ -1290,12 +1086,6 @@
             "genre": "None",
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.documentary.sports-doc"
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.documentary.history-doc"
           },
           {
             "type": "series",
@@ -1372,21 +1162,6 @@
             "tmdbSourceType": null
           },
           {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.drama.family-drama",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          },
-          {
             "type": "series",
             "genre": "Drama",
             "title": null,
@@ -1433,12 +1208,6 @@
             "catalogId": "tmdb.discover.movie.drama.political-drama"
           },
           {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.drama.family-drama"
-          },
-          {
             "type": "series",
             "genre": "Drama",
             "addonId": "aio-metadata",
@@ -1477,21 +1246,6 @@
             "filters": null,
             "sortHow": null,
             "provider": "addon",
-            "catalogId": "tmdb.discover.movie.family.talking-animals",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
             "catalogId": "tmdb.discover.movie.family.holiday-christmas",
             "mediaType": null,
             "traktListId": null,
@@ -1508,21 +1262,6 @@
             "sortHow": null,
             "provider": "addon",
             "catalogId": "tmdb.discover.movie.family.fairy-tale",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.family.school-friendship",
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
@@ -1559,12 +1298,6 @@
             "type": "movie",
             "genre": "None",
             "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.family.talking-animals"
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.family.holiday-christmas"
           },
           {
@@ -1572,12 +1305,6 @@
             "genre": "None",
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.family.fairy-tale"
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.family.school-friendship"
           },
           {
             "type": "series",
@@ -1669,21 +1396,6 @@
             "tmdbSourceType": null
           },
           {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.fantasy.steampunk",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          },
-          {
             "type": "series",
             "genre": "Sci-Fi & Fantasy",
             "title": null,
@@ -1734,12 +1446,6 @@
             "genre": "None",
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.fantasy.robots-ai"
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.fantasy.steampunk"
           },
           {
             "type": "series",
@@ -1795,36 +1501,6 @@
             "filters": null,
             "sortHow": null,
             "provider": "addon",
-            "catalogId": "tmdb.discover.movie.history.medieval",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.history.ancient-world",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
             "catalogId": "tmdb.discover.movie.history.war-film",
             "mediaType": null,
             "traktListId": null,
@@ -1863,18 +1539,6 @@
             "genre": "None",
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.history.period-drama"
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.history.medieval"
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.history.ancient-world"
           },
           {
             "type": "movie",
@@ -2026,21 +1690,6 @@
             "filters": null,
             "sortHow": null,
             "provider": "addon",
-            "catalogId": "tmdb.discover.movie.horror.body-horror",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
             "catalogId": "tmdb.discover.movie.horror.gothic-horror",
             "mediaType": null,
             "traktListId": null,
@@ -2135,12 +1784,6 @@
             "type": "movie",
             "genre": "None",
             "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.horror.body-horror"
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.horror.gothic-horror"
           },
           {
@@ -2203,37 +1846,7 @@
             "filters": null,
             "sortHow": null,
             "provider": "addon",
-            "catalogId": "tmdb.discover.movie.music.concert-performance",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
             "catalogId": "tmdb.discover.movie.music.music-biopic",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.music.dance",
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
@@ -2261,19 +1874,7 @@
             "type": "movie",
             "genre": "None",
             "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.music.concert-performance"
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.music.music-biopic"
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.music.dance"
           }
         ],
         "focusGifEnabled": false,
@@ -2557,21 +2158,6 @@
             "filters": null,
             "sortHow": null,
             "provider": "addon",
-            "catalogId": "tmdb.discover.movie.romance.forbidden-tragic",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
             "catalogId": "tmdb.discover.movie.romance.teen-romance",
             "mediaType": null,
             "traktListId": null,
@@ -2588,21 +2174,6 @@
             "sortHow": null,
             "provider": "addon",
             "catalogId": "tmdb.discover.movie.romance.lgbtq-romance",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.romance.paranormal-romance",
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
@@ -2630,12 +2201,6 @@
             "type": "movie",
             "genre": "None",
             "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.romance.forbidden-tragic"
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.romance.teen-romance"
           },
           {
@@ -2643,12 +2208,6 @@
             "genre": "None",
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.romance.lgbtq-romance"
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.romance.paranormal-romance"
           }
         ],
         "focusGifEnabled": false,
@@ -2717,21 +2276,6 @@
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.thriller.erotic-thriller",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
           }
         ],
         "hideTitle": false,
@@ -2763,12 +2307,6 @@
             "genre": "None",
             "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.thriller.techno-thriller"
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.thriller.erotic-thriller"
           }
         ],
         "focusGifEnabled": false,
@@ -2839,52 +2377,7 @@
             "filters": null,
             "sortHow": null,
             "provider": "addon",
-            "catalogId": "tmdb.discover.movie.western.spaghetti-western",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.western.revisionist-western",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
             "catalogId": "tmdb.discover.movie.western.neo-western",
-            "mediaType": null,
-            "traktListId": null,
-            "tmdbSourceType": null
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "title": null,
-            "sortBy": null,
-            "tmdbId": null,
-            "addonId": "aio-metadata",
-            "filters": null,
-            "sortHow": null,
-            "provider": "addon",
-            "catalogId": "tmdb.discover.movie.western.outlaws",
             "mediaType": null,
             "traktListId": null,
             "tmdbSourceType": null
@@ -2906,25 +2399,7 @@
             "type": "movie",
             "genre": "None",
             "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.western.spaghetti-western"
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.western.revisionist-western"
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
             "catalogId": "tmdb.discover.movie.western.neo-western"
-          },
-          {
-            "type": "movie",
-            "genre": "None",
-            "addonId": "aio-metadata",
-            "catalogId": "tmdb.discover.movie.western.outlaws"
           }
         ],
         "focusGifEnabled": false,

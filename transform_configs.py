@@ -145,6 +145,17 @@ SUBGENRE = {
     "outlaws":            ("🐎 Outlaws & Gunslingers", [37, 28]),
 }
 
+# Weakest 25 subgenres to drop to stay under the 250 enabled-catalog cap
+# (single-keyword/sparse, vague-broad, or low-appeal niches).
+DROP_SUBGENRES = {
+    "paranormal-romance", "body-horror", "spaghetti-western", "revisionist-western",
+    "car-racing", "road-trip", "computer-animation", "adult-animation", "slapstick",
+    "parody-spoof", "school-friendship", "family-drama", "concert-performance", "dance",
+    "erotic-thriller", "ancient-world", "medieval", "history-doc", "forbidden-tragic",
+    "steampunk", "detective-pi", "jungle-lost-world", "buddy-comedy", "outlaws",
+    "talking-animals",
+}
+
 # genre folder -> (catalogId slug prefix, main genre name, [subgenre slugs], series label)
 GENRE_LAYOUT = [
     ("Action",      "action",      "Action",      ["heist", "superhero", "car-racing", "assassins"], "Action & Adventure"),
@@ -282,12 +293,16 @@ def main():
             for sub in HORROR_EXISTING:
                 add("movie", f"tmdb.discover.movie.horror.{sub}", "None")
             for sub in ["body-horror", "gothic-horror", "comedy-horror"]:
+                if sub in DROP_SUBGENRES:
+                    continue
                 cid = f"tmdb.discover.movie.horror.{sub}"
                 name, gids = SUBGENRE[sub]
                 new_catalogs.append(make_subgenre_catalog(cid, name, gids, kwmap[sub]))
                 add("movie", cid, "None")
         else:
             for sub in sub_spec:
+                if sub in DROP_SUBGENRES:
+                    continue
                 cid = f"tmdb.discover.movie.{slug_prefix}.{sub}"
                 name, gids = SUBGENRE[sub]
                 new_catalogs.append(make_subgenre_catalog(cid, name, gids, kwmap[sub]))
