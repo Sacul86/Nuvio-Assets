@@ -18,7 +18,7 @@ https://raw.githubusercontent.com/sacul86/nuvio-assets/claude/personal-plugin-li
 > folder from the source repo alongside this manifest (or keep using the
 > original repo's manifest and just disable the entries listed below).
 
-## What's included (39 providers)
+## What's included (40 providers)
 
 All entries support English (`en`) content and stream movies/TV — no anime,
 no torrent/P2P, no providers known to be geo-/ISP-blocked behind a VPN.
@@ -27,14 +27,14 @@ no torrent/P2P, no providers known to be geo-/ISP-blocked behind a VPN.
 CineStream · Dahmermovies · Dahmermovies-TV · DooFlix · GoatAPI · HDHub4u ·
 HindMoviez · HDMovie2 · LA.Movie · Lordflix · MovieBox · MovieBlast ·
 MoviesDrive · MoviesMod · Movies4u · NetMirror · NoTorrent · Peachify ·
-PlayIMDb (Movies) · PlayIMDb (Series) · StreamFlix · TopCartoons · MultiVid ·
+PlayIMDb (Movies) · PlayIMDb (Series) · ShowBox · StreamFlix · TopCartoons · MultiVid ·
 UHDMovies · VegaMovies · VidLink · VidEasy · VidSrc · VixSrc · VidFast ·
 XPass · ZinkMovies
 
 > Several of these are multi-language (English + Hindi/Tamil/Telugu/etc.). They
 > are kept because they serve English content; their other languages don't hurt.
 
-## What was removed (20 providers)
+## What was removed (19 providers)
 
 ### Anime (10)
 AllAnime · All-Wish · AnimeKai · AnikotoTV · AnimePahe · AnimeSalt ·
@@ -52,16 +52,23 @@ Animetsu · AnimeWorld · Anime-Sama · HiAnime
 > dropped (both are French-dub-oriented even though they list English). Say the
 > word and I'll add them back.
 
-### Needs a VPN (2)
-- **Torrentio** — torrent/P2P source; a VPN is strongly advisable for these
-- **ShowBox** — its FebBox streaming backend is region-locked
+### Needs a VPN (1)
+- **Torrentio** — torrent/P2P source. With torrents your IP is broadcast to
+  every other peer in the swarm and actively logged by copyright monitors, so a
+  VPN is genuinely needed to stay private from your ISP. This is the one
+  provider here that materially increases your exposure.
 
-## Note on "VPN required"
+## Note on "VPN required" (for streaming = ISP privacy)
 
-The source manifest has **no VPN field**, so this can't be filtered
-mechanically. VPN need comes from a host being geo-blocked or ISP-blocked in
-your region (it has nothing to do with HTTP vs HTTPS — those only encrypt the
-connection). Only the two clear-cut cases above were removed. Some Indian
-download sites (UHDMovies, HDHub4u, MoviesMod, VegaMovies, MoviesDrive, etc.)
-are ISP-blocked **inside India** but work fine elsewhere, so they were kept —
-if you're in a region where they're blocked, disable them.
+For streaming, the VPN concern is keeping your traffic private from your ISP —
+not unblocking regions. The distinction that matters:
+
+- **Direct HTTP(S) streaming** — every provider in the kept list (VidSrc,
+  ShowBox, UHDMovies, etc.). Your ISP just sees you connecting to a website,
+  same as normal browsing; with HTTPS it sees the domain, not what you watch.
+- **Torrent / P2P** (Torrentio) — your IP is exposed to other peers and logged.
+  This is where a VPN actually matters, so it was removed.
+
+HTTPS already encrypts the *content* of what you stream from the direct
+providers; a VPN only adds hiding the *domain* from your ISP. That's your call
+per provider — but none of the kept providers expose you the way P2P does.
