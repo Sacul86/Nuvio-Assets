@@ -8,25 +8,43 @@
       "description": "4KHDHub direct links",
       "version": "1.0.1",
       "author": "Nuvio Team",
-      "supportedTypes": ["movie", "tv"],
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
       "filename": "providers/4khdhub.js",
       "enabled": true,
-      "formats": ["mp4", "m3u8"],
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
       "logo": "https://i.postimg.cc/DZpW6Xfb/4khdhub.png",
-      "contentLanguage": ["en"]
+      "contentLanguage": [
+        "en"
+      ]
     },
     {
-      "id": "vidsrc",
-      "name": "VidSrc",
-      "description": "Vidsrc - The best place to watch movies and TV shows online for free. Stream in 1080p HD",
+      "id": "xpass",
+      "name": "XPass",
+      "description": "Play Movie/TV by TMDB ID or IMDb ID",
       "version": "1.0.0",
-      "author": "Nuvio Team",
-      "supportedTypes": ["movie", "tv"],
-      "filename": "providers/vidsrc.js",
+      "author": "Dustincos",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/xpass.js",
       "enabled": true,
-      "formats": ["mp4", "m3u8"],
-      "logo": "https://i.postimg.cc/ncMLBsLJ/vidsrc.png",
-      "contentLanguage": ["en"]
+      "formats": [
+        "mp4",
+        "mkv",
+        "m3u8"
+      ],
+      "logo": "https://i.postimg.cc/tgqNQxdy/xpass.png",
+      "contentLanguage": [
+        "en",
+        "hi"
+      ]
     },
     {
       "id": "vidlink",
@@ -34,12 +52,20 @@
       "description": "Vidlink streaming with encrypted TMDB ID support for movies and TV shows",
       "version": "1.0.0",
       "author": "Nuvio Team",
-      "supportedTypes": ["movie", "tv"],
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
       "filename": "providers/vidlink.js",
       "enabled": true,
-      "formats": ["mp4", "m3u8"],
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
       "logo": "https://i.postimg.cc/RZRHQd75/vidlink.png",
-      "contentLanguage": ["en"]
+      "contentLanguage": [
+        "en"
+      ]
     },
     {
       "id": "videasy",
@@ -47,12 +73,20 @@
       "description": "Videasy streaming with encrypted TMDB ID support for movies and TV shows",
       "version": "1.0.0",
       "author": "Nuvio Team",
-      "supportedTypes": ["movie", "tv"],
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
       "filename": "providers/videasy.js",
       "enabled": true,
-      "formats": ["mp4", "m3u8"],
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
       "logo": "https://i.postimg.cc/7LHYMtVV/videasy.png",
-      "contentLanguage": ["en"]
+      "contentLanguage": [
+        "en"
+      ]
     },
     {
       "id": "vidfast",
@@ -60,12 +94,20 @@
       "description": "Stream movies and TV shows from vidfast.pro.",
       "version": "1.0.0",
       "author": "Dustincos",
-      "supportedTypes": ["movie", "tv"],
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
       "filename": "providers/vidfast.js",
       "enabled": true,
-      "formats": ["mp4", "m3u8"],
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
       "logo": "https://i.postimg.cc/0Qp8PSx5/vidfast.png",
-      "contentLanguage": ["en"]
+      "contentLanguage": [
+        "en"
+      ]
     }
   ]
 }

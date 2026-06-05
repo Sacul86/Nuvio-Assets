@@ -6,16 +6,16 @@ A tightly curated set of 5 providers from
 
 ## How to use
 
-Add the raw URL of `personal-manifest.json` as a scraper repo in Nuvio:
+Add this raw URL as a plugin repository in Nuvio:
 
 ```
-https://raw.githubusercontent.com/sacul86/nuvio-assets/claude/personal-plugin-list-QffUb/personal-manifest.json
+https://raw.githubusercontent.com/Sacul86/Nuvio-Assets/refs/heads/plugins/manifest.json
 ```
 
-> The `filename` paths (e.g. `providers/vidsrc.js`) point at provider scripts in
-> the original All-in-One-Nuvio repo. This manifest only curates **which**
-> providers load. If Nuvio resolves provider files relative to the manifest,
-> mirror the matching files from the source repo's `providers/` folder.
+> This repo is **self-contained**: `manifest.json` plus the actual provider
+> scripts in `providers/`. Nuvio resolves each entry's `filename` (e.g.
+> `providers/vidlink.js`) relative to the manifest URL, so the scripts must live
+> here — they do.
 
 ## The 5 providers
 
@@ -25,10 +25,14 @@ networks so they back each other up when one is down.
 | Provider | Why it's here | Endpoints (all HTTPS) |
 |---|---|---|
 | **4KHDHub** | Best quality — 4K/HEVC direct links | `4khdhub.dad`, `*.hf.space` |
-| **VidSrc** | Most popular/reliable embed network | `cloudnestra.com`, `vsrc.su` |
-| **VidLink** | Strong independent alternate | `vidlink.pro` |
+| **XPass** | Reliable TMDB/IMDb-ID direct play | `play.xpass.top` |
+| **VidLink** | Strong independent alternate (confirmed working) | `vidlink.pro` |
 | **VidEasy** | Large catalog | `videasy.net`, `player.videasy.net` |
 | **VidFast** | Fast modern source, good fallback | `vidfast.to`, `enc-dec.app` |
+
+> **VidSrc was swapped out for XPass.** VidSrc itself is HTTPS, but it chains
+> through `cloudnestra.com`, which currently returns HTTP 403 (Cloudflare
+> block), so it returned no streams. XPass is verified-HTTPS and live.
 
 ## HTTPS research
 
