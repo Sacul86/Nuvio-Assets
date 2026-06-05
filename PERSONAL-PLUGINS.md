@@ -28,11 +28,14 @@ networks so they back each other up when one is down.
 | **XPass** | Reliable TMDB/IMDb-ID direct play | `play.xpass.top` |
 | **VidLink** | Strong independent alternate (confirmed working) | `vidlink.pro` |
 | **VidEasy** | Large catalog | `videasy.net`, `player.videasy.net` |
-| **VidFast** | Fast modern source, good fallback | `vidfast.to`, `enc-dec.app` |
+| **Peachify** | Fast Cloudflare-Worker multi-source | `peachify.top`, `*.eat-peach.sbs` |
 
-> **VidSrc was swapped out for XPass.** VidSrc itself is HTTPS, but it chains
-> through `cloudnestra.com`, which currently returns HTTP 403 (Cloudflare
-> block), so it returned no streams. XPass is verified-HTTPS and live.
+> **Two swaps from the original 5:**
+> - **VidSrc → XPass.** VidSrc chains through `cloudnestra.com`, which returns
+>   HTTP 403 (Cloudflare block), so it returned no streams.
+> - **VidFast → Peachify.** VidFast works but is very slow/unreliable — its
+>   resolve→`enc-dec.app` decrypt→fetch chain lags badly on mobile. Peachify is
+>   a single Cloudflare-Worker network, verified HTTPS (no plain-HTTP/IP).
 
 ## HTTPS research
 
