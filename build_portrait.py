@@ -177,27 +177,68 @@ def grade(im):
     return Image.composite(Image.new("RGB", (PW, PH)), im, grad.resize((PW, PH)))
 
 
-def title(im, text):
-    d = ImageDraw.Draw(im)
-    text = text.upper()
-    size = 116
-    while size > 30:
+def fit_size(labels, base=98, floor=48):
+    """One font size used for every tile: the largest that fits the longest
+    single (unbreakable) word across all labels within the text column."""
+    maxw = PW - MX * 2
+    words = [w for lb in labels for w in lb.upper().split()]
+    size = base
+    while size > floor:
         f = ImageFont.truetype(FONT, size)
-        ls = max(2, size * 0.02)
-        w = sum(d.textlength(c, font=f) for c in text) + (len(text) - 1) * ls
-        if w <= PW - MX * 2:
+        d = ImageDraw.Draw(Image.new("RGB", (1, 1)))
+        if all(d.textlength(w, font=f) <= maxw for w in words):
             break
-        size -= 3
+        size -= 2
+    return size
+
+
+def title(im, text, size=None):
+    """Gold caps, fixed size, wrapped onto multiple lines, bottom-left."""
+    d = ImageDraw.Draw(im)
+    if size is None:
+        size = fit_size([text])
     f = ImageFont.truetype(FONT, size)
-    ls = max(2, size * 0.02)
+    maxw = PW - MX * 2
+    # greedy word-wrap (never shrink to fit a phrase)
+    lines, cur = [], ""
+    for w in text.upper().split():
+        trial = (cur + " " + w).strip()
+        if d.textlength(trial, font=f) <= maxw or not cur:
+            cur = trial
+        else:
+            lines.append(cur)
+            cur = w
+    if cur:
+        lines.append(cur)
     asc, desc = f.getmetrics()
-    y = PH - MB - (asc + desc)
-    cx = MX
-    for c in text:
-        d.text((cx + 3, y + 3), c, font=f, fill=(0, 0, 0))
-        d.text((cx, y), c, font=f, fill=GOLD, stroke_width=2, stroke_fill=STROKE)
-        cx += d.textlength(c, font=f) + ls
+    lh = asc + desc
+    gap = int(lh * 0.06)
+    total = len(lines) * lh + (len(lines) - 1) * gap
+    y = PH - MB - total
+    for line in lines:
+        d.text((MX + 3, y + 3), line, font=f, fill=(0, 0, 0))
+        d.text((MX, y), line, font=f, fill=GOLD, stroke_width=2, stroke_fill=STROKE)
+        y += lh + gap
     return im
+
+
+def streaming_tile(src_im):
+    """Fit a landscape brand cover onto a portrait canvas, filling the top/
+    bottom bands by edge-replicating the art so the logo is never cropped."""
+    art = src_im.convert("RGB")
+    aw, ah = art.size
+    nw = PW
+    nh = max(1, round(ah * PW / aw))
+    art = art.resize((nw, nh), Image.LANCZOS)
+    canvas = Image.new("RGB", (PW, PH))
+    top = (PH - nh) // 2
+    if top > 0:
+        canvas.paste(art.crop((0, 0, PW, 1)).resize((PW, top)), (0, 0))
+        bot = PH - top - nh
+        if bot > 0:
+            canvas.paste(art.crop((0, nh - 1, PW, nh)).resize((PW, bot)), (0, top + nh))
+    canvas.paste(art, (0, max(0, top)))
+    return canvas
 
 
 def slug_of(fo):

@@ -161,38 +161,54 @@ def image_url(res):
     return (None, "none")
 
 
+CACHE = Path("assets/.srccache")   # pre-text tiles, for instant re-texting
+CACHE.mkdir(parents=True, exist_ok=True)
+STREAM_COVER = "https://cdn.xperience-app.com/covers/default/{slug}.webp"
+
+
 def main():
     profile = sys.argv[1]
     data = json.load(open(profile))
     jobs = [(c["title"], f["title"], bp.slug_of(f))
             for c in data for f in c["folders"] if bp.slug_of(f)]
-    print(f"Rebuilding {len(jobs)} title-free portraits\n")
+    size = bp.fit_size([t for _, t, _ in jobs])   # one size for every tile
+    print(f"Rebuilding {len(jobs)} portraits @ font {size}\n")
     ok = miss = fallback = 0
     for coll, ttl, slug in jobs:
         try:
+            # Streaming: branded logo cover, text already built in -> no gold label
+            if coll == "Streaming":
+                raw = bp.S.get(STREAM_COVER.format(slug=slug), timeout=30)
+                raw.raise_for_status()
+                tmp = bp.OUT / f".{slug}.src"
+                tmp.write_bytes(raw.content)
+                tile = bp.streaming_tile(Image.open(tmp))
+                tile.save(CACHE / f"{slug}.jpg", "JPEG", quality=90)
+                tile.save(bp.OUT / f"{slug}.jpg", "JPEG", quality=90)
+                tmp.unlink(missing_ok=True)
+                ok += 1
+                continue
+
             res = resolve(coll, ttl, slug)
-        except Exception as e:
-            res = None
-            print(f"  [err] {slug}: {e}")
-        if not res:
-            print(f"  [MISS] {coll}/{ttl}")
-            miss += 1
-            continue
-        url, note = image_url(res)
-        if not url:
-            print(f"  [MISS] {coll}/{ttl} (no image)")
-            miss += 1
-            continue
-        if note == "TEXT-fallback":
-            fallback += 1
-            print(f"  [text] {coll}/{ttl} — no textless art, kept default poster")
-        try:
+            if not res:
+                print(f"  [MISS] {coll}/{ttl}")
+                miss += 1
+                continue
+            url, note = image_url(res)
+            if not url:
+                print(f"  [MISS] {coll}/{ttl} (no image)")
+                miss += 1
+                continue
+            if note == "TEXT-fallback":
+                fallback += 1
+                print(f"  [text] {coll}/{ttl} — no textless art, kept default poster")
             raw = bp.S.get(url, timeout=30)
             raw.raise_for_status()
             tmp = bp.OUT / f".{slug}.src"
             tmp.write_bytes(raw.content)
-            im = bp.title(bp.grade(bp.cover_crop(Image.open(tmp))), ttl)
-            im.save(bp.OUT / f"{slug}.jpg", "JPEG", quality=88)
+            base = bp.grade(bp.cover_crop(Image.open(tmp)))
+            base.save(CACHE / f"{slug}.jpg", "JPEG", quality=90)
+            bp.title(base, ttl, size).save(bp.OUT / f"{slug}.jpg", "JPEG", quality=88)
             tmp.unlink(missing_ok=True)
             ok += 1
             if ok % 40 == 0:
